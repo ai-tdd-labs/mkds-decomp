@@ -60,7 +60,7 @@ if echo "$OUT" | grep -q "OK ==="; then
   git add -A && git commit -q -m "Sweep-driver harvest ($MODEL/$EFFORT)
 
 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" && \
-    git push -q origin main && git push -q public main && say "gepusht"
+    git push -q origin main && bash tools/push_public.sh "Sweep-driver harvest" && say "gepusht"
 else
   say "VERSCHIL — diagnose nodig (uitgepakte bins diffen, .L-label-truc); NIET gepusht"
 fi
