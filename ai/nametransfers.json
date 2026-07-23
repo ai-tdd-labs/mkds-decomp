@@ -1,0 +1,205 @@
+[
+ {
+  "mkds": "func_0200eddc",
+  "addr": "0x200eddc",
+  "size": 44,
+  "naam": "DC_func_0002",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02021bc8",
+  "addr": "0x2021bc8",
+  "size": 32,
+  "naam": "SND_func_0043",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02027fb8",
+  "addr": "0x2027fb8",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02028058",
+  "addr": "0x2028058",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02028e00",
+  "addr": "0x2028e00",
+  "size": 20,
+  "naam": "CARD_func_0054",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0202e68c",
+  "addr": "0x202e68c",
+  "size": 20,
+  "naam": "CARD_func_0054",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0202f51c",
+  "addr": "0x202f51c",
+  "size": 20,
+  "naam": "CARD_func_0054",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0203038c",
+  "addr": "0x203038c",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020303a8",
+  "addr": "0x20303a8",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0203091c",
+  "addr": "0x203091c",
+  "size": 20,
+  "naam": "CARD_func_0054",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02035d74",
+  "addr": "0x2035d74",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02036264",
+  "addr": "0x2036264",
+  "size": 20,
+  "naam": "CARD_func_0054",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020cab58",
+  "addr": "0x20cab58",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020cb48c",
+  "addr": "0x20cb48c",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020ce744",
+  "addr": "0x20ce744",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020ceb54",
+  "addr": "0x20ceb54",
+  "size": 28,
+  "naam": "GXS_SetGraphicsMode",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020f41b0",
+  "addr": "0x20f41b0",
+  "size": 20,
+  "naam": "CARD_func_0052",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020f705c",
+  "addr": "0x20f705c",
+  "size": 20,
+  "naam": "CARD_func_0054",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_020f70f0",
+  "addr": "0x20f70f0",
+  "size": 20,
+  "naam": "CARD_func_0054",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0212f7c8",
+  "addr": "0x212f7c8",
+  "size": 24,
+  "naam": "NNS_Snd_func_02068a4c",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0212f7e0",
+  "addr": "0x212f7e0",
+  "size": 24,
+  "naam": "NNS_Snd_func_02068a34",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02130340",
+  "addr": "0x2130340",
+  "size": 64,
+  "naam": "_dflt",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0213c9c0",
+  "addr": "0x213c9c0",
+  "size": 40,
+  "naam": "wmemchr",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0213ecf8",
+  "addr": "0x213ecf8",
+  "size": 52,
+  "naam": "wcschr",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0213ee30",
+  "addr": "0x213ee30",
+  "size": 32,
+  "naam": "wcscpy",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0213ee50",
+  "addr": "0x213ee50",
+  "size": 28,
+  "naam": "wcslen",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_021400a0",
+  "addr": "0x21400a0",
+  "size": 40,
+  "naam": "copysign",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_0214c728",
+  "addr": "0x214c728",
+  "size": 36,
+  "naam": "CopySingle384",
+  "score": 1.0
+ },
+ {
+  "mkds": "func_02021be8",
+  "addr": "0x2021be8",
+  "size": 76,
+  "naam": "SND_func_0042",
+  "score": 0.973
+ }
+]

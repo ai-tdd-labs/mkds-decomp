@@ -1,0 +1,97 @@
+{"addr": "0x2007ec4", "func": "func_02007ec4", "voorstel": "Maybe_helper_007ec4", "zekerheid": "laag", "bewijs": "kleine helper (0x74 bytes)"}
+{"addr": "0x200850c", "func": "func_0200850c", "voorstel": "Maybe_helper_00850c", "zekerheid": "laag", "bewijs": "kleine helper (0x64 bytes)"}
+{"addr": "0x200895c", "func": "func_0200895c", "voorstel": "Maybe_helper_00895c", "zekerheid": "laag", "bewijs": "kleine helper (0x74 bytes)"}
+{"addr": "0x20089d0", "func": "func_020089d0", "voorstel": "Maybe_helper_0089d0", "zekerheid": "laag", "bewijs": "kleine helper (0x44 bytes)"}
+{"addr": "0x200973c", "func": "func_0200973c", "voorstel": "Maybe_helper_00973c", "zekerheid": "laag", "bewijs": "kleine helper (0x70 bytes)"}
+{"addr": "0x201e540", "func": "func_0201e540", "voorstel": "Maybe_call_VecFx32_Normalize", "zekerheid": "middel", "bewijs": "doorgeefluik -> VecFx32_Normalize"}
+{"addr": "0x2020b2c", "func": "func_02020b2c", "voorstel": "Maybe_helper_020b2c", "zekerheid": "laag", "bewijs": "kleine helper (0x44 bytes)"}
+{"addr": "0x2021040", "func": "func_02021040", "voorstel": "Maybe_helper_021040", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x2021080", "func": "func_02021080", "voorstel": "Maybe_helper_021080", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x2021114", "func": "func_02021114", "voorstel": "Maybe_helper_021114", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x2024a28", "func": "func_02024a28", "voorstel": "Maybe_call_StructMQRacerEntry_SomeFn_6", "zekerheid": "middel", "bewijs": "doorgeefluik -> StructMQRacerEntry_SomeFn_6"}
+{"addr": "0x20351c8", "func": "func_020351c8", "voorstel": "Maybe_helper_0351c8", "zekerheid": "laag", "bewijs": "kleine helper (0x60 bytes)"}
+{"addr": "0x2046e84", "func": "func_02046e84", "voorstel": "Maybe_call_Struct59C4Sub_SomeFn_2", "zekerheid": "middel", "bewijs": "doorgeefluik -> Struct59C4Sub_SomeFn_2"}
+{"addr": "0x20474e4", "func": "func_020474e4", "voorstel": "Maybe_helper_0474e4", "zekerheid": "laag", "bewijs": "kleine helper (0x60 bytes)"}
+{"addr": "0x204a978", "func": "func_0204a978", "voorstel": "Maybe_call_Mem_CpuFill8", "zekerheid": "middel", "bewijs": "doorgeefluik -> Mem_CpuFill8"}
+{"addr": "0x20559ec", "func": "func_020559ec", "voorstel": "Maybe_call_Mem_CpuCopy8", "zekerheid": "middel", "bewijs": "doorgeefluik -> Mem_CpuCopy8"}
+{"addr": "0x2061250", "func": "func_02061250", "voorstel": "Maybe_call_PlayerProfileInfo_GetProfile", "zekerheid": "middel", "bewijs": "doorgeefluik -> PlayerProfileInfo_GetProfileId_from_thumb"}
+{"addr": "0x20616c0", "func": "func_020616c0", "voorstel": "Maybe_call_Mem_CpuCopy8_2", "zekerheid": "middel", "bewijs": "doorgeefluik -> Mem_CpuCopy8"}
+{"addr": "0x2080adc", "func": "func_02080adc", "voorstel": "Maybe_helper_080adc", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x2080cd0", "func": "func_02080cd0", "voorstel": "Maybe_helper_080cd0", "zekerheid": "laag", "bewijs": "kleine helper (0x64 bytes)"}
+{"addr": "0x2081618", "func": "func_02081618", "voorstel": "Maybe_call_GetDriverEntry", "zekerheid": "middel", "bewijs": "doorgeefluik -> GetDriverEntry"}
+{"addr": "0x2081d78", "func": "func_02081d78", "voorstel": "Maybe_call_GetDriverEntry_2", "zekerheid": "middel", "bewijs": "doorgeefluik -> GetDriverEntry"}
+{"addr": "0x2081e5c", "func": "func_02081e5c", "voorstel": "Maybe_call_GetDriverEntry_3", "zekerheid": "middel", "bewijs": "doorgeefluik -> GetDriverEntry"}
+{"addr": "0x2082d64", "func": "func_02082d64", "voorstel": "Maybe_call_GetDriverEntry_4", "zekerheid": "middel", "bewijs": "doorgeefluik -> GetDriverEntry"}
+{"addr": "0x208fdcc", "func": "func_0208fdcc", "voorstel": "Maybe_helper_08fdcc", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x20901a0", "func": "func_020901a0", "voorstel": "Maybe_helper_0901a0", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x20901f0", "func": "func_020901f0", "voorstel": "Maybe_helper_0901f0", "zekerheid": "laag", "bewijs": "kleine helper (0x5c bytes)"}
+{"addr": "0x209086c", "func": "func_0209086c", "voorstel": "Maybe_helper_09086c", "zekerheid": "laag", "bewijs": "kleine helper (0x64 bytes)"}
+{"addr": "0x209125c", "func": "func_0209125c", "voorstel": "Maybe_helper_09125c", "zekerheid": "laag", "bewijs": "kleine helper (0x44 bytes)"}
+{"addr": "0x2091828", "func": "func_02091828", "voorstel": "Maybe_helper_091828", "zekerheid": "laag", "bewijs": "kleine helper (0x64 bytes)"}
+{"addr": "0x2093708", "func": "func_02093708", "voorstel": "Maybe_helper_093708", "zekerheid": "laag", "bewijs": "kleine helper (0x4c bytes)"}
+{"addr": "0x2093754", "func": "func_02093754", "voorstel": "Maybe_helper_093754", "zekerheid": "laag", "bewijs": "kleine helper (0x64 bytes)"}
+{"addr": "0x20938c0", "func": "func_020938c0", "voorstel": "Maybe_helper_0938c0", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x2093c64", "func": "func_02093c64", "voorstel": "Maybe_helper_093c64", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x2093fa4", "func": "func_02093fa4", "voorstel": "Maybe_helper_093fa4", "zekerheid": "laag", "bewijs": "kleine helper (0x4c bytes)"}
+{"addr": "0x20946b8", "func": "func_020946b8", "voorstel": "Maybe_helper_0946b8", "zekerheid": "laag", "bewijs": "kleine helper (0x6c bytes)"}
+{"addr": "0x2094db4", "func": "func_02094db4", "voorstel": "Maybe_helper_094db4", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x2094e3c", "func": "func_02094e3c", "voorstel": "Maybe_helper_094e3c", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x20957ec", "func": "func_020957ec", "voorstel": "Maybe_call_VecFx32_AddScale1", "zekerheid": "middel", "bewijs": "doorgeefluik -> VecFx32_AddScale1"}
+{"addr": "0x20959fc", "func": "func_020959fc", "voorstel": "Maybe_helper_0959fc", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x2095f9c", "func": "func_02095f9c", "voorstel": "Maybe_helper_095f9c", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x20975ac", "func": "func_020975ac", "voorstel": "Maybe_helper_0975ac", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x209828c", "func": "func_0209828c", "voorstel": "Maybe_helper_09828c", "zekerheid": "laag", "bewijs": "kleine helper (0x48 bytes)"}
+{"addr": "0x20982d4", "func": "func_020982d4", "voorstel": "Maybe_helper_0982d4", "zekerheid": "laag", "bewijs": "kleine helper (0x54 bytes)"}
+{"addr": "0x2098328", "func": "func_02098328", "voorstel": "Maybe_helper_098328", "zekerheid": "laag", "bewijs": "kleine helper (0x4c bytes)"}
+{"addr": "0x2098374", "func": "func_02098374", "voorstel": "Maybe_helper_098374", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x2098d04", "func": "func_02098d04", "voorstel": "Maybe_helper_098d04", "zekerheid": "laag", "bewijs": "kleine helper (0x48 bytes)"}
+{"addr": "0x209a78c", "func": "func_0209a78c", "voorstel": "Maybe_helper_09a78c", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x209b344", "func": "func_0209b344", "voorstel": "Maybe_helper_09b344", "zekerheid": "laag", "bewijs": "kleine helper (0x44 bytes)"}
+{"addr": "0x209ba08", "func": "func_0209ba08", "voorstel": "Maybe_call_StructML_SomeFn_8", "zekerheid": "middel", "bewijs": "doorgeefluik -> StructML_SomeFn_8"}
+{"addr": "0x209bbfc", "func": "func_0209bbfc", "voorstel": "Maybe_helper_09bbfc", "zekerheid": "laag", "bewijs": "kleine helper (0x60 bytes)"}
+{"addr": "0x209c154", "func": "func_0209c154", "voorstel": "Maybe_call_CreateAllocateSomeObject_fro", "zekerheid": "middel", "bewijs": "doorgeefluik -> CreateAllocateSomeObject_from_thumb"}
+{"addr": "0x209c198", "func": "func_0209c198", "voorstel": "Maybe_call_CreateAllocateSomeObject_fro_2", "zekerheid": "middel", "bewijs": "doorgeefluik -> CreateAllocateSomeObject_from_thumb"}
+{"addr": "0x209c1dc", "func": "func_0209c1dc", "voorstel": "Maybe_call_CreateAllocateSomeObject_fro_3", "zekerheid": "middel", "bewijs": "doorgeefluik -> CreateAllocateSomeObject_from_thumb"}
+{"addr": "0x209d650", "func": "func_0209d650", "voorstel": "Maybe_helper_09d650", "zekerheid": "laag", "bewijs": "kleine helper (0x44 bytes)"}
+{"addr": "0x209d800", "func": "func_0209d800", "voorstel": "Maybe_helper_09d800", "zekerheid": "laag", "bewijs": "kleine helper (0x4c bytes)"}
+{"addr": "0x209df44", "func": "func_0209df44", "voorstel": "Maybe_helper_09df44", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x209ea90", "func": "func_0209ea90", "voorstel": "Maybe_helper_09ea90", "zekerheid": "laag", "bewijs": "kleine helper (0x74 bytes)"}
+{"addr": "0x209f178", "func": "func_0209f178", "voorstel": "Maybe_call_StructMapObject_SomeFn_2", "zekerheid": "middel", "bewijs": "doorgeefluik -> StructMapObject_SomeFn_2"}
+{"addr": "0x209fc38", "func": "func_0209fc38", "voorstel": "Maybe_helper_09fc38", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x20a16d0", "func": "func_020a16d0", "voorstel": "Maybe_helper_0a16d0", "zekerheid": "laag", "bewijs": "kleine helper (0x58 bytes)"}
+{"addr": "0x20a1e40", "func": "func_020a1e40", "voorstel": "Maybe_call_GetDriverEntry_5", "zekerheid": "middel", "bewijs": "doorgeefluik -> GetDriverEntry"}
+{"addr": "0x20a22ac", "func": "func_020a22ac", "voorstel": "Maybe_helper_0a22ac", "zekerheid": "laag", "bewijs": "kleine helper (0x54 bytes)"}
+{"addr": "0x20a2f30", "func": "func_020a2f30", "voorstel": "Maybe_helper_0a2f30", "zekerheid": "laag", "bewijs": "kleine helper (0x6c bytes)"}
+{"addr": "0x20a2fe4", "func": "func_020a2fe4", "voorstel": "Maybe_helper_0a2fe4", "zekerheid": "laag", "bewijs": "kleine helper (0x78 bytes)"}
+{"addr": "0x20a3f48", "func": "func_020a3f48", "voorstel": "Maybe_helper_0a3f48", "zekerheid": "laag", "bewijs": "kleine helper (0x60 bytes)"}
+{"addr": "0x20a5918", "func": "func_020a5918", "voorstel": "Maybe_call_CreateAllocateSomeObject_fro_4", "zekerheid": "middel", "bewijs": "doorgeefluik -> CreateAllocateSomeObject_from_thumb"}
+{"addr": "0x20a6c64", "func": "func_020a6c64", "voorstel": "Maybe_CreateObj_17ca6c", "zekerheid": "middel", "bewijs": "maakt object uit data 0x0217ca6c"}
+{"addr": "0x20a6cb4", "func": "func_020a6cb4", "voorstel": "Maybe_helper_0a6cb4", "zekerheid": "laag", "bewijs": "kleine helper (0x6c bytes)"}
+{"addr": "0x20a6d40", "func": "func_020a6d40", "voorstel": "Maybe_helper_0a6d40", "zekerheid": "laag", "bewijs": "kleine helper (0x4c bytes)"}
+{"addr": "0x20a7270", "func": "func_020a7270", "voorstel": "Maybe_helper_0a7270", "zekerheid": "laag", "bewijs": "kleine helper (0x58 bytes)"}
+{"addr": "0x20a72c8", "func": "func_020a72c8", "voorstel": "Maybe_helper_0a72c8", "zekerheid": "laag", "bewijs": "kleine helper (0x70 bytes)"}
+{"addr": "0x20a9224", "func": "func_020a9224", "voorstel": "Maybe_call_CreateAllocateSomeObject_fro_5", "zekerheid": "middel", "bewijs": "doorgeefluik -> CreateAllocateSomeObject_from_thumb"}
+{"addr": "0x20a9e04", "func": "func_020a9e04", "voorstel": "Maybe_CreateObj_17ca6c_2", "zekerheid": "middel", "bewijs": "maakt object uit data 0x0217ca6c"}
+{"addr": "0x20aba9c", "func": "func_020aba9c", "voorstel": "Maybe_helper_0aba9c", "zekerheid": "laag", "bewijs": "kleine helper (0x44 bytes)"}
+{"addr": "0x20ac5e4", "func": "func_020ac5e4", "voorstel": "Maybe_helper_0ac5e4", "zekerheid": "laag", "bewijs": "kleine helper (0x58 bytes)"}
+{"addr": "0x20b4cec", "func": "func_020b4cec", "voorstel": "Maybe_call_FX_Div", "zekerheid": "middel", "bewijs": "doorgeefluik -> FX_Div"}
+{"addr": "0x20d68b0", "func": "func_020d68b0", "voorstel": "Maybe_CreateObj_156adc", "zekerheid": "middel", "bewijs": "maakt object uit data 0x02156adc"}
+{"addr": "0x20d7b88", "func": "func_020d7b88", "voorstel": "Maybe_helper_0d7b88", "zekerheid": "laag", "bewijs": "kleine helper (0x64 bytes)"}
+{"addr": "0x20d98a4", "func": "func_020d98a4", "voorstel": "Maybe_helper_0d98a4", "zekerheid": "laag", "bewijs": "kleine helper (0x5c bytes)"}
+{"addr": "0x20de130", "func": "func_020de130", "voorstel": "Maybe_helper_0de130", "zekerheid": "laag", "bewijs": "kleine helper (0x54 bytes)"}
+{"addr": "0x20de438", "func": "func_020de438", "voorstel": "Maybe_helper_0de438", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}
+{"addr": "0x20e4768", "func": "func_020e4768", "voorstel": "Maybe_CreateObj_158f70", "zekerheid": "middel", "bewijs": "maakt object uit data 0x02158f70"}
+{"addr": "0x20e6d88", "func": "func_020e6d88", "voorstel": "Maybe_helper_0e6d88", "zekerheid": "laag", "bewijs": "kleine helper (0x68 bytes)"}
+{"addr": "0x20e7a40", "func": "func_020e7a40", "voorstel": "Maybe_call_StateDualHandler_SetState", "zekerheid": "middel", "bewijs": "doorgeefluik -> StateDualHandler_SetState"}
+{"addr": "0x20eb2a0", "func": "func_020eb2a0", "voorstel": "Maybe_call_Vector3_MaybeNormalize", "zekerheid": "middel", "bewijs": "doorgeefluik -> Vector3_MaybeNormalize"}
+{"addr": "0x20ec7e8", "func": "func_020ec7e8", "voorstel": "Maybe_call_VecFx32_Add", "zekerheid": "middel", "bewijs": "doorgeefluik -> VecFx32_Add"}
+{"addr": "0x20ed490", "func": "func_020ed490", "voorstel": "Maybe_helper_0ed490", "zekerheid": "laag", "bewijs": "kleine helper (0x40 bytes)"}
+{"addr": "0x20f9ca8", "func": "func_020f9ca8", "voorstel": "Maybe_call_FindComputeSomeCollisionEntr", "zekerheid": "middel", "bewijs": "doorgeefluik -> FindComputeSomeCollisionEntryId"}
+{"addr": "0x20fcac0", "func": "func_020fcac0", "voorstel": "Maybe_helper_0fcac0", "zekerheid": "laag", "bewijs": "kleine helper (0x70 bytes)"}
+{"addr": "0x20ff910", "func": "func_020ff910", "voorstel": "Maybe_call_MTX_Concat33", "zekerheid": "middel", "bewijs": "doorgeefluik -> MTX_Concat33"}
+{"addr": "0x210b6a0", "func": "func_0210b6a0", "voorstel": "Maybe_helper_10b6a0", "zekerheid": "laag", "bewijs": "kleine helper (0x68 bytes)"}
+{"addr": "0x210ef68", "func": "func_0210ef68", "voorstel": "Maybe_call_Sound_SetFileFatDynamicOffse", "zekerheid": "middel", "bewijs": "doorgeefluik -> Sound_SetFileFatDynamicOffsetField"}
+{"addr": "0x2128310", "func": "func_02128310", "voorstel": "Maybe_helper_128310", "zekerheid": "laag", "bewijs": "kleine helper (0x64 bytes)"}
+{"addr": "0x212beb4", "func": "func_0212beb4", "voorstel": "Maybe_helper_12beb4", "zekerheid": "laag", "bewijs": "kleine helper (0x60 bytes)"}
+{"addr": "0x2143520", "func": "func_02143520", "voorstel": "Maybe_helper_143520", "zekerheid": "laag", "bewijs": "kleine helper (0x6c bytes)"}
+{"addr": "0x215286c", "func": "func_0215286c", "voorstel": "Maybe_helper_15286c", "zekerheid": "laag", "bewijs": "kleine helper (0x50 bytes)"}

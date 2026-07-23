@@ -1,0 +1,515 @@
+[
+ {
+  "score": 0.978,
+  "func": "GX_VRAMCNT_SetLCDC_",
+  "mkds": "GX_VRAMCNT_SetLCDC_",
+  "addr": "0x2149dd8",
+  "module": "arm9",
+  "size": 184,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_vramcnt.c"
+ },
+ {
+  "score": 0.975,
+  "func": "CARDi_SetRomOp",
+  "mkds": "Card_WriteRomOperation",
+  "addr": "0x2146730",
+  "module": "arm9",
+  "size": 160,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/CARD_rom.c"
+ },
+ {
+  "score": 0.968,
+  "func": "GX_InitGXState",
+  "mkds": "Gfx_InitializeState",
+  "addr": "0x2148c20",
+  "module": "arm9",
+  "size": 128,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_state.c"
+ },
+ {
+  "score": 0.964,
+  "func": "FS_LoadArchive",
+  "mkds": "Fs_Archive_LoadFromFatFnt",
+  "addr": "0x2004018",
+  "module": "arm9",
+  "size": 120,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FS_archive.c"
+ },
+ {
+  "score": 0.964,
+  "func": "OS_IrqHandler_ThreadSwitch",
+  "mkds": "func_01ff8058",
+  "addr": "0x1ff8058",
+  "module": "itcm",
+  "size": 348,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_irqHandler.c"
+ },
+ {
+  "score": 0.964,
+  "func": "SND_CalcChannelVolume",
+  "mkds": "func_020218f4",
+  "addr": "0x20218f4",
+  "module": "arm9",
+  "size": 116,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/SND_util.c"
+ },
+ {
+  "score": 0.962,
+  "func": "VEC_Mag",
+  "mkds": "VecFx32_Norm",
+  "addr": "0x21482cc",
+  "module": "arm9",
+  "size": 104,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FX_vec.c"
+ },
+ {
+  "score": 0.96,
+  "func": "raise",
+  "mkds": "func_02139e20",
+  "addr": "0x2139e20",
+  "module": "arm9",
+  "size": 336,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/st/libs/c/src/signal.c"
+ },
+ {
+  "score": 0.954,
+  "func": "__exit",
+  "mkds": "func_02133e50",
+  "addr": "0x2133e50",
+  "module": "arm9",
+  "size": 308,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/st/libs/c/src/abort_exit_arm_eabi.c"
+ },
+ {
+  "score": 0.941,
+  "func": "MATH_CountPopulation",
+  "mkds": "Math_CountPopulation",
+  "addr": "0x202056c",
+  "module": "arm9",
+  "size": 68,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/MATH_pop.c"
+ },
+ {
+  "score": 0.941,
+  "func": "OSi_RemoveThreadFromList",
+  "mkds": "Os_PopThread",
+  "addr": "0x200e4e4",
+  "module": "arm9",
+  "size": 72,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_thread.c"
+ },
+ {
+  "score": 0.933,
+  "func": "FX_InvAsync",
+  "mkds": "FX_InvAsync",
+  "addr": "0x2147dec",
+  "module": "arm9",
+  "size": 60,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FX_cp.c"
+ },
+ {
+  "score": 0.933,
+  "func": "FX_GetDivResult",
+  "mkds": "FX_GetDivResult",
+  "addr": "0x2147e28",
+  "module": "arm9",
+  "size": 60,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FX_cp.c"
+ },
+ {
+  "score": 0.929,
+  "func": "FX_DivAsync",
+  "mkds": "FX_DivAsync",
+  "addr": "0x2147d88",
+  "module": "arm9",
+  "size": 56,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FX_cp.c"
+ },
+ {
+  "score": 0.929,
+  "func": "OS_EnableIrqMask",
+  "mkds": "Os_EnableIrqHandler",
+  "addr": "0x200cae4",
+  "module": "arm9",
+  "size": 56,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_interrupt.c"
+ },
+ {
+  "score": 0.923,
+  "func": "VEC_Subtract",
+  "mkds": "VecFx32_Subtract",
+  "addr": "0x21484d0",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FX_vec.c"
+ },
+ {
+  "score": 0.923,
+  "func": "VEC_Add",
+  "mkds": "VecFx32_Add",
+  "addr": "0x2148504",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FX_vec.c"
+ },
+ {
+  "score": 0.923,
+  "func": "G2_GetBG1CharPtr",
+  "mkds": "GetVramBg1BaseOffset_Top",
+  "addr": "0x214a000",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.923,
+  "func": "G2_GetBG0CharPtr",
+  "mkds": "GetVramBg0BaseOffset_Top",
+  "addr": "0x214a054",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.923,
+  "func": "G2_GetBG1ScrPtr",
+  "mkds": "func_0214a2c0",
+  "addr": "0x214a2c0",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.923,
+  "func": "G2_GetBG0ScrPtr",
+  "mkds": "func_0214a314",
+  "addr": "0x214a314",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.923,
+  "func": "OS_ResetRequestIrqMask",
+  "mkds": "SetIF",
+  "addr": "0x200ca68",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_interrupt.c"
+ },
+ {
+  "score": 0.923,
+  "func": "OS_SetIrqMask",
+  "mkds": "SetIE",
+  "addr": "0x200cb1c",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_interrupt.c"
+ },
+ {
+  "score": 0.923,
+  "func": "OSi_RemoveLinkFromQueue",
+  "mkds": "Os_ThreadQueue_Pop",
+  "addr": "0x200e5c4",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_thread.c"
+ },
+ {
+  "score": 0.917,
+  "func": "GX_VBlankIntr",
+  "mkds": "GX_VBlankIntr",
+  "addr": "0x2148a58",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX.c"
+ },
+ {
+  "score": 0.917,
+  "func": "G2_GetBG3CharPtr",
+  "mkds": "GetVramBg3BaseOffset_Top",
+  "addr": "0x2149ee0",
+  "module": "arm9",
+  "size": 96,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.917,
+  "func": "G3X_SetClearColor",
+  "mkds": "G3X_SetClearColor",
+  "addr": "0x214a700",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_g3x.c"
+ },
+ {
+  "score": 0.917,
+  "func": "OS_InitMessageQueue",
+  "mkds": "Os_MessageQueue_Initialize",
+  "addr": "0x200eb90",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_message.c"
+ },
+ {
+  "score": 0.917,
+  "func": "OSi_RemoveMutexLinkFromQueue",
+  "mkds": "Os_MutexQueue_Pop",
+  "addr": "0x200e594",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_thread.c"
+ },
+ {
+  "score": 0.917,
+  "func": "InitMBlock",
+  "mkds": "Mem_Exp_InitializeMemoryBlock",
+  "addr": "0x2017e70",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/libnns/src/NNS_FND_expheap.c"
+ },
+ {
+  "score": 0.917,
+  "func": "InsertMBlock",
+  "mkds": "Mem_ExpHeapMemoryBlockList_Insert",
+  "addr": "0x2017ea0",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/libnns/src/NNS_FND_expheap.c"
+ },
+ {
+  "score": 0.917,
+  "func": "OSi_InitStackChecker",
+  "mkds": "Os_InitializeSvcStack",
+  "addr": "0x200ca34",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/khdays/libs/nitro/os/asm_stubs/calls/OSi_InitStackChecker.c"
+ },
+ {
+  "score": 0.917,
+  "func": "rand",
+  "mkds": "func_021384dc",
+  "addr": "0x21384dc",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokeheartgold/lib/MSL_C/src/rand.c"
+ },
+ {
+  "score": 0.909,
+  "func": "G2_GetBG2CharPtr",
+  "mkds": "GetVramBg2BaseOffset_Top",
+  "addr": "0x2149f88",
+  "module": "arm9",
+  "size": 88,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.909,
+  "func": "OS_SNPrintf",
+  "mkds": "Util_SNPrintF",
+  "addr": "0x200d9e0",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_printf.c"
+ },
+ {
+  "score": 0.909,
+  "func": "OS_SNPrintf",
+  "mkds": "_snprintf",
+  "addr": "0x2135048",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_printf.c"
+ },
+ {
+  "score": 0.909,
+  "func": "OS_SNPrintf",
+  "mkds": "ParticularSnprintf16",
+  "addr": "0x213ca64",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_printf.c"
+ },
+ {
+  "score": 0.909,
+  "func": "OS_SPrintf",
+  "mkds": "MaybeUtil_SPrintF",
+  "addr": "0x200da28",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_printf.c"
+ },
+ {
+  "score": 0.909,
+  "func": "OS_SPrintf",
+  "mkds": "func_02138510",
+  "addr": "0x2138510",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_printf.c"
+ },
+ {
+  "score": 0.909,
+  "func": "OSi_InitVramExclusive",
+  "mkds": "OSi_InitVramExclusive",
+  "addr": "0x200ffd8",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_vramExclusive.c"
+ },
+ {
+  "score": 0.909,
+  "func": "SNDi_SetAlarmHandler",
+  "mkds": "SetMDValue",
+  "addr": "0x2021734",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/SND_alarm.c"
+ },
+ {
+  "score": 0.909,
+  "func": "SND_AlarmInit",
+  "mkds": "Sound_InitializeAlarms",
+  "addr": "0x2021784",
+  "module": "arm9",
+  "size": 48,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/SND_alarm.c"
+ },
+ {
+  "score": 0.905,
+  "func": "G3X_SetFog",
+  "mkds": "G3X_SetFog",
+  "addr": "0x214a7ec",
+  "module": "arm9",
+  "size": 84,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_g3x.c"
+ },
+ {
+  "score": 0.9,
+  "func": "G2S_GetBG3CharPtr",
+  "mkds": "GetVramBg3BaseOffset_Bottom",
+  "addr": "0x2149e90",
+  "module": "arm9",
+  "size": 80,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.9,
+  "func": "OSi_InsertLinkToQueue",
+  "mkds": "Os_ThreadQueue_Queue",
+  "addr": "0x200e5f8",
+  "module": "arm9",
+  "size": 120,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_thread.c"
+ },
+ {
+  "score": 0.889,
+  "func": "G2S_GetBG2CharPtr",
+  "mkds": "GetVramBg2BaseOffset_Bottom",
+  "addr": "0x2149f40",
+  "module": "arm9",
+  "size": 72,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.889,
+  "func": "G2x_ChangeBlendBrightness_",
+  "mkds": "func_0214a348",
+  "addr": "0x214a348",
+  "module": "arm9",
+  "size": 72,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_g2.c"
+ },
+ {
+  "score": 0.889,
+  "func": "RTC_ConvertDateToDay",
+  "mkds": "Rtc_Date_GetDays",
+  "addr": "0x214e274",
+  "module": "arm9",
+  "size": 148,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/RTC_convert.c"
+ },
+ {
+  "score": 0.886,
+  "func": "G2_GetBG3ScrPtr",
+  "mkds": "func_0214a108",
+  "addr": "0x214a108",
+  "module": "arm9",
+  "size": 140,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.886,
+  "func": "G2_GetBG2ScrPtr",
+  "mkds": "func_0214a214",
+  "addr": "0x214a214",
+  "module": "arm9",
+  "size": 140,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.882,
+  "func": "GX_DispOn",
+  "mkds": "func_021489c4",
+  "addr": "0x21489c4",
+  "module": "arm9",
+  "size": 76,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX.c"
+ },
+ {
+  "score": 0.879,
+  "func": "OS_GetIrqFunction",
+  "mkds": "Os_GetIrqHandler",
+  "addr": "0x200cbe8",
+  "module": "arm9",
+  "size": 140,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/OS_interrupt.c"
+ },
+ {
+  "score": 0.875,
+  "func": "G2S_GetBG3ScrPtr",
+  "mkds": "func_0214a088",
+  "addr": "0x214a088",
+  "module": "arm9",
+  "size": 128,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.875,
+  "func": "G2S_GetBG2ScrPtr",
+  "mkds": "func_0214a194",
+  "addr": "0x214a194",
+  "module": "arm9",
+  "size": 128,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/GX_bgcnt.c"
+ },
+ {
+  "score": 0.862,
+  "func": "strncpy",
+  "mkds": "CopyString16",
+  "addr": "0x213edbc",
+  "module": "arm9",
+  "size": 116,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/st/libs/c/src/string.c"
+ },
+ {
+  "score": 0.846,
+  "func": "strncmp",
+  "mkds": "func_0213ed2c",
+  "addr": "0x213ed2c",
+  "module": "arm9",
+  "size": 52,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/st/libs/c/src/string.c"
+ },
+ {
+  "score": 0.833,
+  "func": "FS_OpenFileFast",
+  "mkds": "Fs_File_OpenById",
+  "addr": "0x2004a80",
+  "module": "arm9",
+  "size": 124,
+  "bron": "/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/pokediamond/arm9/lib/NitroSDK/src/FS_file.c"
+ }
+]

@@ -1,0 +1,31 @@
+MIT License — geldt voor de tooling en documentatie in deze repository
+(tools/, build.sh, notes/ eigen werk, PLAN.md, README.md).
+
+Copyright (c) 2026 ai-tdd-labs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+De gedecompileerde bronnen in src/ zijn een van de originele game afgeleide
+reconstructie, gemaakt voor interoperabiliteit, preservatie en studie. Dit
+project is niet gelieerd aan of goedgekeurd door Nintendo. Deze repository
+bevat geen ROM, BIOS of andere originele game-assets; om te bouwen is een
+eigen, legaal verkregen dump vereist. "Mario Kart" en "Nintendo DS" zijn
+handelsmerken van Nintendo.

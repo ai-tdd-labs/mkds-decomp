@@ -1,0 +1,70 @@
+• Read the candidate file.The mismatch: ROM's bne jumps further (0x20299d0 vs 0x20299b4), i.e. ROM skips more code — the ROM duplicates a tail into both arms (shared vs duplicated epilogue). The likely culprit: the final if/else on mission_mr_buf. Currently both arms store mission_mr_buf_p8 then merge at function end. ROM has the tail (the else?) duplicated... Actually ROM bne jumps further — bne guards something. Likely the outer `if (GetPMaybeState()==0)` block: mwcc merged the tail; ROM duplicates.
+
+  Better shape lever per instructions: duplicate the small tail statement into both arms, or nest the following if/else inside the preceding conditional. Note: if GetPMaybeState()!=0, mission_mr_buf was zeroed by CpuFastMemoryZero, so mission_mr_buf==0 → p8=0. So nesting the final if/else inside the outer if, and adding an else storing 0, is semantically fine. That forces mwcc to duplicate tail instead of merging — matches "ROM bne jumps further."
+
+  Actually which bne? At offset 0x54. Likely the `func_020299e4()==0` bne: ROM's bne skips to 0x20299d0 (further) vs candidate 0x20299b4 — i.e. in ROM the else-arm (store 0) tail is duplicated/longer. Candidate structure: if(func_020299e4()==0){store buf}else{store 0}, then merged tail checking mission_mr_buf. In ROM the bne to else jumps further, meaning the else arm contains more code — likely the final if/else duplicated into both arms.
+
+  Apply: nest the tail check into both arms of the inner if/else. Since in the else arm mission_mr_buf=0, p8=0 directly. And in the then arm, check buf!=0. But find_buf result could be 0? Keep the check.Semantically safe: mission_mr_buf was zeroed by CpuFastMemoryZero, so outer-else p8=0 matches old behavior (old code: mission_mr_buf==0 → p8=0). READY.
+
+• Applied the "duplicate tail into both arms" shape change: nested the `mission_mr_buf` check inside the `func_020299e4()==0` arm, and gave each arm its own `mission_mr_buf_p8` store. This forces mwcc to emit separate epilogues instead of merging at a shared tail, which lengthens the span the `bne` skips — matching the ROM's longer jump to `0x20299d0`. Semantics are preserved since `CpuFastMemoryZero` already cleared `mission_mr_buf` on the outer-else path.
+
+  READY
+
+To resume this session: kimi -r session_1918fecf-13e1-4a60-ac76-24579a3817a7
+== ronde 1: 
+• No oracle details given. Revert my change; try next lever. The mismatch is a bne jumping further — duplicated vs shared tail. Alternative: the duplication should be at the final if/else, not nested. Try: duplicate the small tail statement into both arms of the final if/else... Or use early-exit guard: `if (GetPMaybeState() != 0) goto tail;`.
+
+  Actually maybe the shape: ROM bne jumps further meaning the taken-path skips MORE code — likely the outer if's else path duplicates the final p8=0 store, but the inner if/else merges tail. My previous edit also changed inner structure. Next lever: revert to original, use early-exit via else containing the final tail duplicated? Let's think: original had merged final if/else. Candidate bne shorter → tail shared. ROM further → tail duplicated. Which bne at 0x54? Probably GetPMaybeState's bne (skip whole block). If bne skips to 0x20299d0 instead of 0x20299b4 — 0x1c more — the outer-if body in ROM is longer, i.e. code inside the guarded block is bigger: duplicated final if/else inside. My previous edit did nest it but also split inner else stores differently.
+
+  Alternative: keep original inner structure, but move the final if/else INSIDE the outer if (only), with the outer else falling to... but then outer path needs p8 store too. Maybe simplest next try: nest the tail check inside outer if but keep inner if/else merged shape:
+
+  if (GetPMaybeState()==0) {
+      if (func_020299e4()==0) buf=find...; else buf=0;
+      if (buf!=0) p8=buf+8; else p8=0;
+  } else {
+      p8 = 0;
+  }
+
+  That duplicates only the final store into the outer-else. Try that.State the change: this time only the final if/else is nested inside the outer if (the inner if/else keeps its original merged shape), so the outer-guard bne skips a longer body while the inner structure stays untouched. READY.
+
+• Reverted the inner-arm split and instead nested only the final `mission_mr_buf` if/else inside the outer `GetPMaybeState()` guard, with the outer else getting its own `mission_mr_buf_p8 = 0` store. This keeps the inner if/else in its original merged shape while lengthening the guarded body — the targeted "nest a following if/else inside the preceding conditional" lever.
+
+  READY
+
+To resume this session: kimi -r session_1918fecf-13e1-4a60-ac76-24579a3817a7
+== ronde 2: 
+• Both nested variants failed. Next lever: early-exit guard with goto to tail label. Revert to original shape but restructure: keep final if/else at top level, and make the outer guard an early exit... but the final tail must still run. Alternative: invert — put the LARGE arm as THEN-arm, or duplicate tail via goto.
+
+  Try: early-exit guard using goto into a shared tail? The bne jumps FURTHER in ROM = more code between. Another lever: do/while vs for. Or: put large arm as THEN — maybe swap the final if/else polarity: `if (buf == 0) p8=0; else p8=buf+8;` swaps branch target layout.
+
+  Actually the bne at 0x54: candidate bne targets 0x20299b4, ROM 0x20299d0 (further by 0x1c). If this bne is the `mission_mr_buf != 0` test in the final if/else (bne to else... no, bne taken when !=0). Hmm. The final check: `if (buf != 0) p8 = buf+8; else p8 = 0;` compiles to cmp; beq else. The inner: `func_020299e4()==0` → bne to else-arm (store 0). If ROM's bne target is further, the then-arm is LONGER in ROM — i.e. then-arm contains duplicated tail. That was my FIRST attempt (nested final check inside then-arm) — failed. But maybe first attempt failed because I also duplicated into inner-else; ROM might duplicate tail into then-arm only, with else falling into... no, else also needs it.
+
+  Try: goto-based early exit:
+  if (GetPMaybeState() != 0) goto done;
+  buf = (func_020299e4()==0) ? find(...) : 0;  — ternary changes shape too.
+  done: final if/else.
+
+  Simpler next lever per list: "duplicate a small tail statement into both arms (separate epilogues)" on the FINAL if/else: make each arm end with `return;`? void function — adding explicit returns forces separate epilogues:
+
+  if (buf != 0) { p8 = buf+8; return; } p8 = 0;
+
+  Or use early-exit guard:
+  if (buf == 0) { p8 = 0; return; } p8 = buf+8;
+
+  That restructures final if/else into guard+fallthrough — changes block ordering/branch. Try that, reverting outer nesting to original.READY.
+
+• Reverted the nesting entirely and applied the early-exit guard lever on the final conditional: `if (mission_mr_buf == 0) { p8 = 0; return; }` followed by the fall-through `p8 = buf + 8` store. This flips the branch polarity and gives the zero-path its own epilogue, changing which code the `bne` skips over.
+
+  READY
+
+To resume this session: kimi -r session_1918fecf-13e1-4a60-ac76-24579a3817a7
+== ronde 3: 
+• Next lever: goto to tail label for the outer guard. Combine: revert final if/else to original, and use `if (GetPMaybeState() != 0) goto tail;` with the inner work, tail label before final if/else.READY.
+
+• Applied the goto-to-tail lever: the `GetPMaybeState()` guard is now an inverted early-exit (`if (... != 0) goto tail;`) with the final `mission_mr_buf` if/else restored to its original shape at the shared `tail:` label. This flips the outer guard's branch direction and block layout while keeping the merged tail.
+
+  READY
+
+To resume this session: kimi -r session_1918fecf-13e1-4a60-ac76-24579a3817a7
+== ronde 4: 
+FINAL: MATCH=no | rondes=4 | best= | 165s

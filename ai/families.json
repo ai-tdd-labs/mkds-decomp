@@ -1,0 +1,2156 @@
+[
+ {
+  "leden": 12,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_020b1cf4",
+    "addr": "0x20b1cf4"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceStartBattleM",
+    "addr": "0x20b837c"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceNewRecordTaS",
+    "addr": "0x20b8394"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceGoalTeamS",
+    "addr": "0x20b83ac"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceGoalS",
+    "addr": "0x20b83c4"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceS",
+    "addr": "0x20b83dc"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceGoalMrM",
+    "addr": "0x20b83f4"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceMrM",
+    "addr": "0x20b840c"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceBattleM",
+    "addr": "0x20b8424"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceTaM",
+    "addr": "0x20b843c"
+   },
+   {
+    "naam": "GetB3C4_Cell_RaceGoalM",
+    "addr": "0x20b8454"
+   },
+   {
+    "naam": "func_020c3e14",
+    "addr": "0x20c3e14"
+   }
+  ]
+ },
+ {
+  "leden": 7,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "GXS_SetGraphicsMode__mkds_28058",
+    "addr": "0x2028058"
+   },
+   {
+    "naam": "GXS_SetGraphicsMode__mkds_303a8",
+    "addr": "0x20303a8"
+   },
+   {
+    "naam": "GXS_SetGraphicsMode__mkds_35d74",
+    "addr": "0x2035d74"
+   },
+   {
+    "naam": "GXS_SetGraphicsMode__mkds_cab58",
+    "addr": "0x20cab58"
+   },
+   {
+    "naam": "GXS_SetGraphicsMode__mkds_cb48c",
+    "addr": "0x20cb48c"
+   },
+   {
+    "naam": "GXS_SetGraphicsMode__mkds_ce744",
+    "addr": "0x20ce744"
+   },
+   {
+    "naam": "GXS_SetGraphicsMode__mkds_ceb54",
+    "addr": "0x20ceb54"
+   }
+  ]
+ },
+ {
+  "leden": 7,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "IsRaceCountdownEnded",
+    "addr": "0x20b33d8"
+   },
+   {
+    "naam": "func_020ba620",
+    "addr": "0x20ba620"
+   },
+   {
+    "naam": "func_020c70a0",
+    "addr": "0x20c70a0"
+   },
+   {
+    "naam": "IsSavingTimeTrialRecord",
+    "addr": "0x20c70bc"
+   },
+   {
+    "naam": "GetLastTimeTrialWasRecord",
+    "addr": "0x20c70ec"
+   },
+   {
+    "naam": "func_020c7148",
+    "addr": "0x20c7148"
+   },
+   {
+    "naam": "func_020d3dd8",
+    "addr": "0x20d3dd8"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "func_020228e8",
+    "addr": "0x20228e8"
+   },
+   {
+    "naam": "DriverContext_Fn4_Net3",
+    "addr": "0x20637c4"
+   },
+   {
+    "naam": "DriverContext_Fn4_NotNet",
+    "addr": "0x20641d4"
+   },
+   {
+    "naam": "StructMQSub2_SomeFn",
+    "addr": "0x209081c"
+   },
+   {
+    "naam": "func_02092b20",
+    "addr": "0x2092b20"
+   },
+   {
+    "naam": "func_020d4d44",
+    "addr": "0x20d4d44"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_02028074",
+    "addr": "0x2028074"
+   },
+   {
+    "naam": "SetTopDispcntWindow0Window1ObjDisplayFlag",
+    "addr": "0x20ad88c"
+   },
+   {
+    "naam": "func_020cb4a8",
+    "addr": "0x20cb4a8"
+   },
+   {
+    "naam": "SetDispcntWindows01ObjDisplayFlagsTop",
+    "addr": "0x20cc150"
+   },
+   {
+    "naam": "func_020ce760",
+    "addr": "0x20ce760"
+   },
+   {
+    "naam": "func_020ceb70",
+    "addr": "0x20ceb70"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 40,
+  "functies": [
+   {
+    "naam": "func_020280e8",
+    "addr": "0x20280e8"
+   },
+   {
+    "naam": "IsDwc",
+    "addr": "0x20299f0"
+   },
+   {
+    "naam": "IsDwc_2",
+    "addr": "0x202f1a8"
+   },
+   {
+    "naam": "IsDwc_0",
+    "addr": "0x20cbadc"
+   },
+   {
+    "naam": "func_020ce784",
+    "addr": "0x20ce784"
+   },
+   {
+    "naam": "IsDwc_1",
+    "addr": "0x20d1164"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 60,
+  "functies": [
+   {
+    "naam": "DisplayConfig_SetTopEngineBg1Config_0",
+    "addr": "0x202f4e0"
+   },
+   {
+    "naam": "DisplayConfig_SetTopEngineBg1Config",
+    "addr": "0x20ad9c0"
+   },
+   {
+    "naam": "DisplayConfig_SetBottomEngineBg1Config",
+    "addr": "0x20cc214"
+   },
+   {
+    "naam": "DisplayConfig_SetBottomEngineBg0Config",
+    "addr": "0x20cc250"
+   },
+   {
+    "naam": "DisplayConfig_SetTopEngineBg1Config_1",
+    "addr": "0x20cc2f4"
+   },
+   {
+    "naam": "DisplayConfig_SetTopEngineBg0Config",
+    "addr": "0x20cc330"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "func_020675f8",
+    "addr": "0x20675f8"
+   },
+   {
+    "naam": "func_020676c4",
+    "addr": "0x20676c4"
+   },
+   {
+    "naam": "func_02067984",
+    "addr": "0x2067984"
+   },
+   {
+    "naam": "func_02067a64",
+    "addr": "0x2067a64"
+   },
+   {
+    "naam": "func_02067a9c",
+    "addr": "0x2067a9c"
+   },
+   {
+    "naam": "func_02067ad4",
+    "addr": "0x2067ad4"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "func_0209af64",
+    "addr": "0x209af64"
+   },
+   {
+    "naam": "func_0209c4bc",
+    "addr": "0x209c4bc"
+   },
+   {
+    "naam": "func_020a0028",
+    "addr": "0x20a0028"
+   },
+   {
+    "naam": "func_020a2668",
+    "addr": "0x20a2668"
+   },
+   {
+    "naam": "func_020a7894",
+    "addr": "0x20a7894"
+   },
+   {
+    "naam": "func_021488e8",
+    "addr": "0x21488e8"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "GetCurrentMissionLevelStage",
+    "addr": "0x20adbc4"
+   },
+   {
+    "naam": "GetCurrentMissionLevel",
+    "addr": "0x20adbe4"
+   },
+   {
+    "naam": "GetCurrentMissionLevelStage_0",
+    "addr": "0x20b2f18"
+   },
+   {
+    "naam": "GetCurrentMissionLevel_0",
+    "addr": "0x20b2f38"
+   },
+   {
+    "naam": "GetCurrentMissionStage",
+    "addr": "0x20cc598"
+   },
+   {
+    "naam": "GetCurrentMissionLevel_1",
+    "addr": "0x20cc5b8"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 48,
+  "functies": [
+   {
+    "naam": "func_0212c494",
+    "addr": "0x212c494"
+   },
+   {
+    "naam": "func_0212c4c4",
+    "addr": "0x212c4c4"
+   },
+   {
+    "naam": "func_0212c4f4",
+    "addr": "0x212c4f4"
+   },
+   {
+    "naam": "func_0212c524",
+    "addr": "0x212c524"
+   },
+   {
+    "naam": "NNS_SndPlayerSetTrackMute",
+    "addr": "0x212c594"
+   },
+   {
+    "naam": "func_0212c5c4",
+    "addr": "0x212c5c4"
+   }
+  ]
+ },
+ {
+  "leden": 6,
+  "size": 100,
+  "functies": [
+   {
+    "naam": "Sound_GetGroupInfoEntry",
+    "addr": "0x212d328"
+   },
+   {
+    "naam": "Sound_GetPlayerInfoEntry",
+    "addr": "0x212d38c"
+   },
+   {
+    "naam": "Sound_GetSwarInfoEntry",
+    "addr": "0x212d3f0"
+   },
+   {
+    "naam": "Sound_GetSbnkInfoEntry",
+    "addr": "0x212d454"
+   },
+   {
+    "naam": "Sound_GetSarcInfoEntry",
+    "addr": "0x212d4b8"
+   },
+   {
+    "naam": "NNS_SndArcGetSeqInfo",
+    "addr": "0x212d51c"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "JNT0_LoadJointByIdx",
+    "addr": "0x2013a4c"
+   },
+   {
+    "naam": "BMA0_LoadRawData",
+    "addr": "0x2013a88"
+   },
+   {
+    "naam": "BTA0_LoadRawData",
+    "addr": "0x2013ac4"
+   },
+   {
+    "naam": "BTP0_LoadRawData",
+    "addr": "0x2013b00"
+   },
+   {
+    "naam": "BVA0_LoadRawData",
+    "addr": "0x2013bf8"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 44,
+  "functies": [
+   {
+    "naam": "func_02020844",
+    "addr": "0x2020844"
+   },
+   {
+    "naam": "func_02020904",
+    "addr": "0x2020904"
+   },
+   {
+    "naam": "func_02020964",
+    "addr": "0x2020964"
+   },
+   {
+    "naam": "func_02020db0",
+    "addr": "0x2020db0"
+   },
+   {
+    "naam": "func_02020e10",
+    "addr": "0x2020e10"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 44,
+  "functies": [
+   {
+    "naam": "func_02020990",
+    "addr": "0x2020990"
+   },
+   {
+    "naam": "func_020209bc",
+    "addr": "0x20209bc"
+   },
+   {
+    "naam": "func_020209e8",
+    "addr": "0x20209e8"
+   },
+   {
+    "naam": "SND_UnlockChannel",
+    "addr": "0x2020aa0"
+   },
+   {
+    "naam": "SND_LockChannel",
+    "addr": "0x2020acc"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 72,
+  "functies": [
+   {
+    "naam": "SceneFn_Emblem",
+    "addr": "0x204a550"
+   },
+   {
+    "naam": "SceneFn_WLMenu",
+    "addr": "0x204afd0"
+   },
+   {
+    "naam": "SceneFn_Record",
+    "addr": "0x2055a4c"
+   },
+   {
+    "naam": "SceneFn_Logo",
+    "addr": "0x2057d10"
+   },
+   {
+    "naam": "SceneFn_Result",
+    "addr": "0x2059b78"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_02051640",
+    "addr": "0x2051640"
+   },
+   {
+    "naam": "func_0205af90",
+    "addr": "0x205af90"
+   },
+   {
+    "naam": "func_020617f0",
+    "addr": "0x20617f0"
+   },
+   {
+    "naam": "func_02075cf0",
+    "addr": "0x2075cf0"
+   },
+   {
+    "naam": "WorkerNotifyTaskPending",
+    "addr": "0x20d0f60"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 40,
+  "functies": [
+   {
+    "naam": "func_020581f4",
+    "addr": "0x20581f4"
+   },
+   {
+    "naam": "StructZE_E7Fn_18_1_from_thumb",
+    "addr": "0x2058fe0"
+   },
+   {
+    "naam": "StructZE_E7Fn_21_1_from_thumb",
+    "addr": "0x2059034"
+   },
+   {
+    "naam": "StructZE_E7Fn_20_1_from_thumb",
+    "addr": "0x20592ac"
+   },
+   {
+    "naam": "StructZE_E7Fn_16_1_from_thumb",
+    "addr": "0x20593b4"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "func_020609c4",
+    "addr": "0x20609c4"
+   },
+   {
+    "naam": "func_020609f8",
+    "addr": "0x20609f8"
+   },
+   {
+    "naam": "func_02060a2c",
+    "addr": "0x2060a2c"
+   },
+   {
+    "naam": "func_02060a60",
+    "addr": "0x2060a60"
+   },
+   {
+    "naam": "func_02060a94",
+    "addr": "0x2060a94"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 60,
+  "functies": [
+   {
+    "naam": "func_020e6b58",
+    "addr": "0x20e6b58"
+   },
+   {
+    "naam": "func_020e6b94",
+    "addr": "0x20e6b94"
+   },
+   {
+    "naam": "func_020e6bd0",
+    "addr": "0x20e6bd0"
+   },
+   {
+    "naam": "MaybeGetBBMtxAtPosition",
+    "addr": "0x20e6cbc"
+   },
+   {
+    "naam": "func_020e6cf8",
+    "addr": "0x20e6cf8"
+   }
+  ]
+ },
+ {
+  "leden": 5,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_0214f4a4",
+    "addr": "0x214f4a4"
+   },
+   {
+    "naam": "func_0214f4bc",
+    "addr": "0x214f4bc"
+   },
+   {
+    "naam": "func_0214f4d4",
+    "addr": "0x214f4d4"
+   },
+   {
+    "naam": "func_0214f4ec",
+    "addr": "0x214f4ec"
+   },
+   {
+    "naam": "func_0214f504",
+    "addr": "0x214f504"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 72,
+  "functies": [
+   {
+    "naam": "func_02013468",
+    "addr": "0x2013468"
+   },
+   {
+    "naam": "ModelBlock_SomeTexPltFn_3",
+    "addr": "0x20134b0"
+   },
+   {
+    "naam": "ModelBlock_SomeTexPltFn_1",
+    "addr": "0x20134f8"
+   },
+   {
+    "naam": "ModelBlock_SomeTexPltFn_8",
+    "addr": "0x2013540"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "func_020208a4",
+    "addr": "0x20208a4"
+   },
+   {
+    "naam": "func_02020930",
+    "addr": "0x2020930"
+   },
+   {
+    "naam": "SND_StartTimer",
+    "addr": "0x2020c2c"
+   },
+   {
+    "naam": "func_02020ddc",
+    "addr": "0x2020ddc"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "SND_SetChannelVolume",
+    "addr": "0x2020a6c"
+   },
+   {
+    "naam": "func_02020af8",
+    "addr": "0x2020af8"
+   },
+   {
+    "naam": "func_02020c60",
+    "addr": "0x2020c60"
+   },
+   {
+    "naam": "func_02020d34",
+    "addr": "0x2020d34"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 40,
+  "functies": [
+   {
+    "naam": "func_02020c94",
+    "addr": "0x2020c94"
+   },
+   {
+    "naam": "func_02020cbc",
+    "addr": "0x2020cbc"
+   },
+   {
+    "naam": "func_02020ce4",
+    "addr": "0x2020ce4"
+   },
+   {
+    "naam": "func_02020d0c",
+    "addr": "0x2020d0c"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 40,
+  "functies": [
+   {
+    "naam": "func_02027f68",
+    "addr": "0x2027f68"
+   },
+   {
+    "naam": "func_02027f90",
+    "addr": "0x2027f90"
+   },
+   {
+    "naam": "func_0203033c",
+    "addr": "0x203033c"
+   },
+   {
+    "naam": "func_02030364",
+    "addr": "0x2030364"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 60,
+  "functies": [
+   {
+    "naam": "func_02027fd4",
+    "addr": "0x2027fd4"
+   },
+   {
+    "naam": "EnableAlphaSetSubBldcntBldalpha",
+    "addr": "0x20ad8a4"
+   },
+   {
+    "naam": "func_020caaac",
+    "addr": "0x20caaac"
+   },
+   {
+    "naam": "EnableAlphaSetBldcntBldalphaSub",
+    "addr": "0x20cba30"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_0202a90c",
+    "addr": "0x202a90c"
+   },
+   {
+    "naam": "func_0202cdd4",
+    "addr": "0x202cdd4"
+   },
+   {
+    "naam": "func_0202f744",
+    "addr": "0x202f744"
+   },
+   {
+    "naam": "func_020354fc",
+    "addr": "0x20354fc"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_0202ecbc",
+    "addr": "0x202ecbc"
+   },
+   {
+    "naam": "func_0203063c",
+    "addr": "0x203063c"
+   },
+   {
+    "naam": "func_020ca994",
+    "addr": "0x20ca994"
+   },
+   {
+    "naam": "func_020cb1dc",
+    "addr": "0x20cb1dc"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 40,
+  "functies": [
+   {
+    "naam": "func_0203629c",
+    "addr": "0x203629c"
+   },
+   {
+    "naam": "G2d_TextCanvas_PrintString2",
+    "addr": "0x20adfb0"
+   },
+   {
+    "naam": "G2d_Text_PrintString3",
+    "addr": "0x20b24a4"
+   },
+   {
+    "naam": "G2d_Text_PrintString5",
+    "addr": "0x20ca7e0"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_020362c4",
+    "addr": "0x20362c4"
+   },
+   {
+    "naam": "G2d_Text_Create",
+    "addr": "0x20adfd8"
+   },
+   {
+    "naam": "RaceOptionMenuEntryDrawContext_Create",
+    "addr": "0x20b24cc"
+   },
+   {
+    "naam": "G2d_Text_Create_0",
+    "addr": "0x20ca808"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 64,
+  "functies": [
+   {
+    "naam": "func_020517d4",
+    "addr": "0x20517d4"
+   },
+   {
+    "naam": "func_02051e58",
+    "addr": "0x2051e58"
+   },
+   {
+    "naam": "func_02052bb8",
+    "addr": "0x2052bb8"
+   },
+   {
+    "naam": "func_0205329c",
+    "addr": "0x205329c"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 44,
+  "functies": [
+   {
+    "naam": "func_020589ec",
+    "addr": "0x20589ec"
+   },
+   {
+    "naam": "StructZE_E7Fn_18_2_from_thumb",
+    "addr": "0x2058fb4"
+   },
+   {
+    "naam": "StructZE_E7Fn_21_2_from_thumb",
+    "addr": "0x2059008"
+   },
+   {
+    "naam": "StructZE_E7Fn_16_2_from_thumb",
+    "addr": "0x2059388"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 136,
+  "functies": [
+   {
+    "naam": "func_02084114",
+    "addr": "0x2084114"
+   },
+   {
+    "naam": "func_0208419c",
+    "addr": "0x208419c"
+   },
+   {
+    "naam": "func_02084224",
+    "addr": "0x2084224"
+   },
+   {
+    "naam": "func_020842ac",
+    "addr": "0x20842ac"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 36,
+  "functies": [
+   {
+    "naam": "func_0208c188",
+    "addr": "0x208c188"
+   },
+   {
+    "naam": "func_0208c1ac",
+    "addr": "0x208c1ac"
+   },
+   {
+    "naam": "func_0208c1f4",
+    "addr": "0x208c1f4"
+   },
+   {
+    "naam": "func_0208c218",
+    "addr": "0x208c218"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "DisplayConfig_SetTopEngineBg3Config",
+    "addr": "0x20ad958"
+   },
+   {
+    "naam": "DisplayConfig_SetTopEngineBg2Config",
+    "addr": "0x20ad98c"
+   },
+   {
+    "naam": "DisplayConfig_SetTopEngineBg3Config_0",
+    "addr": "0x20cc28c"
+   },
+   {
+    "naam": "DisplayConfig_SetTopEngineBg2Config2",
+    "addr": "0x20cc2c0"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_020b3f64",
+    "addr": "0x20b3f64"
+   },
+   {
+    "naam": "func_020c13d0",
+    "addr": "0x20c13d0"
+   },
+   {
+    "naam": "StructE8_SomeFnHandle7",
+    "addr": "0x20c5dd8"
+   },
+   {
+    "naam": "func_020d3c7c",
+    "addr": "0x20d3c7c"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_02113790",
+    "addr": "0x2113790"
+   },
+   {
+    "naam": "func_0211606c",
+    "addr": "0x211606c"
+   },
+   {
+    "naam": "func_021185d4",
+    "addr": "0x21185d4"
+   },
+   {
+    "naam": "func_02119dfc",
+    "addr": "0x2119dfc"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "Sound_LoadSwar",
+    "addr": "0x212e924"
+   },
+   {
+    "naam": "Sound_LoadSbnk",
+    "addr": "0x212e95c"
+   },
+   {
+    "naam": "Sound_LoadSarc",
+    "addr": "0x212e994"
+   },
+   {
+    "naam": "CheckMaybeLoadSseqOk",
+    "addr": "0x212e9cc"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 72,
+  "functies": [
+   {
+    "naam": "func_021438a8",
+    "addr": "0x21438a8"
+   },
+   {
+    "naam": "func_02143b7c",
+    "addr": "0x2143b7c"
+   },
+   {
+    "naam": "func_02143d88",
+    "addr": "0x2143d88"
+   },
+   {
+    "naam": "func_02143e78",
+    "addr": "0x2143e78"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "GetVramBg1BaseOffset_Bottom",
+    "addr": "0x2149fe0"
+   },
+   {
+    "naam": "GetVramBg0BaseOffset_Bottom",
+    "addr": "0x214a034"
+   },
+   {
+    "naam": "func_0214a2a0",
+    "addr": "0x214a2a0"
+   },
+   {
+    "naam": "GetAnotherSubEngineBGOffset",
+    "addr": "0x214a2f4"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "GetVramBg1BaseOffset_Top",
+    "addr": "0x214a000"
+   },
+   {
+    "naam": "GetVramBg0BaseOffset_Top",
+    "addr": "0x214a054"
+   },
+   {
+    "naam": "func_0214a2c0",
+    "addr": "0x214a2c0"
+   },
+   {
+    "naam": "func_0214a314",
+    "addr": "0x214a314"
+   }
+  ]
+ },
+ {
+  "leden": 4,
+  "size": 104,
+  "functies": [
+   {
+    "naam": "TEQSub_Fn25Impl",
+    "addr": "0x214bd04"
+   },
+   {
+    "naam": "TEQSub_Fn9Impl",
+    "addr": "0x214bd6c"
+   },
+   {
+    "naam": "TEQSub_Fn24Impl",
+    "addr": "0x214bdd4"
+   },
+   {
+    "naam": "TEQSub_Fn8Impl",
+    "addr": "0x214be3c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 100,
+  "functies": [
+   {
+    "naam": "Logo_StateHandler_NotifyWiFiHelp_Second",
+    "addr": "0x20010e0"
+   },
+   {
+    "naam": "Logo_StateHandler_NotifyWiFiIdIssue_Second",
+    "addr": "0x200118c"
+   },
+   {
+    "naam": "Logo_StateHandler_NotifySaveDataCorrupted_Second",
+    "addr": "0x20017cc"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 72,
+  "functies": [
+   {
+    "naam": "Logo_StateHandler_NotifyWiFiHelp_First",
+    "addr": "0x2001144"
+   },
+   {
+    "naam": "Logo_StateHandler_NotifyWiFiIdIssue_First",
+    "addr": "0x20011f0"
+   },
+   {
+    "naam": "Logo_StateHandler_NotifySaveDataCorrupted_First",
+    "addr": "0x2001830"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 90,
+  "functies": [
+   {
+    "naam": "func_020066c0",
+    "addr": "0x20066c0"
+   },
+   {
+    "naam": "func_02006794",
+    "addr": "0x2006794"
+   },
+   {
+    "naam": "func_02006858",
+    "addr": "0x2006858"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 48,
+  "functies": [
+   {
+    "naam": "Util_SNPrintF",
+    "addr": "0x200d9e0"
+   },
+   {
+    "naam": "_snprintf",
+    "addr": "0x2135048"
+   },
+   {
+    "naam": "ParticularSnprintf16",
+    "addr": "0x213ca64"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "func_02013344",
+    "addr": "0x2013344"
+   },
+   {
+    "naam": "func_02013378",
+    "addr": "0x2013378"
+   },
+   {
+    "naam": "ModelBlock_SomeTexPltFn_0",
+    "addr": "0x20133ac"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_02020d68",
+    "addr": "0x2020d68"
+   },
+   {
+    "naam": "func_02020d80",
+    "addr": "0x2020d80"
+   },
+   {
+    "naam": "func_02020d98",
+    "addr": "0x2020d98"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 44,
+  "functies": [
+   {
+    "naam": "func_0202802c",
+    "addr": "0x202802c"
+   },
+   {
+    "naam": "func_02035d48",
+    "addr": "0x2035d48"
+   },
+   {
+    "naam": "func_020cab2c",
+    "addr": "0x20cab2c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_02028724",
+    "addr": "0x2028724"
+   },
+   {
+    "naam": "func_0202874c",
+    "addr": "0x202874c"
+   },
+   {
+    "naam": "func_02028774",
+    "addr": "0x2028774"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_0202f058",
+    "addr": "0x202f058"
+   },
+   {
+    "naam": "func_0202f080",
+    "addr": "0x202f080"
+   },
+   {
+    "naam": "func_0202f0a8",
+    "addr": "0x202f0a8"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 36,
+  "functies": [
+   {
+    "naam": "SetSomeDispcntSubMask",
+    "addr": "0x202f454"
+   },
+   {
+    "naam": "SetDispcntSubDisplayFrameSelect",
+    "addr": "0x20ad8e0"
+   },
+   {
+    "naam": "SetSubDispcntTileObjMappingRemoveBoundary",
+    "addr": "0x20cc168"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "SetSomeDispcntTopMask",
+    "addr": "0x202f478"
+   },
+   {
+    "naam": "SetDispcntTopDisplayFrameSelect",
+    "addr": "0x20ad904"
+   },
+   {
+    "naam": "SetTopDispcntTileObjMappingRemoveBoundary",
+    "addr": "0x20cc18c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_020306b8",
+    "addr": "0x20306b8"
+   },
+   {
+    "naam": "func_020306e0",
+    "addr": "0x20306e0"
+   },
+   {
+    "naam": "func_02030708",
+    "addr": "0x2030708"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 124,
+  "functies": [
+   {
+    "naam": "func_02035db4",
+    "addr": "0x2035db4"
+   },
+   {
+    "naam": "func_02035e64",
+    "addr": "0x2035e64"
+   },
+   {
+    "naam": "func_02035ee0",
+    "addr": "0x2035ee0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 72,
+  "functies": [
+   {
+    "naam": "SceneFn_Menu",
+    "addr": "0x2039eec"
+   },
+   {
+    "naam": "SceneFn_Title",
+    "addr": "0x203c018"
+   },
+   {
+    "naam": "SceneFn_Menu2",
+    "addr": "0x2046a88"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "SetGlobalP_BFlagBit1",
+    "addr": "0x203a4d4"
+   },
+   {
+    "naam": "Struct5624_SetXflag1",
+    "addr": "0x20435d4"
+   },
+   {
+    "naam": "func_02043a9c",
+    "addr": "0x2043a9c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "ClearSaveDataSection_MissionRun_from_thumb",
+    "addr": "0x2057294"
+   },
+   {
+    "naam": "ClearSaveDataSection_GrandPrix_from_thumb",
+    "addr": "0x20572cc"
+   },
+   {
+    "naam": "ClearSaveDataSection_Emblem_from_thumb",
+    "addr": "0x20572e8"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "func_020588d8",
+    "addr": "0x20588d8"
+   },
+   {
+    "naam": "StructZE_E7Fn_19_1_from_thumb",
+    "addr": "0x2058f7c"
+   },
+   {
+    "naam": "StructZE_E7Fn_17_1_from_thumb",
+    "addr": "0x2059304"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 72,
+  "functies": [
+   {
+    "naam": "RunReadGhostBinsFn",
+    "addr": "0x2061358"
+   },
+   {
+    "naam": "RunSomeATFunction",
+    "addr": "0x2061428"
+   },
+   {
+    "naam": "SetStructYE_RunATFunction",
+    "addr": "0x2061540"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "DriverContext_Dispose",
+    "addr": "0x20638c0"
+   },
+   {
+    "naam": "func_0208c4e8",
+    "addr": "0x208c4e8"
+   },
+   {
+    "naam": "func_0208c504",
+    "addr": "0x208c504"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "func_020679bc",
+    "addr": "0x20679bc"
+   },
+   {
+    "naam": "func_020679f4",
+    "addr": "0x20679f4"
+   },
+   {
+    "naam": "func_02067a2c",
+    "addr": "0x2067a2c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 60,
+  "functies": [
+   {
+    "naam": "func_020810e4",
+    "addr": "0x20810e4"
+   },
+   {
+    "naam": "func_02081338",
+    "addr": "0x2081338"
+   },
+   {
+    "naam": "func_020815a0",
+    "addr": "0x20815a0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 84,
+  "functies": [
+   {
+    "naam": "func_020840c0",
+    "addr": "0x20840c0"
+   },
+   {
+    "naam": "func_02084384",
+    "addr": "0x2084384"
+   },
+   {
+    "naam": "func_020843d8",
+    "addr": "0x20843d8"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_0208bd20",
+    "addr": "0x208bd20"
+   },
+   {
+    "naam": "func_0208bdc0",
+    "addr": "0x208bdc0"
+   },
+   {
+    "naam": "func_0208bde0",
+    "addr": "0x208bde0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 100,
+  "functies": [
+   {
+    "naam": "func_0208f670",
+    "addr": "0x208f670"
+   },
+   {
+    "naam": "func_0208f948",
+    "addr": "0x208f948"
+   },
+   {
+    "naam": "func_0208fd24",
+    "addr": "0x208fd24"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 60,
+  "functies": [
+   {
+    "naam": "func_0208f7d4",
+    "addr": "0x208f7d4"
+   },
+   {
+    "naam": "func_0208fe1c",
+    "addr": "0x208fe1c"
+   },
+   {
+    "naam": "func_0209024c",
+    "addr": "0x209024c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 164,
+  "functies": [
+   {
+    "naam": "func_0208f9ac",
+    "addr": "0x208f9ac"
+   },
+   {
+    "naam": "func_0208fafc",
+    "addr": "0x208fafc"
+   },
+   {
+    "naam": "func_0208ffe4",
+    "addr": "0x208ffe4"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 24,
+  "functies": [
+   {
+    "naam": "func_02095f18",
+    "addr": "0x2095f18"
+   },
+   {
+    "naam": "func_0209b5f4",
+    "addr": "0x209b5f4"
+   },
+   {
+    "naam": "func_020a8080",
+    "addr": "0x20a8080"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 36,
+  "functies": [
+   {
+    "naam": "StructMapObject_SomeFn_3",
+    "addr": "0x209b6c8"
+   },
+   {
+    "naam": "func_0209b734",
+    "addr": "0x209b734"
+   },
+   {
+    "naam": "StructMapObject_MaybeSetNsbcaFrame",
+    "addr": "0x209b77c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 36,
+  "functies": [
+   {
+    "naam": "StructMapObject_SomeFn_2",
+    "addr": "0x209b6ec"
+   },
+   {
+    "naam": "func_0209b710",
+    "addr": "0x209b710"
+   },
+   {
+    "naam": "StructMapObject_GetAnimationBCAFrameCount",
+    "addr": "0x209b758"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "StructMapObject_AddAnimationNsbtp_from_thumb",
+    "addr": "0x209bde8"
+   },
+   {
+    "naam": "StructMapObject_AddAnimationNsbta_from_thumb",
+    "addr": "0x209be1c"
+   },
+   {
+    "naam": "StructMapObject_AddAnimationNsbca_from_thumb",
+    "addr": "0x209be50"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_0209c0f4",
+    "addr": "0x209c0f4"
+   },
+   {
+    "naam": "func_0209c114",
+    "addr": "0x209c114"
+   },
+   {
+    "naam": "func_0209c134",
+    "addr": "0x209c134"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_0209f2f8",
+    "addr": "0x209f2f8"
+   },
+   {
+    "naam": "func_0209f698",
+    "addr": "0x209f698"
+   },
+   {
+    "naam": "func_0209f6b8",
+    "addr": "0x209f6b8"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_020acdc4",
+    "addr": "0x20acdc4"
+   },
+   {
+    "naam": "func_020acdec",
+    "addr": "0x20acdec"
+   },
+   {
+    "naam": "func_020ace14",
+    "addr": "0x20ace14"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_020ae1f4",
+    "addr": "0x20ae1f4"
+   },
+   {
+    "naam": "func_020ae21c",
+    "addr": "0x20ae21c"
+   },
+   {
+    "naam": "func_020ae290",
+    "addr": "0x20ae290"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "func_020b48b4",
+    "addr": "0x20b48b4"
+   },
+   {
+    "naam": "MaybeReadCharBlock_1",
+    "addr": "0x20b4934"
+   },
+   {
+    "naam": "Gfx_ReadCharGraphicsRelative",
+    "addr": "0x20b49bc"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 128,
+  "functies": [
+   {
+    "naam": "func_020b6a18",
+    "addr": "0x20b6a18"
+   },
+   {
+    "naam": "func_020b6a98",
+    "addr": "0x20b6a98"
+   },
+   {
+    "naam": "func_020b6b54",
+    "addr": "0x20b6b54"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 272,
+  "functies": [
+   {
+    "naam": "func_020c756c",
+    "addr": "0x20c756c"
+   },
+   {
+    "naam": "func_020cd328",
+    "addr": "0x20cd328"
+   },
+   {
+    "naam": "func_020cd5d0",
+    "addr": "0x20cd5d0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 284,
+  "functies": [
+   {
+    "naam": "func_020ce134",
+    "addr": "0x20ce134"
+   },
+   {
+    "naam": "func_020cffec",
+    "addr": "0x20cffec"
+   },
+   {
+    "naam": "func_020d0150",
+    "addr": "0x20d0150"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 42,
+  "functies": [
+   {
+    "naam": "func_020ce6c0",
+    "addr": "0x20ce6c0"
+   },
+   {
+    "naam": "func_020ce7b8",
+    "addr": "0x20ce7b8"
+   },
+   {
+    "naam": "func_020ce998",
+    "addr": "0x20ce998"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 88,
+  "functies": [
+   {
+    "naam": "func_020ce6ec",
+    "addr": "0x20ce6ec"
+   },
+   {
+    "naam": "func_020ce7e4",
+    "addr": "0x20ce7e4"
+   },
+   {
+    "naam": "func_020ce8d0",
+    "addr": "0x20ce8d0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 48,
+  "functies": [
+   {
+    "naam": "SomeAlloc",
+    "addr": "0x20cffa0"
+   },
+   {
+    "naam": "SomeAlloc2",
+    "addr": "0x20d12b0"
+   },
+   {
+    "naam": "func_020f73a4",
+    "addr": "0x20f73a4"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 112,
+  "functies": [
+   {
+    "naam": "func_020d278c",
+    "addr": "0x20d278c"
+   },
+   {
+    "naam": "func_020d27fc",
+    "addr": "0x20d27fc"
+   },
+   {
+    "naam": "func_020d28e0",
+    "addr": "0x20d28e0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "func_020d8b88",
+    "addr": "0x20d8b88"
+   },
+   {
+    "naam": "func_020d8bc0",
+    "addr": "0x20d8bc0"
+   },
+   {
+    "naam": "func_020d8c74",
+    "addr": "0x20d8c74"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 128,
+  "functies": [
+   {
+    "naam": "func_020d9de0",
+    "addr": "0x20d9de0"
+   },
+   {
+    "naam": "func_020da414",
+    "addr": "0x20da414"
+   },
+   {
+    "naam": "func_02100004",
+    "addr": "0x2100004"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "func_020dac58",
+    "addr": "0x20dac58"
+   },
+   {
+    "naam": "func_020e3300",
+    "addr": "0x20e3300"
+   },
+   {
+    "naam": "func_020e4ab4",
+    "addr": "0x20e4ab4"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 56,
+  "functies": [
+   {
+    "naam": "func_0210a67c",
+    "addr": "0x210a67c"
+   },
+   {
+    "naam": "func_0210a6b4",
+    "addr": "0x210a6b4"
+   },
+   {
+    "naam": "func_0210a6ec",
+    "addr": "0x210a6ec"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "func_02113480",
+    "addr": "0x2113480"
+   },
+   {
+    "naam": "func_021181cc",
+    "addr": "0x21181cc"
+   },
+   {
+    "naam": "func_02119bf0",
+    "addr": "0x2119bf0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 26,
+  "functies": [
+   {
+    "naam": "func_021177a4",
+    "addr": "0x21177a4"
+   },
+   {
+    "naam": "func_02117814",
+    "addr": "0x2117814"
+   },
+   {
+    "naam": "func_02117830",
+    "addr": "0x2117830"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "func_02118038",
+    "addr": "0x2118038"
+   },
+   {
+    "naam": "func_021180f8",
+    "addr": "0x21180f8"
+   },
+   {
+    "naam": "func_0211b9ec",
+    "addr": "0x211b9ec"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 52,
+  "functies": [
+   {
+    "naam": "func_02118054",
+    "addr": "0x2118054"
+   },
+   {
+    "naam": "func_02118114",
+    "addr": "0x2118114"
+   },
+   {
+    "naam": "func_02119a90",
+    "addr": "0x2119a90"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "GetSomeBTKEmblemData",
+    "addr": "0x2120294"
+   },
+   {
+    "naam": "GetSomeBTKNickname",
+    "addr": "0x21202b0"
+   },
+   {
+    "naam": "GetSomeBTKFriendCode",
+    "addr": "0x21202f0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 32,
+  "functies": [
+   {
+    "naam": "func_02121e24",
+    "addr": "0x2121e24"
+   },
+   {
+    "naam": "func_02121e44",
+    "addr": "0x2121e44"
+   },
+   {
+    "naam": "func_02121e64",
+    "addr": "0x2121e64"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 48,
+  "functies": [
+   {
+    "naam": "func_02121e84",
+    "addr": "0x2121e84"
+   },
+   {
+    "naam": "func_02121eb4",
+    "addr": "0x2121eb4"
+   },
+   {
+    "naam": "func_02121f1c",
+    "addr": "0x2121f1c"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 28,
+  "functies": [
+   {
+    "naam": "G3_MultMtx43",
+    "addr": "0x214a4f8"
+   },
+   {
+    "naam": "G3_LoadMtx43",
+    "addr": "0x214a514"
+   },
+   {
+    "naam": "G3_LoadMtx44",
+    "addr": "0x214a530"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 88,
+  "functies": [
+   {
+    "naam": "GX_EndLoadOBJExtPltt",
+    "addr": "0x214b500"
+   },
+   {
+    "naam": "func_0214c1bc",
+    "addr": "0x214c1bc"
+   },
+   {
+    "naam": "func_0214c3c0",
+    "addr": "0x214c3c0"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 104,
+  "functies": [
+   {
+    "naam": "TEQSub_Fn30Impl",
+    "addr": "0x214c028"
+   },
+   {
+    "naam": "CopySomePaletteData",
+    "addr": "0x214c090"
+   },
+   {
+    "naam": "CopyPaletteBottom",
+    "addr": "0x214c0f8"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 60,
+  "functies": [
+   {
+    "naam": "func_0214f5f4",
+    "addr": "0x214f5f4"
+   },
+   {
+    "naam": "func_0214f680",
+    "addr": "0x214f680"
+   },
+   {
+    "naam": "func_0214fc74",
+    "addr": "0x214fc74"
+   }
+  ]
+ },
+ {
+  "leden": 3,
+  "size": 60,
+  "functies": [
+   {
+    "naam": "func_0214fba8",
+    "addr": "0x214fba8"
+   },
+   {
+    "naam": "func_0214fd18",
+    "addr": "0x214fd18"
+   },
+   {
+    "naam": "Pm_GetBacklightFlags",
+    "addr": "0x214fdd4"
+   }
+  ]
+ }
+]

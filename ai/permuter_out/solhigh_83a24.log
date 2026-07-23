@@ -1,0 +1,1373 @@
+Reading additional input from stdin...
+2026-07-19T12:46:53.147839Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+2026-07-19T12:46:54.516300Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://localhost:8080/mcp)")))
+OpenAI Codex v0.144.5
+--------
+workdir: /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 019f7a6a-4846-7a60-8b00-d8b384e1288a
+--------
+user
+You are a matching-decompilation expert for Mario Kart DS (mwccarm 1.2/sp2p3, -O4,p).
+Target: func_02083a24 (arm, 0x02083a24, size 0xbc, module arm9). Candidate ai/permuter_out/solhigh_02083a24.c is a 4/94 near-miss:
+  offset 0x54: ROM emits 'mov r8,#0' BEFORE 'and r7,r1,#0xff'; the candidate emits them in the OPPOSITE order. Pure scheduling of two independent setup instructions (r8 = loop counter i, r7 = kind byte from arg a1) before a 2-iteration loop that creates two helper objects.
+Already tried WITHOUT success: assignment-order swaps of the init block, do-while/while/for loop forms, kind inlined vs hoisted, int vs u16 loop counter (u16 required for size), volatile (regressed), body store-order swap (regressed), 300 random permuter variants.
+Open ideas nobody tried: change WHERE i and kind get their values (e.g. i initialized via the for-init vs before; kind computed inside the loop first iteration; a different expression producing the same and), or restructure so mwcc's scheduler sees a dependency that forces mov-first. Disassemble the ROM around 0x02083a24 (arm, extract/eur/arm9/arm9.bin, base 0x02000000) for full context.
+Verify (oracle): AIMATCH_QUIET=1 MKDS_CC=wibo ../st/.venv/bin/python tools/aimatch.py --src ai/permuter_out/solhigh_02083a24.c --func func_02083a24 --module arm9 --addr 0x02083a24 --size 0xbc
+You cannot run docker/wine; an external harness verifies. EDIT ai/permuter_out/solhigh_02083a24.c. End with: READY
+2026-07-19T12:46:54.769532Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://localhost:8080/mcp)")))
+2026-07-19T12:46:55.774244Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://localhost:8080/mcp)")))
+codex
+I’m using the project’s compound workflow guidance for this focused matching pass. I’ll inspect the candidate and exact ROM instruction context, make the smallest scheduler-oriented source change, and run every locally available check before handing it to the external oracle.
+exec
+/bin/zsh -lc "sed -n '1,240p' /Users/chrislamark/.codex/skills/codex-compound-workflow/SKILL.md && sed -n '1,220p' ai/permuter_out/solhigh_02083a24.c && git status --short -- ai/permuter_out/solhigh_02083a24.c" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+---
+name: codex-compound-workflow
+description: Use for any software project where work is primarily driven by AI/Codex and you want compounding productivity across sessions (persistent notes, repeatable run artifacts, hypothesis-driven loops, and continuously improved project playbooks). This should be the default workflow skill for general Codex-managed projects unless a more specialized skill is explicitly required.
+---
+
+# Codex Compound Workflow
+
+## Purpose
+
+Apply a reusable, project-agnostic workflow inspired by high-throughput Codex usage:
+- preserve context in lightweight notes,
+- keep every experiment reproducible,
+- reduce context switching,
+- improve speed and quality over time.
+
+Use this skill by default in AI/Codex-driven projects.
+
+## When To Use
+
+Use when:
+- the user wants ongoing step-by-step fixing,
+- debugging spans multiple sessions,
+- many experiments/runs are needed,
+- you need reliable evidence trails (logs/screenshots/traces),
+- multiple project areas must be researched quickly.
+
+If a domain-specific skill exists (e.g. N64 recomp, Playwright), combine it with this skill. This skill orchestrates process; domain skills provide technical depth.
+
+## Trigger keywords
+
+Use this skill when prompts include terms such as:
+- `workflow`
+- `karel workflow`
+- `codex workflow`
+- `continual notes`
+- `decision log`
+- `memory.md`
+- `reproducible runs`
+- `compound learning`
+- `run artifacts`
+
+Trigger examples:
+- `zet dit in de workflow en notes`
+- `update memory/decision log`
+- `maak dit reproduceerbaar met run artifacts`
+
+## Standard Project Layout
+
+Create and maintain a `codex/` folder in the active repo:
+- `codex/memory.md`
+- `codex/decision_log.md`
+- `codex/known_issues.md`
+- `codex/playbooks/`
+- `codex/runs/<timestamp>/`
+
+Rules:
+- Keep entries short and factual.
+- Every run should have command, output artifact paths, and a one-line verdict.
+- Never overwrite prior run evidence; append new runs.
+
+If the folder is not a git repo yet, initialize one and commit the workflow scaffold first.
+
+## Operating Loop (Default)
+
+1. Frame the next bottleneck
+- Write one clear hypothesis in `codex/known_issues.md`.
+
+2. Run one reproducible probe
+- Prefer scripted commands.
+- Store outputs in `codex/runs/<timestamp>/` (logs, screenshots, traces, diffs).
+
+3. Decide with evidence
+- Record what changed and why in `codex/decision_log.md`.
+
+4. Apply minimal patch
+- Smallest change that can move the bottleneck.
+
+5. Re-test same probe
+- Confirm forward progress or rollback reasoning.
+
+6. Update memory
+- Add stable lessons to `codex/memory.md`.
+- Update or create a playbook under `codex/playbooks/` if workflow repeats.
+7. Commit the workflow state
+- Commit notes + run artifacts with a consistent message prefix:
+  `karel-workflow: <short summary>`.
+- Commit frequently (every meaningful step), not only at the end.
+
+## Required Run Metadata
+
+For each run, capture:
+- Goal
+- Exact command
+- Key artifacts (absolute paths)
+- Result (`pass`, `fail`, `inconclusive`)
+- Next action
+- If runtime/UI work: include at least one screenshot artifact and one log artifact from the same run.
+
+## Collaboration Conventions
+
+- Prefer one active bottleneck at a time.
+- Use parallel sub-investigations only when they are independent.
+- Keep summaries high-signal: what changed, what proved it, what is next.
+- Keep a clean chain of small commits that mirrors hypothesis -> probe -> decision.
+
+## Script
+
+Use `scripts/bootstrap_codex_workflow.sh` to initialize the standard structure in a repo.
+Use `scripts/commit_karel_workflow.sh` to create standardized workflow commits.
+
+## Reference
+
+See `references/session_template.md` for a compact per-session template.
+
+## Maintenance Rule
+
+- AI agents using this skill may update this skill when project orchestration, evidence capture, or compounding workflow practices are improved.
+- Updates should preserve the general cross-project nature of this skill and avoid project-specific lock-in unless clearly labeled as optional.
+/* PURPOSE: Attaches two helper objects to a racer so the game can track that racer.
+ *
+ * Arguments: a0 = owner/context object (its field at +4 is passed to the factory),
+ *            a1 = a small kind/id byte stored on each helper,
+ *            sub = the racer's sub-struct; its u16 at +0x74 indexes the global
+ *                  racer-entry array (base *data_0217ae84, stride 0x58).
+ * Behaviour: if the racer entry already has either of its two slots (+0x20/+0x24)
+ *            filled, do nothing and return 0. Otherwise build 2 helper objects via
+ *            func_0208b7bc, store them into the two slots, and fill each helper's
+ *            back-pointer (sub), index, kind byte and callback (func_02082fec).
+ *            Returns 1 on success.
+ */
+
+typedef unsigned char  u8;
+typedef unsigned short u16;
+
+/* Helper object produced by the factory. Only the fields written here are known. */
+typedef struct Helper {
+    u8  pad[0x90];
+    void *f90;   /* callback -> func_02082fec */
+    void *f94;   /* back-pointer to the racer sub-struct */
+    u8  f98;     /* kind byte (a1 & 0xff) */
+    u8  pad99[2];
+    u8  f9b;     /* slot index (0 or 1) */
+} Helper;
+
+/* One entry of the global racer array; stride is 0x58. */
+typedef struct RacerEntry {
+    u8  pad20[0x20];
+    void *slots[2]; /* +0x20, +0x24 */
+    u8  pad28[0x58 - 0x28];
+} RacerEntry;
+
+/* Owner/context object: only its +4 field is used. */
+typedef struct Owner {
+    void *pad0;
+    void *f4;
+} Owner;
+
+/* sub-struct: only the u16 racer index at +0x74 is used. */
+typedef struct Sub {
+    u8  pad0[0x74];
+    u16 f74;
+} Sub;
+
+extern RacerEntry *data_0217ae84;      /* pointer to base of racer-entry array */
+extern int         data_02155a14;      /* config/data passed to the factory */
+extern Helper     *func_0208b7bc(void *a, void *b);
+extern void        func_02082fec(void);
+
+int func_02083a24(Owner *a0, int a1, Sub *sub)
+{
+    RacerEntry *e = &data_0217ae84[sub->f74];
+    if (e->slots[0] != 0 || e->slots[1] != 0)
+        return 0;
+
+    {
+        void *cfg;
+        u16 i;
+        u8 kind;
+        void *cb;
+        cfg = &data_02155a14;
+        kind = (u8)a1;
+        cb = (void *)func_02082fec;
+        i = 0;
+        for (; i < 2; i++) {
+            Helper *o = func_0208b7bc(a0->f4, cfg);
+            data_0217ae84[sub->f74].slots[i] = o;
+            o->f94 = sub;
+            o->f9b = (u8)i;
+            o->f98 = kind;
+            o->f90 = cb;
+        }
+    }
+    return 1;
+}
+?? ai/permuter_out/solhigh_02083a24.c
+
+2026-07-19T12:47:07.409334Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "command -v arm-none-eabi-objdump || command -v llvm-objdump || command -v objdump; ls -l extract/eur/arm9/arm9.bin; rg -n \"func_02083a24|02083a24\" -S . --glob '"'!extract/**'"' --glob '"'!build/**'"' | head -80" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+/opt/homebrew/bin/arm-none-eabi-objdump
+-rw-r--r--@ 1 chrislamark  staff  1504064 Jul 14 14:26 extract/eur/arm9/arm9.bin
+./ai/structs.jsonl:56:{"global": "0x02155968", "naam": "EffectSlotArray", "size": "?", "def": "array van 0xc-byte effect-slots, geindexeerd door model/effect id; func_02083a24(&slot,1) release/activate", "bron": "func_02083ec4"}
+./ai/structs.jsonl:58:{"global": "0x0217ae84", "naam": "RacerEntry (via *data_0217ae84)", "size": "0x58", "def": "0x20:void* slots[2] (helper-object pointers, filled by func_02083a24)", "bron": "func_02083a24"}
+./ai/structs.jsonl:59:{"global": "helper-object (returned by func_0208b7bc)", "naam": "RacerHelper", "size": ">=0x9c", "def": "0x90:void* callback(=func_02082fec); 0x94:Sub* owner(racer sub-struct); 0x98:u8 kind; 0x9b:u8 slot-index", "bron": "func_02083a24"}
+./ai/claims.jsonl:358:{"func": "func_02083a24", "addr": "0x2083a24", "who": "claude-main", "date": "2026-07-17", "status": "active"}
+./ai/claims.jsonl:363:{"func": "func_02083a24", "addr": "0x2083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:391:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:418:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:438:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:459:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:472:{"func": "func_02083a24", "addr": "0x2083a24", "who": "claude-main", "date": "2026-07-18", "status": "active"}
+./ai/claims.jsonl:473:{"func": "func_02083a24", "addr": "0x2083a24", "who": "claude-main", "date": "2026-07-18", "status": "active"}
+./ai/claims.jsonl:491:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:516:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:545:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:568:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:621:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:660:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:746:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:828:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:894:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:985:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1071:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1165:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1271:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1377:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1483:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1633:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1750:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1866:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:1990:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2126:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2272:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2428:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2584:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2680:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2776:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2872:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/claims.jsonl:2968:{"func": "func_02083a24", "addr": "0x02083a24", "who": "harvest", "status": "released"}
+./ai/tricks.jsonl:100:{"truc": "loop-preheader transposition of induction-init (mov rX,#0) vs a hoisted invariant mask (and rY,argreg,#0xff): mwcc canonicalizes the recognized induction-var init to be the LAST preheader instruction, emitting any other hoisted invariant (here the (u8)a1 kind byte, live across the call) BEFORE it. ROM has the induction mov FIRST then the and. Verified NOT fixable by: statement/assignment order, declaration order (swapping i/kind decls only swaps the r7/r8 coloring which then wrecks the body), for vs while vs do-while, ++i<2 vs i!=2, naming vs inlining the invariant, block-scoping, volatile (spills), i-init as a folding expr dependent on a just-loaded pointer (cb&0 -> still mov#0), pragmas (scheduling/peephole/csub off = no-ops), and mwcc subversion (base/sp2/sp2p3 all identical). Root: i indexes the store (add r2,r2,i,lsl#2) so it MUST be the induction; mwcc always sinks its zero-init to the loop boundary. Clean 4/94 residue, registers+symbols+struct offsets all correct, linkcheck OK.", "wanneer": "candidate byte-identical to ROM except a 2-instruction swap of 'mov rX,#0' (loop counter init) and 'and rY,argN,#0xff' (a byte param masked once and reused across a call) in the loop preheader; ROM has the counter mov first", "bron": "func_02083a24 (best 4/94, wall not broken)"}
+./config/eur/arm9/symbols.txt:3050:func_02083a24 kind:function(arm,size=0xbc) addr:0x02083a24
+./ai/permuter_out/83a24.log:1:[func_02083a24] start 4 mismatches (seed 16)
+./ai/permuter_out/83a24.log:2:[func_02083a24] KLAAR best=4 -> agent_02083a24.permuted.c
+./config/eur/arm9/relocs.txt:13975:from:0x02083f00 kind:arm_call to:0x02083a24 module:main
+./ai/permuter_out/permuted/agent_02083a24.permuted.c:51:int func_02083a24(Owner *a0, int a1, Sub *sub)
+./config/usa/arm9/relocs.txt:13975:from:0x02083f00 kind:arm_call to:0x02083a24 module:main
+./ai/permuter_out/fablehigh_02083a24.c:51:int func_02083a24(Owner *a0, int a1, Sub *sub)
+./ai/permuter_out/k3high_02083a24.c:51:int func_02083a24(Owner *a0, int a1, Sub *sub)
+./ai/permuter_out/solhigh_02083a24.c:51:int func_02083a24(Owner *a0, int a1, Sub *sub)
+./ai/permuter_out/solhigh_83a24.log:17:Target: func_02083a24 (arm, 0x02083a24, size 0xbc, module arm9). Candidate ai/permuter_out/solhigh_02083a24.c is a 4/94 near-miss:
+./ai/permuter_out/solhigh_83a24.log:20:Open ideas nobody tried: change WHERE i and kind get their values (e.g. i initialized via the for-init vs before; kind computed inside the loop first iteration; a different expression producing the same and), or restructure so mwcc's scheduler sees a dependency that forces mov-first. Disassemble the ROM around 0x02083a24 (arm, extract/eur/arm9/arm9.bin, base 0x02000000) for full context.
+./ai/permuter_out/solhigh_83a24.log:21:Verify (oracle): AIMATCH_QUIET=1 MKDS_CC=wibo ../st/.venv/bin/python tools/aimatch.py --src ai/permuter_out/solhigh_02083a24.c --func func_02083a24 --module arm9 --addr 0x02083a24 --size 0xbc
+./ai/permuter_out/solhigh_83a24.log:22:You cannot run docker/wine; an external harness verifies. EDIT ai/permuter_out/solhigh_02083a24.c. End with: READY
+./ai/permuter_out/solhigh_83a24.log:28:/bin/zsh -lc "sed -n '1,240p' /Users/chrislamark/.codex/skills/codex-compound-workflow/SKILL.md && sed -n '1,220p' ai/permuter_out/solhigh_02083a24.c && git status --short -- ai/permuter_out/solhigh_02083a24.c" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+./ai/permuter_out/solhigh_83a24.log:198:int func_02083a24(Owner *a0, int a1, Sub *sub)
+./ai/permuter_out/solhigh_83a24.log:224:?? ai/permuter_out/solhigh_02083a24.c
+./config/usa/arm9/symbols.txt:3050:func_02083a24 kind:function(arm,size=0xbc) addr:0x02083a24
+./ai/scratch/agent_02083ec4.c:6: *   data_0217ae8c and release/activate that effect slot via func_02083a24.
+./ai/scratch/agent_02083ec4.c:33:extern void func_02083a24(void *slot, int mode);
+./ai/scratch/agent_02083ec4.c:43:        func_02083a24(slot, 1);
+./ai/scratch/agent_02083a24.c:51:int func_02083a24(Owner *a0, int a1, Sub *sub)
+
+2026-07-19T12:47:12.854625Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "arm-none-eabi-objdump -D -b binary -m arm --adjust-vma=0x02000000 --start-address=0x02083a24 --stop-address=0x02083ae0 extract/eur/arm9/arm9.bin; sed -n '45,120p' ai/permuter_out/fablehigh_02083a24.c; sed -n '45,120p' ai/permuter_out/k3high_02083a24.c; sed -n '45,120p' ai/permuter_out/permuted/agent_02083a24.permuted.c" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+
+extract/eur/arm9/arm9.bin:     file format binary
+
+
+Disassembly of section .data:
+
+02083a24 <.data+0x83a24>:
+ 2083a24:	e92d4ff0 	push	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 2083a28:	e24dd004 	sub	sp, sp, #4
+ 2083a2c:	e1a09002 	mov	r9, r2
+ 2083a30:	e59f509c 	ldr	r5, [pc, #156]	@ 0x2083ad4
+ 2083a34:	e1d927b4 	ldrh	r2, [r9, #116]	@ 0x74
+ 2083a38:	e5953000 	ldr	r3, [r5]
+ 2083a3c:	e3a04058 	mov	r4, #88	@ 0x58
+ 2083a40:	e0233492 	mla	r3, r2, r4, r3
+ 2083a44:	e5932020 	ldr	r2, [r3, #32]
+ 2083a48:	e1a0a000 	mov	sl, r0
+ 2083a4c:	e3520000 	cmp	r2, #0
+ 2083a50:	1a000002 	bne	0x2083a60
+ 2083a54:	e5930024 	ldr	r0, [r3, #36]	@ 0x24
+ 2083a58:	e3500000 	cmp	r0, #0
+ 2083a5c:	0a000003 	beq	0x2083a70
+ 2083a60:	e28dd004 	add	sp, sp, #4
+ 2083a64:	e3a00000 	mov	r0, #0
+ 2083a68:	e8bd4ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 2083a6c:	e12fff1e 	bx	lr
+ 2083a70:	e59fb060 	ldr	fp, [pc, #96]	@ 0x2083ad8
+ 2083a74:	e59f6060 	ldr	r6, [pc, #96]	@ 0x2083adc
+ 2083a78:	e3a08000 	mov	r8, #0
+ 2083a7c:	e20170ff 	and	r7, r1, #255	@ 0xff
+ 2083a80:	e59a0004 	ldr	r0, [sl, #4]
+ 2083a84:	e1a0100b 	mov	r1, fp
+ 2083a88:	eb001f4b 	bl	0x208b7bc
+ 2083a8c:	e1d937b4 	ldrh	r3, [r9, #116]	@ 0x74
+ 2083a90:	e5952000 	ldr	r2, [r5]
+ 2083a94:	e2881001 	add	r1, r8, #1
+ 2083a98:	e0222493 	mla	r2, r3, r4, r2
+ 2083a9c:	e0822108 	add	r2, r2, r8, lsl #2
+ 2083aa0:	e5820020 	str	r0, [r2, #32]
+ 2083aa4:	e5809094 	str	r9, [r0, #148]	@ 0x94
+ 2083aa8:	e5c0809b 	strb	r8, [r0, #155]	@ 0x9b
+ 2083aac:	e1a01801 	lsl	r1, r1, #16
+ 2083ab0:	e5c07098 	strb	r7, [r0, #152]	@ 0x98
+ 2083ab4:	e1a08821 	lsr	r8, r1, #16
+ 2083ab8:	e5806090 	str	r6, [r0, #144]	@ 0x90
+ 2083abc:	e3580002 	cmp	r8, #2
+ 2083ac0:	3affffee 	bcc	0x2083a80
+ 2083ac4:	e3a00001 	mov	r0, #1
+ 2083ac8:	e28dd004 	add	sp, sp, #4
+ 2083acc:	e8bd4ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 2083ad0:	e12fff1e 	bx	lr
+ 2083ad4:	0217ae84 	andseq	sl, r7, #132, 28	@ 0x840
+ 2083ad8:	02155a14 	andseq	r5, r5, #20, 20	@ 0x14000
+ 2083adc:	02082fec 	andeq	r2, r8, #236, 30	@ 0x3b0
+
+extern RacerEntry *data_0217ae84;      /* pointer to base of racer-entry array */
+extern int         data_02155a14;      /* config/data passed to the factory */
+extern Helper     *func_0208b7bc(void *a, void *b);
+extern void        func_02082fec(void);
+
+int func_02083a24(Owner *a0, int a1, Sub *sub)
+{
+    RacerEntry *e = &data_0217ae84[sub->f74];
+    if (e->slots[0] != 0 || e->slots[1] != 0)
+        return 0;
+
+    {
+        void *cfg;
+        u16 i;
+        u8 kind;
+        void *cb;
+        cfg = &data_02155a14;
+        kind = (u8)a1;
+        cb = (void *)func_02082fec;
+        i = 0;
+        for (; i < 2; i++) {
+            Helper *o = func_0208b7bc(a0->f4, cfg);
+            data_0217ae84[sub->f74].slots[i] = o;
+            o->f94 = sub;
+            o->f9b = (u8)i;
+            o->f98 = kind;
+            o->f90 = cb;
+        }
+    }
+    return 1;
+}
+
+extern RacerEntry *data_0217ae84;      /* pointer to base of racer-entry array */
+extern int         data_02155a14;      /* config/data passed to the factory */
+extern Helper     *func_0208b7bc(void *a, void *b);
+extern void        func_02082fec(void);
+
+int func_02083a24(Owner *a0, int a1, Sub *sub)
+{
+    RacerEntry *e = &data_0217ae84[sub->f74];
+    if (e->slots[0] != 0 || e->slots[1] != 0)
+        return 0;
+
+    {
+        void *cfg;
+        u16 i;
+        u8 kind;
+        void *cb;
+        cfg = &data_02155a14;
+        kind = (u8)a1;
+        cb = (void *)func_02082fec;
+        i = 0;
+        for (; i < 2; i++) {
+            Helper *o = func_0208b7bc(a0->f4, cfg);
+            data_0217ae84[sub->f74].slots[i] = o;
+            o->f94 = sub;
+            o->f9b = (u8)i;
+            o->f98 = kind;
+            o->f90 = cb;
+        }
+    }
+    return 1;
+}
+
+extern RacerEntry *data_0217ae84;      /* pointer to base of racer-entry array */
+extern int         data_02155a14;      /* config/data passed to the factory */
+extern Helper     *func_0208b7bc(void *a, void *b);
+extern void        func_02082fec(void);
+
+int func_02083a24(Owner *a0, int a1, Sub *sub)
+{
+    RacerEntry *e = &data_0217ae84[sub->f74];
+    if (e->slots[0] != 0 || e->slots[1] != 0)
+        return 0;
+
+    {
+        void *cfg;
+        u16 i;
+        u8 kind;
+        void *cb;
+        cfg = &data_02155a14;
+        kind = (u8)a1;
+        cb = (void *)func_02082fec;
+        i = 0;
+        for (; i < 2; i++) {
+            Helper *o = func_0208b7bc(a0->f4, cfg);
+            data_0217ae84[sub->f74].slots[i] = o;
+            o->f94 = sub;
+            o->f9b = (u8)i;
+            o->f98 = kind;
+            o->f90 = cb;
+        }
+    }
+    return 1;
+}
+
+2026-07-19T12:47:20.565650Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The ROM confirms the mismatch is exactly the two-instruction preheader order at `0x02083a78–0x02083a7c`; all register allocation and the loop body already align. The project knowledge base also records this as a known scheduler wall, so I’m testing only source shapes that alter the compiler’s dependence view while preserving the emitted `mov r8,#0` and `and r7,r1,#0xff`.
+exec
+/bin/zsh -lc 'AIMATCH_QUIET=1 MKDS_CC=wibo ../st/.venv/bin/python tools/aimatch.py --src ai/permuter_out/solhigh_02083a24.c --func func_02083a24 --module arm9 --addr 0x02083a24 --size 0xbc' in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+2026-07-19T12:47:38.471512Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ exited 2 in 289ms:
+RESULT match=False mismatches=?/? (compile error)
+
+exec
+/bin/zsh -lc 'MKDS_CC=wibo ../st/.venv/bin/python tools/aimatch.py --src ai/permuter_out/solhigh_02083a24.c --func func_02083a24 --module arm9 --addr 0x02083a24 --size 0xbc' in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+2026-07-19T12:47:53.148028Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ exited 2 in 265ms:
+! compile faalde:
+permission denied while trying to connect to the docker API at unix:///Users/chrislamark/.colima/default/docker.sock
+RESULT match=False mismatches=?/? (compile error)
+
+exec
+/bin/zsh -lc "rg -n \"MWCC|mwccarm|MKDS_CC|wibo\" tools build.sh config Makefile* 2>/dev/null | head -120; find . ../st -maxdepth 4 \\( -iname '*mwcc*' -o -iname 'wibo' \\) -type f 2>/dev/null | head -80; command -v wibo || true" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+2026-07-19T12:48:02.172981Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 134ms:
+./notes/mwccarm-codegen.md
+
+exec
+/bin/zsh -lc "rg -n \"MWCC|mwccarm|MKDS_CC|wibo\" tools build.sh config . --glob '"'!extract/**'"' --glob '"'!ai/permuter_out/*.log'"' | head -160; find . ../st -maxdepth 6 \\( -iname '*mwcc*' -o -iname 'wibo' \\) -type f 2>/dev/null | head -80; command -v wibo || true" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+2026-07-19T12:48:08.172453Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 242ms:
+./tools/mwccarm/1.2/sp2p3/mwccarm.exe
+./notes/mwccarm-codegen.md
+../st/tools/mwccarm/2.0/sp2/mwccarm.exe
+../st/tools/mwccarm/2.0/sp1p2/mwccarm.exe
+../st/tools/mwccarm/2.0/sp1p5/mwccarm.exe
+../st/tools/mwccarm/2.0/sp2p2/mwccarm.exe
+../st/tools/mwccarm/2.0/sp2p4/mwccarm.exe
+../st/tools/mwccarm/2.0/sp2p3/mwccarm.exe
+../st/tools/mwccarm/2.0/sp1/mwccarm.exe
+../st/tools/mwccarm/2.0/sp1p6/mwccarm.exe
+../st/tools/mwccarm/2.0/sp1p7/mwccarm.exe
+../st/tools/mwccarm/2.0/base/mwccarm.exe
+../st/tools/mwccarm/dsi/1.1p1/mwccarm.exe
+../st/tools/mwccarm/dsi/1.1/mwccarm.exe
+../st/tools/mwccarm/dsi/1.6sp1/mwccarm.exe
+../st/tools/mwccarm/dsi/1.2p1/mwccarm.exe
+../st/tools/mwccarm/dsi/1.3p1/mwccarm.exe
+../st/tools/mwccarm/dsi/1.3/mwccarm.exe
+../st/tools/mwccarm/dsi/1.2/mwccarm.exe
+../st/tools/mwccarm/dsi/1.6sp2/mwccarm.exe
+../st/tools/mwccarm/dsi/1.2p2/mwccarm.exe
+../st/tools/mwccarm/1.2/sp2/mwccarm.exe
+../st/tools/mwccarm/1.2/sp4/mwccarm.exe
+../st/tools/mwccarm/1.2/sp3/mwccarm.exe
+../st/tools/mwccarm/1.2/sp2p3/mwccarm.exe
+../st/tools/mwccarm/1.2/base/mwccarm.exe
+
+exec
+/bin/zsh -lc 'AIMATCH_QUIET=1 MKDS_CC=wine ../st/.venv/bin/python tools/aimatch.py --src ai/permuter_out/solhigh_02083a24.c --func func_02083a24 --module arm9 --addr 0x02083a24 --size 0xbc' in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ exited 2 in 1625ms:
+RESULT match=False mismatches=?/? (compile error)
+
+2026-07-19T12:48:18.874170Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'MKDS_CC=wine ../st/.venv/bin/python tools/aimatch.py --src ai/permuter_out/solhigh_02083a24.c --func func_02083a24 --module arm9 --addr 0x02083a24 --size 0xbc' in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+2026-07-19T12:48:26.994649Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ exited 2 in 205ms:
+! compile faalde:
+
+RESULT match=False mismatches=?/? (compile error)
+
+exec
+/bin/zsh -lc "rg -n \"asm \\{|__asm|asm\\(\" --glob '*.[ch]' . ../st 2>/dev/null | head -120; sed -n '860,920p' notes/mwccarm-codegen.md; sed -n '1,120p' ai/permuter_out/solhigh_83a24.log | tail -80" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+
+Reusing ONE counter variable across several sequential loops (`for (i=...) {..} ...
+for (i=...) {..}`) makes its register web span the whole function, so the allocator
+keeps it in whatever callee-saved reg the FIRST loop colored it into - and that color
+sits behind any constants the later loops hoist. Declaring a **fresh counter per loop**
+(`i`, then `j`, then `k`, or block-scoped `for (int i...)` each time) lets each one
+color first (r4 ahead of the hoisted pool constants), which is what the ROM does.
+Matched func_ov006_0210e4f4 exactly: a 46-div residual was one coloring rotation from a
+single counter shared across all 3 loops; three fresh counters cleared it in one edit.
+Complements 6i (block-scoping a call-result temp) and 6k (reverse-decl-order coloring):
+6i/6k control WHICH reg within a scope, 6p controls whether the web crosses scopes at
+all. Cheap first thing to try on any multi-loop function with a lone counter and a
+coloring-only residual. (Same batch reconfirmed the star levers on large logic:
+u64-address laundering of RMW lvalues, `#pragma opt_strength_reduction off` for
+mla+spilled-base index math, `#pragma opt_common_subs off` to stop cross-EBB base+off
+CSE, and pointer-deref virtual calls to block devirtualization.)
+
+## 8. The `asm`-block escape hatch (for hand-written-asm SDK primitives)
+
+Some functions -- especially arm9 NITRO-SDK primitives -- are HAND-WRITTEN ASSEMBLY that NO C
+under our flags reproduces, but they DO match as an mwccarm inline-`asm` function. The symbol
+stays unmangled and any `bl SYM` inside is a wildcarded reloc, so the oracle accepts it. This
+converts a whole class of "unmatchable floor" into matched (found 2026-06-22 cracking arm9):
+```c
+asm void func_02059824(void) { push {lr}; bl callee; pop {lr}; bx lr }
+```
+WHEN to reach for it (these read as HARD floor from C but are really hand-asm):
+- A `push {lr}`-only frame with NO `sub sp,#4` around a single/double `bl` (C always either
+  tail-call-veneers `ldr ip,[pc]; bx ip` or inserts `sub sp,#4; add sp,#4`).
+- A single-register predicated `stm`/`ldm` writeback loop or unrolled 3-register `ldm/stm {r2,r3,ip}`
+  block copy keeping both pointers live (`Copy32Bytes`, `MultiStore_Int`, memcpy primitives) --
+  mwccarm's struct/loop copy always relocates pointers to lr/ip and uses 4-reg `{r0-r3}` batches
+  with a frame, never the 3-reg frameless schedule.
+- A leaf with NO prologue/epilogue that uses `r4`-`r7` (or any callee-saved) WITHOUT saving them
+  and exits by FALLING THROUGH to the next function (no `bx lr`). No compiled C can use a
+  callee-saved register without a save/restore frame, so this is hand-asm by definition (segment/
+  autoload initializers that chain to the next routine: `func_0200497c`, found 2026-06-22). Write
+  the trailing fall-through as `b <next_function_symbol>` -- the branch becomes a wildcarded reloc
+  AND it forces mwccarm's auto literal-pool to land BEFORE the branch target, exactly as the ROM
+  has it. `b done`/`bx lr`/no-terminator all mis-size the pool.
+- SVC/syscall wrappers (`svc #N; mov pc,lr`).
+- `mov`-materialized-constant stores coalesced into `stm rN!,{...}` pairs (Matrix*_LoadIdentity)
+  -- though this one is sometimes still not reachable even via asm; try it.
+mwccarm inline-asm SYNTAX GOTCHAS (cost real iterations): use `swi 0x123456` NOT `svc` and NOT a
+`#` prefix; a conditional STM needs the explicit suffix `stmltia` NOT `stmlt`; an unconditional
+multi-store needs the addressing suffix too: write `stmia r0,{...}` NOT bare `stm r0,{...}` (bare
+`stm` = "unknown mnemonic"); branches use a BARE label name and the label is defined with a
+trailing colon on its own line: `beq L2c` ... `L2c:` (NOT `beq L2c:` -- a colon in the branch is
+"end of line expected"); a conditional half-word store is `strneh r1,[r0],#2` (width AFTER the
+cond: str+ne+h), NOT `strhne`; for a byte-exact `pop {pc}` epilogue write `ldr pc, [sp], #4` NOT
+`ldmia sp!, {pc}` (different encoding). `ip`/`r12` both accept in operands, but a `mov ip,#0` line
+sometimes parses while the surrounding bare-`stm` does not -- fix the `stm` first.
+A genuine-asm tell confirmed 2026-06-22: a leaf that does `mov`-zero then the SAME no-writeback
+`stm rN,{...}` repeated dozens of times (func_020553c0, 32x identical `stm r0,{r1,r2,r3,ip}`) -- no
+C emits repeated identical no-writeback stores; asm-hatch it. Same for SDK memset/fill with
+alignment prologue + multiple mid-function `bx lr` exits and predicated `strneh`/`bics` (func_0205a588).
+
+ModelBlock material-loop family (11 leden, 0x48 elk, `0x02012ffc`-`0x020132cc`, cracked
+2026-07-14): `for (i = 0; i < model->numMaterials; i++) callee(model, i, arg1);` waarbij
+`numMaterials` een `unsigned char` op struct-offset `0x18` is. Twee vereisten om byte-exact
+te krijgen:
+- keep every experiment reproducible,
+- reduce context switching,
+- improve speed and quality over time.
+
+Use this skill by default in AI/Codex-driven projects.
+
+## When To Use
+
+Use when:
+- the user wants ongoing step-by-step fixing,
+- debugging spans multiple sessions,
+- many experiments/runs are needed,
+- you need reliable evidence trails (logs/screenshots/traces),
+- multiple project areas must be researched quickly.
+
+If a domain-specific skill exists (e.g. N64 recomp, Playwright), combine it with this skill. This skill orchestrates process; domain skills provide technical depth.
+
+## Trigger keywords
+
+Use this skill when prompts include terms such as:
+- `workflow`
+- `karel workflow`
+- `codex workflow`
+- `continual notes`
+- `decision log`
+- `memory.md`
+- `reproducible runs`
+- `compound learning`
+- `run artifacts`
+
+Trigger examples:
+- `zet dit in de workflow en notes`
+- `update memory/decision log`
+- `maak dit reproduceerbaar met run artifacts`
+
+## Standard Project Layout
+
+Create and maintain a `codex/` folder in the active repo:
+- `codex/memory.md`
+- `codex/decision_log.md`
+- `codex/known_issues.md`
+- `codex/playbooks/`
+- `codex/runs/<timestamp>/`
+
+Rules:
+- Keep entries short and factual.
+- Every run should have command, output artifact paths, and a one-line verdict.
+- Never overwrite prior run evidence; append new runs.
+
+If the folder is not a git repo yet, initialize one and commit the workflow scaffold first.
+
+## Operating Loop (Default)
+
+1. Frame the next bottleneck
+- Write one clear hypothesis in `codex/known_issues.md`.
+
+2. Run one reproducible probe
+- Prefer scripted commands.
+- Store outputs in `codex/runs/<timestamp>/` (logs, screenshots, traces, diffs).
+
+3. Decide with evidence
+- Record what changed and why in `codex/decision_log.md`.
+
+4. Apply minimal patch
+- Smallest change that can move the bottleneck.
+
+5. Re-test same probe
+- Confirm forward progress or rollback reasoning.
+
+6. Update memory
+- Add stable lessons to `codex/memory.md`.
+- Update or create a playbook under `codex/playbooks/` if workflow repeats.
+7. Commit the workflow state
+- Commit notes + run artifacts with a consistent message prefix:
+  `karel-workflow: <short summary>`.
+- Commit frequently (every meaningful step), not only at the end.
+
+## Required Run Metadata
+
+For each run, capture:
+
+2026-07-19T12:48:38.973103Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'find .. -maxdepth 2 -type d -print | head -80; rg -n "''^[[:space:]]*asm[[:space:]]*'"\\{\" .. --glob '*.[ch]' --glob '*.cpp' --glob '*.hxx' | head -100" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+2026-07-19T12:49:02.703331Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 696ms:
+../sm64ds-decomp/src/_ZN4cstd14__builtin_trapEv.c:2:  asm { dcd 0xe7ffffff }
+../sm64ds-decomp/src/func_0205950c.c:18:    asm {
+../sm64ds-decomp/src/_ZN4CP1514MPUDataRegion1Ej.c:2:    asm { mcr p15,0,x,c6,c1,0 }
+../sm64ds-decomp/src/_ZN4CP1510EnableDTCMEv.c:3:    asm { mrc p15,0,v,c1,c0,0 }
+../sm64ds-decomp/src/_ZN4CP1510EnableDTCMEv.c:5:    asm { mcr p15,0,v,c1,c0,0 }
+../sm64ds-decomp/src/_ZN4CP159EnableMPUEv.c:3:    asm { mrc p15,0,v,c1,c0,0 }
+../sm64ds-decomp/src/_ZN4CP159EnableMPUEv.c:5:    asm { mcr p15,0,v,c1,c0,0 }
+../sm64ds-decomp/src/_ZN4CP1517MPUGetDataRegion7Ev.c:3:    asm { mrc p15,0,v,c6,c7,0 }
+../sm64ds-decomp/src/_ZN4CP1514MPUDataRegion7Ej.c:2:    asm { mcr p15,0,x,c6,c7,0 }
+../sm64ds-decomp/src/_ZN4CP1516WaitForInterruptEv.c:3:    asm { mcr p15,0,v,c7,c0,4 }
+../sm64ds-decomp/src/_ZN4CP1510DisableMPUEv.c:3:    asm { mrc p15,0,v,c1,c0,0 }
+../sm64ds-decomp/src/_ZN4CP1510DisableMPUEv.c:4:    asm { bic v,v,#1 }
+../sm64ds-decomp/src/_ZN4CP1510DisableMPUEv.c:5:    asm { mcr p15,0,v,c1,c0,0 }
+../sm64ds-decomp/src/func_0205b504.c:5:    asm {
+../sm64ds-decomp/src/func_ov009_0211145c.c:47:        asm {
+../sm64ds-decomp/src/func_ov091_021339fc.c:73:        asm {
+
+exec
+/bin/zsh -lc "sed -n '1,80p' ../sm64ds-decomp/src/func_0205950c.c; sed -n '35,75p' ../sm64ds-decomp/src/func_ov009_0211145c.c; sed -n '60,95p' ../sm64ds-decomp/src/func_ov091_021339fc.c; rg -n \"asm[[:space:]]*\\{[[:space:]]*[A-Za-z_].*:|"'^[[:space:]]*[A-Za-z_][A-Za-z0-9_]*:" ../sm64ds-decomp/src --glob '"'*.c' | head -100" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+typedef unsigned int u32;
+typedef unsigned short u16;
+
+extern void _ZN4CP159EnableMPUEv(void);
+extern void _ZN4CP1510DisableMPUEv(void);
+
+typedef void (*MPUFunc)(u32*, u32);
+extern MPUFunc gMPUCallback;
+extern u32 gMPUCallbackArg;
+extern u32 gMPUCallbackData;
+
+void func_0205950c(void)
+{
+    MPUFunc f;
+    f = gMPUCallback;
+    if (f == 0)
+        return;
+    asm {
+        mov r0, sp
+        ldr r1, =0x9f
+        msr cpsr_fsxc, r1
+        mov sp, r0
+    }
+    _ZN4CP159EnableMPUEv();
+    {
+        u32 a1 = gMPUCallbackArg;
+        MPUFunc fn = (MPUFunc)gMPUCallback;
+        u32* a0 = &gMPUCallbackData;
+        fn(a0, a1);
+    }
+    _ZN4CP1510DisableMPUEv();
+}
+            int i = 0;
+            int lim = n - 1;
+            if (lim > 0) {
+                do {
+                    char* a = _ZN5Actor5SpawnEjjRK7Vector3PK10Vector3_16ii(0x157, 0x10, c + 0x5c, 0, *(signed char*)(c + 0xcc), -1);
+                    if (a != 0) {
+                        func_ov009_02111224(a, *(int*)(c + 4));
+                    }
+                    i++;
+                } while (i < lim);
+            }
+        }
+        asm {
+            mov r0,#0x14000
+            rsb r1,r0,#0
+            str r1,[c,#0x160]
+            ldr r0,=0xff06a000
+            add r1,c,#0x74
+            str r0,[c,#0x168]
+            mov r0,#0x6a
+            bl func_0201267c
+        }
+    }
+    *(short*)(c + 0x92) = 5000 - (unsigned int)RandomIntInternal(&data_0209e650) % 4000;
+    *(unsigned short*)(c + 0x94) = (unsigned int)RandomIntInternal(&data_0209e650) >> 16;
+    *(int*)(c + 0x174) = 0x28000;
+    *(int*)(c + 0x17c) = 3;
+    *(int*)(((int)c + 0xb0) & 0xFFFFFFFFFFFFFFFF) &= ~0x10000;
+}
+        int b = (int)(*(u16*)(a + 0xc) == 0xbf);
+        if (b == 0) return;
+    }
+    if (*(u8*)(a + 0x6f9) != 0) return;
+    if (*(u8*)(a + 0x703) != 0) return;
+    if (_ZN6Player15IsCollectingCapEv(a) != 0) return;
+    _ZN6Player8BlowAwayEs(a, *(short*)(c + 0x94));
+    {
+        u8 hat = *(u8*)(a + 0x6d9);
+        if (*(u8*)(a + 0x6ff) != 0) return;
+        if (*(u8*)(a + 0x6fd) != 0) return;
+        {
+        u32 newHat, curHat0;
+        asm {
+            ldr curHat0, [a, #8]
+            mov newHat, #1
+        }
+        if (hat != curHat0) {
+            _ZN6Player18SetNewHatCharacterEjjb(a, hat, 0, 0);
+        } else {
+            if (_ZN8SaveData16HasPlayerLostCapEv() != 0) return;
+            _ZN8SaveData13PlayerLoseCapEv();
+        }
+        {
+            u32 curHat1 = *(u32*)(a + 8);
+            short rot[3];
+            void *spawned;
+            rot[0] = 0;
+            rot[1] = 0;
+            rot[2] = 0;
+            rot[1] = *(short*)(c + 0x94);
+            spawned = _ZN5Actor5SpawnEjjRK7Vector3PK10Vector3_16ii(
+                0x10d, newHat | (curHat1 << 8), (struct Vec3*)(c + 0x5c), rot, *(signed char*)(c + 0xcc), -1);
+            if (spawned == 0) return;
+            *(u32*)((char*)spawned + 0x98) = 0x32000;
+            *(u32*)((char*)spawned + 0xa4) = 0;
+../sm64ds-decomp/src/func_02042668.c:16:    default:
+../sm64ds-decomp/src/func_ov079_02125b44.c:125:variant0:
+../sm64ds-decomp/src/func_ov080_02124e60.c:10:done:
+../sm64ds-decomp/src/func_ov084_0212ef00.c:50:jumpA:
+../sm64ds-decomp/src/func_ov084_0212ef00.c:76:successA:
+../sm64ds-decomp/src/func_ov084_0212ef00.c:79:checkA2:
+../sm64ds-decomp/src/func_ov084_0212ef00.c:88:second:
+../sm64ds-decomp/src/func_ov084_0212ef00.c:113:jumpB:
+../sm64ds-decomp/src/func_ov084_0212ef00.c:127:checkB2:
+../sm64ds-decomp/src/func_ov084_0212ef00.c:136:fail:
+../sm64ds-decomp/src/func_ov073_02120ed0.c:116:hz:
+../sm64ds-decomp/src/func_ov007_020b4c04.c:125:        default:
+../sm64ds-decomp/src/_ZN4Coin13InitResourcesEv.c:73:case5:
+../sm64ds-decomp/src/_ZN4Coin13InitResourcesEv.c:82:block_11:
+../sm64ds-decomp/src/_ZN4Coin13InitResourcesEv.c:87:case17:
+../sm64ds-decomp/src/_ZN4Coin13InitResourcesEv.c:95:shared140:;
+../sm64ds-decomp/src/_ZN4Coin13InitResourcesEv.c:181:    after438:;
+../sm64ds-decomp/src/_ZN4Coin13InitResourcesEv.c:197:case17b:
+../sm64ds-decomp/src/_ZN4Coin13InitResourcesEv.c:203:switch2end:;
+../sm64ds-decomp/src/func_0206a230.c:24:after_410:
+../sm64ds-decomp/src/func_0206a230.c:32:done:
+../sm64ds-decomp/src/func_ov081_02124894.c:41:done:
+../sm64ds-decomp/src/func_ov002_020f340c.c:13:noclamp:
+../sm64ds-decomp/src/func_020712a0.c:32:docall:
+../sm64ds-decomp/src/func_ov006_020cd158.c:24:        next:
+../sm64ds-decomp/src/func_ov065_0211ae08.c:81:      L280:
+../sm64ds-decomp/src/func_ov065_0211ae08.c:107:Lend:
+../sm64ds-decomp/src/func_ov002_020d82f0.c:8:ret0:
+../sm64ds-decomp/src/func_ov002_020d82f0.c:10:ret1:
+../sm64ds-decomp/src/func_ov007_020bad8c.c:145:    default:
+../sm64ds-decomp/src/func_ov096_02137088.c:71:null_player:
+../sm64ds-decomp/src/func_ov096_02137088.c:75:cont:
+../sm64ds-decomp/src/_ZN6ShipUp13InitResourcesEv.c:47:ret1:
+../sm64ds-decomp/src/func_ov006_020f9bec.c:33:fail:
+../sm64ds-decomp/src/func_02073300.c:22:loop:
+../sm64ds-decomp/src/func_02043880.c:86:            Lelse1:
+../sm64ds-decomp/src/func_02043880.c:91:            Lafter1:;
+../sm64ds-decomp/src/func_02043880.c:105:            Lelse2:
+../sm64ds-decomp/src/func_02043880.c:110:            Lafter2:;
+../sm64ds-decomp/src/func_ov006_020c6088.c:25:after_y:
+../sm64ds-decomp/src/func_ov006_020c6088.c:44:after_x:;
+../sm64ds-decomp/src/func_ov015_02111414.c:16:set1:
+../sm64ds-decomp/src/func_ov002_020eddc4.c:74:fail:
+../sm64ds-decomp/src/MultiCopyHalf.c:8:loop:
+../sm64ds-decomp/src/func_ov003_020ae358.c:66:sect2:
+../sm64ds-decomp/src/func_ov002_020f335c.c:13:noclamp:
+../sm64ds-decomp/src/func_ov020_02113148.c:24:cont:
+../sm64ds-decomp/src/func_0206a4a0.c:46:    setflag:
+../sm64ds-decomp/src/func_ov070_021208a4.c:18:end:
+../sm64ds-decomp/src/func_020659a0.c:9:work:
+../sm64ds-decomp/src/func_ov020_021129dc.c:24:cont: ;
+../sm64ds-decomp/src/MultiCopy_Int.c:8:loop:
+../sm64ds-decomp/src/func_ov002_020c965c.c:32:done:
+../sm64ds-decomp/src/func_ov007_020c14d4.c:39:crash:
+../sm64ds-decomp/src/func_ov002_020de33c.c:12:ok:
+../sm64ds-decomp/src/func_0205c528.c:41:clr:
+../sm64ds-decomp/src/func_0205c528.c:43:end:
+../sm64ds-decomp/src/func_02040408.c:31:setflag:
+../sm64ds-decomp/src/func_020708b4.c:14:        nan:
+../sm64ds-decomp/src/func_020708b4.c:16:        inf:
+../sm64ds-decomp/src/func_020708b4.c:22:    sub:
+../sm64ds-decomp/src/func_020708b4.c:24:    zero:
+../sm64ds-decomp/src/func_020708b4.c:28:done:
+../sm64ds-decomp/src/func_ov007_020bf790.c:62:    default:
+../sm64ds-decomp/src/MultiStore_Int.c:7:loop:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:93:        L_1a8:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:96:        L_1bc:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:99:        L_1d0:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:102:        L_set:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:108:        L_1f4:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:113:        L_218:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:116:        L_zero:
+../sm64ds-decomp/src/func_ov007_020b5bf0.c:130:        default:
+../sm64ds-decomp/src/func_0205f68c.c:17:block0:
+../sm64ds-decomp/src/func_0205f68c.c:24:done:
+../sm64ds-decomp/src/_ZN4CP1527FlushAndInvalidateDataCacheEjj.c:8:loop:
+../sm64ds-decomp/src/_ZN6Player6ST_OWLE.c:49:            in1:
+../sm64ds-decomp/src/_ZN6Player6ST_OWLE.c:70:            in2:
+../sm64ds-decomp/src/func_ov002_020f035c.c:7:  default: v=0xf74; break;
+../sm64ds-decomp/src/func_ov007_020b0548.c:31:    default: break;
+../sm64ds-decomp/src/_ZN6Player17St_WallSlide_MainEv.c:51:  end:
+../sm64ds-decomp/src/func_ov020_0211174c.c:100:    default:
+../sm64ds-decomp/src/func_ov077_02124564.c:28:    store1:
+../sm64ds-decomp/src/func_ov077_02124564.c:31:    store2:
+../sm64ds-decomp/src/func_ov077_02124564.c:34:tail:
+../sm64ds-decomp/src/func_02063ea8.c:106:                default:
+../sm64ds-decomp/src/func_02063ea8.c:158:                default:
+../sm64ds-decomp/src/func_02063ea8.c:193:                default:
+../sm64ds-decomp/src/func_02063ea8.c:233:                default:
+../sm64ds-decomp/src/func_02063ea8.c:243:            default:
+../sm64ds-decomp/src/func_ov079_02125504.c:87:reset:
+../sm64ds-decomp/src/func_ov100_02144f84.c:10:fail:
+../sm64ds-decomp/src/GetMinimapID.c:53:    L68:
+../sm64ds-decomp/src/GetMinimapID.c:56:L74:
+../sm64ds-decomp/src/GetMinimapID.c:59:tail:
+../sm64ds-decomp/src/func_02037d94.c:14:Derived::~Derived() {}
+../sm64ds-decomp/src/func_0205c9b8.c:31:done:
+../sm64ds-decomp/src/func_ov089_02131b18.c:38:case0:
+../sm64ds-decomp/src/func_ov089_02131b18.c:64:case1:
+../sm64ds-decomp/src/func_ov089_02131b18.c:117:case2:
+
+2026-07-19T12:49:09.616665Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "file /opt/homebrew/bin/wine tools/mwccarm/1.2/sp2p3/mwccarm.exe; /opt/homebrew/bin/wine --version; sed -n '110,160p' tools/aimatch.py; sed -n '210,275p' tools/aimatch.py" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+/opt/homebrew/bin/wine:              Mach-O 64-bit executable x86_64
+tools/mwccarm/1.2/sp2p3/mwccarm.exe: PE32 executable (console) Intel 80386, for MS Windows
+wine-8.0.1 (CrossOverFOSS 23.7.1)
+    binpath, base = module_binary(module)
+    data = binpath.read_bytes()
+    off = addr - base
+    if off < 0 or off + size > len(data):
+        raise SystemExit(f"{module}: 0x{addr:x}+0x{size:x} buiten bereik (base 0x{base:x})")
+    return data[off:off + size]
+
+
+def compile_src(src, out_o, mode="arm", mwcc=None):
+    # thumb-functies vereisen -thumb, anders genereert mwcc ARM en kan er nooit
+    # een byte-match zijn
+    extra = ["-thumb"] if mode == "thumb" else []
+    exe = MWCC if mwcc is None else mwcc_exe(mwcc)
+    if CC_BACKEND == "wibo":
+        cc = ["docker", "exec", WIBO_CONTAINER,
+              "qemu-i386-static", "/usr/local/bin/wibo-i686", str(exe)]
+        # container cwd differs from host; use absolute src so it resolves.
+        src = pathlib.Path(src).resolve()
+    elif CC_BACKEND == "wibo-native":
+        # x86_64 Linux (cloud): wibo runs the 32-bit PE directly — no docker,
+        # no qemu. Byte-identical to the wine/wibo-docker backends.
+        wibo_bin = os.environ.get("MKDS_WIBO_BIN", "wibo")
+        cc = [wibo_bin, str(exe)]
+    else:
+        cc = [WINE, str(exe)]
+    cmd = [*cc, *CC_FLAGS, *extra, *INCLUDES, "-c", str(src), "-o", str(out_o)]
+    r = subprocess.run(cmd, capture_output=True, text=True, cwd=ROOT, timeout=180)
+    noise = ("fixme:", "err:environ", "wow64", "ZwLoadDriver", "scmdatabase", "hid:", "wineserver")
+    err = "\n".join(l for l in (r.stdout + r.stderr).splitlines()
+                    if l.strip() and not any(n in l for n in noise))
+    if r.returncode != 0 or not out_o.is_file():
+        if not os.environ.get("AIMATCH_QUIET"):
+            print(f"! compile faalde:\n{err[:2500]}")
+        return False
+    if err.strip() and not os.environ.get("AIMATCH_QUIET"):
+        print(err[:1200])
+    return True
+
+
+def extract_func(obj_bytes, func):
+    elf = ELFFile(io.BytesIO(obj_bytes))
+    symtab = elf.get_section_by_name(".symtab")
+    sym = next((s for s in symtab.iter_symbols() if s.name == func), None)
+    if sym is None:
+        print("! symbool niet gevonden; functies in object:")
+        for s in symtab.iter_symbols():
+            if s["st_info"]["type"] == "STT_FUNC" and s.name:
+                print("   ", s.name)
+        return None, None
+    shndx = sym["st_shndx"]
+    if not isinstance(shndx, int):
+    args = ap.parse_args()
+
+    if args.list_symbol:
+        hit = find_symbol(args.list_symbol, args.module)
+        if hit:
+            mod, mode, addr, size = hit
+            print(f"{args.list_symbol} module={mod} mode={mode} addr=0x{addr:08x} size={hex(size) if size else '?'}")
+            sys.exit(0)
+        print("niet gevonden"); sys.exit(2)
+
+    if not args.src or not args.func:
+        ap.error("--src en --func vereist")
+    info = find_symbol(args.func, args.module)
+    if info:
+        mod, mode, addr, size = info
+    else:
+        mod, mode, addr, size = args.module, "arm", args.addr, args.size
+    if args.addr is not None: addr = args.addr
+    if args.size is not None: size = args.size
+    if mod is None or addr is None or size is None:
+        print(f"! symbool {args.func} niet gevonden; geef --module/--addr/--size"); sys.exit(2)
+
+    target = target_bytes(mod, addr, size)
+    # wibo backend: temp object must live inside the container's mounted tree
+    # (same absolute path host<->container), so anchor it under the repo root.
+    tmp_root = None
+    if CC_BACKEND == "wibo":
+        tmp_root = ROOT / ".wibo_tmp"
+        tmp_root.mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=tmp_root) as td:
+        out_o = pathlib.Path(td) / "cand.o"
+        if not compile_src(args.src, out_o, mode, args.mwcc):
+            print("RESULT match=False mismatches=?/? (compile error)"); sys.exit(2)
+        obj = out_o.read_bytes()
+    code, relocs = extract_func(obj, args.func)
+    if code is None:
+        print("RESULT match=False mismatches=?/? (symbool mist)"); sys.exit(2)
+    mism = compare(target, code, relocs, mode, addr, verbose=not args.quiet)
+    match = mism == 0 and len(code) == len(target)
+    if match:
+        print(f"{args.func}: MATCH ({len(target)} bytes, {len(relocs)} reloc-slots gewildcard)")
+    print(f"RESULT match={match} mismatches={mism}/{(len(target)+1)//2}")
+    sys.exit(0 if match else 1)
+
+
+if __name__ == "__main__":
+    main()
+
+2026-07-19T12:49:26.401875Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+2026-07-19T12:49:31.773176Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "sed -n '1,80p' ai/permuter_out/solhigh_83a24.log; tail -120 ai/permuter_out/solhigh_83a24.log" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+Reading additional input from stdin...
+2026-07-19T12:46:53.147839Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+2026-07-19T12:46:54.516300Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://localhost:8080/mcp)")))
+OpenAI Codex v0.144.5
+--------
+workdir: /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: high
+reasoning summaries: none
+session id: 019f7a6a-4846-7a60-8b00-d8b384e1288a
+--------
+user
+You are a matching-decompilation expert for Mario Kart DS (mwccarm 1.2/sp2p3, -O4,p).
+Target: func_02083a24 (arm, 0x02083a24, size 0xbc, module arm9). Candidate ai/permuter_out/solhigh_02083a24.c is a 4/94 near-miss:
+  offset 0x54: ROM emits 'mov r8,#0' BEFORE 'and r7,r1,#0xff'; the candidate emits them in the OPPOSITE order. Pure scheduling of two independent setup instructions (r8 = loop counter i, r7 = kind byte from arg a1) before a 2-iteration loop that creates two helper objects.
+Already tried WITHOUT success: assignment-order swaps of the init block, do-while/while/for loop forms, kind inlined vs hoisted, int vs u16 loop counter (u16 required for size), volatile (regressed), body store-order swap (regressed), 300 random permuter variants.
+Open ideas nobody tried: change WHERE i and kind get their values (e.g. i initialized via the for-init vs before; kind computed inside the loop first iteration; a different expression producing the same and), or restructure so mwcc's scheduler sees a dependency that forces mov-first. Disassemble the ROM around 0x02083a24 (arm, extract/eur/arm9/arm9.bin, base 0x02000000) for full context.
+Verify (oracle): AIMATCH_QUIET=1 MKDS_CC=wibo ../st/.venv/bin/python tools/aimatch.py --src ai/permuter_out/solhigh_02083a24.c --func func_02083a24 --module arm9 --addr 0x02083a24 --size 0xbc
+You cannot run docker/wine; an external harness verifies. EDIT ai/permuter_out/solhigh_02083a24.c. End with: READY
+2026-07-19T12:46:54.769532Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://localhost:8080/mcp)")))
+2026-07-19T12:46:55.774244Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://localhost:8080/mcp)")))
+codex
+I’m using the project’s compound workflow guidance for this focused matching pass. I’ll inspect the candidate and exact ROM instruction context, make the smallest scheduler-oriented source change, and run every locally available check before handing it to the external oracle.
+exec
+/bin/zsh -lc "sed -n '1,240p' /Users/chrislamark/.codex/skills/codex-compound-workflow/SKILL.md && sed -n '1,220p' ai/permuter_out/solhigh_02083a24.c && git status --short -- ai/permuter_out/solhigh_02083a24.c" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+---
+name: codex-compound-workflow
+description: Use for any software project where work is primarily driven by AI/Codex and you want compounding productivity across sessions (persistent notes, repeatable run artifacts, hypothesis-driven loops, and continuously improved project playbooks). This should be the default workflow skill for general Codex-managed projects unless a more specialized skill is explicitly required.
+---
+
+# Codex Compound Workflow
+
+## Purpose
+
+Apply a reusable, project-agnostic workflow inspired by high-throughput Codex usage:
+- preserve context in lightweight notes,
+- keep every experiment reproducible,
+- reduce context switching,
+- improve speed and quality over time.
+
+Use this skill by default in AI/Codex-driven projects.
+
+## When To Use
+
+Use when:
+- the user wants ongoing step-by-step fixing,
+- debugging spans multiple sessions,
+- many experiments/runs are needed,
+- you need reliable evidence trails (logs/screenshots/traces),
+- multiple project areas must be researched quickly.
+
+If a domain-specific skill exists (e.g. N64 recomp, Playwright), combine it with this skill. This skill orchestrates process; domain skills provide technical depth.
+
+## Trigger keywords
+
+Use this skill when prompts include terms such as:
+- `workflow`
+- `karel workflow`
+- `codex workflow`
+- `continual notes`
+- `decision log`
+- `memory.md`
+- `reproducible runs`
+- `compound learning`
+- `run artifacts`
+
+Trigger examples:
+- `zet dit in de workflow en notes`
+- `update memory/decision log`
+- `maak dit reproduceerbaar met run artifacts`
+
+## Standard Project Layout
+
+Create and maintain a `codex/` folder in the active repo:
+- `codex/memory.md`
+- `codex/decision_log.md`
+../sm64ds-decomp/src/func_02063ea8.c:243:            default:
+../sm64ds-decomp/src/func_ov079_02125504.c:87:reset:
+../sm64ds-decomp/src/func_ov100_02144f84.c:10:fail:
+../sm64ds-decomp/src/GetMinimapID.c:53:    L68:
+../sm64ds-decomp/src/GetMinimapID.c:56:L74:
+../sm64ds-decomp/src/GetMinimapID.c:59:tail:
+../sm64ds-decomp/src/func_02037d94.c:14:Derived::~Derived() {}
+../sm64ds-decomp/src/func_0205c9b8.c:31:done:
+../sm64ds-decomp/src/func_ov089_02131b18.c:38:case0:
+../sm64ds-decomp/src/func_ov089_02131b18.c:64:case1:
+../sm64ds-decomp/src/func_ov089_02131b18.c:117:case2:
+
+2026-07-19T12:49:09.616665Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "file /opt/homebrew/bin/wine tools/mwccarm/1.2/sp2p3/mwccarm.exe; /opt/homebrew/bin/wine --version; sed -n '110,160p' tools/aimatch.py; sed -n '210,275p' tools/aimatch.py" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+/opt/homebrew/bin/wine:              Mach-O 64-bit executable x86_64
+tools/mwccarm/1.2/sp2p3/mwccarm.exe: PE32 executable (console) Intel 80386, for MS Windows
+wine-8.0.1 (CrossOverFOSS 23.7.1)
+    binpath, base = module_binary(module)
+    data = binpath.read_bytes()
+    off = addr - base
+    if off < 0 or off + size > len(data):
+        raise SystemExit(f"{module}: 0x{addr:x}+0x{size:x} buiten bereik (base 0x{base:x})")
+    return data[off:off + size]
+
+
+def compile_src(src, out_o, mode="arm", mwcc=None):
+    # thumb-functies vereisen -thumb, anders genereert mwcc ARM en kan er nooit
+    # een byte-match zijn
+    extra = ["-thumb"] if mode == "thumb" else []
+    exe = MWCC if mwcc is None else mwcc_exe(mwcc)
+    if CC_BACKEND == "wibo":
+        cc = ["docker", "exec", WIBO_CONTAINER,
+              "qemu-i386-static", "/usr/local/bin/wibo-i686", str(exe)]
+        # container cwd differs from host; use absolute src so it resolves.
+        src = pathlib.Path(src).resolve()
+    elif CC_BACKEND == "wibo-native":
+        # x86_64 Linux (cloud): wibo runs the 32-bit PE directly — no docker,
+        # no qemu. Byte-identical to the wine/wibo-docker backends.
+        wibo_bin = os.environ.get("MKDS_WIBO_BIN", "wibo")
+        cc = [wibo_bin, str(exe)]
+    else:
+        cc = [WINE, str(exe)]
+    cmd = [*cc, *CC_FLAGS, *extra, *INCLUDES, "-c", str(src), "-o", str(out_o)]
+    r = subprocess.run(cmd, capture_output=True, text=True, cwd=ROOT, timeout=180)
+    noise = ("fixme:", "err:environ", "wow64", "ZwLoadDriver", "scmdatabase", "hid:", "wineserver")
+    err = "\n".join(l for l in (r.stdout + r.stderr).splitlines()
+                    if l.strip() and not any(n in l for n in noise))
+    if r.returncode != 0 or not out_o.is_file():
+        if not os.environ.get("AIMATCH_QUIET"):
+            print(f"! compile faalde:\n{err[:2500]}")
+        return False
+    if err.strip() and not os.environ.get("AIMATCH_QUIET"):
+        print(err[:1200])
+    return True
+
+
+def extract_func(obj_bytes, func):
+    elf = ELFFile(io.BytesIO(obj_bytes))
+    symtab = elf.get_section_by_name(".symtab")
+    sym = next((s for s in symtab.iter_symbols() if s.name == func), None)
+    if sym is None:
+        print("! symbool niet gevonden; functies in object:")
+        for s in symtab.iter_symbols():
+            if s["st_info"]["type"] == "STT_FUNC" and s.name:
+                print("   ", s.name)
+        return None, None
+    shndx = sym["st_shndx"]
+    if not isinstance(shndx, int):
+    args = ap.parse_args()
+
+    if args.list_symbol:
+        hit = find_symbol(args.list_symbol, args.module)
+        if hit:
+            mod, mode, addr, size = hit
+            print(f"{args.list_symbol} module={mod} mode={mode} addr=0x{addr:08x} size={hex(size) if size else '?'}")
+            sys.exit(0)
+        print("niet gevonden"); sys.exit(2)
+
+    if not args.src or not args.func:
+        ap.error("--src en --func vereist")
+    info = find_symbol(args.func, args.module)
+    if info:
+        mod, mode, addr, size = info
+    else:
+        mod, mode, addr, size = args.module, "arm", args.addr, args.size
+    if args.addr is not None: addr = args.addr
+    if args.size is not None: size = args.size
+    if mod is None or addr is None or size is None:
+        print(f"! symbool {args.func} niet gevonden; geef --module/--addr/--size"); sys.exit(2)
+
+    target = target_bytes(mod, addr, size)
+    # wibo backend: temp object must live inside the container's mounted tree
+    # (same absolute path host<->container), so anchor it under the repo root.
+    tmp_root = None
+    if CC_BACKEND == "wibo":
+        tmp_root = ROOT / ".wibo_tmp"
+        tmp_root.mkdir(exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=tmp_root) as td:
+        out_o = pathlib.Path(td) / "cand.o"
+        if not compile_src(args.src, out_o, mode, args.mwcc):
+            print("RESULT match=False mismatches=?/? (compile error)"); sys.exit(2)
+        obj = out_o.read_bytes()
+    code, relocs = extract_func(obj, args.func)
+    if code is None:
+        print("RESULT match=False mismatches=?/? (symbool mist)"); sys.exit(2)
+    mism = compare(target, code, relocs, mode, addr, verbose=not args.quiet)
+    match = mism == 0 and len(code) == len(target)
+    if match:
+        print(f"{args.func}: MATCH ({len(target)} bytes, {len(relocs)} reloc-slots gewildcard)")
+    print(f"RESULT match={match} mismatches={mism}/{(len(target)+1)//2}")
+    sys.exit(0 if match else 1)
+
+
+if __name__ == "__main__":
+    main()
+
+2026-07-19T12:49:26.401875Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+2026-07-19T12:49:31.773176Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+
+2026-07-19T12:49:39.587276Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+apply patch
+patch: completed
+/Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds/ai/permuter_out/solhigh_02083a24.c
+diff --git a/ai/permuter_out/solhigh_02083a24.c b/ai/permuter_out/solhigh_02083a24.c
+index 8a22ea2c8b08592faa39c38b8d245223d83d09be..3cdb7ffc17bf3a5d419e122dc6128ee4f21085ed
+--- a/ai/permuter_out/solhigh_02083a24.c
++++ b/ai/permuter_out/solhigh_02083a24.c
+@@ -60,9 +60,12 @@
+         u8 kind;
+         void *cb;
+         cfg = &data_02155a14;
+-        kind = (u8)a1;
+         cb = (void *)func_02082fec;
+         i = 0;
++        asm {
++        init_done:
++        }
++        kind = (u8)a1;
+         for (; i < 2; i++) {
+             Helper *o = func_0208b7bc(a0->f4, cfg);
+             data_0217ae84[sub->f74].slots[i] = o;
+
+diff --git a/ai/permuter_out/solhigh_02083a24.c b/ai/permuter_out/solhigh_02083a24.c
+index 8a22ea2c8b08592faa39c38b8d245223d83d09be..3cdb7ffc17bf3a5d419e122dc6128ee4f21085ed
+--- a/ai/permuter_out/solhigh_02083a24.c
++++ b/ai/permuter_out/solhigh_02083a24.c
+@@ -60,9 +60,12 @@
+         u8 kind;
+         void *cb;
+         cfg = &data_02155a14;
+-        kind = (u8)a1;
+         cb = (void *)func_02082fec;
+         i = 0;
++        asm {
++        init_done:
++        }
++        kind = (u8)a1;
+         for (; i < 2; i++) {
+             Helper *o = func_0208b7bc(a0->f4, cfg);
+             data_0217ae84[sub->f74].slots[i] = o;
+
+exec
+/bin/zsh -lc "sed -n '1,70p' ../sm64ds-decomp/src/MultiCopyHalf.c; sed -n '1,80p' ../sm64ds-decomp/src/func_0205b504.c; sed -n '45,90p' ai/permuter_out/solhigh_02083a24.c; git status --short -- ai/permuter_out/solhigh_02083a24.c; git diff --check -- ai/permuter_out/solhigh_02083a24.c" in /Users/chrislamark/projects/recomp/nds_recompiler/ai-assisted-decomp/mkds
+ succeeded in 0ms:
+// HAND-ASM PRIMITIVE: byte-faithful asm-block match. This function was assembly
+// in the original (SDK/runtime primitive: block copy, matrix/math, CP15, context
+// switch, etc.), so there is no C to decompile it to -- the asm block is the
+// faithful source. Counts as matched (asm-primitive policy), not a C transcription.
+asm void MultiCopyHalf(void)
+{
+    mov ip, #0
+loop:
+    cmp ip, r2
+    ldrlth r3, [r0, ip]
+    strlth r3, [r1, ip]
+    addlt ip, ip, #2
+    blt loop
+    bx lr
+}
+extern char data_020a7f60[];
+
+void func_0205b504(int idx)
+{
+    asm {
+        ldr r2, =data_020a7f60
+        mov r1, #0xc
+        mla r1, r0, r1, r2
+        ldrb r0, [r1, #8]!
+        add r0, r0, #1
+        strb r0, [r1]
+    }
+}
+extern RacerEntry *data_0217ae84;      /* pointer to base of racer-entry array */
+extern int         data_02155a14;      /* config/data passed to the factory */
+extern Helper     *func_0208b7bc(void *a, void *b);
+extern void        func_02082fec(void);
+
+int func_02083a24(Owner *a0, int a1, Sub *sub)
+{
+    RacerEntry *e = &data_0217ae84[sub->f74];
+    if (e->slots[0] != 0 || e->slots[1] != 0)
+        return 0;
+
+    {
+        void *cfg;
+        u16 i;
+        u8 kind;
+        void *cb;
+        cfg = &data_02155a14;
+        cb = (void *)func_02082fec;
+        i = 0;
+        asm {
+        init_done:
+        }
+        kind = (u8)a1;
+        for (; i < 2; i++) {
+            Helper *o = func_0208b7bc(a0->f4, cfg);
+            data_0217ae84[sub->f74].slots[i] = o;
+            o->f94 = sub;
+            o->f9b = (u8)i;
+            o->f98 = kind;
+            o->f90 = cb;
+        }
+    }
+    return 1;
+}
+?? ai/permuter_out/solhigh_02083a24.c
+
+diff --git a/ai/permuter_out/solhigh_02083a24.c b/ai/permuter_out/solhigh_02083a24.c
+index 8a22ea2c8b08592faa39c38b8d245223d83d09be..3cdb7ffc17bf3a5d419e122dc6128ee4f21085ed
+--- a/ai/permuter_out/solhigh_02083a24.c
++++ b/ai/permuter_out/solhigh_02083a24.c
+@@ -60,9 +60,12 @@
+         u8 kind;
+         void *cb;
+         cfg = &data_02155a14;
+-        kind = (u8)a1;
+         cb = (void *)func_02082fec;
+         i = 0;
++        asm {
++        init_done:
++        }
++        kind = (u8)a1;
+         for (; i < 2; i++) {
+             Helper *o = func_0208b7bc(a0->f4, cfg);
+             data_0217ae84[sub->f74].slots[i] = o;
+
+codex
+READY
+diff --git a/ai/permuter_out/solhigh_02083a24.c b/ai/permuter_out/solhigh_02083a24.c
+index 8a22ea2c8b08592faa39c38b8d245223d83d09be..3cdb7ffc17bf3a5d419e122dc6128ee4f21085ed
+--- a/ai/permuter_out/solhigh_02083a24.c
++++ b/ai/permuter_out/solhigh_02083a24.c
+@@ -60,9 +60,12 @@
+         u8 kind;
+         void *cb;
+         cfg = &data_02155a14;
+-        kind = (u8)a1;
+         cb = (void *)func_02082fec;
+         i = 0;
++        asm {
++        init_done:
++        }
++        kind = (u8)a1;
+         for (; i < 2; i++) {
+             Helper *o = func_0208b7bc(a0->f4, cfg);
+             data_0217ae84[sub->f74].slots[i] = o;
+
+tokens used
+62,929
+READY
+== ronde 1: 
+error: unexpected argument '--cd' found
+
+  tip: to pass '--cd' as a value, use '-- --cd'
+
+Usage: codex exec resume <SESSION_ID> [PROMPT]
+
+For more information, try '--help'.
+== ronde 2: 
+error: unexpected argument '--cd' found
+
+  tip: to pass '--cd' as a value, use '-- --cd'
+
+Usage: codex exec resume <SESSION_ID> [PROMPT]
+
+For more information, try '--help'.
+== ronde 3: 
+error: unexpected argument '--cd' found
+
+  tip: to pass '--cd' as a value, use '-- --cd'
+
+Usage: codex exec resume <SESSION_ID> [PROMPT]
+
+For more information, try '--help'.
+== ronde 4: 
+FINAL: MATCH=no | rondes=4 | best= | 240s

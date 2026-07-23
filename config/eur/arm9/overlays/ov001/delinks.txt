@@ -1,0 +1,9 @@
+    .text       start:0x021804e0 end:0x02181aa0 kind:code align:32
+    .rodata     start:0x02181aa0 end:0x021a7684 kind:rodata align:4
+    .ctor       start:0x021a7684 end:0x021a7684 kind:rodata align:4
+    .data       start:0x021a76a0 end:0x021a99e0 kind:data align:32
+    .bss        start:0x021a99e0 end:0x021ca440 kind:bss align:32
+
+src/ov001/func_ov001_021814fc.c:
+    complete
+    .text       start:0x021814fc end:0x02181510

@@ -1,0 +1,1433 @@
+[
+ {
+  "addr": "0x21469a4",
+  "func": "Card_ContextThreadMain",
+  "module": "arm9",
+  "size": "0x5c",
+  "obj": "ai/sdk_objs/Card_ContextThreadMain.o",
+  "donor": "CARDi_TaskThread",
+  "relocs": 4
+ },
+ {
+  "addr": "0x2146c98",
+  "func": "MTX_Identity22_",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/MTX_Identity22_.o",
+  "donor": "MTX_Identity22_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2146cb0",
+  "func": "func_02146cb0",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_02146cb0.o",
+  "donor": "MTX_Rot22_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2146cbc",
+  "func": "MTX_Identity33_",
+  "module": "arm9",
+  "size": "0x24",
+  "obj": "ai/sdk_objs/MTX_Identity33_.o",
+  "donor": "MTX_Identity33_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2146d28",
+  "func": "MTX_RotX33__from_thumb",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/MTX_RotX33__from_thumb.o",
+  "donor": "MTX_RotX33_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2146d44",
+  "func": "MTX_RotY33__from_thumb",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/MTX_RotY33__from_thumb.o",
+  "donor": "MTX_RotY33_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2146d60",
+  "func": "MTX_RotZ33__from_thumb",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/MTX_RotZ33__from_thumb.o",
+  "donor": "MTX_RotZ33_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x21471bc",
+  "func": "Matrix4x3_Identity",
+  "module": "arm9",
+  "size": "0x28",
+  "obj": "ai/sdk_objs/Matrix4x3_Identity.o",
+  "donor": "MTX_Identity43_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x21471e4",
+  "func": "func_021471e4",
+  "module": "arm9",
+  "size": "0x34",
+  "obj": "ai/sdk_objs/func_021471e4.o",
+  "donor": "MTX_Copy43To44_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2147218",
+  "func": "MTX_Scale43__from_thumb",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/MTX_Scale43__from_thumb.o",
+  "donor": "MTX_Scale43_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2147230",
+  "func": "MTX_RotX43__from_thumb",
+  "module": "arm9",
+  "size": "0x20",
+  "obj": "ai/sdk_objs/MTX_RotX43__from_thumb.o",
+  "donor": "MTX_RotX43_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2147250",
+  "func": "MTX_RotY43__from_thumb",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/MTX_RotY43__from_thumb.o",
+  "donor": "MTX_RotY43_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2147954",
+  "func": "func_02147954",
+  "module": "arm9",
+  "size": "0x2c",
+  "obj": "ai/sdk_objs/func_02147954.o",
+  "donor": "MTX_Identity44_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2147980",
+  "func": "func_02147980",
+  "module": "arm9",
+  "size": "0x34",
+  "obj": "ai/sdk_objs/func_02147980.o",
+  "donor": "MTX_Copy44To43_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214c728",
+  "func": "CopySingle384",
+  "module": "arm9",
+  "size": "0x24",
+  "obj": "ai/sdk_objs/CopySingle384.o",
+  "donor": "GX_SendFifo48B",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214a54c",
+  "func": "GXi_NopClearFifo128_",
+  "module": "arm9",
+  "size": "0x94",
+  "obj": "ai/sdk_objs/GXi_NopClearFifo128_.o",
+  "donor": "GXi_NopClearFifo128_",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214cfe4",
+  "func": "Mem_CpuFill16",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/Mem_CpuFill16.o",
+  "donor": "MIi_CpuClear16",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214cffc",
+  "func": "CopyMemory16",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/CopyMemory16.o",
+  "donor": "MIi_CpuCopy16",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2000920",
+  "func": "Crt0_MemorySet32",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Crt0_MemorySet32.o",
+  "donor": "MIi_CpuClear32",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d02c",
+  "func": "Mem_CpuCopy32",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/Mem_CpuCopy32.o",
+  "donor": "MIi_CpuCopy32",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d044",
+  "func": "MIi_CpuSend32",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/MIi_CpuSend32.o",
+  "donor": "MIi_CpuSend32",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d05c",
+  "func": "Mem_CpuFastMemorySet",
+  "module": "arm9",
+  "size": "0x4c",
+  "obj": "ai/sdk_objs/Mem_CpuFastMemorySet.o",
+  "donor": "MIi_CpuClearFast",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d0a8",
+  "func": "MIi_CpuCopyFast",
+  "module": "arm9",
+  "size": "0x38",
+  "obj": "ai/sdk_objs/MIi_CpuCopyFast.o",
+  "donor": "MIi_CpuCopyFast",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d0e0",
+  "func": "asm_MI_Copy32B",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/asm_MI_Copy32B.o",
+  "donor": "MI_Copy32B",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d0fc",
+  "func": "asm_MI_Copy36B",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/asm_MI_Copy36B.o",
+  "donor": "MI_Copy36B",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d118",
+  "func": "asm_MI_Copy48B",
+  "module": "arm9",
+  "size": "0x24",
+  "obj": "ai/sdk_objs/asm_MI_Copy48B.o",
+  "donor": "MI_Copy48B",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d13c",
+  "func": "asm_MI_Copy64B",
+  "module": "arm9",
+  "size": "0x2c",
+  "obj": "ai/sdk_objs/asm_MI_Copy64B.o",
+  "donor": "MI_Copy64B",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d168",
+  "func": "Mem_CpuFill8",
+  "module": "arm9",
+  "size": "0x94",
+  "obj": "ai/sdk_objs/Mem_CpuFill8.o",
+  "donor": "MI_CpuFill8",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d1fc",
+  "func": "Mem_CpuCopy8",
+  "module": "arm9",
+  "size": "0x130",
+  "obj": "ai/sdk_objs/Mem_CpuCopy8.o",
+  "donor": "MI_CpuCopy8",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d32c",
+  "func": "func_0214d32c",
+  "module": "arm9",
+  "size": "0x10",
+  "obj": "ai/sdk_objs/func_0214d32c.o",
+  "donor": "MI_Zero36B",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d344",
+  "func": "DecompressLzss",
+  "module": "arm9",
+  "size": "0x94",
+  "obj": "ai/sdk_objs/DecompressLzss.o",
+  "donor": "MI_UncompressLZ8",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200eddc",
+  "func": "DC_func_0002",
+  "module": "arm9",
+  "size": "0x2c",
+  "obj": "ai/sdk_objs/DC_func_0002.o",
+  "donor": "DC_StoreAll",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200ee08",
+  "func": "DC_FlushAll",
+  "module": "arm9",
+  "size": "0x34",
+  "obj": "ai/sdk_objs/DC_FlushAll.o",
+  "donor": "DC_FlushAll",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200ee3c",
+  "func": "DC_InvalidateRangeNoClean",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/DC_InvalidateRangeNoClean.o",
+  "donor": "DC_InvalidateRange",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200ee58",
+  "func": "DC_SomeClean",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/DC_SomeClean.o",
+  "donor": "DC_StoreRange",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200ee74",
+  "func": "Arm_FlushRange",
+  "module": "arm9",
+  "size": "0x24",
+  "obj": "ai/sdk_objs/Arm_FlushRange.o",
+  "donor": "DC_FlushRange",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200ee98",
+  "func": "Mem_DcDrainWriteBuffer",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/Mem_DcDrainWriteBuffer.o",
+  "donor": "DC_WaitWriteBufferEmpty",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200eea4",
+  "func": "IC_InvalidateRangeNoClean",
+  "module": "arm9",
+  "size": "0x1c",
+  "obj": "ai/sdk_objs/IC_InvalidateRangeNoClean.o",
+  "donor": "IC_InvalidateRange",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200e6ec",
+  "func": "Arm_Context_Save",
+  "module": "arm9",
+  "size": "0x4c",
+  "obj": "ai/sdk_objs/Arm_Context_Save.o",
+  "donor": "OS_SaveContext",
+  "relocs": 1
+ },
+ {
+  "addr": "0x200e738",
+  "func": "Arm_Context_Load",
+  "module": "arm9",
+  "size": "0x44",
+  "obj": "ai/sdk_objs/Arm_Context_Load.o",
+  "donor": "OS_LoadContext",
+  "relocs": 1
+ },
+ {
+  "addr": "0x200f3f4",
+  "func": "Os_SaveExceptionContext",
+  "module": "arm9",
+  "size": "0x90",
+  "obj": "ai/sdk_objs/Os_SaveExceptionContext.o",
+  "donor": "OSi_SetExContext",
+  "relocs": 1
+ },
+ {
+  "addr": "0x200f36c",
+  "func": "Os_ExceptionHandler",
+  "module": "arm9",
+  "size": "0x74",
+  "obj": "ai/sdk_objs/Os_ExceptionHandler.o",
+  "donor": "OSi_ExceptionHandler",
+  "relocs": 3
+ },
+ {
+  "addr": "0x1ff8000",
+  "func": "func_01ff8000",
+  "module": "itcm",
+  "size": "0x58",
+  "obj": "ai/sdk_objs/func_01ff8000.o",
+  "donor": "OS_IrqHandler",
+  "relocs": 2
+ },
+ {
+  "addr": "0x200f33c",
+  "func": "Os_EnablePU",
+  "module": "arm9",
+  "size": "0x10",
+  "obj": "ai/sdk_objs/Os_EnablePU.o",
+  "donor": "OS_EnableProtectionUnit",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200f34c",
+  "func": "Os_DisablePU",
+  "module": "arm9",
+  "size": "0x10",
+  "obj": "ai/sdk_objs/Os_DisablePU.o",
+  "donor": "OS_DisableProtectionUnit",
+  "relocs": 0
+ },
+ {
+  "addr": "0x214d018",
+  "func": "MIi_CpuClear32",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/MIi_CpuClear32.o",
+  "donor": "OSi_CpuClear32",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200cd1c",
+  "func": "func_0200cd1c",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_0200cd1c.o",
+  "donor": "OS_UnLockCartridge",
+  "relocs": 1
+ },
+ {
+  "addr": "0x200cd28",
+  "func": "Os_AllocateLockId",
+  "module": "arm9",
+  "size": "0x58",
+  "obj": "ai/sdk_objs/Os_AllocateLockId.o",
+  "donor": "OS_GetLockID",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200cd80",
+  "func": "Os_ReleaseLockId",
+  "module": "arm9",
+  "size": "0x30",
+  "obj": "ai/sdk_objs/Os_ReleaseLockId.o",
+  "donor": "OS_ReleaseLockID",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fc8c",
+  "func": "Os_EnableIrq",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Os_EnableIrq.o",
+  "donor": "OS_EnableInterrupts",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fca0",
+  "func": "Os_DisableIrq",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Os_DisableIrq.o",
+  "donor": "OS_DisableInterrupts",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fcb4",
+  "func": "Os_RestoreIrq",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/Os_RestoreIrq.o",
+  "donor": "OS_RestoreInterrupts",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fccc",
+  "func": "Os_DisableIrqFiq",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Os_DisableIrqFiq.o",
+  "donor": "OS_DisableInterrupts_IrqAndFiq",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fce0",
+  "func": "Os_RestoreIrqFiq",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/Os_RestoreIrqFiq.o",
+  "donor": "OS_RestoreInterrupts_IrqAndFiq",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fcf8",
+  "func": "Arm_GetProcessorMode",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/Arm_GetProcessorMode.o",
+  "donor": "OS_GetProcMode",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200f328",
+  "func": "GetDtcmStartAddress",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/GetDtcmStartAddress.o",
+  "donor": "OS_GetDTCMAddress",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fd04",
+  "func": "Os_Halt",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/Os_Halt.o",
+  "donor": "OS_Halt",
+  "relocs": 0
+ },
+ {
+  "addr": "0x200fd1c",
+  "func": "Os_Terminate",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Os_Terminate.o",
+  "donor": "OS_Terminate",
+  "relocs": 2
+ },
+ {
+  "addr": "0x200dbd4",
+  "func": "Os_IdleThreadMain",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Os_IdleThreadMain.o",
+  "donor": "OSi_IdleThreadProc",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2004db0",
+  "func": "Fs_IsInitialized",
+  "module": "arm9",
+  "size": "0x10",
+  "obj": "ai/sdk_objs/Fs_IsInitialized.o",
+  "donor": "OS_IsThreadAvailable",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2000a5c",
+  "func": "Crt0_InitializePU",
+  "module": "arm9",
+  "size": "0xe8",
+  "obj": "ai/sdk_objs/Crt0_InitializePU.o",
+  "donor": "init_cp15",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2000934",
+  "func": "Crt0_DecompressFlushCode",
+  "module": "arm9",
+  "size": "0xac",
+  "obj": "ai/sdk_objs/Crt0_DecompressFlushCode.o",
+  "donor": "MIi_UncompressBackward",
+  "relocs": 0
+ },
+ {
+  "addr": "0x201733c",
+  "func": "IntrusiveListWrapper_NextItem",
+  "module": "arm9",
+  "size": "0x18",
+  "obj": "ai/sdk_objs/IntrusiveListWrapper_NextItem.o",
+  "donor": "NNS_FndGetNextListObject",
+  "relocs": 0
+ },
+ {
+  "addr": "0x2084958",
+  "func": "Model_SetCullMode",
+  "module": "arm9",
+  "size": "0x10",
+  "obj": "ai/sdk_objs/Model_SetCullMode.o",
+  "donor": "AllocatorFreeForExpHeap_0x020d45bc",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2020e3c",
+  "func": "Sound_UnlockMutex",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Sound_UnlockMutex.o",
+  "donor": "SNDi_UnlockMutex_ov030_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2020e50",
+  "func": "Sound_LockMutex",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/Sound_LockMutex.o",
+  "donor": "SNDi_UnlockMutex_ov031_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x204bca0",
+  "func": "func_0204bca0",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_0204bca0.o",
+  "donor": "SNDi_UnlockMutex_ov032_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c7450",
+  "func": "func_020c7450",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c7450.o",
+  "donor": "SNDi_UnlockMutex_ov033_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c767c",
+  "func": "func_020c767c",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c767c.o",
+  "donor": "SNDi_UnlockMutex_ov034_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c778c",
+  "func": "func_020c778c",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c778c.o",
+  "donor": "SNDi_UnlockMutex_ov035_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c79c0",
+  "func": "func_020c79c0",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c79c0.o",
+  "donor": "SNDi_UnlockMutex_ov036_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c7af8",
+  "func": "func_020c7af8",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c7af8.o",
+  "donor": "SNDi_UnlockMutex_ov037_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c7c08",
+  "func": "func_020c7c08",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c7c08.o",
+  "donor": "SNDi_UnlockMutex_ov038_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c7d40",
+  "func": "func_020c7d40",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c7d40.o",
+  "donor": "SNDi_UnlockMutex_ov039_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c7f70",
+  "func": "func_020c7f70",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c7f70.o",
+  "donor": "SNDi_UnlockMutex_ov040_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c8084",
+  "func": "func_020c8084",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c8084.o",
+  "donor": "SNDi_UnlockMutex_ov041_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20c8240",
+  "func": "func_020c8240",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020c8240.o",
+  "donor": "SNDi_UnlockMutex_ov042_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ca3d0",
+  "func": "func_020ca3d0",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ca3d0.o",
+  "donor": "SNDi_UnlockMutex_ov043_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ca520",
+  "func": "func_020ca520",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ca520.o",
+  "donor": "SNDi_UnlockMutex_ov044_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ca65c",
+  "func": "func_020ca65c",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ca65c.o",
+  "donor": "SNDi_UnlockMutex_ov045_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cce10",
+  "func": "func_020cce10",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cce10.o",
+  "donor": "SNDi_UnlockMutex_ov046_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ccf58",
+  "func": "func_020ccf58",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ccf58.o",
+  "donor": "SNDi_UnlockMutex_ov047_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cd2dc",
+  "func": "func_020cd2dc",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cd2dc.o",
+  "donor": "SNDi_UnlockMutex_ov048_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cd438",
+  "func": "func_020cd438",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cd438.o",
+  "donor": "SNDi_UnlockMutex_ov049_0x020b3220",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cd584",
+  "func": "func_020cd584",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cd584.o",
+  "donor": "SNDi_UnlockMutex_ov050_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cd6e0",
+  "func": "func_020cd6e0",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cd6e0.o",
+  "donor": "SNDi_UnlockMutex_ov051_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cd830",
+  "func": "func_020cd830",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cd830.o",
+  "donor": "SNDi_UnlockMutex_ov052_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cd9c8",
+  "func": "func_020cd9c8",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cd9c8.o",
+  "donor": "SNDi_UnlockMutex_ov053_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cdb40",
+  "func": "func_020cdb40",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cdb40.o",
+  "donor": "SNDi_UnlockMutex_ov054_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cdc7c",
+  "func": "func_020cdc7c",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cdc7c.o",
+  "donor": "SNDi_UnlockMutex_ov055_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cddd0",
+  "func": "func_020cddd0",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cddd0.o",
+  "donor": "SNDi_UnlockMutex_ov056_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cdf04",
+  "func": "func_020cdf04",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cdf04.o",
+  "donor": "SNDi_UnlockMutex_ov057_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ce0ec",
+  "func": "func_020ce0ec",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ce0ec.o",
+  "donor": "SNDi_UnlockMutex_ov058_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ce250",
+  "func": "func_020ce250",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ce250.o",
+  "donor": "SNDi_UnlockMutex_ov059_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ce3cc",
+  "func": "func_020ce3cc",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ce3cc.o",
+  "donor": "SNDi_UnlockMutex_ov060_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ce534",
+  "func": "func_020ce534",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ce534.o",
+  "donor": "SNDi_UnlockMutex_ov061_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20ce694",
+  "func": "func_020ce694",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020ce694.o",
+  "donor": "SNDi_UnlockMutex_ov062_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cedf8",
+  "func": "func_020cedf8",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cedf8.o",
+  "donor": "SNDi_UnlockMutex_ov063_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20cf2fc",
+  "func": "func_020cf2fc",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020cf2fc.o",
+  "donor": "SNDi_UnlockMutex_ov064_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20d0108",
+  "func": "func_020d0108",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020d0108.o",
+  "donor": "SNDi_UnlockMutex_ov065_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20d026c",
+  "func": "func_020d026c",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020d026c.o",
+  "donor": "SNDi_UnlockMutex_ov066_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x20d0e28",
+  "func": "func_020d0e28",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_020d0e28.o",
+  "donor": "SNDi_UnlockMutex_ov067_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2108ec4",
+  "func": "SetGlobalSdatActive",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/SetGlobalSdatActive.o",
+  "donor": "SNDi_UnlockMutex_ov068_0x020b5a20",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148d84",
+  "func": "GX_DisableBankForSubOBJ",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/GX_DisableBankForSubOBJ.o",
+  "donor": "SNDi_UnlockMutex_ov070_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148d98",
+  "func": "GX_DisableBankForSubBG",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/GX_DisableBankForSubBG.o",
+  "donor": "SNDi_UnlockMutex_ov071_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148dac",
+  "func": "GX_DisableBankForLCDC",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/GX_DisableBankForLCDC.o",
+  "donor": "SNDi_UnlockMutex_ov072_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148dc0",
+  "func": "GX_DisableBankForARM7",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/GX_DisableBankForARM7.o",
+  "donor": "SNDi_UnlockMutex_ov073_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148dd4",
+  "func": "GX_DisableBankForClearImage",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/GX_DisableBankForClearImage.o",
+  "donor": "SNDi_UnlockMutex_ov074_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148de8",
+  "func": "GX_DisableBankForTexPltt",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/GX_DisableBankForTexPltt.o",
+  "donor": "SNDi_UnlockMutex_ov075_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148dfc",
+  "func": "func_02148dfc",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02148dfc.o",
+  "donor": "SNDi_UnlockMutex_ov076_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148e58",
+  "func": "func_02148e58",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02148e58.o",
+  "donor": "SNDi_UnlockMutex_ov077_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148e6c",
+  "func": "func_02148e6c",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02148e6c.o",
+  "donor": "SNDi_UnlockMutex_ov078_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148fb4",
+  "func": "func_02148fb4",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02148fb4.o",
+  "donor": "SNDi_UnlockMutex_ov079_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148fc8",
+  "func": "func_02148fc8",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02148fc8.o",
+  "donor": "SNDi_UnlockMutex_ov080_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148fdc",
+  "func": "func_02148fdc",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02148fdc.o",
+  "donor": "SNDi_UnlockMutex_ov081_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2148ff0",
+  "func": "func_02148ff0",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02148ff0.o",
+  "donor": "SNDi_UnlockMutex_ov082_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x2149004",
+  "func": "func_02149004",
+  "module": "arm9",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_02149004.o",
+  "donor": "SNDi_UnlockMutex_ov083_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x21814fc",
+  "func": "func_ov001_021814fc",
+  "module": "ov001",
+  "size": "0x14",
+  "obj": "ai/sdk_objs/func_ov001_021814fc.o",
+  "donor": "SNDi_UnlockMutex_ov084_0x020b8100",
+  "relocs": 2
+ },
+ {
+  "addr": "0x201667c",
+  "func": "TEQSub_Fn35",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn35.o",
+  "donor": "WM_EndKeySharing_0x0205bb78",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016688",
+  "func": "func_02016688",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_02016688.o",
+  "donor": "WM_EndKeySharing_0x020b3928",
+  "relocs": 1
+ },
+ {
+  "addr": "0x20166f4",
+  "func": "func_020166f4",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_020166f4.o",
+  "donor": "WM_EndKeySharing_0x020b3a70",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016700",
+  "func": "TEQSub_Fn30",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn30.o",
+  "donor": "WM_EndKeySharing_0x020b3b08",
+  "relocs": 1
+ },
+ {
+  "addr": "0x201670c",
+  "func": "TEQSub_Fn29",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn29.o",
+  "donor": "WM_EndKeySharing_0x020b3e80",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016718",
+  "func": "TEQSub_Fn28",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn28.o",
+  "donor": "WM_EndKeySharing_0x020b6128",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016724",
+  "func": "TEQSub_Fn27",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn27.o",
+  "donor": "WM_EndKeySharing_0x020b6270",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016730",
+  "func": "TEQSub_Fn26",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn26.o",
+  "donor": "WM_EndKeySharing_0x020b6308",
+  "relocs": 1
+ },
+ {
+  "addr": "0x201673c",
+  "func": "TEQSub_Fn25",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn25.o",
+  "donor": "WM_EndKeySharing_0x020b6680",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016748",
+  "func": "TEQSub_Fn24",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn24.o",
+  "donor": "WM_EndKeySharing_0x020b8808",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016754",
+  "func": "TEQSub_Fn23",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn23.o",
+  "donor": "WM_EndKeySharing_0x020b8950",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016760",
+  "func": "TEQSub_Fn22",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn22.o",
+  "donor": "WM_EndKeySharing_0x020b89e8",
+  "relocs": 1
+ },
+ {
+  "addr": "0x201676c",
+  "func": "func_0201676c",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_0201676c.o",
+  "donor": "WM_EndKeySharing_0x020b8d60",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016778",
+  "func": "TEQSub_Fn20",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn20.o",
+  "donor": "WM_EndKeySharing_0x020ba244",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016784",
+  "func": "func_02016784",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_02016784.o",
+  "donor": "WM_EndKeySharing_0x020baec8",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016790",
+  "func": "func_02016790",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_02016790.o",
+  "donor": "WM_EndKeySharing_0x020bb010",
+  "relocs": 1
+ },
+ {
+  "addr": "0x20167fc",
+  "func": "func_020167fc",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_020167fc.o",
+  "donor": "WM_EndKeySharing_0x020bb0a8",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016808",
+  "func": "func_02016808",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_02016808.o",
+  "donor": "WM_EndKeySharing_0x020bb420",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016814",
+  "func": "TEQSub_Fn13",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn13.o",
+  "donor": "WM_EndKeySharing_ov166_0x020cc37c",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016820",
+  "func": "TEQSub_Fn12",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn12.o",
+  "donor": "WM_EndKeySharing_ov167_0x020cffbc",
+  "relocs": 1
+ },
+ {
+  "addr": "0x201682c",
+  "func": "TEQSub_Fn11",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn11.o",
+  "donor": "WM_EndKeySharing_ov168_0x020d3bfc",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016838",
+  "func": "TEQSub_Fn10",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn10.o",
+  "donor": "WM_EndKeySharing_ov169_0x020cc37c",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016844",
+  "func": "TEQSub_Fn9",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn9.o",
+  "donor": "WM_EndKeySharing_ov171_0x020cc384",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016850",
+  "func": "TEQSub_Fn8",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn8.o",
+  "donor": "WM_EndKeySharing_ov175_0x020cc37c",
+  "relocs": 1
+ },
+ {
+  "addr": "0x201685c",
+  "func": "TEQSub_Fn7",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn7.o",
+  "donor": "WM_EndKeySharing_ov176_0x020cffbc",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016868",
+  "func": "TEQSub_Fn6",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn6.o",
+  "donor": "WM_EndKeySharing_ov292_0x020d3ab4",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016874",
+  "func": "func_02016874",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/func_02016874.o",
+  "donor": "WM_EndKeySharing_ov292_0x020d3ac0",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2133f84",
+  "func": "CheckZetaInvokeBeta",
+  "module": "arm9",
+  "size": "0x54",
+  "obj": "ai/sdk_objs/CheckZetaInvokeBeta.o",
+  "donor": "exit",
+  "relocs": 4
+ },
+ {
+  "addr": "0x2133fd8",
+  "func": "OnAssertionFailed",
+  "module": "arm9",
+  "size": "0x30",
+  "obj": "ai/sdk_objs/OnAssertionFailed.o",
+  "donor": "abort",
+  "relocs": 3
+ },
+ {
+  "addr": "0x21343b0",
+  "func": "func_021343b0",
+  "module": "arm9",
+  "size": "0x70",
+  "obj": "ai/sdk_objs/func_021343b0.o",
+  "donor": "__flush_all",
+  "relocs": 2
+ },
+ {
+  "addr": "0x214177c",
+  "func": "func_0214177c",
+  "module": "arm9",
+  "size": "0x3e0",
+  "obj": "ai/sdk_objs/func_0214177c.o",
+  "donor": "__two_exp",
+  "relocs": 47
+ },
+ {
+  "addr": "0x2134420",
+  "func": "abs",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/abs.o",
+  "donor": "labs",
+  "relocs": 0
+ },
+ {
+  "addr": "0x213ee6c",
+  "func": "func_0213ee6c",
+  "module": "arm9",
+  "size": "0x1234",
+  "obj": "ai/sdk_objs/func_0213ee6c.o",
+  "donor": "__ieee754_pow",
+  "relocs": 136
+ },
+ {
+  "addr": "0x21400a0",
+  "func": "copysign",
+  "module": "arm9",
+  "size": "0x28",
+  "obj": "ai/sdk_objs/copysign.o",
+  "donor": "copysign",
+  "relocs": 0
+ },
+ {
+  "addr": "0x21400c8",
+  "func": "func_021400c8",
+  "module": "arm9",
+  "size": "0x24",
+  "obj": "ai/sdk_objs/func_021400c8.o",
+  "donor": "fabs",
+  "relocs": 0
+ },
+ {
+  "addr": "0x21400ec",
+  "func": "func_021400ec",
+  "module": "arm9",
+  "size": "0xc0",
+  "obj": "ai/sdk_objs/func_021400ec.o",
+  "donor": "frexp",
+  "relocs": 1
+ },
+ {
+  "addr": "0x2016880",
+  "func": "TEQSub_Fn4",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/TEQSub_Fn4.o",
+  "donor": "log",
+  "relocs": 1
+ },
+ {
+  "addr": "0x201797c",
+  "func": "Mem_Exp_Finalize",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/Mem_Exp_Finalize.o",
+  "donor": "log10f",
+  "relocs": 1
+ },
+ {
+  "addr": "0x20180d4",
+  "func": "Mem_Frame_Finalize",
+  "module": "arm9",
+  "size": "0xc",
+  "obj": "ai/sdk_objs/Mem_Frame_Finalize.o",
+  "donor": "pow",
+  "relocs": 1
+ },
+ {
+  "addr": "0x213c9c0",
+  "func": "wmemchr",
+  "module": "arm9",
+  "size": "0x28",
+  "obj": "ai/sdk_objs/wmemchr.o",
+  "donor": "wmemchr",
+  "relocs": 0
+ },
+ {
+  "addr": "0x213c9e8",
+  "func": "func_0213c9e8",
+  "module": "arm9",
+  "size": "0x10",
+  "obj": "ai/sdk_objs/func_0213c9e8.o",
+  "donor": "wmemcpy",
+  "relocs": 1
+ }
+]

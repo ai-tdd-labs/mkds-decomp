@@ -1,0 +1,10 @@
+// PURPOSE: Sets the top screen's BG3 display configuration.
+// Passes the top engine's BG3 configuration area and six settings onward.
+// The exact meaning of the individual settings is probably display-engine specific.
+
+extern void DisplayEngineConfig_SetBg3Config(void *cfg, int a1, int a2, int a3, int a4, int a5, int a6);
+
+void DisplayConfig_SetTopEngineBg3Config(char *base, int a1, int a2, int a3, int a4, int a5, int a6)
+{
+    DisplayEngineConfig_SetBg3Config(base + 0x28, a1, a2, a3, a4, a5, a6);
+}

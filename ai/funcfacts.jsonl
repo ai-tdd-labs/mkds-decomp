@@ -1,0 +1,677 @@
+{"func": "AllocateFindFileBuffer_KME_KM1_KM2_KSB_from_thumb", "sig": "void * AllocateFindFileBuffer_KME_KM1_KM2_KSB_from_thumb(const char *path)", "doc": "Looks up and loads a file in one of the scene archives (probably KME/KM1/KM2/KSB)"}
+{"func": "Anim_LoadFindAnimationBlock", "sig": "AnimationBlock * Anim_LoadFindAnimationBlock(AnimationFileHeader *animation, unsigned int fileMagic, unsigned int blockMagic)", "doc": "PURPOSE: Finds an animation block with a requested type"}
+{"func": "Arc_MountArchive_from_thumb", "sig": "void Arc_MountArchive_from_thumb(int idx, int scene)", "doc": "Mounts one archive from the static archive table (0x021543e0, stride 0x18) by index, unless it is already mounted (runtime entry +0x68 != 0)"}
+{"func": "Card_SendToFifo", "sig": "void Card_SendToFifo(u32 commandWord, u32 retryDelay)", "doc": "PURPOSE: Sends a card command through the system FIFO"}
+{"func": "CheckExtraKartUnlockFlagsWith_from_thumb", "sig": "int CheckExtraKartUnlockFlagsWith_from_thumb(void *saveData)", "doc": "PURPOSE: Reports how many kart choices are unlocked"}
+{"func": "ComputeTotalCpatDistance_from_thumb", "sig": "void ComputeTotalCpatDistance_from_thumb(void)", "doc": "PURPOSE: Calculates the total distance along the course's CPAT route"}
+{"func": "CopyBgData_Bg0_Bottom", "sig": "void CopyBgData_Bg0_Bottom(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyBgData_Bg0_Top", "sig": "void CopyBgData_Bg0_Top(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyBgData_Bg1_Bottom", "sig": "void CopyBgData_Bg1_Bottom(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyBgData_Bg1_Top", "sig": "void CopyBgData_Bg1_Top(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyBgData_Bg2_Bottom", "sig": "void CopyBgData_Bg2_Bottom(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyBgData_Bg2_Top", "sig": "void CopyBgData_Bg2_Top(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyBgData_Bg3_Bottom", "sig": "void CopyBgData_Bg3_Bottom(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyBgData_Bg3_Top", "sig": "void CopyBgData_Bg3_Top(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "CopyOamBuffersToMemory_from_thumb", "sig": "void CopyOamBuffersToMemory_from_thumb(void *main_buffer, void *sub_buffer)", "doc": "PURPOSE: Copies prepared sprite buffers into OAM memory"}
+{"func": "CreateCEML_from_thumb", "sig": "void CreateCEML_from_thumb(void *heap)", "doc": "PURPOSE: Load the kart-select model resources and build the model block for the current kart"}
+{"func": "CreateGlobal78_from_thumb", "sig": "void CreateGlobal78_from_thumb(int width, int height, int textCapacity)", "doc": "PURPOSE: Creates the workspace used by the on-screen keyboard"}
+{"func": "CreateLoadPhysicalParams", "sig": "void CreateLoadPhysicalParams(void *heap, int count)", "doc": "PURPOSE: Sets up the memory that holds the karts' and characters' driving stats and loads them from the game files"}
+{"func": "CreateMapObjectFromModel_from_thumb", "sig": "MapModelObject * CreateMapObjectFromModel_from_thumb(MapObjectOwner *owner, void *modelName)", "doc": "PURPOSE: Creates a map object from a model file"}
+{"func": "DisplayConfig_SetBottomEngineBg2Config2", "sig": "void DisplayConfig_SetBottomEngineBg2Config2(char *base, int a1, int a2, int a3, int a4, int a5, int a6)", "doc": ""}
+{"func": "DisplayConfig_SetBottomEngineBg3Config", "sig": "void DisplayConfig_SetBottomEngineBg3Config(char *base, int a1, int a2, int a3, int a4, int a5, int a6)", "doc": ""}
+{"func": "DisplayConfig_SetBottomEngineBg3Config_0", "sig": "void DisplayConfig_SetBottomEngineBg3Config_0(char *base, int a1, int a2, int a3, int a4, int a5, int a6)", "doc": ""}
+{"func": "DisplayConfig_SetBottomEngineBg3Config_1", "sig": "void DisplayConfig_SetBottomEngineBg3Config_1(char *base, int a1, int a2, int a3, int a4, int a5, int a6)", "doc": ""}
+{"func": "DisposeDrivers", "sig": "void DisposeDrivers(void)", "doc": "PURPOSE: Disposes every active driver context"}
+{"func": "DisposeNavigationContext_from_thumb", "sig": "void DisposeNavigationContext_from_thumb(void)", "doc": "PURPOSE: Frees the navigation screen contexts"}
+{"func": "ExplosionKind_Bombcore2_UpdateFn", "sig": "void ExplosionKind_Bombcore2_UpdateFn(Bombcore2Explosion *explosion)", "doc": "PURPOSE: Advances the bomb-core explosion until its lifetime ends"}
+{"func": "FX_Div", "sig": "void FX_Div(void *a0)", "doc": ""}
+{"func": "FX_DivAsync", "sig": "void FX_DivAsync(fx32 numerator, fx32 denominator)", "doc": ""}
+{"func": "FX_GetDivResult", "sig": "fx32 FX_GetDivResult(void)", "doc": ""}
+{"func": "FX_Inv", "sig": "void FX_Inv(void *a0)", "doc": ""}
+{"func": "FX_InvAsync", "sig": "void FX_InvAsync(fx32 x)", "doc": ""}
+{"func": "FindFormatGhostBinPath", "sig": "int FindFormatGhostBinPath(int internalId, char *buf, unsigned int len)", "doc": "Looks up the course id for an internal id and then formats the ghost file path \"/data/ghost/ghost_%03d.bin\" into buf"}
+{"func": "FormatCharacterEmblemNsbcaPath", "sig": "char * FormatCharacterEmblemNsbcaPath(int character, int animation)", "doc": "PURPOSE: Builds the animation path for a character emblem"}
+{"func": "FormatCharacterEmblemNsbmdPath", "sig": "char * FormatCharacterEmblemNsbmdPath(int character, int alt)", "doc": "PURPOSE: Builds the file path of a character's emblem 3D model (.nsbmd)"}
+{"func": "FormatCharacterEmblemNsbtxPath", "sig": "char * FormatCharacterEmblemNsbtxPath(int character, int flag)", "doc": "PURPOSE: Builds the file path of a character's emblem texture (.nsbtx)"}
+{"func": "FormatCharacterFaceAnimationNsbtpPath", "sig": "char * FormatCharacterFaceAnimationNsbtpPath(void)", "doc": "Builds the path to the face animations: \"%s%scommon/P_faceanim.nsbtp\" in the shared path buffer (0x100) and returns it."}
+{"func": "FormatCharacterKartNsbmdPath", "sig": "char * FormatCharacterKartNsbmdPath(int character)", "doc": "PURPOSE: Builds the file path to a character's kart 3D model (.nsbmd)"}
+{"func": "FormatCharacterKartNsbtxPath", "sig": "char * FormatCharacterKartNsbtxPath(int character)", "doc": "PURPOSE: Builds the file path of the texture (.nsbtx) for a character's kart"}
+{"func": "FormatCharacterPath", "sig": "char * FormatCharacterPath(int character)", "doc": "PURPOSE: Builds a character's asset file path into the shared path buffer"}
+{"func": "FormatCourseCarc_from_thumb", "sig": "char * FormatCourseCarc_from_thumb(char *output, int courseId, int loadTextureCarc)", "doc": "PURPOSE: Builds the archive path for a course"}
+{"func": "FormatEmblemNsbtx", "sig": "char * FormatEmblemNsbtx(int character)", "doc": "Builds the emblem texture path for a character: \"%semblem/%s_emblem.nsbtx\" with the character name from a 12-byte struct table (data_02155cf4)"}
+{"func": "FormatKartShadowNsbmdPath", "sig": "char * FormatKartShadowNsbmdPath(int kart)", "doc": "PURPOSE: Builds the file path of a kart's shadow model (sh_*.nsbmd)"}
+{"func": "FormatRaceCarcWithLanguage_from_thumb", "sig": "void FormatRaceCarcWithLanguage_from_thumb(char *dst, const char *name, int idx)", "doc": "Builds a race .carc path WITH language code: \"/data/Scene/%s_%s_%s%s\" -> name + table[idx] + language string + \".carc\" into dst (max 0x80)"}
+{"func": "FormatResultCarcWithLanguage_from_thumb", "sig": "void FormatResultCarcWithLanguage_from_thumb(char *dst)", "doc": "Builds the .carc scene path for the results screen WITH language code: \"/data/Scene/%s%s_%s%s\" -> name + (variant depending on mode field f78) + language string"}
+{"func": "FormatResultCarc_from_thumb", "sig": "void FormatResultCarc_from_thumb(char *dst)", "doc": "Builds the .carc scene path for the results screen (without language code): \"/data/Scene/%s%s%s\" -> name + (variant depending on mode field f78) + \".carc\" into "}
+{"func": "FormatTeamEmblemNsbtx", "sig": "char * FormatTeamEmblemNsbtx(int team)", "doc": "PURPOSE: Builds the file path of a team's emblem texture (Team*_emblem.nsbtx)"}
+{"func": "FriendCode_SomeFn_7_from_thumb", "sig": "void FriendCode_SomeFn_7_from_thumb(int a0, unsigned int a1, char *a2)", "doc": "PURPOSE: Builds a friend-code-style text string from a packed value, a checksum, and a 4-byte tag, formatted as \"<32-char><char><char><char><char><32-char>\""}
+{"func": "Fs_Archive_SetExtraFileOperationHandler", "sig": "void Fs_Archive_SetExtraFileOperationHandler(FSArchive *arc, void *readFn, void *writeFn)", "doc": ""}
+{"func": "Fs_File_Initialize", "sig": "void Fs_File_Initialize(FSFile *f)", "doc": ""}
+{"func": "Fs_File_ReleaseOperation", "sig": "void Fs_File_ReleaseOperation(FsFile *file, u32 operationResult)", "doc": "PURPOSE: Finishes a file operation and wakes its waiting thread"}
+{"func": "Fs_OverlayInfo_GetBinarySize", "sig": "u32 Fs_OverlayInfo_GetBinarySize(FSOverlayInfo *info)", "doc": ""}
+{"func": "GXS_SetGraphicsMode", "sig": "void GXS_SetGraphicsMode(u32 mode)", "doc": ""}
+{"func": "GXS_SetGraphicsMode__mkds_3038c", "sig": "void GXS_SetGraphicsMode__mkds_3038c(u32 mode)", "doc": ""}
+{"func": "GenerateTimeTrialCodeImpl", "sig": "int GenerateTimeTrialCodeImpl(char *out, TimeTrialRecord *rec, int internalId)", "doc": "Generates the 16-character time-trial ghost code from a record"}
+{"func": "GetActiveExecutionContextHeapHandle", "sig": "void GetActiveExecutionContextHeapHandle(void *a0)", "doc": ""}
+{"func": "GetActiveExecutionContextHeapHandle_0", "sig": "void GetActiveExecutionContextHeapHandle_0(void *a0)", "doc": ""}
+{"func": "GetActiveExecutionContextHeapHandle_1", "sig": "void GetActiveExecutionContextHeapHandle_1(void *a0)", "doc": ""}
+{"func": "GetActiveExecutionContextHeapHandle_2", "sig": "void GetActiveExecutionContextHeapHandle_2(void *a0)", "doc": ""}
+{"func": "GetActiveExecutionContextHeapHandle_3", "sig": "void GetActiveExecutionContextHeapHandle_3(void *a0)", "doc": ""}
+{"func": "GetActiveExecutionContextHeapHandle_4", "sig": "void GetActiveExecutionContextHeapHandle_4(void *a0)", "doc": ""}
+{"func": "GetActiveExecutionContextHeapHandle_5", "sig": "void GetActiveExecutionContextHeapHandle_5(void *a0)", "doc": ""}
+{"func": "GetMultiplayerErrorString_from_thumb", "sig": "void * GetMultiplayerErrorString_from_thumb(void)", "doc": "PURPOSE: Returns the message for the current multiplayer connection error"}
+{"func": "GetRacerCharacterId", "sig": "u32 GetRacerCharacterId(u32 racerId)", "doc": ""}
+{"func": "GetRacerCharacterId_0", "sig": "u32 GetRacerCharacterId_0(u32 racerId)", "doc": ""}
+{"func": "GetRacerKartId", "sig": "u32 GetRacerKartId(u32 racerId)", "doc": ""}
+{"func": "GetRacerName", "sig": "u32 GetRacerName(u32 racerId)", "doc": ""}
+{"func": "GetRacerTeam", "sig": "u32 GetRacerTeam(u32 racerId)", "doc": ""}
+{"func": "GetRacerType", "sig": "u32 GetRacerType(u32 racerId)", "doc": ""}
+{"func": "GetRacerType_0", "sig": "u32 GetRacerType_0(u32 racerId)", "doc": ""}
+{"func": "GetSomeRacerValue", "sig": "u32 GetSomeRacerValue(u32 racerId)", "doc": ""}
+{"func": "GlobalZ_GetOI", "sig": "int GlobalZ_GetOI(int slot, OnlineInfo *output)", "doc": "PURPOSE: Reads one saved online-information record"}
+{"func": "HandleAllGlobalTEQSubs", "sig": "void HandleAllGlobalTEQSubs(void)", "doc": "PURPOSE: Processes every pending transfer in the global transfer queue"}
+{"func": "InitializeBackScreen_from_thumb", "sig": "int InitializeBackScreen_from_thumb(int graphicsOffset)", "doc": "PURPOSE: Initializes the race-rule selection background graphics"}
+{"func": "InitializeEverything", "sig": "void InitializeEverything(void)", "doc": "PURPOSE: Sets up the whole game when it boots: system libraries, screen brightness, the main memory heap, and the main game thread"}
+{"func": "InitializeGlobalCE_from_thumb", "sig": "void InitializeGlobalCE_from_thumb(void *heap)", "doc": "Initializes the global \"CE\" structure (kart/emblem menu data, 0x26c bytes): allocates it on the given heap, sets data_0217ad00 to 0, zeroes nearly all fields, s"}
+{"func": "InitializeGlobalMV", "sig": "void InitializeGlobalMV(void *heap)", "doc": "PURPOSE: Sets up the global rank and records manager when a race starts"}
+{"func": "InitializeGlobalPK_from_thumb", "sig": "void InitializeGlobalPK_from_thumb(void *heap)", "doc": "PURPOSE: Prepares the global ghost-loading resources"}
+{"func": "InitializePECannonTable_from_thumb", "sig": "void InitializePECannonTable_from_thumb(void)", "doc": "PURPOSE: Builds a lookup table for the course's cannon points"}
+{"func": "InitializeSceneOverlayConfig", "sig": "void InitializeSceneOverlayConfig(void *heap)", "doc": "PURPOSE: Initializes the shared scene overlay settings"}
+{"func": "InitializeSetGlobalAN_from_thumb", "sig": "void InitializeSetGlobalAN_from_thumb(GlobalANWork *work, u32 totalSize)", "doc": "PURPOSE: Starts the global AN worker thread"}
+{"func": "InitializeSystemContext", "sig": "void InitializeSystemContext(void *heap)", "doc": "PURPOSE: Creates the main system context and its memory arena"}
+{"func": "IntrusiveListWrapper_InsertFirst", "sig": "void IntrusiveListWrapper_InsertFirst(IntrusiveListWrapper *list, void *item)", "doc": "PURPOSE: Adds an item to the front of an intrusive list"}
+{"func": "IntrusiveListWrapper_InsertLast", "sig": "void IntrusiveListWrapper_InsertLast(IntrusiveListWrapper *list, void *item)", "doc": "PURPOSE: Adds an item to the end of an intrusive list"}
+{"func": "Keyboard_SwitchFn4_from_thumb", "sig": "void Keyboard_SwitchFn4_from_thumb(void)", "doc": "PURPOSE: Shows a connection progress message after a short delay"}
+{"func": "Keyboard_SwitchFn5_from_thumb", "sig": "void Keyboard_SwitchFn5_from_thumb(void)", "doc": "PURPOSE: Shows a progress message after both screens finish fading in"}
+{"func": "LoadAD00KillerItemModel_from_thumb", "sig": "void LoadAD00KillerItemModel_from_thumb(int heapId)", "doc": "PURPOSE: Loads the AD00 \"killer item\" 3D model (mesh, texture, shadow variant, and animation) and wires it into the shared racer-manager slot"}
+{"func": "LoadAirshipMapObject", "sig": "void LoadAirshipMapObject(void *a0)", "doc": ""}
+{"func": "LoadBakubakuMapObject", "sig": "void LoadBakubakuMapObject(void *a0)", "doc": "PURPOSE: Spawns the \"bakubaku\" (Chain Chomp) map object plus its shadow model and registers both with the map's polygon-id system"}
+{"func": "LoadBalloonMapObject", "sig": "void LoadBalloonMapObject(int *a0)", "doc": "PURPOSE: Loads the balloon map object (balloon.nsbmd + balloon.nsbtp)"}
+{"func": "LoadBankEgg1MapObject", "sig": "void LoadBankEgg1MapObject(void *a0)", "doc": ""}
+{"func": "LoadBankTree1MapObject", "sig": "void LoadBankTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadBeachTree1MapObject", "sig": "void LoadBeachTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadBeachWaterModels", "sig": "void LoadBeachWaterModels(void)", "doc": "PURPOSE: Loads the beach water models and prepares their effect settings"}
+{"func": "LoadBubbleEffectModel", "sig": "void LoadBubbleEffectModel(void)", "doc": "PURPOSE: Loads the bubble effect model/texture and its animation"}
+{"func": "LoadCertainSwarSbnkSarc", "sig": "void LoadCertainSwarSbnkSarc(void)", "doc": "PURPOSE: Loads a related set of sound resources"}
+{"func": "LoadChandelierMapObject", "sig": "void LoadChandelierMapObject(void *a0)", "doc": ""}
+{"func": "LoadCrabMapObject", "sig": "void LoadCrabMapObject(void *a0)", "doc": "PURPOSE: Loads the crab map object's body and hand models"}
+{"func": "LoadCrossTree1MapObject", "sig": "void LoadCrossTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadDeTree1MapObject", "sig": "void LoadDeTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadEmbeddedStatic2DArchive_from_thumb", "sig": "void LoadEmbeddedStatic2DArchive_from_thumb(void *heap)", "doc": "PURPOSE: Loads the built-in 2D graphics archive into memory"}
+{"func": "LoadFlipperMapObject", "sig": "void LoadFlipperMapObject(void *a0)", "doc": "Loads the flipper map object (pinball track): model + nsbtp and nsbta animations."}
+{"func": "LoadGardenTree1MapObject", "sig": "void LoadGardenTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadGhostHouseWaterModel", "sig": "void LoadGhostHouseWaterModel(void)", "doc": "PURPOSE: Loads the ghost-house water model buffers"}
+{"func": "LoadGroupById", "sig": "void LoadGroupById(void *a0)", "doc": ""}
+{"func": "LoadKinoHouse1MapObject", "sig": "void LoadKinoHouse1MapObject(void *a0)", "doc": ""}
+{"func": "LoadKinoHouse2MapObject", "sig": "void LoadKinoHouse2MapObject(void *a0)", "doc": ""}
+{"func": "LoadKinoMount1MapObject", "sig": "void LoadKinoMount1MapObject(void *a0)", "doc": ""}
+{"func": "LoadKinoMount2MapObject", "sig": "void LoadKinoMount2MapObject(void *a0)", "doc": ""}
+{"func": "LoadMA2ContentIfMounted_from_thumb", "sig": "void LoadMA2ContentIfMounted_from_thumb(void)", "doc": "Loads the MA2 content (license card/emblem editor?) once mount entry 1 is loaded: three NFTR fonts (LC_Font_s/m, marioFont) are parsed and their addresses store"}
+{"func": "LoadMarioTree3MapObject", "sig": "void LoadMarioTree3MapObject(void *a0)", "doc": ""}
+{"func": "LoadMiniDokanMapObject", "sig": "void LoadMiniDokanMapObject(void *a0)", "doc": ""}
+{"func": "LoadMoveTreeMapObject", "sig": "void LoadMoveTreeMapObject(void *a0)", "doc": "Loads the moving tree (move_tree): model + nsbca animation and polygon-id 0x3f."}
+{"func": "LoadNsCannon1MapObject", "sig": "void LoadNsCannon1MapObject(void *a0)", "doc": ""}
+{"func": "LoadNsKiller2MapObject", "sig": "void LoadNsKiller2MapObject(void *a0)", "doc": "PURPOSE: Load the NsKiller2 map-object model and its shadow variant, then tag the shadow with polygon id 0x3f"}
+{"func": "LoadOf6Tree1MapObject", "sig": "void LoadOf6Tree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadOf6Yoshi1MapObject", "sig": "void LoadOf6Yoshi1MapObject(void *a0)", "doc": ""}
+{"func": "LoadOlaTree1cMapObject", "sig": "void LoadOlaTree1cMapObject(void *a0)", "doc": ""}
+{"func": "LoadOlgMush1MapObject", "sig": "void LoadOlgMush1MapObject(void *a0)", "doc": ""}
+{"func": "LoadOlgPipe1MapObject", "sig": "void LoadOlgPipe1MapObject(void *a0)", "doc": ""}
+{"func": "LoadOm6Tree1MapObject", "sig": "void LoadOm6Tree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadOpaTree1MapObject", "sig": "void LoadOpaTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadOsaTree1cMapObject", "sig": "void LoadOsaTree1cMapObject(void *a0)", "doc": ""}
+{"func": "LoadPakkunBodyMapObject", "sig": "void LoadPakkunBodyMapObject(void *a0)", "doc": "Loads the Pakkun plant (piranha) body: model, polygon-id 0x3f and a second property (0x1f) via StructMapObject_SomeFn_6."}
+{"func": "LoadPictureMapObjects", "sig": "void LoadPictureMapObjects(void *a0)", "doc": "PURPOSE: Load the two \"picture\" map objects (models + nsbca animations) and set their polygon id"}
+{"func": "LoadRainStarMapObject", "sig": "void LoadRainStarMapObject(void *a0)", "doc": "Loads the rain star object (RainStar): model + nsbta animation and polygon-id 0x3f."}
+{"func": "LoadSanboMapObject", "sig": "void LoadSanboMapObject(void *a0)", "doc": "PURPOSE: Load the \"sanbo\" (island) map object's two model pieces and mark both with polygon id 0x3f."}
+{"func": "LoadShineBalloonMapObject", "sig": "void LoadShineBalloonMapObject(void *a0)", "doc": ""}
+{"func": "LoadSmanBottomMapObject", "sig": "void LoadSmanBottomMapObject(void *a0)", "doc": ""}
+{"func": "LoadSmanTopMapObject", "sig": "void LoadSmanTopMapObject(void *a0)", "doc": ""}
+{"func": "LoadSnowTree1MapObject", "sig": "void LoadSnowTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadStaffRollStuff", "sig": "void LoadStaffRollStuff(void *heap)", "doc": "Sets up the staff-roll (credits) screen state on the bottom/sub engine"}
+{"func": "LoadStatic2DContents", "sig": "void LoadStatic2DContents(void *heap)", "doc": "PURPOSE: Loads the graphics and text used by the DS Download Play screen"}
+{"func": "LoadSunMapObject", "sig": "void LoadSunMapObject(void *a0)", "doc": "PURPOSE: Spawns the sun model plus its low-detail (LOD) twin and gives the sun a spinning animation and a unique polygon id"}
+{"func": "LoadTownMonteMapObject", "sig": "void LoadTownMonteMapObject(void *a0)", "doc": "Loads the TownMonte map object (model+animation), first sets a callback pointer at offset 0x14 of the argument object, and gives the object polygon-id 0x3f."}
+{"func": "LoadTownTree1MapObject", "sig": "void LoadTownTree1MapObject(void *a0)", "doc": ""}
+{"func": "LoadTownWaterModel", "sig": "void LoadTownWaterModel(void)", "doc": "PURPOSE: Loads the town water model buffers"}
+{"func": "Logo_StateHandler_EraseSaveData_First", "sig": "void Logo_StateHandler_EraseSaveData_First(void)", "doc": "PURPOSE: Starts erasing save data and shows its progress message"}
+{"func": "Logo_StateHandler_NotifyCorruptedSaveDataErased_Second", "sig": "void Logo_StateHandler_NotifyCorruptedSaveDataErased_Second(void)", "doc": "PURPOSE: Finishes the erased-corrupted-save notice and advances the logo screen"}
+{"func": "Logo_StateHandler_NotifySaveDataCorrupted_Second", "sig": "void Logo_StateHandler_NotifySaveDataCorrupted_Second(void)", "doc": "PURPOSE: Finishes the corrupted-save notice and advances the logo screen"}
+{"func": "Logo_StateHandler_NotifySaveDataErased_Second", "sig": "void Logo_StateHandler_NotifySaveDataErased_Second(void)", "doc": "PURPOSE: Finishes the erased-save notice and advances the logo screen"}
+{"func": "Logo_StateHandler_NotifyWiFiHelp_Second", "sig": "void Logo_StateHandler_NotifyWiFiHelp_Second(void)", "doc": "PURPOSE: Finishes the Wi-Fi help notice and advances the logo screen"}
+{"func": "Logo_StateHandler_NotifyWiFiIdIssue_Second", "sig": "void Logo_StateHandler_NotifyWiFiIdIssue_Second(void)", "doc": "PURPOSE: Handles the second Wi-Fi ID warning dialog"}
+{"func": "MaybeCheckMapObjBkWaveNsbcaNsbma", "sig": "void MaybeCheckMapObjBkWaveNsbcaNsbma(void)", "doc": "PURPOSE: Checks whether the map-object \"bk_wave\" animation files are present and remembers the result"}
+{"func": "MaybeLoadKartAIData_from_thumb", "sig": "void MaybeLoadKartAIData_from_thumb(void)", "doc": "PURPOSE: Looks up the kart AI settings for the current race and remembers where they are"}
+{"func": "MaybeLoadWinModelTextureAnimationHelper_from_thumb", "sig": "void MaybeLoadWinModelTextureAnimationHelper_from_thumb(int heapId, ModelBlock *model, Animation *animation, void *modelData, void *textureData, void *animationData)", "doc": "PURPOSE: Loads a model and its winning animation"}
+{"func": "MaybeVerifyMultiSelectFiles_from_thumb", "sig": "void MaybeVerifyMultiSelectFiles_from_thumb(void)", "doc": "Loads/verifies all graphics files of the multi-select screen (member selection): 5x char-graphics (.NCGR), 4x cell banks (.ncer), 5x palettes (.NCLR) and 2x scr"}
+{"func": "Maybe_CreateObj_1569fc", "sig": "void * Maybe_CreateObj_1569fc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158164", "sig": "void * Maybe_CreateObj_158164(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15818c", "sig": "void * Maybe_CreateObj_15818c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1581b8", "sig": "void * Maybe_CreateObj_1581b8(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158238", "sig": "void * Maybe_CreateObj_158238(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158260", "sig": "void * Maybe_CreateObj_158260(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15828c", "sig": "void * Maybe_CreateObj_15828c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158334", "sig": "void * Maybe_CreateObj_158334(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15835c", "sig": "void * Maybe_CreateObj_15835c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158388", "sig": "void * Maybe_CreateObj_158388(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15840c", "sig": "void * Maybe_CreateObj_15840c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158434", "sig": "void * Maybe_CreateObj_158434(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158460", "sig": "void * Maybe_CreateObj_158460(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1584d4", "sig": "void * Maybe_CreateObj_1584d4(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1584fc", "sig": "void * Maybe_CreateObj_1584fc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158528", "sig": "void * Maybe_CreateObj_158528(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1585a8", "sig": "void * Maybe_CreateObj_1585a8(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1585d0", "sig": "void * Maybe_CreateObj_1585d0(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1585fc", "sig": "void * Maybe_CreateObj_1585fc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158628", "sig": "void * Maybe_CreateObj_158628(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158654", "sig": "void * Maybe_CreateObj_158654(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1586d8", "sig": "void * Maybe_CreateObj_1586d8(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158700", "sig": "void * Maybe_CreateObj_158700(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1587b0", "sig": "void * Maybe_CreateObj_1587b0(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1587dc", "sig": "void * Maybe_CreateObj_1587dc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158854", "sig": "void * Maybe_CreateObj_158854(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15887c", "sig": "void * Maybe_CreateObj_15887c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1588a8", "sig": "void * Maybe_CreateObj_1588a8(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158a54", "sig": "void * Maybe_CreateObj_158a54(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158abc", "sig": "void * Maybe_CreateObj_158abc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158afc", "sig": "void * Maybe_CreateObj_158afc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158b3c", "sig": "void * Maybe_CreateObj_158b3c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158bbc", "sig": "void * Maybe_CreateObj_158bbc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158be4", "sig": "void * Maybe_CreateObj_158be4(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158c10", "sig": "void * Maybe_CreateObj_158c10(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158c3c", "sig": "void * Maybe_CreateObj_158c3c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158cc0", "sig": "void * Maybe_CreateObj_158cc0(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158d18", "sig": "void * Maybe_CreateObj_158d18(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158e9c", "sig": "void * Maybe_CreateObj_158e9c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158ec4", "sig": "void * Maybe_CreateObj_158ec4(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158ef0", "sig": "void * Maybe_CreateObj_158ef0(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158f30", "sig": "void * Maybe_CreateObj_158f30(void)", "doc": ""}
+{"func": "Maybe_CreateObj_158ff0", "sig": "void * Maybe_CreateObj_158ff0(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159018", "sig": "void * Maybe_CreateObj_159018(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159044", "sig": "void * Maybe_CreateObj_159044(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159070", "sig": "void * Maybe_CreateObj_159070(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1590ec", "sig": "void * Maybe_CreateObj_1590ec(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159114", "sig": "void * Maybe_CreateObj_159114(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159140", "sig": "void * Maybe_CreateObj_159140(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1591dc", "sig": "void * Maybe_CreateObj_1591dc(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159208", "sig": "void * Maybe_CreateObj_159208(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15927c", "sig": "void * Maybe_CreateObj_15927c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1592a4", "sig": "void * Maybe_CreateObj_1592a4(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1592d0", "sig": "void * Maybe_CreateObj_1592d0(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159348", "sig": "void * Maybe_CreateObj_159348(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159370", "sig": "void * Maybe_CreateObj_159370(void)", "doc": ""}
+{"func": "Maybe_CreateObj_1594e4", "sig": "void * Maybe_CreateObj_1594e4(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15950c", "sig": "void * Maybe_CreateObj_15950c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_159538", "sig": "void * Maybe_CreateObj_159538(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15a068", "sig": "void * Maybe_CreateObj_15a068(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15a100", "sig": "void * Maybe_CreateObj_15a100(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15a12c", "sig": "void * Maybe_CreateObj_15a12c(void)", "doc": ""}
+{"func": "Maybe_CreateObj_15a680", "sig": "void * Maybe_CreateObj_15a680(void)", "doc": ""}
+{"func": "Maybe_Keyboard_s_10key", "sig": "void Maybe_Keyboard_s_10key(void)", "doc": "Loads all graphics resources of the small keyboard / 10-key input screen: the bnbl/bncl/bnll layout buffers for both the 10-key and normal keyboard variants are"}
+{"func": "Maybe_TimeAttack_ghost_get_m_b", "sig": "void Maybe_TimeAttack_ghost_get_m_b(void)", "doc": "PURPOSE: Loads the time-attack ghost menu graphics"}
+{"func": "Maybe_banner", "sig": "void Maybe_banner(void *arg)", "doc": "Banner text preparation around a screen transition: in mode 2 a direct call; otherwise load \"/banner.bmg\""}
+{"func": "Maybe_calc_094bf0", "sig": "int Maybe_calc_094bf0(int a, int b)", "doc": ""}
+{"func": "Maybe_calc_0968c0", "sig": "int Maybe_calc_0968c0(int a, int b)", "doc": ""}
+{"func": "Maybe_call_Mem_CpuFastMemorySet", "sig": "void Maybe_call_Mem_CpuFastMemorySet(int val, void *dst)", "doc": ""}
+{"func": "Maybe_call_Mem_CpuFastMemorySet_2", "sig": "void Maybe_call_Mem_CpuFastMemorySet_2(int val, void *dst)", "doc": ""}
+{"func": "Maybe_call_Mem_CpuFastMemorySet_3", "sig": "void Maybe_call_Mem_CpuFastMemorySet_3(int val, void *dst)", "doc": ""}
+{"func": "Maybe_call_Mem_CpuFastMemorySet_4", "sig": "void Maybe_call_Mem_CpuFastMemorySet_4(int val, void *dst)", "doc": ""}
+{"func": "Maybe_call_Mem_CpuFastMemorySet_5", "sig": "void Maybe_call_Mem_CpuFastMemorySet_5(int val, void *dst)", "doc": ""}
+{"func": "Maybe_check_0287c8", "sig": "int Maybe_check_0287c8(S *obj)", "doc": ""}
+{"func": "Maybe_check_02f0fc", "sig": "int Maybe_check_02f0fc(S *obj)", "doc": ""}
+{"func": "Maybe_check_03075c", "sig": "int Maybe_check_03075c(S *obj)", "doc": ""}
+{"func": "Maybe_check_0ace68", "sig": "int Maybe_check_0ace68(S *obj)", "doc": ""}
+{"func": "Maybe_check_0ae2e4", "sig": "int Maybe_check_0ae2e4(S *obj)", "doc": ""}
+{"func": "Maybe_check_0b2ac8", "sig": "int Maybe_check_0b2ac8(S *obj)", "doc": ""}
+{"func": "Maybe_check_0cb170", "sig": "int Maybe_check_0cb170(S *obj)", "doc": ""}
+{"func": "Maybe_emblem2", "sig": "void Maybe_emblem2(void *heap)", "doc": "PURPOSE: Loads the emblem graphics resources"}
+{"func": "Maybe_get_0c0c2c", "sig": "void Maybe_get_0c0c2c(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_10", "sig": "void Maybe_get_0c0c2c_10(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_11", "sig": "void Maybe_get_0c0c2c_11(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_2", "sig": "void Maybe_get_0c0c2c_2(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_3", "sig": "void Maybe_get_0c0c2c_3(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_4", "sig": "void Maybe_get_0c0c2c_4(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_5", "sig": "void Maybe_get_0c0c2c_5(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_6", "sig": "void Maybe_get_0c0c2c_6(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_7", "sig": "void Maybe_get_0c0c2c_7(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_8", "sig": "void Maybe_get_0c0c2c_8(void)", "doc": ""}
+{"func": "Maybe_get_0c0c2c_9", "sig": "void Maybe_get_0c0c2c_9(void)", "doc": ""}
+{"func": "Maybe_get_15d4b4", "sig": "s16 Maybe_get_15d4b4(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_10", "sig": "s16 Maybe_get_15d4b4_10(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_2", "sig": "s16 Maybe_get_15d4b4_2(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_3", "sig": "s16 Maybe_get_15d4b4_3(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_4", "sig": "s16 Maybe_get_15d4b4_4(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_5", "sig": "s16 Maybe_get_15d4b4_5(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_6", "sig": "s16 Maybe_get_15d4b4_6(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_7", "sig": "s16 Maybe_get_15d4b4_7(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_8", "sig": "s16 Maybe_get_15d4b4_8(int idx)", "doc": ""}
+{"func": "Maybe_get_15d4b4_9", "sig": "s16 Maybe_get_15d4b4_9(int idx)", "doc": ""}
+{"func": "Maybe_get_16ec9c", "sig": "void Maybe_get_16ec9c(void)", "doc": ""}
+{"func": "Maybe_get_17b0b4", "sig": "void Maybe_get_17b0b4(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b0b8", "sig": "void Maybe_get_17b0b8(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b0bc", "sig": "void Maybe_get_17b0bc(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b0c4", "sig": "void Maybe_get_17b0c4(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b0c8", "sig": "void Maybe_get_17b0c8(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b0dc", "sig": "void Maybe_get_17b0dc(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b104", "sig": "void Maybe_get_17b104(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b10c", "sig": "void Maybe_get_17b10c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b118", "sig": "void Maybe_get_17b118(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b11c", "sig": "void Maybe_get_17b11c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b120", "sig": "void Maybe_get_17b120(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b124", "sig": "void Maybe_get_17b124(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b128", "sig": "void Maybe_get_17b128(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b12c", "sig": "void Maybe_get_17b12c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b130", "sig": "void Maybe_get_17b130(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b134", "sig": "void Maybe_get_17b134(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b138", "sig": "void Maybe_get_17b138(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b13c", "sig": "void Maybe_get_17b13c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b140", "sig": "void Maybe_get_17b140(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b144", "sig": "void Maybe_get_17b144(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b148", "sig": "void Maybe_get_17b148(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b14c", "sig": "void Maybe_get_17b14c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b150", "sig": "void Maybe_get_17b150(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b154", "sig": "void Maybe_get_17b154(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b158", "sig": "void Maybe_get_17b158(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b15c", "sig": "void Maybe_get_17b15c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b160", "sig": "void Maybe_get_17b160(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b164", "sig": "void Maybe_get_17b164(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b168", "sig": "void Maybe_get_17b168(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b16c", "sig": "void Maybe_get_17b16c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b170", "sig": "void Maybe_get_17b170(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b190", "sig": "void Maybe_get_17b190(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b194", "sig": "void Maybe_get_17b194(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b224", "sig": "void Maybe_get_17b224(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b230", "sig": "void Maybe_get_17b230(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b33c", "sig": "void Maybe_get_17b33c(void *a0)", "doc": ""}
+{"func": "Maybe_get_17b688", "sig": "void Maybe_get_17b688(void)", "doc": ""}
+{"func": "Maybe_get_17b6f0", "sig": "void Maybe_get_17b6f0(void)", "doc": ""}
+{"func": "Maybe_get_17b710", "sig": "void Maybe_get_17b710(void)", "doc": ""}
+{"func": "Maybe_get_17b71c", "sig": "void Maybe_get_17b71c(void)", "doc": ""}
+{"func": "Maybe_get_17b778", "sig": "void Maybe_get_17b778(void)", "doc": ""}
+{"func": "Maybe_get_17b7b8", "sig": "void Maybe_get_17b7b8(void)", "doc": ""}
+{"func": "Maybe_get_17b7f0", "sig": "void Maybe_get_17b7f0(void)", "doc": ""}
+{"func": "Maybe_get_17b830", "sig": "void Maybe_get_17b830(void)", "doc": ""}
+{"func": "Maybe_helper_013044", "sig": "void Maybe_helper_013044(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "Maybe_helper_01308c", "sig": "void Maybe_helper_01308c(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "Maybe_helper_0218f4", "sig": "u16 Maybe_helper_0218f4(s32 x)", "doc": ""}
+{"func": "Maybe_helper_028794", "sig": "int Maybe_helper_028794(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0287ec", "sig": "int Maybe_helper_0287ec(S *obj)", "doc": ""}
+{"func": "Maybe_helper_028d9c", "sig": "void Maybe_helper_028d9c(void *a0)", "doc": ""}
+{"func": "Maybe_helper_02f028", "sig": "int Maybe_helper_02f028(S *obj)", "doc": ""}
+{"func": "Maybe_helper_02f0c8", "sig": "int Maybe_helper_02f0c8(void *a0)", "doc": ""}
+{"func": "Maybe_helper_030728", "sig": "int Maybe_helper_030728(void *a0)", "doc": ""}
+{"func": "Maybe_helper_030780", "sig": "int Maybe_helper_030780(S *obj)", "doc": ""}
+{"func": "Maybe_helper_03c240", "sig": "u32 Maybe_helper_03c240(u32 racerId)", "doc": ""}
+{"func": "Maybe_helper_03c5ac", "sig": "u32 Maybe_helper_03c5ac(u32 racerId)", "doc": ""}
+{"func": "Maybe_helper_091214", "sig": "void Maybe_helper_091214(void)", "doc": ""}
+{"func": "Maybe_helper_091238", "sig": "void Maybe_helper_091238(void)", "doc": ""}
+{"func": "Maybe_helper_0918a8", "sig": "void Maybe_helper_0918a8(void)", "doc": ""}
+{"func": "Maybe_helper_091f24", "sig": "short Maybe_helper_091f24(int arg)", "doc": ""}
+{"func": "Maybe_helper_092484", "sig": "void Maybe_helper_092484(void)", "doc": ""}
+{"func": "Maybe_helper_093080", "sig": "short Maybe_helper_093080(int arg)", "doc": ""}
+{"func": "Maybe_helper_093210", "sig": "void Maybe_helper_093210(void)", "doc": ""}
+{"func": "Maybe_helper_094744", "sig": "void Maybe_helper_094744(void)", "doc": ""}
+{"func": "Maybe_helper_094bd0", "sig": "short Maybe_helper_094bd0(int arg)", "doc": ""}
+{"func": "Maybe_helper_09516c", "sig": "short Maybe_helper_09516c(int arg)", "doc": ""}
+{"func": "Maybe_helper_0992ac", "sig": "void Maybe_helper_0992ac(void)", "doc": ""}
+{"func": "Maybe_helper_0992d0", "sig": "void Maybe_helper_0992d0(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099390", "sig": "void Maybe_helper_099390(void)", "doc": ""}
+{"func": "Maybe_helper_0993b4", "sig": "void Maybe_helper_0993b4(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099474", "sig": "void Maybe_helper_099474(void)", "doc": ""}
+{"func": "Maybe_helper_099498", "sig": "void Maybe_helper_099498(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099558", "sig": "void Maybe_helper_099558(void)", "doc": ""}
+{"func": "Maybe_helper_09957c", "sig": "void Maybe_helper_09957c(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09963c", "sig": "void Maybe_helper_09963c(void)", "doc": ""}
+{"func": "Maybe_helper_099660", "sig": "void Maybe_helper_099660(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099720", "sig": "void Maybe_helper_099720(void)", "doc": ""}
+{"func": "Maybe_helper_099744", "sig": "void Maybe_helper_099744(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099804", "sig": "void Maybe_helper_099804(void)", "doc": ""}
+{"func": "Maybe_helper_099828", "sig": "void Maybe_helper_099828(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_0998e8", "sig": "void Maybe_helper_0998e8(void)", "doc": ""}
+{"func": "Maybe_helper_09990c", "sig": "void Maybe_helper_09990c(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_0999cc", "sig": "void Maybe_helper_0999cc(void)", "doc": ""}
+{"func": "Maybe_helper_0999f0", "sig": "void Maybe_helper_0999f0(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099ab0", "sig": "void Maybe_helper_099ab0(void)", "doc": ""}
+{"func": "Maybe_helper_099ad4", "sig": "void Maybe_helper_099ad4(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099b94", "sig": "void Maybe_helper_099b94(void)", "doc": ""}
+{"func": "Maybe_helper_099bb8", "sig": "void Maybe_helper_099bb8(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099c78", "sig": "void Maybe_helper_099c78(void)", "doc": ""}
+{"func": "Maybe_helper_099c9c", "sig": "void Maybe_helper_099c9c(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099d5c", "sig": "void Maybe_helper_099d5c(void)", "doc": ""}
+{"func": "Maybe_helper_099d80", "sig": "void Maybe_helper_099d80(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099e40", "sig": "void Maybe_helper_099e40(void)", "doc": ""}
+{"func": "Maybe_helper_099e64", "sig": "void Maybe_helper_099e64(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_099f24", "sig": "void Maybe_helper_099f24(void)", "doc": ""}
+{"func": "Maybe_helper_099f48", "sig": "void Maybe_helper_099f48(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a008", "sig": "void Maybe_helper_09a008(void)", "doc": ""}
+{"func": "Maybe_helper_09a02c", "sig": "void Maybe_helper_09a02c(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a0ec", "sig": "void Maybe_helper_09a0ec(void)", "doc": ""}
+{"func": "Maybe_helper_09a110", "sig": "void Maybe_helper_09a110(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a1d0", "sig": "void Maybe_helper_09a1d0(void)", "doc": ""}
+{"func": "Maybe_helper_09a1f4", "sig": "void Maybe_helper_09a1f4(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a2b4", "sig": "void Maybe_helper_09a2b4(void)", "doc": ""}
+{"func": "Maybe_helper_09a2d8", "sig": "void Maybe_helper_09a2d8(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a398", "sig": "void Maybe_helper_09a398(void)", "doc": ""}
+{"func": "Maybe_helper_09a3bc", "sig": "void Maybe_helper_09a3bc(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a47c", "sig": "void Maybe_helper_09a47c(void)", "doc": ""}
+{"func": "Maybe_helper_09a4a0", "sig": "void Maybe_helper_09a4a0(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a560", "sig": "void Maybe_helper_09a560(void)", "doc": ""}
+{"func": "Maybe_helper_09a584", "sig": "void Maybe_helper_09a584(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a644", "sig": "void Maybe_helper_09a644(void)", "doc": ""}
+{"func": "Maybe_helper_09a668", "sig": "void Maybe_helper_09a668(void *a1, void *a2)", "doc": ""}
+{"func": "Maybe_helper_09a768", "sig": "void Maybe_helper_09a768(void)", "doc": ""}
+{"func": "Maybe_helper_09cf10", "sig": "void Maybe_helper_09cf10(void)", "doc": ""}
+{"func": "Maybe_helper_09df20", "sig": "void Maybe_helper_09df20(void)", "doc": ""}
+{"func": "Maybe_helper_09eb04", "sig": "void Maybe_helper_09eb04(void)", "doc": ""}
+{"func": "Maybe_helper_0a0044", "sig": "short Maybe_helper_0a0044(int arg)", "doc": ""}
+{"func": "Maybe_helper_0a3130", "sig": "void Maybe_helper_0a3130(void)", "doc": ""}
+{"func": "Maybe_helper_0a58d0", "sig": "void Maybe_helper_0a58d0(void)", "doc": ""}
+{"func": "Maybe_helper_0a58f4", "sig": "void Maybe_helper_0a58f4(void)", "doc": ""}
+{"func": "Maybe_helper_0a7358", "sig": "void Maybe_helper_0a7358(void)", "doc": ""}
+{"func": "Maybe_helper_0a91e0", "sig": "void Maybe_helper_0a91e0(void)", "doc": ""}
+{"func": "Maybe_helper_0a9db0", "sig": "void Maybe_helper_0a9db0(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ac658", "sig": "void Maybe_helper_0ac658(void)", "doc": ""}
+{"func": "Maybe_helper_0ace34", "sig": "int Maybe_helper_0ace34(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ace8c", "sig": "int Maybe_helper_0ace8c(S *obj)", "doc": ""}
+{"func": "Maybe_helper_0ae2b0", "sig": "int Maybe_helper_0ae2b0(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ae308", "sig": "int Maybe_helper_0ae308(S *obj)", "doc": ""}
+{"func": "Maybe_helper_0ae564", "sig": "short Maybe_helper_0ae564(int arg)", "doc": ""}
+{"func": "Maybe_helper_0b2a94", "sig": "int Maybe_helper_0b2a94(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0b2aec", "sig": "int Maybe_helper_0b2aec(S *obj)", "doc": ""}
+{"func": "Maybe_helper_0b5270", "sig": "short Maybe_helper_0b5270(int arg)", "doc": ""}
+{"func": "Maybe_helper_0c72f4", "sig": "void Maybe_helper_0c72f4(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c7550", "sig": "void Maybe_helper_0c7550(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c76ac", "sig": "void Maybe_helper_0c76ac(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c7820", "sig": "void Maybe_helper_0c7820(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c79f0", "sig": "void Maybe_helper_0c79f0(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c7b28", "sig": "void Maybe_helper_0c7b28(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c7c38", "sig": "void Maybe_helper_0c7c38(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c7d70", "sig": "void Maybe_helper_0c7d70(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c7fa0", "sig": "void Maybe_helper_0c7fa0(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0c80b0", "sig": "void Maybe_helper_0c80b0(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ca058", "sig": "void Maybe_helper_0ca058(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ca438", "sig": "void Maybe_helper_0ca438(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ca54c", "sig": "void Maybe_helper_0ca54c(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cb13c", "sig": "int Maybe_helper_0cb13c(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cb194", "sig": "int Maybe_helper_0cb194(S *obj)", "doc": ""}
+{"func": "Maybe_helper_0cc6a4", "sig": "u32 Maybe_helper_0cc6a4(u32 racerId)", "doc": ""}
+{"func": "Maybe_helper_0cccd8", "sig": "void Maybe_helper_0cccd8(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cce3c", "sig": "void Maybe_helper_0cce3c(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cd30c", "sig": "void Maybe_helper_0cd30c(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cd464", "sig": "void Maybe_helper_0cd464(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cd5b4", "sig": "void Maybe_helper_0cd5b4(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cd710", "sig": "void Maybe_helper_0cd710(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cd860", "sig": "void Maybe_helper_0cd860(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cd9f8", "sig": "void Maybe_helper_0cd9f8(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cdb70", "sig": "void Maybe_helper_0cdb70(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cdcac", "sig": "void Maybe_helper_0cdcac(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cddfc", "sig": "void Maybe_helper_0cddfc(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cdf34", "sig": "void Maybe_helper_0cdf34(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ce118", "sig": "void Maybe_helper_0ce118(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ce27c", "sig": "void Maybe_helper_0ce27c(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ce3f8", "sig": "void Maybe_helper_0ce3f8(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ce564", "sig": "void Maybe_helper_0ce564(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0ced10", "sig": "void Maybe_helper_0ced10(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cefc0", "sig": "void Maybe_helper_0cefc0(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0cffd0", "sig": "void Maybe_helper_0cffd0(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0d0134", "sig": "void Maybe_helper_0d0134(void *a0)", "doc": ""}
+{"func": "Maybe_helper_0d0cbc", "sig": "void Maybe_helper_0d0cbc(void *a0)", "doc": ""}
+{"func": "Maybe_helper_105b48", "sig": "void Maybe_helper_105b48(void *a0)", "doc": ""}
+{"func": "Maybe_helper_10ef34", "sig": "void Maybe_helper_10ef34(void *a0)", "doc": ""}
+{"func": "Maybe_helper_10f0d8", "sig": "void Maybe_helper_10f0d8(void *a0)", "doc": ""}
+{"func": "Maybe_helper_10f114", "sig": "void Maybe_helper_10f114(void *a0)", "doc": ""}
+{"func": "Maybe_helper_134ae8", "sig": "double Maybe_helper_134ae8(double x, int n)", "doc": ""}
+{"func": "Maybe_m_b", "sig": "void Maybe_m_b(void)", "doc": "PURPOSE: Loads the picture of the currently selected cup on the cup-select screen"}
+{"func": "Maybe_m_b_2", "sig": "void Maybe_m_b_2(void)", "doc": "PURPOSE: Loads the palette for the currently selected cup on the cup-select screen"}
+{"func": "Maybe_m_picture", "sig": "void Maybe_m_picture(void)", "doc": "PURPOSE: Loads the picture file for the cup you have highlighted on the cup-select screen"}
+{"func": "Mem_AllocateHeap", "sig": "void * Mem_AllocateHeap(void *heap, unsigned int size)", "doc": "PURPOSE: Allocates memory from a supported heap"}
+{"func": "Mem_CpuFastMemorySet2", "sig": "void Mem_CpuFastMemorySet2(int val, void *dst)", "doc": ""}
+{"func": "Mem_CreateChildFrameHeapFromHead", "sig": "void * Mem_CreateChildFrameHeapFromHead(void *heap, unsigned int size)", "doc": "PURPOSE: Creates a child frame heap at the start of a parent heap"}
+{"func": "Mem_Exp_Allocate", "sig": "void * Mem_Exp_Allocate(void *heap, unsigned int size, int alignment)", "doc": "PURPOSE: Allocates an aligned block from an expandable heap"}
+{"func": "Mem_FindTopParentHeapHead", "sig": "HeapHead * Mem_FindTopParentHeapHead(void *heapList, unsigned char *address)", "doc": "PURPOSE: Finds the deepest heap that contains an address"}
+{"func": "Mem_FreeHeap", "sig": "void Mem_FreeHeap(void *heap, void *block)", "doc": "PURPOSE: Frees a block from a compatible heap"}
+{"func": "MemoryRegionAddressAccess", "sig": "void MemoryRegionAddressAccess(void)", "doc": "PURPOSE: Touches the boundaries of several system memory regions"}
+{"func": "Mode_CreateFromResource", "sig": "void Mode_CreateFromResource(Mode *mode, void *resource)", "doc": "PURPOSE: Initializes a mode object from a resource"}
+{"func": "ModelBlock_SetEmi", "sig": "void ModelBlock_SetEmi(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SetLight", "sig": "void ModelBlock_SetLight(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SetPolygonId", "sig": "void ModelBlock_SetPolygonId(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SetSomethingToAllMaterials_MaybeTraslucent", "sig": "void ModelBlock_SetSomethingToAllMaterials_MaybeTraslucent(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SomeMatFn_0", "sig": "void ModelBlock_SomeMatFn_0(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SomeMatFn_1", "sig": "void ModelBlock_SomeMatFn_1(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SomeMatFn_2", "sig": "void ModelBlock_SomeMatFn_2(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SomeMatFn_4", "sig": "void ModelBlock_SomeMatFn_4(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "ModelBlock_SomeTexPltFn_2", "sig": "void ModelBlock_SomeTexPltFn_2(ModelBlock *model, int arg1)", "doc": ""}
+{"func": "Model_CreateFromNsbmdNsbtx2_from_thumb", "sig": "int Model_CreateFromNsbmdNsbtx2_from_thumb(void *self)", "doc": "PURPOSE: Loads the \"kart_tire\" model and finds its material block by name"}
+{"func": "NFTR_GetTileIndexForCharacter", "sig": "int NFTR_GetTileIndexForCharacter(NFTR_Font *font, u32 character)", "doc": "PURPOSE: Finds the font tile used to draw a character"}
+{"func": "NitroKartStringFunction_from_thumb", "sig": "void NitroKartStringFunction_from_thumb(void *obj, int param1)", "doc": "PURPOSE: Register a caller-supplied object into the next free slot of a global table and bump the table's live-entry count"}
+{"func": "NkmHandler_AREA_from_thumb", "sig": "int NkmHandler_AREA_from_thumb(void *sectionCursor)", "doc": "PURPOSE: Loads the course's AREA records for later use"}
+{"func": "NkmHandler_KTPC_from_thumb", "sig": "int NkmHandler_KTPC_from_thumb(void *section)", "doc": "PURPOSE: Loads cannon points from the course map"}
+{"func": "Os_EnableIrqHandler", "sig": "u32 Os_EnableIrqHandler(u32 mask)", "doc": ""}
+{"func": "Os_FifoResetHandler", "sig": "void Os_FifoResetHandler(int tag, int data, int error)", "doc": "PURPOSE: Marks the system ready after a valid reset message"}
+{"func": "Os_InitializeVAlarm", "sig": "void Os_InitializeVAlarm(void)", "doc": "PURPOSE: Initializes the vertical-alarm system once"}
+{"func": "Os_IsEmulator", "sig": "int Os_IsEmulator(void)", "doc": ""}
+{"func": "Os_Lock_GetOwnerId", "sig": "u16 Os_Lock_GetOwnerId(OSLockWord *lock)", "doc": ""}
+{"func": "Os_Mutex_TryLock", "sig": "int Os_Mutex_TryLock(OsMutex *mutex)", "doc": "PURPOSE: Tries to lock a mutex without waiting"}
+{"func": "Os_Mutex_Unlock", "sig": "void Os_Mutex_Unlock(OsMutex *mutex)", "doc": "PURPOSE: Releases a mutex held by the current thread"}
+{"func": "Os_PopThread", "sig": "void Os_PopThread(OSThread *thread)", "doc": ""}
+{"func": "Os_SetMemoryRegionStartAddress", "sig": "void Os_SetMemoryRegionStartAddress(int region, unsigned int addr)", "doc": ""}
+{"func": "Os_Thread_ExitImpl", "sig": "void Os_Thread_ExitImpl(Os_Thread *thread, void *destructorArgument)", "doc": "PURPOSE: Exits a thread and passes a value to its destructor"}
+{"func": "Os_Thread_GetPriority", "sig": "int Os_Thread_GetPriority(OSThread *thread)", "doc": ""}
+{"func": "Os_Thread_IsTerminated", "sig": "int Os_Thread_IsTerminated(OSThread *thread)", "doc": ""}
+{"func": "OverwriteEmptySaveData_from_thumb", "sig": "void OverwriteEmptySaveData_from_thumb(void)", "doc": "PURPOSE: Replaces an empty save file with fresh save data"}
+{"func": "PopulatePathEntries_from_thumb", "sig": "void PopulatePathEntries_from_thumb(void *heap)", "doc": "PURPOSE: Builds fast lookup entries for the course paths"}
+{"func": "PrepareNavigationContextFiles_from_thumb", "sig": "void PrepareNavigationContextFiles_from_thumb(void)", "doc": "Loads/verifies the graphics files of the navigation/\"txt_system\" context (bottom-screen text system plus select_choises/select_return parts)"}
+{"func": "ReadSaveDataSection_GrandPrix_from_thumb", "sig": "void ReadSaveDataSection_GrandPrix_from_thumb(void *destination)", "doc": "PURPOSE: Loads the saved Grand Prix records into a destination buffer"}
+{"func": "ReadSaveDataSection_Header_from_thumb", "sig": "void ReadSaveDataSection_Header_from_thumb(void *callbackContext)", "doc": "PURPOSE: Loads the header section of the save file"}
+{"func": "ReadSaveData_NonGhost_from_thumb", "sig": "void ReadSaveData_NonGhost_from_thumb(void)", "doc": "PURPOSE: Starts loading all save data except ghosts"}
+{"func": "ResetGlobal59C4Sub", "sig": "void ResetGlobal59C4Sub(void)", "doc": "PURPOSE: Releases the active scene subsystem and clears its state"}
+{"func": "Rtc_GetDate", "sig": "int Rtc_GetDate(void *time)", "doc": "PURPOSE: Reads the current time from the real-time clock"}
+{"func": "Rtc_GetTime", "sig": "int Rtc_GetTime(void *time)", "doc": "PURPOSE: Reads the current time from the real-time clock"}
+{"func": "SND_GetWaveDataAddress", "sig": "const void * SND_GetWaveDataAddress(const SNDWaveArc *waveArc, s32 index)", "doc": ""}
+{"func": "SND_StopTimer", "sig": "void SND_StopTimer(u32 channelMask, u32 captureMask, u32 alarmMask, u32 flags)", "doc": "PURPOSE: Stops the selected sound timers"}
+{"func": "Scene_Race_PostSleepImpl", "sig": "void Scene_Race_PostSleepImpl(void)", "doc": "PURPOSE: Resumes race state after the system wakes"}
+{"func": "SelectChoisesContext_LoadGraphics_from_thumb", "sig": "int SelectChoisesContext_LoadGraphics_from_thumb(int offset)", "doc": "Loads the graphics of the \"select choises\" screen (bottom screen): char data (.ncgr) is placed at the end of the supplied VRAM offset (offset -= szByte), the 32"}
+{"func": "SetCardOwnerArm9", "sig": "void SetCardOwnerArm9(void)", "doc": ""}
+{"func": "SetDispcntWindows01ObjDisplayFlagsSub", "sig": "void SetDispcntWindows01ObjDisplayFlagsSub(u32 mode)", "doc": ""}
+{"func": "SetSubDispcntWindow0Window1ObjDisplayFlag", "sig": "void SetSubDispcntWindow0Window1ObjDisplayFlag(u32 mode)", "doc": ""}
+{"func": "Sound_Context_Allocate", "sig": "void * Sound_Context_Allocate(SoundContext *context, unsigned int payloadSize, SoundDisposeCallback disposeCallback, void *soundArchive, void *customArgument)", "doc": "PURPOSE: Allocates tracked memory for sound data"}
+{"func": "Sound_Context_SetHeap", "sig": "int Sound_Context_SetHeap(SoundContext *context, void *heap)", "doc": "PURPOSE: Attaches a heap to a sound context and resets it for use"}
+{"func": "Sound_GetSarcPointer", "sig": "int Sound_GetSarcPointer(int archiveId, u32 flags, void *heap, int preparationOption, void **archiveDataOut)", "doc": "PURPOSE: Gets the data pointer for a sound archive"}
+{"func": "Sound_RegisterFifoHandler", "sig": "void Sound_RegisterFifoHandler(void)", "doc": "PURPOSE: Registers the sound FIFO handler and waits for it to become ready"}
+{"func": "SpecialMemoryMemsetV2", "sig": "void SpecialMemoryMemsetV2(int val, void *dst)", "doc": ""}
+{"func": "StructAD00Sub_LoadKartModel_from_thumb", "sig": "void StructAD00Sub_LoadKartModel_from_thumb(int *a1, int a2, int a3)", "doc": "PURPOSE: Loads a racer's kart 3D model (mesh + texture) and wires it into the kart's model block, optionally registering its wheel/tire node"}
+{"func": "StructCESub_Initialize_from_thumb", "sig": "void StructCESub_Initialize_from_thumb(void *heap, StructCESub *sub)", "doc": "PURPOSE: Initializes a kart-select resource slot"}
+{"func": "StructMQRacerEntry_SomeFn_2", "sig": "void StructMQRacerEntry_SomeFn_2(StructMQRacerEntry *racer)", "doc": "PURPOSE: Resets material settings for both racer models"}
+{"func": "StructMQRacerEntry_SomeFn_36", "sig": "void StructMQRacerEntry_SomeFn_36(StructMQRacerEntry *racer)", "doc": "PURPOSE: Sets material options for two racer models"}
+{"func": "StructNKGPCupEntry_CopyTo_from_thumb", "sig": "void StructNKGPCupEntry_CopyTo_from_thumb(const SaveDataGrandPrixCupRecordEntry *savedEntry, NKGPCupEntry *cupEntry)", "doc": "PURPOSE: Copies a saved Grand Prix cup record into working memory"}
+{"func": "StructTEQ_ReserveTEQSub", "sig": "int StructTEQ_ReserveTEQSub(StructTEQ *queue)", "doc": "PURPOSE: Reserves the next slot in a transfer queue"}
+{"func": "StructTEQ_TryPopTEQSub", "sig": "int StructTEQ_TryPopTEQSub(StructTEQ *queue)", "doc": "PURPOSE: Removes one queued transfer entry when the queue is not empty"}
+{"func": "StructWM_SomeFn", "sig": "int StructWM_SomeFn(StructWM *work, int callback, u32 dmaChannel)", "doc": "PURPOSE: Initializes wireless memory and starts its main operation"}
+{"func": "TEQSub_Fn0", "sig": "void TEQSub_Fn0(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn1", "sig": "void TEQSub_Fn1(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn10Impl_Fn12Impl", "sig": "void TEQSub_Fn10Impl_Fn12Impl(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn11Impl_Fn13Impl", "sig": "void TEQSub_Fn11Impl_Fn13Impl(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn16", "sig": "void TEQSub_Fn16(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn17", "sig": "void TEQSub_Fn17(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn2", "sig": "void TEQSub_Fn2(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn24Impl", "sig": "void TEQSub_Fn24Impl(void *src, u32 offset, u32 size)", "doc": "PURPOSE: Copies graphics data into the other sub-screen background memory"}
+{"func": "TEQSub_Fn25Impl", "sig": "void TEQSub_Fn25Impl(void *src, u32 offset, u32 size)", "doc": "PURPOSE: Copies graphics data into the other sub-screen background memory"}
+{"func": "TEQSub_Fn26Impl_Fn28Impl", "sig": "void TEQSub_Fn26Impl_Fn28Impl(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn27Impl_Fn29Impl", "sig": "void TEQSub_Fn27Impl_Fn29Impl(void *src, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn3", "sig": "void TEQSub_Fn3(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn32", "sig": "void TEQSub_Fn32(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn33", "sig": "void TEQSub_Fn33(void *ptr, u32 offset, u32 size)", "doc": ""}
+{"func": "TEQSub_Fn8Impl", "sig": "void TEQSub_Fn8Impl(void *src, u32 offset, u32 size)", "doc": "PURPOSE: Copies graphics data into the other sub-screen background memory"}
+{"func": "TEQSub_Fn9Impl", "sig": "void TEQSub_Fn9Impl(void *src, u32 offset, u32 size)", "doc": "PURPOSE: Copies graphics data into the other sub-screen background memory"}
+{"func": "TimeTrialCopyToSaveData_from_thumb", "sig": "void TimeTrialCopyToSaveData_from_thumb(int internalId, int recordBank, const TimeTrialRecord *source)", "doc": "PURPOSE: Copies a time-trial record into save data"}
+{"func": "UpdateBldcntBldalphaBldy_Sub", "sig": "void UpdateBldcntBldalphaBldy_Sub(s16 firstTargetPixels, s16 secondTargetPixels, s16 evaCoefficient, s16 evbCoefficient, int brightnessCoefficient)", "doc": "PURPOSE: Updates the sub-screen's display blending settings"}
+{"func": "UpdateInput", "sig": "void UpdateInput(void)", "doc": "PURPOSE: Updates the game's current button input"}
+{"func": "VerifyCommonSelectGameFiles_from_thumb", "sig": "void VerifyCommonSelectGameFiles_from_thumb(void)", "doc": "PURPOSE: load and decode the common \"select game\" screen's graphics files"}
+{"func": "VerifySelectCharacterFiles_from_thumb", "sig": "void VerifySelectCharacterFiles_from_thumb(void)", "doc": "PURPOSE: Loads the graphics files for the character-selection screen"}
+{"func": "VerifySelectKartFiles_from_thumb", "sig": "void VerifySelectKartFiles_from_thumb(void)", "doc": "PURPOSE: Loads the graphics files for the kart-selection screen"}
+{"func": "VerifySelectMenuFiles_from_thumb", "sig": "void VerifySelectMenuFiles_from_thumb(void)", "doc": "Loads/verifies the graphics files of the \"select menu\" (etc screen)"}
+{"func": "func_02007ec4", "sig": "void func_02007ec4(SharedDataRecord *record, u16 primaryLimit, u16 secondaryLimit, int enableOption4, int enableOption8)", "doc": "PURPOSE: Initializes a shared-data record and its options"}
+{"func": "func_0200850c", "sig": "void func_0200850c(RangeTransferContext *context, u32 requestedStart, u32 requestedEnd, int clearDestination)", "doc": "PURPOSE: Copies or clears a safe section of a memory image"}
+{"func": "func_0200895c", "sig": "void func_0200895c(int slot)", "doc": "PURPOSE: Resets the working data for one player slot"}
+{"func": "func_020089d0", "sig": "void func_020089d0(int slot)", "doc": "PURPOSE: Clears all stored data for one player slot"}
+{"func": "func_02008aa0", "sig": "void func_02008aa0(int slot)", "doc": ""}
+{"func": "func_0200973c", "sig": "void func_0200973c(PlayerSlotEntry *entry, const void *sourceData, u16 sourceMask, u16 updateMask)", "doc": "PURPOSE: Copies a complete slot update into a player entry"}
+{"func": "func_02015044", "sig": "void func_02015044(AnimOutput *out)", "doc": "Decodes one animation transform record into the destination's 3x3 matrix"}
+{"func": "func_0201d798", "sig": "void func_0201d798(VecFx32 *out, const VecFx32 *v, BasisOwner *basis)", "doc": "Builds a probably orthonormal third fx16 basis axis from the two axes at arg2 + 0x84, then transforms the fx32 vector in arg1 by that basis"}
+{"func": "func_0201e540", "sig": "void func_0201e540(VecFx32 *out)", "doc": ""}
+{"func": "func_02020b2c", "sig": "void func_02020b2c(s32 alarm, u32 tick, u32 period, SNDAlarmCallback callback, void *userData)", "doc": "PURPOSE: Sets up a sound alarm and registers the function it will call"}
+{"func": "func_02021040", "sig": "int func_02021040(void)", "doc": "PURPOSE: Counts the sound commands in a waiting list"}
+{"func": "func_02021080", "sig": "int func_02021080(void)", "doc": "PURPOSE: Counts the sound commands in an active list"}
+{"func": "func_02021114", "sig": "int func_02021114(void)", "doc": "PURPOSE: Returns the currently selected sound command-list value"}
+{"func": "func_02024a28", "sig": "void func_02024a28(void *racer, int effectId, int value, int mode)", "doc": "PURPOSE: Plays a racer effect with a level based on the supplied value"}
+{"func": "func_020351c8", "sig": "void func_020351c8(void)", "doc": "PURPOSE: Shows a confirmation dialog with two choices"}
+{"func": "func_02046e84", "sig": "void func_02046e84(void)", "doc": "PURPOSE: Marks the race scene as suspended"}
+{"func": "func_020474e4", "sig": "void func_020474e4(void)", "doc": "PURPOSE: Configures four standard mount entries for the full game"}
+{"func": "func_0204a978", "sig": "void func_0204a978(InputRecord *record)", "doc": "PURPOSE: Resets an input recording buffer"}
+{"func": "func_02054b44", "sig": "int func_02054b44(void)", "doc": "Status poll of the global object at data_0217aa00 (probably a network / wifi or scene-transition context)"}
+{"func": "func_020559ec", "sig": "void func_020559ec(const void *source, int slotIndex, u32 flagMask)", "doc": "PURPOSE: Copies a 20-byte payload into a selected context slot"}
+{"func": "func_02061250", "sig": "int func_02061250(void)", "doc": "PURPOSE: Checks whether the current player profile has an ID"}
+{"func": "func_020616c0", "sig": "int func_020616c0(RecordEntry *entry, void *output)", "doc": "PURPOSE: Copies a valid 20-byte record into an output buffer"}
+{"func": "func_02078e4c", "sig": "void func_02078e4c(void *dst, void *plttDst)", "doc": "PURPOSE: Loads the kart emblem image and its colors into video memory"}
+{"func": "func_0207e7f0", "sig": "void func_0207e7f0(Obj *obj)", "doc": "func_0207e7f0 (arm) \u2014 computes a scaled \"reaction\" offset vector for an object"}
+{"func": "func_0208001c", "sig": "void func_0208001c(State *s, Obj *newObj)", "doc": ""}
+{"func": "func_02080adc", "sig": "void func_02080adc(DirectionTracker *tracker, TrackedObject *current)", "doc": ""}
+{"func": "func_02080cd0", "sig": "void func_02080cd0(DirectionTracker *tracker, TrackedObject *object)", "doc": ""}
+{"func": "func_02080d34", "sig": "void func_02080d34(Tracker *t, int flag)", "doc": ""}
+{"func": "func_02081060", "sig": "void func_02081060(Obj *obj)", "doc": ""}
+{"func": "func_02081120", "sig": "void func_02081120(Obj *o, int done)", "doc": "PURPOSE: Advances one racer's map/minimap dot to its next spot and, once it reaches the end, marks that racer finished"}
+{"func": "func_020813ec", "sig": "void func_020813ec(int idx, VecFx32 *v)", "doc": "PURPOSE: Spawns and updates a racer's slipstream/draft trail effect object"}
+{"func": "func_02081618", "sig": "void func_02081618(int index, VecFx *v)", "doc": "PURPOSE: Places a kart's shadow (or attached prop) in the world by adding the kart's position to its matrix and copying the driver's scaled offset values"}
+{"func": "func_02081b64", "sig": "void func_02081b64(Obj *obj, Ctx *ctx, int a2, int a3)", "doc": "PURPOSE: Positions and aims a racer's trailing effect (like a drift smoke or draft object) behind the kart each frame"}
+{"func": "func_02081ca0", "sig": "void func_02081ca0(Foo *a, Bar *b, int mode)", "doc": "PURPOSE: Copies one tuned value from a data block into a game object, picking a different value/slot depending on a mode flag"}
+{"func": "func_02081d78", "sig": "void func_02081d78(Racer *obj, int skip)", "doc": "PURPOSE: Updates a kart's on-screen position/state from its racing-line progress, but only once per frame (skips when the \"already done\" flag is set)"}
+{"func": "func_02081e5c", "sig": "void func_02081e5c(Obj *obj, int skip)", "doc": "PURPOSE: Advances one racer's scrolled screen position and ticks its spawn/place counter each frame"}
+{"func": "func_02081f30", "sig": "void func_02081f30(void)", "doc": "PURPOSE: Turns a race feature (a callback-driven mini-system) on or off depending on which race mode is currently selected"}
+{"func": "FX_Mul", "sig": "static inline int FX_Mul(int a, int b)", "doc": "PURPOSE: Steers a kart/camera toward a spot ahead on the track and also sets its turn/lean amount from the current player's speed"}
+{"func": "func_0208266c", "sig": "void func_0208266c(Obj *obj, int done)", "doc": "PURPOSE: Aims the camera/racer at a target spot in front of the current player kart on the horizontal (X/Z) plane"}
+{"func": "func_02082a10", "sig": "void func_02082a10(Obj *obj, int done)", "doc": "PURPOSE: Places an object's target point a fixed distance ahead of the player kart on the flat (X/Z) ground"}
+{"func": "func_02082d64", "sig": "void func_02082d64(Obj *obj)", "doc": "PURPOSE: Updates a kart/driver's on-screen position and status flags once per frame"}
+{"func": "func_02083d4c", "sig": "int func_02083d4c(A0 *a0, int a1, A2 *a2)", "doc": "PURPOSE: Starts a new \"watcher\"/callback object for one racer, replacing any old one"}
+{"func": "func_0208e82c", "sig": "void func_0208e82c(MtxFx43 *cam, Corner *top, Corner *bottom, TexParam *tex)", "doc": "Draws a single textured quad (billboard-like strip) through the NDS 3D geometry engine using immediate-mode MMIO register writes"}
+{"func": "func_0208fba0", "sig": "void func_0208fba0(void *a, B *b)", "doc": "PURPOSE: Advances a race object one step and decides whether it keeps going straight ahead or turns/reacts, based on how far it has travelled"}
+{"func": "func_0208fdcc", "sig": "void func_0208fdcc(void *obj0, struct Obj70 *obj1)", "doc": "PURPOSE: Skip an object's per-frame update unless a global gate check passes and its state field is below a threshold"}
+{"func": "func_02090088", "sig": "void func_02090088(void *a, B *b)", "doc": "PURPOSE: Advances a race object one step and decides whether it keeps going straight ahead or turns/reacts, based on how far it has travelled"}
+{"func": "func_020901a0", "sig": "void func_020901a0(void *obj0, struct Obj70 *obj1)", "doc": "PURPOSE: Skip an object's per-frame update unless a global gate check passes and its state field is below a threshold"}
+{"func": "func_020901f0", "sig": "void func_020901f0(void *a0, Obj0209 *a1)", "doc": "PURPOSE: Fires a kart-object event unless the object is still cloaked and its timer has not elapsed yet"}
+{"func": "func_0209086c", "sig": "void func_0209086c(void *obj, int id)", "doc": "PURPOSE: Sets up a kart object's driver state at the start of a race"}
+{"func": "func_0209125c", "sig": "void func_0209125c(void)", "doc": "PURPOSE: Registers a pair of task callback functions (main + exit) with an unknown low-level task/thread-creation routine"}
+{"func": "func_0209151c", "sig": "void func_0209151c(Group *g)", "doc": "PURPOSE: Resets each active item/kart entry in a group to full scale and recomputes two derived size values from its base size field"}
+{"func": "func_020915c0", "sig": "void func_020915c0(void *arg0, void *arg1)", "doc": "PURPOSE: Sends a game object's 3D graphics data to the display, then draws it on screen"}
+{"func": "func_020916a0", "sig": "void func_020916a0(void *a0, Obj *obj)", "doc": ""}
+{"func": "func_02091828", "sig": "int func_02091828(struct Obj *obj, void *race, unsigned char *activate, unsigned char *ret)", "doc": "PURPOSE: When triggered, resets a kart's status counters/vector fields and flips on a status flag, then calls func_020d26f8"}
+{"func": "func_020918cc", "sig": "void func_020918cc(void *ctx, MapObject *obj)", "doc": "PURPOSE: Draws one map object on screen, feeding its animation/matrix data to the 3D geometry engine first"}
+{"func": "func_02091fd8", "sig": "void func_02091fd8(Ctrl *c)", "doc": ""}
+{"func": "func_020920a0", "sig": "void func_020920a0(void *a0, Obj *o)", "doc": "PURPOSE: Draws one map object on screen (its 3D model plus its 2D icon)"}
+{"func": "func_0209280c", "sig": "void func_0209280c(void *arg0, void *arg1)", "doc": "PURPOSE: Draws one spinning map object on screen, feeding its position, a rotation matrix and animation data to the 3D geometry engine first"}
+{"func": "func_020930c8", "sig": "void func_020930c8(Mgr *mgr)", "doc": "PURPOSE: Rolls a fresh random timer value for each active item in a list"}
+{"func": "func_020935fc", "sig": "void func_020935fc(void *a0, Obj *obj)", "doc": "PURPOSE: Draws one map object on screen: gives it a fresh polygon id, feeds its position/matrix/parameter blocks to the geometry engine, then draws its 3D model"}
+{"func": "func_02093708", "sig": "void func_02093708(int *a0)", "doc": "Loads the flamethrower/burner effect (mkd_ef_burner): model + nsbta animation, polygon-id 0x3f, and sets a ready flag (field 0x1c)."}
+{"func": "func_02093754", "sig": "unsigned char func_02093754(struct Manager *mgr, struct SlotState *state, int unused, unsigned char *flagPtr)", "doc": "PURPOSE: Marks a manager slot as \"used\" (value 0x1f) the first time a check function reports it should activate, then returns a caller-supplied flag byte unchan"}
+{"func": "func_020937c4", "sig": "void func_020937c4(Vec3 *pos, Vec3 *vel, int id)", "doc": "PURPOSE: Sets up (spawns) a moving game object from a spawn-description"}
+{"func": "func_020938c0", "sig": "void func_020938c0(void)", "doc": "PURPOSE: Creates some kind of task/object via func_0209bf70 and sets its range fields at offsets 0x38 and 0x3c to fixed fixed-point values"}
+{"func": "func_02093910", "sig": "void func_02093910(int mask, Obj *obj)", "doc": "PURPOSE: Moves a falling/bouncing object each frame and removes it when its time runs out"}
+{"func": "func_02093a50", "sig": "void func_02093a50(void *ctx, void *obj)", "doc": "PURPOSE: Draws one spinning 2D/3D track object (like an item box or sign), building its geometry command list and rotating it to face its angle"}
+{"func": "func_02093b7c", "sig": "int func_02093b7c(struct Obj *obj, struct Race *race, unsigned char *activate, unsigned char *ret)", "doc": "PURPOSE: When an item/effect is triggered, shrinks a kart's size vector and flips on some status flags"}
+{"func": "func_02093c64", "sig": "void func_02093c64(Obj *obj)", "doc": "PURPOSE: Initializes an object for its \"active\" behavior state: marks it visible via a global flag bit, tears down its old lifetime state, allocates/initializes"}
+{"func": "func_02093ee8", "sig": "void func_02093ee8(void *ctx, Obj *o)", "doc": "PURPOSE: Draws one 2D/3D object on screen, first uploading its geometry settings (transform matrix + a couple of parameter blocks) to the 3D engine"}
+{"func": "func_02093fa4", "sig": "void func_02093fa4(Obj02093fa4 *self)", "doc": "PURPOSE: Sets up a fresh game object's embedded sub-structure and registers the object with a manager service"}
+{"func": "func_020946b8", "sig": "void func_020946b8(void)", "doc": "PURPOSE: Reset the b4/b8 fields to zero for every entry in an object's pointer array, stopping at the first null entry"}
+{"func": "func_02094c70", "sig": "void func_02094c70(void *arg0, void *arg1)", "doc": "PURPOSE: Draws a map object's flag/banner-like billboard on screen"}
+{"func": "func_02094db4", "sig": "void func_02094db4(int *a0)", "doc": "Spawns the Boo map object (teresa): model+animation, polygon-id 0x3f, and sets a ready flag in the argument object (field 0x1c)."}
+{"func": "func_02094e3c", "sig": "int func_02094e3c(void)", "doc": "PURPOSE: Decides whether the race can proceed, checking the AI-kart data load first when the current race mode needs it"}
+{"func": "func_02095228", "sig": "void func_02095228(Node *node)", "doc": ""}
+{"func": "func_020957ec", "sig": "void func_020957ec(List020957ec *list)", "doc": "PURPOSE: Applies a fixed forward-scaled offset to every object in a list, stopping at the first empty slot"}
+{"func": "func_02095848", "sig": "void func_02095848(void *ctx, void *obj)", "doc": "PURPOSE: Draws one tilted 2D/3D track object (a twin of func_02093a50), building its geometry command list and pitching it to match its angle"}
+{"func": "func_020959fc", "sig": "void func_020959fc(void)", "doc": "PURPOSE: Register a handler by passing its callback and id 0x125 to the setup function"}
+{"func": "func_02095d1c", "sig": "void func_02095d1c(ObjList *list)", "doc": "PURPOSE: Runs one update step over a list of active objects, moving each one"}
+{"func": "func_02095db8", "sig": "void func_02095db8(void *ctx, Obj *o, void *a2, void *a3)", "doc": "PURPOSE: Draws one map object (its 3D model, choosing near/far draw path by distance-flag) and, unless a distance flag is set, also updates its shadow/trail sub"}
+{"func": "func_02095f9c", "sig": "void func_02095f9c(void)", "doc": "PURPOSE: Creates some kind of task/object via func_0209bf70 and sets its field at offset 0x28 to a fixed value (0x1b0)"}
+{"func": "func_02096d68", "sig": "void func_02096d68(void *a0)", "doc": "Loads the 'cover' map object: three sub-objects (2x model, 1x model+animation), stores them in globals and sets polygon-id 0x3f on the second and third object."}
+{"func": "func_02096df0", "sig": "int func_02096df0(Obj *obj, const VecFx32 *p, fx32 margin, VecFx32 *out)", "doc": "Collision test against a cylindrical/spherical object"}
+{"func": "func_020975ac", "sig": "void func_020975ac(void)", "doc": "PURPOSE: Registers two handler callbacks under ID 0x1d0"}
+{"func": "func_0209828c", "sig": "void * func_0209828c(void)", "doc": "PURPOSE: Initialize a global state object and return it"}
+{"func": "func_020982d4", "sig": "void * func_020982d4(void)", "doc": "PURPOSE: Creates the Pakkun (Piranha Plant) Z-head map-object manager, flags it active, and registers it"}
+{"func": "func_02098328", "sig": "void * func_02098328(void)", "doc": "PURPOSE: Sets up the Piranha Plant body objects on the track and remembers their manager"}
+{"func": "func_02098374", "sig": "void * func_02098374(void)", "doc": "PURPOSE: Creates a map-object manager with no getter callback, flags it as active, and registers it"}
+{"func": "func_02098954", "sig": "void func_02098954(void *ctx, MapObject *obj)", "doc": "PURPOSE: Draws one map object on screen, feeding its animation/matrix and shadow-plane data to the 3D geometry engine first"}
+{"func": "func_02098a58", "sig": "void func_02098a58(void *arg0, void *arg1)", "doc": "PURPOSE: Draws a map object (e.g"}
+{"func": "func_02098d04", "sig": "void func_02098d04(void *a0)", "doc": "Loads the Pakkun plant mouth: model + bite animation (nsbca) and a property (0x1f) via StructMapObject_SomeFn_6."}
+{"func": "func_02098f18", "sig": "void func_02098f18(void *a1, int a2)", "doc": "PURPOSE: Sets up a newly allocated race object using data copied from a source descriptor"}
+{"func": "func_0209a78c", "sig": "void func_0209a78c(void)", "doc": "PURPOSE: Creates a game object of type 0x10e and tags it with ID 0x10f"}
+{"func": "func_0209af98", "sig": "void func_0209af98(Mgr *mgr)", "doc": "PURPOSE: Resets a set of decay fields and rolls a fresh countdown timer for each active list entry"}
+{"func": "func_0209b344", "sig": "u32 func_0209b344(void *arg0, void *arg1, u8 *check_byte_ptr, u8 *result_byte_ptr)", "doc": "PURPOSE: Conditionally processes with func_0209b388 if a check byte is 1, then calls func_020d26f8"}
+{"func": "func_0209bbfc", "sig": "void * func_0209bbfc(MapObjectPtrArray *array)", "doc": "PURPOSE: find the first live element of a MapObject pointer array that has its 0x100 flag set and dispatch it"}
+{"func": "func_0209bfe0", "sig": "int func_0209bfe0(int arg0)", "doc": "PURPOSE: Sets up a fresh object's particle/effect config the first time it's used, then fires a classification event for it"}
+{"func": "func_0209c154", "sig": "void func_0209c154(void)", "doc": "PURPOSE: Creates a game object with its three callback functions and marks it with flags 0x155"}
+{"func": "func_0209c198", "sig": "void func_0209c198(void)", "doc": "PURPOSE: Register a game-state handler with its callbacks and tag it with id 0x156"}
+{"func": "func_0209c1dc", "sig": "void func_0209c1dc(void)", "doc": "PURPOSE: Creates a game object with its three callback functions and marks it with flags 0x1cf"}
+{"func": "func_0209c5b8", "sig": "void func_0209c5b8(void *arg0, void *arg1)", "doc": "PURPOSE: Draws a map object using the 2D/3D object renderer"}
+{"func": "func_0209c678", "sig": "void func_0209c678(void *ctx, DrawObj *obj)", "doc": "PURPOSE: Draws one 2D/3D object, first feeding its per-object data (position, a 12-word transform blob, and a few extra fields) into the geometry engine"}
+{"func": "func_0209c7a8", "sig": "void func_0209c7a8(void *ctx, unsigned char *obj)", "doc": "PURPOSE: Converts an object's raw position into draw-scale units, logs some debug info about it, then hands it off to the 3D object renderer"}
+{"func": "func_0209c8b0", "sig": "int func_0209c8b0(void *arg0, int arg1, int arg2, int arg3)", "doc": "PURPOSE: Tells another system whether this object just finished, choosing between a scaled or unscaled speed value depending on a couple of flags"}
+{"func": "func_0209d650", "sig": "void func_0209d650(Obj0209d650 *self)", "doc": "PURPOSE: Initializes a fresh object's embedded list node and registers the object with an object/heap manager, then clears three tracking fields"}
+{"func": "func_0209d694", "sig": "void func_0209d694(VecFx32 *pos, VecFx32 *vel)", "doc": "PURPOSE: Spawns an effect object at a position and sets up its two sprite parts"}
+{"func": "func_0209d800", "sig": "void func_0209d800(void)", "doc": "PURPOSE: Creates a game object of type 0x18d and tags it with ID 0x196"}
+{"func": "func_0209ddec", "sig": "unsigned char func_0209ddec(struct Obj *obj, struct Race *race, unsigned char *activate, unsigned char *ret)", "doc": "PURPOSE: Starts a one-shot effect on an object, resetting its timers and two child emitter structs, when told to activate"}
+{"func": "func_0209df44", "sig": "void func_0209df44(void)", "doc": "PURPOSE: Registers two handler callbacks under ID 0x18d"}
+{"func": "func_0209ea10", "sig": "int func_0209ea10(void *obj, void *entry, void *unused, unsigned char *kindPtr)", "doc": "PURPOSE: Marks a race entry's slot as processed (state 0xb) and returns its kind, after possibly applying a driver flag and running an update callback the first"}
+{"func": "func_0209ea90", "sig": "void func_0209ea90(Obj *obj)", "doc": ""}
+{"func": "func_0209f178", "sig": "void func_0209f178(void *a0, MapObject *obj)", "doc": "PURPOSE: Advances a map object's animation frame counters once per update"}
+{"func": "func_0209f5cc", "sig": "void func_0209f5cc(void *ctx, MapObject *obj)", "doc": "PURPOSE: Draws one map object on screen, feeding its animation/matrix data to the 3D geometry engine first"}
+{"func": "func_0209f6d8", "sig": "void func_0209f6d8(void *unused0, Obj209f6d8 *self)", "doc": "PURPOSE: Advances a wobble/bounce timer pair on an object and, once it finishes settling, fires an event describing which of two reference tables the object cur"}
+{"func": "func_0209fc38", "sig": "void func_0209fc38(void)", "doc": "PURPOSE: Reset the 19-slot counter table and re-seed slot 0 with a fresh value"}
+{"func": "func_020a16d0", "sig": "void func_020a16d0(int idx)", "doc": "PURPOSE: Runs the direct \"maybe kill driver\" check for one racer slot, unless the race is already over or that racer already has a result"}
+{"func": "func_020a1e40", "sig": "void func_020a1e40(int driverId, Entry *entry)", "doc": "PURPOSE: Copies a racer's low-byte status flag into that racer's kart-work slot, but only while the race hasn't finished and a few guard conditions on the racer"}
+{"func": "func_020a22ac", "sig": "void func_020a22ac(int a)", "doc": "PURPOSE: During the staff-roll/award sequence, mark a driver's slot in the shared entry table as \"state 10\" once its driver-entry lookup succeeds"}
+{"func": "func_020a2f30", "sig": "void func_020a2f30(void *r0, void *r1, int r2)", "doc": "PURPOSE: Advances an object's countdown/position timer and, once it reaches zero or below, resets it and calls func_020d2398 to trigger whatever happens next (p"}
+{"func": "func_020a2fe4", "sig": "void * func_020a2fe4(void *a0, Vec3i *a1)", "doc": "PURPOSE: Allocates and initializes a small game-object record from a template"}
+{"func": "func_020a3e38", "sig": "void func_020a3e38(void *obj)", "doc": "PURPOSE: Halve and eighth a global position vector into two shared globals, then hand the object off to another routine"}
+{"func": "func_020a3f48", "sig": "int func_020a3f48(void)", "doc": "PURPOSE: Runs a cleanup step only for the race modes that need it"}
+{"func": "func_020a5918", "sig": "void func_020a5918(void)", "doc": "PURPOSE: Creates a game object with a single callback and sets a pair of opposite-signed fixed-point fields on it"}
+{"func": "func_020a6c64", "sig": "void func_020a6c64(void *entry)", "doc": ""}
+{"func": "func_020a6cb4", "sig": "Pool * func_020a6cb4(int idx)", "doc": "PURPOSE: Marks one entry in a pool of kart-related objects as \"selected\" and clears the same flag on every other entry"}
+{"func": "func_020a6d40", "sig": "int func_020a6d40(void)", "doc": "PURPOSE: Runs a helper when the race is in mode 2 with the extra flag set"}
+{"func": "func_020a7148", "sig": "void func_020a7148(void *self)", "doc": "PURPOSE: Sets up a race-related object once per race, or destroys itself if that object already exists"}
+{"func": "func_020a7270", "sig": "void func_020a7270(void *a1)", "doc": "PURPOSE: Removes a balloon/shine from a driver and applies the loss effect"}
+{"func": "func_020a72c8", "sig": "int func_020a72c8(int a1, int b)", "doc": "PURPOSE: Removes a balloon/shine from driver a1 and plays the loss effect against driver b (or a1 itself if b is out of range)"}
+{"func": "func_020a9224", "sig": "void func_020a9224(void)", "doc": "PURPOSE: Creates a game object with a single callback and sets two independent fixed-point fields on it"}
+{"func": "func_020a9e04", "sig": "void func_020a9e04(MQRacerEntry *self)", "doc": "PURPOSE: Construct a racer-entry object: run its base initializer, allocate and set up a heap-backed sub-block, cache a config value, and derive an initial valu"}
+{"func": "func_020aba9c", "sig": "void func_020aba9c(void)", "doc": "PURPOSE: Uploads prepared background graphics to the bottom screen"}
+{"func": "func_020ac5e4", "sig": "void func_020ac5e4(void *arg0)", "doc": "PURPOSE: Allocates and zero-initializes a small tracking record, tagging it with its owner"}
+{"func": "func_020b4cec", "sig": "void func_020b4cec(FxStepState *state, fx32 divisor)", "doc": "PURPOSE: Initializes a fixed-point step state from a divisor"}
+{"func": "func_020d68b0", "sig": "void * func_020d68b0(void)", "doc": "PURPOSE: Creates a configured 64-byte object from a shared template"}
+{"func": "func_020d7b88", "sig": "void func_020d7b88(const VecFx32 *normal, Quaternion *rotation)", "doc": "PURPOSE: Converts a surface normal into an upright rotation quaternion"}
+{"func": "func_020d98a4", "sig": "void func_020d98a4(WaterEffectSource *source)", "doc": "PURPOSE: Creates the water effect resources for the current map object"}
+{"func": "func_020de130", "sig": "void func_020de130(void)", "doc": "Loads the Chain Chomp (wanwan) map object: the chain model via the MapObj file lookup, and then conditionally the stake model (wanwan_kui) if that file exists i"}
+{"func": "func_020de438", "sig": "void func_020de438(void)", "doc": "Loads the two warp pipe models (earthen_pipe1/2.nsbmd) as billboard models and registers them."}
+{"func": "func_020de84c", "sig": "void func_020de84c(void)", "doc": "PURPOSE: Prepares the item-box models and animation lookup tables"}
+{"func": "func_020e4768", "sig": "void * func_020e4768(void)", "doc": "PURPOSE: Creates an object from a template with a fixed initial value"}
+{"func": "func_020e6d88", "sig": "void func_020e6d88(const VecFx32 *input)", "doc": "PURPOSE: Builds and normalizes a direction vector"}
+{"func": "func_020e7a40", "sig": "void func_020e7a40(void)", "doc": "PURPOSE: Advances a race state handler unless the staff roll is active"}
+{"func": "func_020eb2a0", "sig": "void func_020eb2a0(VecFx32 *a, VecFx32 *b, fx32 scale, fx32 limit, VecFx32 *out)", "doc": "Builds a clamped offset vector between two points a and b (fx32 vectors)"}
+{"func": "func_020ec7e8", "sig": "int func_020ec7e8(MovingObject *object)", "doc": "PURPOSE: Moves an object and updates its rotation each frame"}
+{"func": "func_020ed490", "sig": "void * func_020ed490(char *resource)", "doc": "PURPOSE: Creates a 3D item model from an item resource"}
+{"func": "func_020ee528", "sig": "int func_020ee528(Obj *self)", "doc": "func_020ee528 (arm) \u2014 refresh a cached transform/frame on an object from its source struct (self->f10) and report whether a derived triple changed"}
+{"func": "func_020f288c", "sig": "void func_020f288c(Ctx *ctx, const VecFx32 *dir)", "doc": "func_020f288c (arm) \u2014 orthonormalises a driver-context basis and fires an SFX"}
+{"func": "func_020f9ca8", "sig": "void func_020f9ca8(RaceObject *object)", "doc": "PURPOSE: Caches the collision entry for a race object"}
+{"func": "func_020fad00", "sig": "void func_020fad00(void)", "doc": "PURPOSE: Sets up race-start speed constants and, for one special course, tells a just-loaded kart model to fade some of its materials in"}
+{"func": "func_020fcac0", "sig": "void func_020fcac0(ObjectState *object)", "doc": "PURPOSE: Initializes an object's state handler and transform"}
+{"func": "func_020ff910", "sig": "void func_020ff910(TransformObject *object, MtxFx43 *output)", "doc": "PURPOSE: Builds an object's output transform matrix"}
+{"func": "func_02106c64", "sig": "void func_02106c64(void)", "doc": "func_02106c64 \u2014 sound/race-state reset helper (probably \"resume race audio\")"}
+{"func": "func_0210b6a0", "sig": "void func_0210b6a0(void)", "doc": "PURPOSE: Initializes four global fixed-point values"}
+{"func": "func_0210ef68", "sig": "void func_0210ef68(SoundFileList *list)", "doc": "PURPOSE: Resets the dynamic offset for every sound file in a list"}
+{"func": "func_0211e65c", "sig": "void func_0211e65c(void)", "doc": "Advances the shared menu animation counter and writes the paired horizontal interpolation values into both item grids"}
+{"func": "func_0211e7c0", "sig": "void func_0211e7c0(void)", "doc": "STATUS: MATCH (178/178, byte-perfect, 6 reloc-slots wildcarded)"}
+{"func": "func_02128310", "sig": "void func_02128310(int useAlternateMode)", "doc": "PURPOSE: Initializes menu state and starts its queued sound"}
+{"func": "func_0212beb4", "sig": "void func_0212beb4(SoundPlayerEntry *newEntry)", "doc": "PURPOSE: Adds a sound player to the global priority list"}
+{"func": "OS_GetCurrentThread", "sig": "static inline OSThread * OS_GetCurrentThread(void)", "doc": ""}
+{"func": "func_02143520", "sig": "int func_02143520(void *destination)", "doc": "PURPOSE: Copies received wireless data into a caller-provided buffer"}
+{"func": "func_02150808", "sig": "void func_02150808(u8 *out, u8 *msg, int msglen, u8 *key, int keylen)", "doc": "HMAC-SHA1: computes HMAC of (msg, msglen) with (key, keylen) into out (20 bytes)"}
+{"func": "func_02150c1c", "sig": "void func_02150c1c(HashCtx *ctx, const u8 *src, u32 len)", "doc": "Streaming hash \"Update\" step (probably SHA-1/MD5-style context, size ctx>=0x60)"}
+{"func": "func_0215286c", "sig": "void func_0215286c(unsigned long long val, int bits, char *buf)", "doc": "Converts a 64-bit value to a base-32 string (5 bits per character, MSB first) with digit table \"0123456789abcdefghijklmnopqrstuv\" (data_0216f2b0)"}
+{"func": "memchr", "sig": "void * memchr(const void *src, int val, u32 n)", "doc": ""}

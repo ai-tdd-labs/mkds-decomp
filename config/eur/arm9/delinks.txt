@@ -1,0 +1,6753 @@
+    .text       start:0x02000000 end:0x02152bc0 kind:code align:32
+    .rodata     start:0x02152bc0 end:0x02161748 kind:rodata align:4
+    .ctor       start:0x02161748 end:0x02161748 kind:rodata align:4
+    .data       start:0x02161760 end:0x0216f340 kind:data align:32
+    .bss        start:0x0216f340 end:0x021804e0 kind:bss align:32
+
+src/arm9/Entry.c:
+    complete
+    .text       start:0x02000800 end:0x02000920
+
+src/arm9/Crt0_MemorySet32.c:
+    complete
+    .text       start:0x02000920 end:0x02000934
+
+src/arm9/Crt0_DecompressFlushCode.c:
+    complete
+    .text       start:0x02000934 end:0x020009e0
+
+src/arm9/Crt0_InitializePU.c:
+    complete
+    .text       start:0x02000a5c end:0x02000b44
+
+src/arm9/Logo_StateHandler_NotifyWiFiHelp_Second.c:
+    complete
+    .text       start:0x020010e0 end:0x02001144
+
+src/arm9/Logo_StateHandler_NotifyWiFiIdIssue_Second.c:
+    complete
+    .text       start:0x0200118c end:0x020011f0
+
+src/arm9/Logo_StateHandler_NotifyWiFiIdIssue_First.c:
+    complete
+    .text       start:0x020011f0 end:0x02001238
+
+src/arm9/Logo_StateHandler_NotifySaveDataErased_Second.c:
+    complete
+    .text       start:0x02001294 end:0x02001300
+
+src/arm9/Logo_StateHandler_NotifySaveDataErased_First.c:
+    complete
+    .text       start:0x02001300 end:0x02001350
+
+src/arm9/Logo_StateHandler_EraseSaveData_First.c:
+    complete
+    .text       start:0x0200148c end:0x02001500
+
+src/arm9/Logo_StateHandler_AskEraseSaveData_First.c:
+    complete
+    .text       start:0x02001598 end:0x020015f0
+
+src/arm9/Logo_StateHandler_NotifyCorruptedSaveDataErased_Second.c:
+    complete
+    .text       start:0x020015f0 end:0x0200165c
+
+src/arm9/Logo_StateHandler_NotifyCorruptedSaveDataErased_First.c:
+    complete
+    .text       start:0x0200165c end:0x020016ac
+
+src/arm9/Logo_StateHandler_NotifySaveDataCorrupted_Second.c:
+    complete
+    .text       start:0x020017cc end:0x02001830
+
+src/arm9/Logo_StateHandler_NotifySaveDataCorrupted_First.c:
+    complete
+    .text       start:0x02001830 end:0x02001878
+
+src/arm9/Logo_StateHandler_ReadSaveData_First.c:
+    complete
+    .text       start:0x02001a44 end:0x02001a74
+
+src/arm9/LoadLogoScreenGraphics.c:
+    complete
+    .text       start:0x02001d30 end:0x02001e54
+
+src/arm9/main.c:
+    complete
+    .text       start:0x02003000 end:0x02003024
+
+src/arm9/Fs_File_ReleaseOperation.c:
+    complete
+    .text       start:0x020031a0 end:0x02003204
+
+src/arm9/Fs_File_DefaultOperation_OpenFileById.c:
+    complete
+    .text       start:0x02003234 end:0x020032b0
+
+src/arm9/Fs_File_DefaultOperation_ReadDirectory.c:
+    complete
+    .text       start:0x0200388c end:0x0200399c
+
+src/arm9/Fs_File_DefaultOperation_SeekDirectory.c:
+    complete
+    .text       start:0x0200399c end:0x02003a34
+
+src/arm9/Fs_Archive_NotifyAsyncEnded.c:
+    complete
+    .text       start:0x02003be0 end:0x02003c60
+
+src/arm9/Fs_Archive_SetExtraFileOperationHandler.c:
+    complete
+    .text       start:0x02003c60 end:0x02003c80
+
+src/arm9/Fs_Archive_Resume.c:
+    complete
+    .text       start:0x02003c80 end:0x02003cfc
+
+src/arm9/Fs_Archive_Suspend.c:
+    complete
+    .text       start:0x02003cfc end:0x02003d8c
+
+src/arm9/Fs_Archive_LoadFatFnt.c:
+    complete
+    .text       start:0x02003e24 end:0x02003f50
+
+src/arm9/Fs_UnregisterArchive.c:
+    complete
+    .text       start:0x02004090 end:0x02004128
+
+src/arm9/Fs_FindArchiveByMountName.c:
+    complete
+    .text       start:0x020041e8 end:0x02004238
+
+src/arm9/Fs_Archive_Initialize.c:
+    complete
+    .text       start:0x02004238 end:0x02004270
+
+src/arm9/Fs_File_ExecuteSyncOperation.c:
+    complete
+    .text       start:0x0200442c end:0x02004474
+
+src/arm9/Fs_File_ExecuteAsyncOperation.c:
+    complete
+    .text       start:0x02004474 end:0x02004518
+
+src/arm9/Fs_Archive_DefaultFatFntRead.c:
+    complete
+    .text       start:0x02004710 end:0x02004734
+
+src/arm9/Fs_Archive_WriteFn_Default.c:
+    complete
+    .text       start:0x02004734 end:0x02004760
+
+src/arm9/Fs_Archive_ReadFn_Default.c:
+    complete
+    .text       start:0x02004760 end:0x02004788
+
+src/arm9/Fs_Chdir.c:
+    complete
+    .text       start:0x020047ec end:0x02004840
+
+src/arm9/File_If1Set2AndUnk20.c:
+    complete
+    .text       start:0x020048cc end:0x02004918
+
+src/arm9/Fs_File_Close.c:
+    complete
+    .text       start:0x020049e8 end:0x02004a30
+
+src/arm9/Fs_File_Open.c:
+    complete
+    .text       start:0x02004a30 end:0x02004a80
+
+src/arm9/Fs_File_OpenById.c:
+    complete
+    .text       start:0x02004a80 end:0x02004afc
+
+src/arm9/Fs_File_OpenRaw.c:
+    complete
+    .text       start:0x02004afc end:0x02004b54
+
+src/arm9/Fs_File_DoRead.c:
+    complete
+    .text       start:0x02004b98 end:0x02004c20
+
+src/arm9/Fs_File_FindPath.c:
+    complete
+    .text       start:0x02004c20 end:0x02004d80
+
+src/arm9/Fs_File_Initialize.c:
+    complete
+    .text       start:0x02004d80 end:0x02004db0
+
+src/arm9/Fs_IsInitialized.c:
+    complete
+    .text       start:0x02004db0 end:0x02004dc0
+
+src/arm9/Fs_Initialize.c:
+    complete
+    .text       start:0x02004dc0 end:0x02004dfc
+
+src/arm9/Fs_RomArchive_ExtraFileOperationHandler_Default.c:
+    complete
+    .text       start:0x02004fcc end:0x0200505c
+
+src/arm9/Fs_UnloadOverlay.c:
+    complete
+    .text       start:0x02005144 end:0x02005198
+
+src/arm9/Fs_ComputeCompareDigest.c:
+    complete
+    .text       start:0x02005414 end:0x020054b8
+
+src/arm9/Fs_OverlayInfo_LoadImage.c:
+    complete
+    .text       start:0x020054b8 end:0x02005558
+
+src/arm9/Fs_OverlayInfo_LoadImageAsync.c:
+    complete
+    .text       start:0x02005558 end:0x020055f0
+
+src/arm9/Fs_OverlayInfo_Load.c:
+    complete
+    .text       start:0x020055f0 end:0x02005704
+
+src/arm9/Fs_OverlayInfo_DoLoad.c:
+    complete
+    .text       start:0x02005704 end:0x02005814
+
+src/arm9/Fs_OverlayInfo_GetBinarySize.c:
+    complete
+    .text       start:0x02005880 end:0x0200589c
+
+src/arm9/func_02005d08.c:
+    complete
+    .text       start:0x02005d08 end:0x02005d4c
+
+src/arm9/func_0200654c.c:
+    complete
+    .text       start:0x0200654c end:0x020065a8
+
+src/arm9/func_020065a8.c:
+    complete
+    .text       start:0x020065a8 end:0x020065f8
+
+src/arm9/func_020065f8.c:
+    complete
+    .text       start:0x020065f8 end:0x02006648
+
+src/arm9/func_020066c0.c:
+    complete
+    .text       start:0x020066c0 end:0x0200671c
+
+src/arm9/func_0200671c.c:
+    complete
+    .text       start:0x0200671c end:0x02006794
+
+src/arm9/func_02006794.c:
+    complete
+    .text       start:0x02006794 end:0x020067f0
+
+src/arm9/func_02006858.c:
+    complete
+    .text       start:0x02006858 end:0x020068b4
+
+src/arm9/func_02006df8.c:
+    complete
+    .text       start:0x02006df8 end:0x02006e74
+
+src/arm9/StructGO_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x02006e74 end:0x02006ef8
+
+src/arm9/func_02007ea0.c:
+    complete
+    .text       start:0x02007ea0 end:0x02007ec4
+
+src/arm9/func_02007ec4.c:
+    complete
+    .text       start:0x02007ec4 end:0x02007f38
+
+src/arm9/func_0200850c.c:
+    complete
+    .text       start:0x0200850c end:0x02008570
+
+src/arm9/func_0200895c.c:
+    complete
+    .text       start:0x0200895c end:0x020089d0
+
+src/arm9/func_020089d0.c:
+    complete
+    .text       start:0x020089d0 end:0x02008a14
+
+src/arm9/func_02008aa0.c:
+    complete
+    .text       start:0x02008aa0 end:0x02008c08
+
+src/arm9/func_02008c08.c:
+    complete
+    .text       start:0x02008c08 end:0x02008cbc
+
+src/arm9/func_020092a4.c:
+    complete
+    .text       start:0x020092a4 end:0x020092d0
+
+src/arm9/func_0200973c.c:
+    complete
+    .text       start:0x0200973c end:0x020097ac
+
+src/arm9/SomeFileRead_from_thumb.c:
+    complete
+    .text       start:0x020097ac end:0x02009828
+
+src/arm9/func_0200a184.c:
+    complete
+    .text       start:0x0200a184 end:0x0200a1bc
+
+src/arm9/func_0200ada4.c:
+    complete
+    .text       start:0x0200ada4 end:0x0200adfc
+
+src/arm9/func_0200ae60.c:
+    complete
+    .text       start:0x0200ae60 end:0x0200aea8
+
+src/arm9/func_0200aeb4.c:
+    complete
+    .text       start:0x0200aeb4 end:0x0200aeec
+
+src/arm9/StructANN_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x0200aeec end:0x0200aff8
+
+src/arm9/InitializeSetGlobalAN_from_thumb.c:
+    complete
+    .text       start:0x0200b02c end:0x0200b08c
+
+src/arm9/func_0200b72c.c:
+    complete
+    .text       start:0x0200b72c end:0x0200b794
+
+src/arm9/func_0200ba84.c:
+    complete
+    .text       start:0x0200ba84 end:0x0200baa8
+
+src/arm9/func_0200bc78.c:
+    complete
+    .text       start:0x0200bc78 end:0x0200bcd8
+
+src/arm9/func_0200c16c.c:
+    complete
+    .text       start:0x0200c16c end:0x0200c20c
+
+src/arm9/func_0200c3fc.c:
+    complete
+    .text       start:0x0200c3fc end:0x0200c430
+
+src/arm9/func_0200c448.c:
+    complete
+    .text       start:0x0200c448 end:0x0200c46c
+
+src/arm9/func_0200c46c.c:
+    complete
+    .text       start:0x0200c46c end:0x0200c4a4
+
+src/arm9/func_0200c4c0.c:
+    complete
+    .text       start:0x0200c4c0 end:0x0200c508
+
+src/arm9/CTRDGi_InitCommon_from_thumb.c:
+    complete
+    .text       start:0x0200c620 end:0x0200c648
+
+src/arm9/Fifo13Handler_0_from_thumb.c:
+    complete
+    .text       start:0x0200c690 end:0x0200c6b8
+
+src/arm9/WaitForIRQ.c:
+    complete
+    .text       start:0x0200c894 end:0x0200c914
+
+src/arm9/Os_EnableIrqHandler.c:
+    complete
+    .text       start:0x0200cae4 end:0x0200cb1c
+
+src/arm9/Os_SetTimerIrqHandler.c:
+    complete
+    .text       start:0x0200cb50 end:0x0200cb9c
+
+src/arm9/OSi_EnterDmaCallback.c:
+    complete
+    .text       start:0x0200cb9c end:0x0200cbe8
+
+src/arm9/func_0200cd1c.c:
+    complete
+    .text       start:0x0200cd1c end:0x0200cd28
+
+src/arm9/Os_AllocateLockId.c:
+    complete
+    .text       start:0x0200cd28 end:0x0200cd80
+
+src/arm9/Os_ReleaseLockId.c:
+    complete
+    .text       start:0x0200cd80 end:0x0200cdb0
+
+src/arm9/Os_Lock_GetOwnerId.c:
+    complete
+    .text       start:0x0200cdc0 end:0x0200cdc8
+
+src/arm9/SetCardOwnerArm9.c:
+    complete
+    .text       start:0x0200cde0 end:0x0200cdf8
+
+src/arm9/Os_Lock_TryLockImpl.c:
+    complete
+    .text       start:0x0200cfd0 end:0x0200d028
+
+src/arm9/Util_SNPrintF.c:
+    complete
+    .text       start:0x0200d9e0 end:0x0200da10
+
+src/arm9/MaybeUtil_SPrintF.c:
+    complete
+    .text       start:0x0200da28 end:0x0200da58
+
+src/arm9/Os_EnableScheduler.c:
+    complete
+    .text       start:0x0200db64 end:0x0200db9c
+
+src/arm9/Os_DisableScheduler.c:
+    complete
+    .text       start:0x0200db9c end:0x0200dbd4
+
+src/arm9/Os_SetThreadSwitchCallback.c:
+    complete
+    .text       start:0x0200dbe8 end:0x0200dc1c
+
+src/arm9/Os_Sleep.c:
+    complete
+    .text       start:0x0200dc3c end:0x0200dcd8
+
+src/arm9/Os_Thread_GetPriority.c:
+    complete
+    .text       start:0x0200dcd8 end:0x0200dce0
+
+src/arm9/Os_Thread_SetPriority.c:
+    complete
+    .text       start:0x0200dce0 end:0x0200dd94
+
+src/arm9/Os_Thread_WakeUpDirect.c:
+    complete
+    .text       start:0x0200df68 end:0x0200df9c
+
+src/arm9/Os_Thread_WakeUp.c:
+    complete
+    .text       start:0x0200df9c end:0x0200e01c
+
+src/arm9/Os_Thread_Sleep.c:
+    complete
+    .text       start:0x0200e01c end:0x0200e070
+
+src/arm9/Os_Thread_IsTerminated.c:
+    complete
+    .text       start:0x0200e070 end:0x0200e084
+
+src/arm9/Os_Thread_Join.c:
+    complete
+    .text       start:0x0200e084 end:0x0200e0c0
+
+src/arm9/Os_Thread_CancelAlarmForSleep.c:
+    complete
+    .text       start:0x0200e0c0 end:0x0200e0ec
+
+src/arm9/func_0200e0ec.c:
+    complete
+    .text       start:0x0200e0ec end:0x0200e160
+
+src/arm9/Os_DisposeCurrentThreadImpl.c:
+    complete
+    .text       start:0x0200e160 end:0x0200e1ac
+
+src/arm9/Os_Thread_ExitImpl.c:
+    complete
+    .text       start:0x0200e1f0 end:0x0200e260
+
+src/arm9/Os_Thread_Exit.c:
+    complete
+    .text       start:0x0200e260 end:0x0200e28c
+
+src/arm9/Os_PopThread.c:
+    complete
+    .text       start:0x0200e4e4 end:0x0200e52c
+
+src/arm9/Arm_Context_Save.c:
+    complete
+    .text       start:0x0200e6ec end:0x0200e738
+
+src/arm9/Arm_Context_Load.c:
+    complete
+    .text       start:0x0200e738 end:0x0200e77c
+
+src/arm9/Os_GetSystemFlags.c:
+    complete
+    .text       start:0x0200e884 end:0x0200e8fc
+
+src/arm9/Os_IsEmulator.c:
+    complete
+    .text       start:0x0200e8fc end:0x0200e904
+
+src/arm9/func_0200e904.c:
+    complete
+    .text       start:0x0200e904 end:0x0200e988
+
+src/arm9/OS_JamMessage.c:
+    complete
+    .text       start:0x0200e988 end:0x0200ea3c
+
+src/arm9/Os_ReceiveMessage.c:
+    complete
+    .text       start:0x0200ea3c end:0x0200eae8
+
+src/arm9/Os_MessageQueue_Send.c:
+    complete
+    .text       start:0x0200eae8 end:0x0200eb90
+
+src/arm9/Os_Mutex_TryLock.c:
+    complete
+    .text       start:0x0200ec08 end:0x0200ec7c
+
+src/arm9/Os_UnlockAllMutexes.c:
+    complete
+    .text       start:0x0200ec7c end:0x0200ecc4
+
+src/arm9/Os_Mutex_Unlock.c:
+    complete
+    .text       start:0x0200ecc4 end:0x0200ed34
+
+src/arm9/Os_Mutex_Lock.c:
+    complete
+    .text       start:0x0200ed34 end:0x0200edc0
+
+src/arm9/DC_func_0002.c:
+    complete
+    .text       start:0x0200eddc end:0x0200ee08
+
+src/arm9/DC_FlushAll.c:
+    complete
+    .text       start:0x0200ee08 end:0x0200ee3c
+
+src/arm9/DC_InvalidateRangeNoClean.c:
+    complete
+    .text       start:0x0200ee3c end:0x0200ee58
+
+src/arm9/DC_SomeClean.c:
+    complete
+    .text       start:0x0200ee58 end:0x0200ee74
+
+src/arm9/Arm_FlushRange.c:
+    complete
+    .text       start:0x0200ee74 end:0x0200ee98
+
+src/arm9/Mem_DcDrainWriteBuffer.c:
+    complete
+    .text       start:0x0200ee98 end:0x0200eea4
+
+src/arm9/IC_InvalidateRangeNoClean.c:
+    complete
+    .text       start:0x0200eea4 end:0x0200eec0
+
+src/arm9/Os_SetMemoryRegionStartAddress.c:
+    complete
+    .text       start:0x0200ef24 end:0x0200ef38
+
+src/arm9/Os_InitializeMainExMemoryRegionAddress.c:
+    complete
+    .text       start:0x0200f190 end:0x0200f210
+
+src/arm9/Os_InitializeMemoryRegionAddresses.c:
+    complete
+    .text       start:0x0200f210 end:0x0200f328
+
+src/arm9/GetDtcmStartAddress.c:
+    complete
+    .text       start:0x0200f328 end:0x0200f33c
+
+src/arm9/Os_EnablePU.c:
+    complete
+    .text       start:0x0200f33c end:0x0200f34c
+
+src/arm9/Os_DisablePU.c:
+    complete
+    .text       start:0x0200f34c end:0x0200f35c
+
+src/arm9/Os_SaveExceptionContext.c:
+    complete
+    .text       start:0x0200f3f4 end:0x0200f484
+
+src/arm9/Os_InitializeExceptionHandler.c:
+    complete
+    .text       start:0x0200f4f0 end:0x0200f580
+
+src/arm9/Os_GetTick.c:
+    complete
+    .text       start:0x0200f5ac end:0x0200f65c
+
+src/arm9/Os_CountTicks.c:
+    complete
+    .text       start:0x0200f65c end:0x0200f6e4
+
+src/arm9/Os_InitializeTick.c:
+    complete
+    .text       start:0x0200f6f4 end:0x0200f790
+
+src/arm9/Os_Alarm_Cancel.c:
+    complete
+    .text       start:0x0200f8b8 end:0x0200f950
+
+src/arm9/Os_Alarm_Set.c:
+    complete
+    .text       start:0x0200f950 end:0x0200f9c8
+
+src/arm9/Os_InsertAlarm.c:
+    complete
+    .text       start:0x0200f9c8 end:0x0200fb08
+
+src/arm9/Os_InitializeAlarm.c:
+    complete
+    .text       start:0x0200fb28 end:0x0200fb80
+
+src/arm9/Os_SetAlarmTimer.c:
+    complete
+    .text       start:0x0200fb80 end:0x0200fc1c
+
+src/arm9/Os_InitializeVAlarm.c:
+    complete
+    .text       start:0x0200fc1c end:0x0200fc8c
+
+src/arm9/Os_EnableIrq.c:
+    complete
+    .text       start:0x0200fc8c end:0x0200fca0
+
+src/arm9/Os_DisableIrq.c:
+    complete
+    .text       start:0x0200fca0 end:0x0200fcb4
+
+src/arm9/Os_RestoreIrq.c:
+    complete
+    .text       start:0x0200fcb4 end:0x0200fccc
+
+src/arm9/Os_DisableIrqFiq.c:
+    complete
+    .text       start:0x0200fccc end:0x0200fce0
+
+src/arm9/Os_RestoreIrqFiq.c:
+    complete
+    .text       start:0x0200fce0 end:0x0200fcf8
+
+src/arm9/Arm_GetProcessorMode.c:
+    complete
+    .text       start:0x0200fcf8 end:0x0200fd04
+
+src/arm9/Os_Halt.c:
+    complete
+    .text       start:0x0200fd04 end:0x0200fd10
+
+src/arm9/Os_FifoResetHandler.c:
+    complete
+    .text       start:0x0200fd30 end:0x0200fd74
+
+src/arm9/Os_GetPersonalData.c:
+    complete
+    .text       start:0x0200fddc end:0x0200fe58
+
+src/arm9/Os_UnlockVram.c:
+    complete
+    .text       start:0x0200fe7c end:0x0200ff04
+
+src/arm9/func_02010168.c:
+    complete
+    .text       start:0x02010168 end:0x020101e8
+
+src/arm9/func_020101e8.c:
+    complete
+    .text       start:0x020101e8 end:0x0201023c
+
+src/arm9/Mode_CreateFromResource.c:
+    complete
+    .text       start:0x02010c84 end:0x02010cec
+
+src/arm9/func_02011074.c:
+    complete
+    .text       start:0x02011074 end:0x020111e0
+
+src/arm9/ModelBlock_SetSomethingToAllMaterials_MaybeTraslucent.c:
+    complete
+    .text       start:0x02012ffc end:0x02013044
+
+src/arm9/Maybe_helper_013044.c:
+    complete
+    .text       start:0x02013044 end:0x0201308c
+
+src/arm9/Maybe_helper_01308c.c:
+    complete
+    .text       start:0x0201308c end:0x020130d4
+
+src/arm9/ModelBlock_SetPolygonId.c:
+    complete
+    .text       start:0x020130d4 end:0x0201311c
+
+src/arm9/ModelBlock_SomeTexPltFn_2.c:
+    complete
+    .text       start:0x0201311c end:0x02013164
+
+src/arm9/ModelBlock_SomeMatFn_4.c:
+    complete
+    .text       start:0x02013164 end:0x020131ac
+
+src/arm9/ModelBlock_SetLight.c:
+    complete
+    .text       start:0x020131ac end:0x020131f4
+
+src/arm9/ModelBlock_SetEmi.c:
+    complete
+    .text       start:0x020131f4 end:0x0201323c
+
+src/arm9/ModelBlock_SomeMatFn_2.c:
+    complete
+    .text       start:0x0201323c end:0x02013284
+
+src/arm9/ModelBlock_SomeMatFn_1.c:
+    complete
+    .text       start:0x02013284 end:0x020132cc
+
+src/arm9/ModelBlock_SomeMatFn_0.c:
+    complete
+    .text       start:0x020132cc end:0x02013314
+
+src/arm9/Anim_LoadFindAnimationBlock.c:
+    complete
+    .text       start:0x02013c18 end:0x02013c78
+
+src/arm9/func_02015044.c:
+    complete
+    .text       start:0x02015044 end:0x020151a4
+
+src/arm9/Anim_CreateBlock_BCA.c:
+    complete
+    .text       start:0x020152bc end:0x02015358
+
+src/arm9/func_02015c24.c:
+    complete
+    .text       start:0x02015c24 end:0x02015c7c
+
+src/arm9/AllocateReserveTEQSub.c:
+    complete
+    .text       start:0x02016468 end:0x020164e8
+
+src/arm9/HandleAllGlobalTEQSubs.c:
+    complete
+    .text       start:0x020164e8 end:0x02016554
+
+src/arm9/StructTEQ_TryPopTEQSub.c:
+    complete
+    .text       start:0x02016574 end:0x020165b8
+
+src/arm9/StructTEQ_ReserveTEQSub.c:
+    complete
+    .text       start:0x020165d8 end:0x0201661c
+
+src/arm9/TEQSub_Fn35.c:
+    complete
+    .text       start:0x0201667c end:0x02016688
+
+src/arm9/func_02016688.c:
+    complete
+    .text       start:0x02016688 end:0x02016694
+
+src/arm9/TEQSub_Fn33.c:
+    complete
+    .text       start:0x02016694 end:0x020166c4
+
+src/arm9/TEQSub_Fn32.c:
+    complete
+    .text       start:0x020166c4 end:0x020166f4
+
+src/arm9/func_020166f4.c:
+    complete
+    .text       start:0x020166f4 end:0x02016700
+
+src/arm9/TEQSub_Fn30.c:
+    complete
+    .text       start:0x02016700 end:0x0201670c
+
+src/arm9/TEQSub_Fn29.c:
+    complete
+    .text       start:0x0201670c end:0x02016718
+
+src/arm9/TEQSub_Fn28.c:
+    complete
+    .text       start:0x02016718 end:0x02016724
+
+src/arm9/TEQSub_Fn27.c:
+    complete
+    .text       start:0x02016724 end:0x02016730
+
+src/arm9/TEQSub_Fn26.c:
+    complete
+    .text       start:0x02016730 end:0x0201673c
+
+src/arm9/TEQSub_Fn25.c:
+    complete
+    .text       start:0x0201673c end:0x02016748
+
+src/arm9/TEQSub_Fn24.c:
+    complete
+    .text       start:0x02016748 end:0x02016754
+
+src/arm9/TEQSub_Fn23.c:
+    complete
+    .text       start:0x02016754 end:0x02016760
+
+src/arm9/TEQSub_Fn22.c:
+    complete
+    .text       start:0x02016760 end:0x0201676c
+
+src/arm9/func_0201676c.c:
+    complete
+    .text       start:0x0201676c end:0x02016778
+
+src/arm9/TEQSub_Fn20.c:
+    complete
+    .text       start:0x02016778 end:0x02016784
+
+src/arm9/func_02016784.c:
+    complete
+    .text       start:0x02016784 end:0x02016790
+
+src/arm9/func_02016790.c:
+    complete
+    .text       start:0x02016790 end:0x0201679c
+
+src/arm9/TEQSub_Fn17.c:
+    complete
+    .text       start:0x0201679c end:0x020167cc
+
+src/arm9/TEQSub_Fn16.c:
+    complete
+    .text       start:0x020167cc end:0x020167fc
+
+src/arm9/func_020167fc.c:
+    complete
+    .text       start:0x020167fc end:0x02016808
+
+src/arm9/func_02016808.c:
+    complete
+    .text       start:0x02016808 end:0x02016814
+
+src/arm9/TEQSub_Fn13.c:
+    complete
+    .text       start:0x02016814 end:0x02016820
+
+src/arm9/TEQSub_Fn12.c:
+    complete
+    .text       start:0x02016820 end:0x0201682c
+
+src/arm9/TEQSub_Fn11.c:
+    complete
+    .text       start:0x0201682c end:0x02016838
+
+src/arm9/TEQSub_Fn10.c:
+    complete
+    .text       start:0x02016838 end:0x02016844
+
+src/arm9/TEQSub_Fn9.c:
+    complete
+    .text       start:0x02016844 end:0x02016850
+
+src/arm9/TEQSub_Fn8.c:
+    complete
+    .text       start:0x02016850 end:0x0201685c
+
+src/arm9/TEQSub_Fn7.c:
+    complete
+    .text       start:0x0201685c end:0x02016868
+
+src/arm9/TEQSub_Fn6.c:
+    complete
+    .text       start:0x02016868 end:0x02016874
+
+src/arm9/func_02016874.c:
+    complete
+    .text       start:0x02016874 end:0x02016880
+
+src/arm9/TEQSub_Fn4.c:
+    complete
+    .text       start:0x02016880 end:0x0201688c
+
+src/arm9/TEQSub_Fn3.c:
+    complete
+    .text       start:0x0201688c end:0x020168bc
+
+src/arm9/TEQSub_Fn2.c:
+    complete
+    .text       start:0x020168bc end:0x020168ec
+
+src/arm9/TEQSub_Fn1.c:
+    complete
+    .text       start:0x020168ec end:0x0201691c
+
+src/arm9/TEQSub_Fn0.c:
+    complete
+    .text       start:0x0201691c end:0x0201694c
+
+src/arm9/StructTEQ_IncrementValidateIndex.c:
+    complete
+    .text       start:0x02016978 end:0x020169a4
+
+src/arm9/IntrusiveListWrapper_GetAtIndex.c:
+    complete
+    .text       start:0x020172d8 end:0x02017328
+
+src/arm9/IntrusiveListWrapper_NextItem.c:
+    complete
+    .text       start:0x0201733c end:0x02017354
+
+src/arm9/IntrusiveListWrapper_SomeFn_0.c:
+    complete
+    .text       start:0x020173c0 end:0x02017440
+
+src/arm9/IntrusiveListWrapper_InsertFirst.c:
+    complete
+    .text       start:0x02017440 end:0x020174a4
+
+src/arm9/IntrusiveListWrapper_InsertLast.c:
+    complete
+    .text       start:0x020174a4 end:0x0201750c
+
+src/arm9/Mem_InitializeHeapHead.c:
+    complete
+    .text       start:0x02017584 end:0x02017614
+
+src/arm9/Mem_FindTopParentHeapHeadList.c:
+    complete
+    .text       start:0x02017614 end:0x02017640
+
+src/arm9/Mem_FindTopParentHeapHead.c:
+    complete
+    .text       start:0x02017640 end:0x020176b0
+
+src/arm9/Mem_Exp_GetAllocatableSize.c:
+    complete
+    .text       start:0x020176c0 end:0x02017748
+
+src/arm9/Mem_Exp_Allocate.c:
+    complete
+    .text       start:0x02017938 end:0x0201797c
+
+src/arm9/Mem_Exp_Finalize.c:
+    complete
+    .text       start:0x0201797c end:0x02017988
+
+src/arm9/Mem_Exp_Create.c:
+    complete
+    .text       start:0x02017988 end:0x020179d4
+
+src/arm9/Mem_Exp_Initialize.c:
+    complete
+    .text       start:0x02017dec end:0x02017e70
+
+src/arm9/Mem_CreateFrameHeapState.c:
+    complete
+    .text       start:0x02017fb4 end:0x0201800c
+
+src/arm9/Mem_Frame_Allocate.c:
+    complete
+    .text       start:0x0201808c end:0x020180d4
+
+src/arm9/Mem_Frame_Finalize.c:
+    complete
+    .text       start:0x020180d4 end:0x020180e0
+
+src/arm9/Mem_Frame_Create.c:
+    complete
+    .text       start:0x020180e0 end:0x0201812c
+
+src/arm9/Mem_Frame_AllocFromTail.c:
+    complete
+    .text       start:0x02018174 end:0x020181f0
+
+src/arm9/Mem_Frame_AllocFromHead.c:
+    complete
+    .text       start:0x020181f0 end:0x02018270
+
+src/arm9/Mem_Frame_Initialize.c:
+    complete
+    .text       start:0x02018270 end:0x020182c0
+
+src/arm9/GetFileBuffer.c:
+    complete
+    .text       start:0x020182c0 end:0x02018314
+
+src/arm9/Fs_Archive_Dispose.c:
+    complete
+    .text       start:0x02018314 end:0x02018344
+
+src/arm9/MountMountEntryFrom.c:
+    complete
+    .text       start:0x02018344 end:0x020184a0
+
+src/arm9/func_0201d798.c:
+    complete
+    .text       start:0x0201d798 end:0x0201d8f8
+
+src/arm9/func_0201df30.c:
+    complete
+    .text       start:0x0201df30 end:0x0201dfc0
+
+src/arm9/func_0201e4e4.c:
+    complete
+    .text       start:0x0201e4e4 end:0x0201e540
+
+src/arm9/func_0201e540.c:
+    complete
+    .text       start:0x0201e540 end:0x0201e5a8
+
+src/arm9/func_020204c0.c:
+    complete
+    .text       start:0x020204c0 end:0x0202056c
+
+src/arm9/ComputeProfileInfoCrc.c:
+    complete
+    .text       start:0x020205b0 end:0x020205e8
+
+src/arm9/ComputeFriendCrc.c:
+    complete
+    .text       start:0x0202061c end:0x02020650
+
+src/arm9/func_02020844.c:
+    complete
+    .text       start:0x02020844 end:0x02020870
+
+src/arm9/func_02020870.c:
+    complete
+    .text       start:0x02020870 end:0x020208a4
+
+src/arm9/func_020208a4.c:
+    complete
+    .text       start:0x020208a4 end:0x020208d8
+
+src/arm9/func_020208d8.c:
+    complete
+    .text       start:0x020208d8 end:0x02020904
+
+src/arm9/func_02020904.c:
+    complete
+    .text       start:0x02020904 end:0x02020930
+
+src/arm9/func_02020930.c:
+    complete
+    .text       start:0x02020930 end:0x02020964
+
+src/arm9/func_02020964.c:
+    complete
+    .text       start:0x02020964 end:0x02020990
+
+src/arm9/func_02020990.c:
+    complete
+    .text       start:0x02020990 end:0x020209bc
+
+src/arm9/func_020209bc.c:
+    complete
+    .text       start:0x020209bc end:0x020209e8
+
+src/arm9/func_020209e8.c:
+    complete
+    .text       start:0x020209e8 end:0x02020a14
+
+src/arm9/func_02020a14.c:
+    complete
+    .text       start:0x02020a14 end:0x02020a6c
+
+src/arm9/SND_SetChannelVolume.c:
+    complete
+    .text       start:0x02020a6c end:0x02020aa0
+
+src/arm9/SND_UnlockChannel.c:
+    complete
+    .text       start:0x02020aa0 end:0x02020acc
+
+src/arm9/SND_LockChannel.c:
+    complete
+    .text       start:0x02020acc end:0x02020af8
+
+src/arm9/func_02020af8.c:
+    complete
+    .text       start:0x02020af8 end:0x02020b2c
+
+src/arm9/func_02020b2c.c:
+    complete
+    .text       start:0x02020b2c end:0x02020b70
+
+src/arm9/func_02020b70.c:
+    complete
+    .text       start:0x02020b70 end:0x02020bbc
+
+src/arm9/SND_StopTimer.c:
+    complete
+    .text       start:0x02020bbc end:0x02020c2c
+
+src/arm9/SND_StartTimer.c:
+    complete
+    .text       start:0x02020c2c end:0x02020c60
+
+src/arm9/func_02020c60.c:
+    complete
+    .text       start:0x02020c60 end:0x02020c94
+
+src/arm9/func_02020c94.c:
+    complete
+    .text       start:0x02020c94 end:0x02020cbc
+
+src/arm9/func_02020cbc.c:
+    complete
+    .text       start:0x02020cbc end:0x02020ce4
+
+src/arm9/func_02020ce4.c:
+    complete
+    .text       start:0x02020ce4 end:0x02020d0c
+
+src/arm9/func_02020d34.c:
+    complete
+    .text       start:0x02020d34 end:0x02020d68
+
+src/arm9/func_02020db0.c:
+    complete
+    .text       start:0x02020db0 end:0x02020ddc
+
+src/arm9/func_02020ddc.c:
+    complete
+    .text       start:0x02020ddc end:0x02020e10
+
+src/arm9/func_02020e10.c:
+    complete
+    .text       start:0x02020e10 end:0x02020e3c
+
+src/arm9/Sound_UnlockMutex.c:
+    complete
+    .text       start:0x02020e3c end:0x02020e50
+
+src/arm9/Sound_LockMutex.c:
+    complete
+    .text       start:0x02020e50 end:0x02020e64
+
+src/arm9/Sound_InitializeImpl.c:
+    complete
+    .text       start:0x02020e64 end:0x02020eb0
+
+src/arm9/Sound_IsCommandAvailable.c:
+    complete
+    .text       start:0x02020eb0 end:0x02020ef8
+
+src/arm9/Sound_AllocateCommandImpl.c:
+    complete
+    .text       start:0x02020ef8 end:0x02020f50
+
+src/arm9/SoundInternal_RequestCommandProc.c:
+    complete
+    .text       start:0x02020f50 end:0x02020f84
+
+src/arm9/Sound_RegisterFifoHandler.c:
+    complete
+    .text       start:0x02020f84 end:0x02020ff0
+
+src/arm9/Sound_FifoHandler.c:
+    complete
+    .text       start:0x02020ff0 end:0x02021020
+
+src/arm9/func_02021040.c:
+    complete
+    .text       start:0x02021040 end:0x02021080
+
+src/arm9/func_02021080.c:
+    complete
+    .text       start:0x02021080 end:0x020210c0
+
+src/arm9/func_020210c0.c:
+    complete
+    .text       start:0x020210c0 end:0x02021114
+
+src/arm9/func_02021114.c:
+    complete
+    .text       start:0x02021114 end:0x02021154
+
+src/arm9/func_02021154.c:
+    complete
+    .text       start:0x02021154 end:0x020211e4
+
+src/arm9/func_020213a4.c:
+    complete
+    .text       start:0x020213a4 end:0x020213ec
+
+src/arm9/Sound_AllocateCommand.c:
+    complete
+    .text       start:0x020213ec end:0x02021488
+
+src/arm9/Sound_CommandReceiveAndReply.c:
+    complete
+    .text       start:0x02021488 end:0x020215bc
+
+src/arm9/func_020217b4.c:
+    complete
+    .text       start:0x020217b4 end:0x02021834
+
+src/arm9/func_02021834.c:
+    complete
+    .text       start:0x02021834 end:0x02021868
+
+src/arm9/func_02021868.c:
+    complete
+    .text       start:0x02021868 end:0x020218bc
+
+src/arm9/func_020218bc.c:
+    complete
+    .text       start:0x020218bc end:0x020218f4
+
+src/arm9/Maybe_helper_0218f4.c:
+    complete
+    .text       start:0x020218f4 end:0x02021968
+
+src/arm9/SND_GetWaveDataAddress.c:
+    complete
+    .text       start:0x02021968 end:0x020219b0
+
+src/arm9/SND_SetWaveDataAddress.c:
+    complete
+    .text       start:0x020219b0 end:0x020219e8
+
+src/arm9/SND_func_0042.c:
+    complete
+    .text       start:0x02021be8 end:0x02021c34
+
+src/arm9/func_02021c34.c:
+    complete
+    .text       start:0x02021c34 end:0x02021cd4
+
+src/arm9/CellBank_InitializeLoad.c:
+    complete
+    .text       start:0x02021e8c end:0x02021f1c
+
+src/arm9/Screen_ReadBlock.c:
+    complete
+    .text       start:0x02021f9c end:0x02021fd0
+
+src/arm9/func_02022438.c:
+    complete
+    .text       start:0x02022438 end:0x02022474
+
+src/arm9/G2d_ComputeMaxWidthHeight.c:
+    complete
+    .text       start:0x02022aa8 end:0x02022b44
+
+src/arm9/NFTR_GetTileIndexForCharacter.c:
+    complete
+    .text       start:0x02022ce4 end:0x02022d44
+
+src/arm9/NFTR_LoadV2.c:
+    complete
+    .text       start:0x02022d44 end:0x02022d88
+
+src/arm9/NFTR_LoadImpl.c:
+    complete
+    .text       start:0x02022d88 end:0x02022dd8
+
+src/arm9/G2d_Sprite_CreateFromTiles.c:
+    complete
+    .text       start:0x02023408 end:0x02023450
+
+src/arm9/G2d_Text_PrintString4.c:
+    complete
+    .text       start:0x0202428c end:0x02024340
+
+src/arm9/G2d_Text_PrintString.c:
+    complete
+    .text       start:0x02024340 end:0x020243f0
+
+src/arm9/func_02024a28.c:
+    complete
+    .text       start:0x02024a28 end:0x02024a88
+
+src/arm9/func_020250a8.c:
+    complete
+    .text       start:0x020250a8 end:0x0202511c
+
+src/arm9/func_02025954.c:
+    complete
+    .text       start:0x02025954 end:0x02025a00
+
+src/arm9/func_02025a50.c:
+    complete
+    .text       start:0x02025a50 end:0x02025abc
+
+src/arm9/LoadPlayerGfxData_from_thumb.c:
+    complete
+    .text       start:0x02025b84 end:0x02025bb4
+
+src/arm9/func_02025e60.c:
+    complete
+    .text       start:0x02025e60 end:0x02025eb0
+
+src/arm9/VerifySelectCharacterFiles_from_thumb.c:
+    complete
+    .text       start:0x02025f90 end:0x02026058
+
+src/arm9/VerifySelectKartFiles_from_thumb.c:
+    complete
+    .text       start:0x02027df8 end:0x02027e78
+
+src/arm9/GXS_SetGraphicsMode.c:
+    complete
+    .text       start:0x02027fb8 end:0x02027fd4
+
+src/arm9/func_02027fd4.c:
+    complete
+    .text       start:0x02027fd4 end:0x02028010
+
+src/arm9/func_020280e8.c:
+    complete
+    .text       start:0x020280e8 end:0x02028110
+
+src/arm9/Maybe_helper_028794.c:
+    complete
+    .text       start:0x02028794 end:0x020287c8
+
+src/arm9/Maybe_check_0287c8.c:
+    complete
+    .text       start:0x020287c8 end:0x020287ec
+
+src/arm9/Maybe_helper_0287ec.c:
+    complete
+    .text       start:0x020287ec end:0x0202881c
+
+src/arm9/Maybe_helper_028d9c.c:
+    complete
+    .text       start:0x02028d9c end:0x02028db8
+
+src/arm9/Maybe_call_Mem_CpuFastMemorySet.c:
+    complete
+    .text       start:0x02028e14 end:0x02028e38
+
+src/arm9/func_020290ac.c:
+    complete
+    .text       start:0x020290ac end:0x020290fc
+
+src/arm9/DoInitializeGlobalCA_from_thumb.c:
+    complete
+    .text       start:0x0202993c end:0x020299e4
+
+src/arm9/IsDwc.c:
+    complete
+    .text       start:0x020299f0 end:0x02029a18
+
+src/arm9/Mem_CpuFastMemorySet2.c:
+    complete
+    .text       start:0x02029a4c end:0x02029a70
+
+src/arm9/Maybe_WiFi_VS_course_select_s_b.c:
+    complete
+    .text       start:0x0202a734 end:0x0202a820
+
+src/arm9/func_0202b888.c:
+    complete
+    .text       start:0x0202b888 end:0x0202b8c0
+
+src/arm9/VerifySelectMenuFiles_from_thumb.c:
+    complete
+    .text       start:0x0202b8d8 end:0x0202ba14
+
+src/arm9/func_0202d5f8.c:
+    complete
+    .text       start:0x0202d5f8 end:0x0202d674
+
+src/arm9/func_0202d82c.c:
+    complete
+    .text       start:0x0202d82c end:0x0202d868
+
+src/arm9/func_0202dc68.c:
+    complete
+    .text       start:0x0202dc68 end:0x0202dcf4
+
+src/arm9/Maybe_TimeAttack_ghost_get_m_b.c:
+    complete
+    .text       start:0x0202e274 end:0x0202e43c
+
+src/arm9/func_0202e43c.c:
+    complete
+    .text       start:0x0202e43c end:0x0202e468
+
+src/arm9/Maybe_call_Mem_CpuFastMemorySet_2.c:
+    complete
+    .text       start:0x0202e6a0 end:0x0202e6c4
+
+src/arm9/func_0202edfc.c:
+    complete
+    .text       start:0x0202edfc end:0x0202ee20
+
+src/arm9/Maybe_helper_02f028.c:
+    complete
+    .text       start:0x0202f028 end:0x0202f058
+
+src/arm9/Maybe_helper_02f0c8.c:
+    complete
+    .text       start:0x0202f0c8 end:0x0202f0fc
+
+src/arm9/Maybe_check_02f0fc.c:
+    complete
+    .text       start:0x0202f0fc end:0x0202f120
+
+src/arm9/IsDwc_2.c:
+    complete
+    .text       start:0x0202f1a8 end:0x0202f1d0
+
+src/arm9/DisplayConfig_SetBottomEngineBg3Config_0.c:
+    complete
+    .text       start:0x0202f4ac end:0x0202f4e0
+
+src/arm9/DisplayConfig_SetTopEngineBg1Config_0.c:
+    complete
+    .text       start:0x0202f4e0 end:0x0202f51c
+
+src/arm9/Maybe_call_Mem_CpuFastMemorySet_3.c:
+    complete
+    .text       start:0x0202f530 end:0x0202f554
+
+src/arm9/MaybeVerifyMultiSelectFiles_from_thumb.c:
+    complete
+    .text       start:0x0202f554 end:0x0202f688
+
+src/arm9/GXS_SetGraphicsMode__mkds_3038c.c:
+    complete
+    .text       start:0x0203038c end:0x020303a8
+
+src/arm9/Maybe_helper_030728.c:
+    complete
+    .text       start:0x02030728 end:0x0203075c
+
+src/arm9/Maybe_check_03075c.c:
+    complete
+    .text       start:0x0203075c end:0x02030780
+
+src/arm9/Maybe_helper_030780.c:
+    complete
+    .text       start:0x02030780 end:0x020307b0
+
+src/arm9/Maybe_call_Mem_CpuFastMemorySet_4.c:
+    complete
+    .text       start:0x02030930 end:0x02030954
+
+src/arm9/VerifyCommonSelectGameFiles_from_thumb.c:
+    complete
+    .text       start:0x0203206c end:0x02032138
+
+src/arm9/func_02032a20.c:
+    complete
+    .text       start:0x02032a20 end:0x02032aa8
+
+src/arm9/func_0203434c.c:
+    complete
+    .text       start:0x0203434c end:0x02034370
+
+src/arm9/func_020351c8.c:
+    complete
+    .text       start:0x020351c8 end:0x02035228
+
+src/arm9/func_02035280.c:
+    complete
+    .text       start:0x02035280 end:0x020352fc
+
+src/arm9/func_020352fc.c:
+    complete
+    .text       start:0x020352fc end:0x02035378
+
+src/arm9/func_020353a4.c:
+    complete
+    .text       start:0x020353a4 end:0x020353f8
+
+src/arm9/func_02035c14.c:
+    complete
+    .text       start:0x02035c14 end:0x02035c50
+
+src/arm9/func_0203606c.c:
+    complete
+    .text       start:0x0203606c end:0x020360a0
+
+src/arm9/func_020360a0.c:
+    complete
+    .text       start:0x020360a0 end:0x020360d0
+
+src/arm9/func_02036108.c:
+    complete
+    .text       start:0x02036108 end:0x02036258
+
+src/arm9/Maybe_call_Mem_CpuFastMemorySet_5.c:
+    complete
+    .text       start:0x02036278 end:0x0203629c
+
+src/arm9/func_0203629c.c:
+    complete
+    .text       start:0x0203629c end:0x020362c4
+
+src/arm9/SetExecuteStart.c:
+    complete
+    .text       start:0x020365bc end:0x020365f0
+
+src/arm9/InitializeEverything.c:
+    complete
+    .text       start:0x020365f0 end:0x02036678
+
+src/arm9/MemoryRegionAddressAccess.c:
+    complete
+    .text       start:0x02036678 end:0x020366bc
+
+src/arm9/EnableVblankIRQ.c:
+    complete
+    .text       start:0x02036778 end:0x020367c4
+
+src/arm9/func_02036820.c:
+    complete
+    .text       start:0x02036820 end:0x02036854
+
+src/arm9/Mem_CreateChildFrameHeapFromTail.c:
+    complete
+    .text       start:0x02036854 end:0x020368e0
+
+src/arm9/Mem_CreateChildFrameHeapFromHead.c:
+    complete
+    .text       start:0x020368e0 end:0x02036948
+
+src/arm9/Mem_CreateChildExpHeap.c:
+    complete
+    .text       start:0x020369fc end:0x02036ab0
+
+src/arm9/Mem_DestroyHeap.c:
+    complete
+    .text       start:0x02036ab0 end:0x02036b30
+
+src/arm9/Mem_FreeHeap.c:
+    complete
+    .text       start:0x02036b30 end:0x02036b74
+
+src/arm9/Mem_AllocateHeapAligned.c:
+    complete
+    .text       start:0x02036b74 end:0x02036bec
+
+src/arm9/Mem_AllocateHeap.c:
+    complete
+    .text       start:0x02036bec end:0x02036c4c
+
+src/arm9/ResetDisplayConfig.c:
+    complete
+    .text       start:0x02037a94 end:0x02037abc
+
+src/arm9/CreateDisplayConfig.c:
+    complete
+    .text       start:0x02038d88 end:0x02038de4
+
+src/arm9/DisplayConfig_SomeFn.c:
+    complete
+    .text       start:0x02038de4 end:0x02038e6c
+
+src/arm9/func_02039378.c:
+    complete
+    .text       start:0x02039378 end:0x0203940c
+
+src/arm9/UpdateInput.c:
+    complete
+    .text       start:0x0203940c end:0x02039478
+
+src/arm9/MaybePrepareVram.c:
+    complete
+    .text       start:0x02039bd4 end:0x02039c7c
+
+src/arm9/SceneFn_Menu.c:
+    complete
+    .text       start:0x02039eec end:0x02039f34
+
+src/arm9/FindFormatGhostBinPath.c:
+    complete
+    .text       start:0x0203b018 end:0x0203b070
+
+src/arm9/FormatGhostBinPath.c:
+    complete
+    .text       start:0x0203b070 end:0x0203b0a0
+
+src/arm9/Maybe_banner.c:
+    complete
+    .text       start:0x0203b0f8 end:0x0203b194
+
+src/arm9/func_0203b96c.c:
+    complete
+    .text       start:0x0203b96c end:0x0203ba70
+
+src/arm9/AllocateKartAppearTableData_from_thumb.c:
+    complete
+    .text       start:0x0203bedc end:0x0203bf04
+
+src/arm9/GetCurrentTime.c:
+    complete
+    .text       start:0x0203bfc4 end:0x0203bfec
+
+src/arm9/GetCurrentDate.c:
+    complete
+    .text       start:0x0203bfec end:0x0203c018
+
+src/arm9/SceneFn_Title.c:
+    complete
+    .text       start:0x0203c018 end:0x0203c060
+
+src/arm9/Scene_Title_Initialize.c:
+    complete
+    .text       start:0x0203c094 end:0x0203c0bc
+
+src/arm9/Maybe_helper_03c240.c:
+    complete
+    .text       start:0x0203c240 end:0x0203c25c
+
+src/arm9/UpdatePlayerLapCountIfNot123.c:
+    complete
+    .text       start:0x0203c25c end:0x0203c2e4
+
+src/arm9/Maybe_helper_03c5ac.c:
+    complete
+    .text       start:0x0203c5ac end:0x0203c5c8
+
+src/arm9/GetSomeRacerValue.c:
+    complete
+    .text       start:0x0203c5c8 end:0x0203c5e4
+
+src/arm9/InitializeGlobalMV.c:
+    complete
+    .text       start:0x0203d848 end:0x0203d8fc
+
+src/arm9/StructRC_SomeFn_1.c:
+    complete
+    .text       start:0x0203f7c0 end:0x0203f91c
+
+src/arm9/StructRC_SomeFn.c:
+    complete
+    .text       start:0x0203f91c end:0x0203fa60
+
+src/arm9/func_02041a70.c:
+    complete
+    .text       start:0x02041a70 end:0x02041bb0
+
+src/arm9/NkmHandler_CAME_from_thumb.c:
+    complete
+    .text       start:0x02042170 end:0x02042280
+
+src/arm9/NkmHandler_AREA_from_thumb.c:
+    complete
+    .text       start:0x02042280 end:0x020422c4
+
+src/arm9/InitializeAreaType3s_from_thumb.c:
+    complete
+    .text       start:0x0204236c end:0x020423fc
+
+src/arm9/NkmHandler_EPAT_from_thumb.c:
+    complete
+    .text       start:0x02042410 end:0x02042498
+
+src/arm9/NkmHandler_EPOI_from_thumb.c:
+    complete
+    .text       start:0x02042498 end:0x02042520
+
+src/arm9/NkmHandler_IPAT_from_thumb.c:
+    complete
+    .text       start:0x02042520 end:0x02042558
+
+src/arm9/NkmHandler_IPOI_from_thumb.c:
+    complete
+    .text       start:0x02042558 end:0x02042590
+
+src/arm9/NkmHandler_CPAT_from_thumb.c:
+    complete
+    .text       start:0x02042590 end:0x02042628
+
+src/arm9/NkmHandler_KTPC_from_thumb.c:
+    complete
+    .text       start:0x02042708 end:0x0204274c
+
+src/arm9/InitializePECannonTable_from_thumb.c:
+    complete
+    .text       start:0x0204274c end:0x020427ac
+
+src/arm9/NkmHandler_KTP2_from_thumb.c:
+    complete
+    .text       start:0x020427ac end:0x020427d4
+
+src/arm9/NkmHandler_KTPS_from_thumb.c:
+    complete
+    .text       start:0x02042990 end:0x020429b8
+
+src/arm9/PopulatePathEntries_from_thumb.c:
+    complete
+    .text       start:0x02042fd8 end:0x02043038
+
+src/arm9/ComputeTotalCpatDistance_from_thumb.c:
+    complete
+    .text       start:0x02043038 end:0x02043078
+
+src/arm9/NkmHandler_POIT_from_thumb.c:
+    complete
+    .text       start:0x02043108 end:0x0204313c
+
+src/arm9/NkmHandler_PATH_from_thumb.c:
+    complete
+    .text       start:0x0204313c end:0x02043170
+
+src/arm9/NkmHandler_OBJI_from_thumb.c:
+    complete
+    .text       start:0x02043170 end:0x020431a4
+
+src/arm9/func_02043410.c:
+    complete
+    .text       start:0x02043410 end:0x02043544
+
+src/arm9/Struct5624_SetXflag2.c:
+    complete
+    .text       start:0x02043544 end:0x0204359c
+
+src/arm9/func_02043b04.c:
+    complete
+    .text       start:0x02043b04 end:0x02043b3c
+
+src/arm9/MaybeLoadStaffGhost.c:
+    complete
+    .text       start:0x02044bf8 end:0x02044d4c
+
+src/arm9/func_020467a0.c:
+    complete
+    .text       start:0x020467a0 end:0x020467d0
+
+src/arm9/InitializeGlobalCO.c:
+    complete
+    .text       start:0x02046a3c end:0x02046a88
+
+src/arm9/SceneFn_Menu2.c:
+    complete
+    .text       start:0x02046a88 end:0x02046ad0
+
+src/arm9/Scene_Menu2_Initialize.c:
+    complete
+    .text       start:0x02046ae4 end:0x02046b40
+
+src/arm9/ResetGlobal59C4.c:
+    complete
+    .text       start:0x02046c74 end:0x02046ca8
+
+src/arm9/Scene_Race_PostSleepImpl.c:
+    complete
+    .text       start:0x02046e24 end:0x02046e84
+
+src/arm9/func_02046e84.c:
+    complete
+    .text       start:0x02046e84 end:0x02046ee4
+
+src/arm9/ResetGlobal59C4Sub.c:
+    complete
+    .text       start:0x02046ee4 end:0x02046f54
+
+src/arm9/CreateGlobal59C4Sub.c:
+    complete
+    .text       start:0x02046fb4 end:0x02047054
+
+src/arm9/CreateGlobal59C4.c:
+    complete
+    .text       start:0x02047104 end:0x02047178
+
+src/arm9/Input_MaybeInitializeTouch.c:
+    complete
+    .text       start:0x02047178 end:0x020471b0
+
+src/arm9/LoadEmbeddedStatic2DArchive_from_thumb.c:
+    complete
+    .text       start:0x020471b0 end:0x02047220
+
+src/arm9/ResizeActiveExecutionContextHeapHandle_from_thumb.c:
+    complete
+    .text       start:0x02047220 end:0x02047250
+
+src/arm9/func_020474e4.c:
+    complete
+    .text       start:0x020474e4 end:0x02047544
+
+src/arm9/func_020476ac.c:
+    complete
+    .text       start:0x020476ac end:0x020476ec
+
+src/arm9/Dispose_CST_Mount_K2D_R2D_MAR_from_thumb.c:
+    complete
+    .text       start:0x020476ec end:0x02047728
+
+src/arm9/Dispose_KM2_KSB_Mount_CRS_from_thumb.c:
+    complete
+    .text       start:0x02047728 end:0x0204775c
+
+src/arm9/Dispose_KM1_Mount_KM2_from_thumb.c:
+    complete
+    .text       start:0x0204775c end:0x02047780
+
+src/arm9/AllocateFindFileBuffer_KME_KM1_KM2_KSB_from_thumb.c:
+    complete
+    .text       start:0x02047780 end:0x020478bc
+
+src/arm9/FindFileBuffer_KME_KM1_KM2_KSB_from_thumb.c:
+    complete
+    .text       start:0x020478bc end:0x02047950
+
+src/arm9/FindFileBufferGeneric_KME_KM1_KM2_KSB_from_thumb.c:
+    complete
+    .text       start:0x02047950 end:0x02047974
+
+src/arm9/find_buf_fn_from_thumb.c:
+    complete
+    .text       start:0x0204799c end:0x02047a28
+
+src/arm9/FindFileBuffer_MAR_EFT_from_thumb.c:
+    complete
+    .text       start:0x02047b08 end:0x02047b30
+
+src/arm9/FormatGetPathMountBuffer_from_thumb.c:
+    complete
+    .text       start:0x02047b30 end:0x02047b6c
+
+src/arm9/MountArchivesForScene_from_thumb.c:
+    complete
+    .text       start:0x02047ba0 end:0x02047cf0
+
+src/arm9/MountCurrentMountEntry_from_thumb.c:
+    complete
+    .text       start:0x02047db8 end:0x02047e0c
+
+src/arm9/DecompressCurrentMountEntry_from_thumb.c:
+    complete
+    .text       start:0x02047e0c end:0x02047e94
+
+src/arm9/Arc_MountArchive_from_thumb.c:
+    complete
+    .text       start:0x02048050 end:0x02048284
+
+src/arm9/FormatArchiveWithLanguage_from_thumb.c:
+    complete
+    .text       start:0x02048284 end:0x020482ac
+
+src/arm9/FormatRaceCarcWithLanguage_from_thumb.c:
+    complete
+    .text       start:0x020482ac end:0x020482f0
+
+src/arm9/FormatSceneArchiveWithRaceMode_from_thumb.c:
+    complete
+    .text       start:0x020482f0 end:0x02048324
+
+src/arm9/FormatStaffRollCarcWithLanguage_from_thumb.c:
+    complete
+    .text       start:0x02048324 end:0x02048350
+
+src/arm9/FormatResultCarcWithLanguage_from_thumb.c:
+    complete
+    .text       start:0x02048350 end:0x020483a0
+
+src/arm9/FormatResultCarc_from_thumb.c:
+    complete
+    .text       start:0x020483a0 end:0x020483e4
+
+src/arm9/FormatSceneArchive_from_thumb.c:
+    complete
+    .text       start:0x020483e4 end:0x0204840c
+
+src/arm9/FormatCarcWithLanguage2_from_thumb.c:
+    complete
+    .text       start:0x0204840c end:0x02048440
+
+src/arm9/FormatCourseCarc_from_thumb.c:
+    complete
+    .text       start:0x02048498 end:0x02048504
+
+src/arm9/AllocateReadFileBuffer_from_thumb.c:
+    complete
+    .text       start:0x02048504 end:0x02048590
+
+src/arm9/OpenReadFileBufferSize_from_thumb.c:
+    complete
+    .text       start:0x0204863c end:0x02048684
+
+src/arm9/SceneFn_Emblem.c:
+    complete
+    .text       start:0x0204a550 end:0x0204a598
+
+src/arm9/func_0204a928.c:
+    complete
+    .text       start:0x0204a928 end:0x0204a978
+
+src/arm9/func_0204a978.c:
+    complete
+    .text       start:0x0204a978 end:0x0204a9e4
+
+src/arm9/AllocateInputRecord.c:
+    complete
+    .text       start:0x0204aa04 end:0x0204aa28
+
+src/arm9/SetSomeSceneSseqId.c:
+    complete
+    .text       start:0x0204acd0 end:0x0204ad24
+
+src/arm9/InitializeSystemContext.c:
+    complete
+    .text       start:0x0204af70 end:0x0204afd0
+
+src/arm9/SceneFn_WLMenu.c:
+    complete
+    .text       start:0x0204afd0 end:0x0204b018
+
+src/arm9/CalculateCRCChecksum_from_thumb.c:
+    complete
+    .text       start:0x0204b284 end:0x0204b2cc
+
+src/arm9/AllocateLockCardBackupResource_from_thumb.c:
+    complete
+    .text       start:0x0204b3a4 end:0x0204b3dc
+
+src/arm9/CleanupUnlockBackup_from_thumb.c:
+    complete
+    .text       start:0x0204b3dc end:0x0204b418
+
+src/arm9/SV_MaybeCompressWriteTwoOffsetsFlagC_from_thumb.c:
+    complete
+    .text       start:0x0204b430 end:0x0204b458
+
+src/arm9/func_0204b714.c:
+    complete
+    .text       start:0x0204b714 end:0x0204b7b8
+
+src/arm9/InitializeSaveDataIoManager_from_thumb.c:
+    complete
+    .text       start:0x0204ba2c end:0x0204ba7c
+
+src/arm9/func_0204ba8c.c:
+    complete
+    .text       start:0x0204ba8c end:0x0204bad8
+
+src/arm9/func_0204bca0.c:
+    complete
+    .text       start:0x0204bca0 end:0x0204bcb4
+
+src/arm9/func_0204bcb4.c:
+    complete
+    .text       start:0x0204bcb4 end:0x0204bcdc
+
+src/arm9/func_0204c28c.c:
+    complete
+    .text       start:0x0204c28c end:0x0204c320
+
+src/arm9/func_0204d0bc.c:
+    complete
+    .text       start:0x0204d0bc end:0x0204d110
+
+src/arm9/func_0204d110.c:
+    complete
+    .text       start:0x0204d110 end:0x0204d18c
+
+src/arm9/UnkStruct_ExtraFileOperationHandler_Unk.c:
+    complete
+    .text       start:0x0204dab8 end:0x0204db40
+
+src/arm9/UnkStruct_ReadFn_RomUnk_0.c:
+    complete
+    .text       start:0x0204db48 end:0x0204db6c
+
+src/arm9/func_0204df90.c:
+    complete
+    .text       start:0x0204df90 end:0x0204dfe0
+
+src/arm9/SetGlobalBAN_from_thumb.c:
+    complete
+    .text       start:0x0204ea14 end:0x0204ea3c
+
+src/arm9/func_0204eb08.c:
+    complete
+    .text       start:0x0204eb08 end:0x0204ebb8
+
+src/arm9/func_0204ee64.c:
+    complete
+    .text       start:0x0204ee64 end:0x0204eeac
+
+src/arm9/NitroKartStringFunction_from_thumb.c:
+    complete
+    .text       start:0x0204eeb4 end:0x0204ef1c
+
+src/arm9/func_0204f4d0.c:
+    complete
+    .text       start:0x0204f4d0 end:0x0204f5e4
+
+src/arm9/func_0204f8a0.c:
+    complete
+    .text       start:0x0204f8a0 end:0x0204f938
+
+src/arm9/func_02052fa4.c:
+    complete
+    .text       start:0x02052fa4 end:0x02053020
+
+src/arm9/func_020536e0.c:
+    complete
+    .text       start:0x020536e0 end:0x0205373c
+
+src/arm9/func_02054208.c:
+    complete
+    .text       start:0x02054208 end:0x02054330
+
+src/arm9/func_02054b44.c:
+    complete
+    .text       start:0x02054b44 end:0x02054c98
+
+src/arm9/func_020559ec.c:
+    complete
+    .text       start:0x020559ec end:0x02055a4c
+
+src/arm9/SceneFn_Record.c:
+    complete
+    .text       start:0x02055a4c end:0x02055a94
+
+src/arm9/InitializeGlobalAA04.c:
+    complete
+    .text       start:0x02056158 end:0x02056208
+
+src/arm9/GetWorstStarRank_from_thumb.c:
+    complete
+    .text       start:0x02056208 end:0x02056284
+
+src/arm9/GetReadStaffGhost_from_thumb.c:
+    complete
+    .text       start:0x02056284 end:0x020562b4
+
+src/arm9/LoadKartAppearTablePointer_from_thumb.c:
+    complete
+    .text       start:0x02056444 end:0x02056464
+
+src/arm9/StructTK_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x02056464 end:0x02056574
+
+src/arm9/func_02056574.c:
+    complete
+    .text       start:0x02056574 end:0x020565ac
+
+src/arm9/func_02056700.c:
+    complete
+    .text       start:0x02056700 end:0x02056750
+
+src/arm9/GetMissionLevelStageInfoByIds_from_thumb.c:
+    complete
+    .text       start:0x020569dc end:0x02056a04
+
+src/arm9/SetMissionLevelStageInfoFromIds_from_thumb.c:
+    complete
+    .text       start:0x02056a04 end:0x02056a2c
+
+src/arm9/CopyCupEntryTo_from_thumb.c:
+    complete
+    .text       start:0x02056a7c end:0x02056aa4
+
+src/arm9/StructNKGPCupEntry_CopyTo_from_thumb.c:
+    complete
+    .text       start:0x02056aa4 end:0x02056b08
+
+src/arm9/CopyCupEntryFrom_from_thumb.c:
+    complete
+    .text       start:0x02056b08 end:0x02056b30
+
+src/arm9/StructNKGPCupEntry_CopyFrom_from_thumb.c:
+    complete
+    .text       start:0x02056b30 end:0x02056bc0
+
+src/arm9/TimeTrialRecord_CopyFrom_from_thumb.c:
+    complete
+    .text       start:0x02056bc0 end:0x02056c0c
+
+src/arm9/TimeTrialRecord_CopyFromImpl_from_thumb.c:
+    complete
+    .text       start:0x02056c0c end:0x02056c6c
+
+src/arm9/TimeTrialCopyToSaveData_from_thumb.c:
+    complete
+    .text       start:0x02056c6c end:0x02056cac
+
+src/arm9/TimeTrialRecordCopyTo_from_thumb.c:
+    complete
+    .text       start:0x02056cac end:0x02056d40
+
+src/arm9/CheckExtraKartUnlockFlagsWith_from_thumb.c:
+    complete
+    .text       start:0x02056dac end:0x02056dec
+
+src/arm9/EraseNonGhostSaveDataSections_from_thumb.c:
+    complete
+    .text       start:0x02056e48 end:0x02056e70
+
+src/arm9/ReadSaveData_NonGhost_from_thumb.c:
+    complete
+    .text       start:0x02056f98 end:0x02056fdc
+
+src/arm9/OverwriteEmptySaveData_from_thumb.c:
+    complete
+    .text       start:0x02057130 end:0x02057174
+
+src/arm9/ClearAllSaveDataSections_from_thumb.c:
+    complete
+    .text       start:0x0205721c end:0x02057244
+
+src/arm9/ClearSaveDataGhosts_from_thumb.c:
+    complete
+    .text       start:0x02057260 end:0x02057294
+
+src/arm9/func_02057410.c:
+    complete
+    .text       start:0x02057410 end:0x0205743c
+
+src/arm9/func_0205743c.c:
+    complete
+    .text       start:0x0205743c end:0x0205746c
+
+src/arm9/MaybeSetPersonalGhostForCoursePresent_from_thumb.c:
+    complete
+    .text       start:0x0205746c end:0x02057498
+
+src/arm9/WriteSaveDataHeader_from_thumb.c:
+    complete
+    .text       start:0x020574a0 end:0x020574c8
+
+src/arm9/InitializeSaveDataHolder_from_thumb.c:
+    complete
+    .text       start:0x02057524 end:0x02057624
+
+src/arm9/StructOI_Initialize_from_thumb.c:
+    complete
+    .text       start:0x02057624 end:0x020576b8
+
+src/arm9/ReadSaveDataSection_NKFE_from_thumb.c:
+    complete
+    .text       start:0x020576b8 end:0x02057710
+
+src/arm9/WriteSaveDataSection_NKFE_from_thumb.c:
+    complete
+    .text       start:0x02057710 end:0x02057764
+
+src/arm9/ReadSaveDataSection_FriendList_from_thumb.c:
+    complete
+    .text       start:0x02057764 end:0x020577b4
+
+src/arm9/WriteSaveDataSection_FriendList_from_thumb.c:
+    complete
+    .text       start:0x020577b4 end:0x02057800
+
+src/arm9/ReadSaveDataSection_DownloadGhost_from_thumb.c:
+    complete
+    .text       start:0x020578fc end:0x02057944
+
+src/arm9/WriteSaveDataSection_DownloadGhost_from_thumb.c:
+    complete
+    .text       start:0x02057944 end:0x0205798c
+
+src/arm9/ReadSaveDataSection_PersonalGhost_from_thumb.c:
+    complete
+    .text       start:0x0205798c end:0x020579d0
+
+src/arm9/WriteSaveDataSection_PersonalGhost_from_thumb.c:
+    complete
+    .text       start:0x020579d0 end:0x02057a18
+
+src/arm9/ReadSaveDataSection_MissionRun_from_thumb.c:
+    complete
+    .text       start:0x02057a18 end:0x02057a60
+
+src/arm9/WriteSaveDataSection_MissionRun_from_thumb.c:
+    complete
+    .text       start:0x02057a60 end:0x02057aac
+
+src/arm9/ReadSaveDataSection_TimeTrial_from_thumb.c:
+    complete
+    .text       start:0x02057aac end:0x02057af4
+
+src/arm9/WriteSaveDataSection_TimeTrials_from_thumb.c:
+    complete
+    .text       start:0x02057af4 end:0x02057b40
+
+src/arm9/ReadSaveDataSection_GrandPrix_from_thumb.c:
+    complete
+    .text       start:0x02057b40 end:0x02057b84
+
+src/arm9/WriteSaveDataSection_GrandPrix_from_thumb.c:
+    complete
+    .text       start:0x02057b84 end:0x02057bcc
+
+src/arm9/ReadSaveDataSection_Emblem_from_thumb.c:
+    complete
+    .text       start:0x02057bcc end:0x02057c14
+
+src/arm9/WriteSaveDataSection_Emblem_from_thumb.c:
+    complete
+    .text       start:0x02057c14 end:0x02057c60
+
+src/arm9/ReadSaveDataSection_Header_from_thumb.c:
+    complete
+    .text       start:0x02057c60 end:0x02057ca4
+
+src/arm9/SceneFn_Logo.c:
+    complete
+    .text       start:0x02057d10 end:0x02057d58
+
+src/arm9/WaitForWorkerTask.c:
+    complete
+    .text       start:0x02057d9c end:0x02057df0
+
+src/arm9/func_02058efc.c:
+    complete
+    .text       start:0x02058efc end:0x02058f20
+
+src/arm9/AllocateSomeZEStuff_from_thumb.c:
+    complete
+    .text       start:0x0205982c end:0x02059878
+
+src/arm9/SceneFn_Result.c:
+    complete
+    .text       start:0x02059b78 end:0x02059bc0
+
+src/arm9/DisposeOverlayManagerHeap.c:
+    complete
+    .text       start:0x02059d80 end:0x02059dc8
+
+src/arm9/CreateRegionHeapHandleForOverlay1.c:
+    complete
+    .text       start:0x02059dc8 end:0x02059e1c
+
+src/arm9/func_0205a108.c:
+    complete
+    .text       start:0x0205a108 end:0x0205a140
+
+src/arm9/func_0205a858.c:
+    complete
+    .text       start:0x0205a858 end:0x0205a908
+
+src/arm9/InitializeGlobalRE.c:
+    complete
+    .text       start:0x0205d0bc end:0x0205d0e8
+
+src/arm9/func_0205d0e8.c:
+    complete
+    .text       start:0x0205d0e8 end:0x0205d140
+
+src/arm9/InitializeGlobalLU.c:
+    complete
+    .text       start:0x0205dc54 end:0x0205dc7c
+
+src/arm9/InitializeSceneOverlayConfig.c:
+    complete
+    .text       start:0x0205e180 end:0x0205e1c4
+
+src/arm9/SceneFn_Ghost.c:
+    complete
+    .text       start:0x0205e4e4 end:0x0205e518
+
+src/arm9/func_0205e548.c:
+    complete
+    .text       start:0x0205e548 end:0x0205e5c4
+
+src/arm9/func_0205ec14.c:
+    complete
+    .text       start:0x0205ec14 end:0x0205eca4
+
+src/arm9/func_0205eda0.c:
+    complete
+    .text       start:0x0205eda0 end:0x0205edcc
+
+src/arm9/SaveFriendList.c:
+    complete
+    .text       start:0x0205edcc end:0x0205edf8
+
+src/arm9/GlobalZ_GetOI.c:
+    complete
+    .text       start:0x0205ee14 end:0x0205ee74
+
+src/arm9/GlobalZ_SetOI.c:
+    complete
+    .text       start:0x0205ee74 end:0x0205eeb0
+
+src/arm9/IsMissionStageBeaten.c:
+    complete
+    .text       start:0x0205fd78 end:0x0205fdb4
+
+src/arm9/GenerateTimeTrialCodeImpl.c:
+    complete
+    .text       start:0x0205fe1c end:0x02060004
+
+src/arm9/func_020601a0.c:
+    complete
+    .text       start:0x020601a0 end:0x020601e4
+
+src/arm9/func_020601e4.c:
+    complete
+    .text       start:0x020601e4 end:0x02060228
+
+src/arm9/func_02060228.c:
+    complete
+    .text       start:0x02060228 end:0x02060268
+
+src/arm9/func_02060318.c:
+    complete
+    .text       start:0x02060318 end:0x02060364
+
+src/arm9/GetCupEntryRank.c:
+    complete
+    .text       start:0x02060364 end:0x02060390
+
+src/arm9/func_02060390.c:
+    complete
+    .text       start:0x02060390 end:0x020603bc
+
+src/arm9/CupGetResult.c:
+    complete
+    .text       start:0x020603bc end:0x020603e8
+
+src/arm9/func_020603e8.c:
+    complete
+    .text       start:0x020603e8 end:0x02060414
+
+src/arm9/func_02060414.c:
+    complete
+    .text       start:0x02060414 end:0x02060440
+
+src/arm9/CupHasRecord.c:
+    complete
+    .text       start:0x02060440 end:0x02060468
+
+src/arm9/func_02060468.c:
+    complete
+    .text       start:0x02060468 end:0x02060510
+
+src/arm9/func_02060880.c:
+    complete
+    .text       start:0x02060880 end:0x020608fc
+
+src/arm9/func_020608fc.c:
+    complete
+    .text       start:0x020608fc end:0x02060950
+
+src/arm9/func_020609c4.c:
+    complete
+    .text       start:0x020609c4 end:0x020609f8
+
+src/arm9/func_020609f8.c:
+    complete
+    .text       start:0x020609f8 end:0x02060a2c
+
+src/arm9/func_02060a2c.c:
+    complete
+    .text       start:0x02060a2c end:0x02060a60
+
+src/arm9/func_02060a60.c:
+    complete
+    .text       start:0x02060a60 end:0x02060a94
+
+src/arm9/func_02060a94.c:
+    complete
+    .text       start:0x02060a94 end:0x02060ac8
+
+src/arm9/func_02060ac8.c:
+    complete
+    .text       start:0x02060ac8 end:0x02060afc
+
+src/arm9/func_02060afc.c:
+    complete
+    .text       start:0x02060afc end:0x02060b34
+
+src/arm9/func_02060b34.c:
+    complete
+    .text       start:0x02060b34 end:0x02060b68
+
+src/arm9/func_02060b68.c:
+    complete
+    .text       start:0x02060b68 end:0x02060c0c
+
+src/arm9/FindSomeOI_FriendCode_Index.c:
+    complete
+    .text       start:0x0206105c end:0x02061104
+
+src/arm9/CheckFriendCode.c:
+    complete
+    .text       start:0x02061104 end:0x02061220
+
+src/arm9/func_02061220.c:
+    complete
+    .text       start:0x02061220 end:0x02061250
+
+src/arm9/func_02061250.c:
+    complete
+    .text       start:0x02061250 end:0x02061290
+
+src/arm9/RunReadGhostBinsFn.c:
+    complete
+    .text       start:0x02061358 end:0x020613a0
+
+src/arm9/RunSomeATFunction.c:
+    complete
+    .text       start:0x02061428 end:0x02061470
+
+src/arm9/SetStructYE_RunATFunction.c:
+    complete
+    .text       start:0x02061540 end:0x02061588
+
+src/arm9/func_020616c0.c:
+    complete
+    .text       start:0x020616c0 end:0x02061704
+
+src/arm9/HandleCourseAnim.c:
+    complete
+    .text       start:0x02063294 end:0x0206331c
+
+src/arm9/StructML_SetSomeDefaultFields.c:
+    complete
+    .text       start:0x020638dc end:0x0206390c
+
+src/arm9/func_02067cb0.c:
+    complete
+    .text       start:0x02067cb0 end:0x02067d0c
+
+src/arm9/StructMQRacerEntry_SomeFn_10.c:
+    complete
+    .text       start:0x02068a10 end:0x02068a64
+
+src/arm9/StructMQRacerEntry_SomeFn_52.c:
+    complete
+    .text       start:0x02068b5c end:0x02068b98
+
+src/arm9/StructMQRacerEntry_SomeFn_34.c:
+    complete
+    .text       start:0x02069044 end:0x02069068
+
+src/arm9/func_0206b020.c:
+    complete
+    .text       start:0x0206b020 end:0x0206b16c
+
+src/arm9/func_0206be54.c:
+    complete
+    .text       start:0x0206be54 end:0x0206bf88
+
+src/arm9/StructMQRacerEntry_SomeFn_89.c:
+    complete
+    .text       start:0x0206d138 end:0x0206d18c
+
+src/arm9/DriverContext_SomeFn_0.c:
+    complete
+    .text       start:0x02071894 end:0x020718c8
+
+src/arm9/func_02073e04.c:
+    complete
+    .text       start:0x02073e04 end:0x02073e4c
+
+src/arm9/func_02073e4c.c:
+    complete
+    .text       start:0x02073e4c end:0x02073e88
+
+src/arm9/StructHD_SomeFn_9.c:
+    complete
+    .text       start:0x02074978 end:0x020749a4
+
+src/arm9/SomeLookAtHD3.c:
+    complete
+    .text       start:0x0207564c end:0x02075694
+
+src/arm9/func_02076c50.c:
+    complete
+    .text       start:0x02076c50 end:0x02076cc4
+
+src/arm9/CreateGlobalHD_HD2_from_thumb.c:
+    complete
+    .text       start:0x020775e4 end:0x0207767c
+
+src/arm9/CreateGlobalHD_HD2_V2_from_thumb.c:
+    complete
+    .text       start:0x0207767c end:0x02077750
+
+src/arm9/CreateGlobalHD5_from_thumb.c:
+    complete
+    .text       start:0x02077944 end:0x02077998
+
+src/arm9/ReadEmblemPalette_from_thumb.c:
+    complete
+    .text       start:0x02077a28 end:0x02077a4c
+
+src/arm9/func_02077b3c.c:
+    complete
+    .text       start:0x02077b3c end:0x02077bc0
+
+src/arm9/func_02077bc0.c:
+    complete
+    .text       start:0x02077bc0 end:0x02077c1c
+
+src/arm9/func_02077c1c.c:
+    complete
+    .text       start:0x02077c1c end:0x02077d68
+
+src/arm9/CreateCESex_from_thumb.c:
+    complete
+    .text       start:0x02077eb4 end:0x02077f00
+
+src/arm9/func_02077f9c.c:
+    complete
+    .text       start:0x02077f9c end:0x0207800c
+
+src/arm9/CopyDefaultHeyhoColorPalettes_from_thumb.c:
+    complete
+    .text       start:0x0207800c end:0x02078078
+
+src/arm9/func_020780f4.c:
+    complete
+    .text       start:0x020780f4 end:0x02078158
+
+src/arm9/func_02078420.c:
+    complete
+    .text       start:0x02078420 end:0x0207851c
+
+src/arm9/StructCESub_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x0207851c end:0x02078580
+
+src/arm9/func_020787f4.c:
+    complete
+    .text       start:0x020787f4 end:0x02078934
+
+src/arm9/func_02078934.c:
+    complete
+    .text       start:0x02078934 end:0x020789d4
+
+src/arm9/InitializeGlobalCE_from_thumb.c:
+    complete
+    .text       start:0x02078b48 end:0x02078c58
+
+src/arm9/CreateGlobalCE_from_thumb.c:
+    complete
+    .text       start:0x02078d64 end:0x02078e4c
+
+src/arm9/func_02078e4c.c:
+    complete
+    .text       start:0x02078e4c end:0x02078ee0
+
+src/arm9/StructCESub_Initialize_from_thumb.c:
+    complete
+    .text       start:0x02078f18 end:0x02078f78
+
+src/arm9/func_02078f78.c:
+    complete
+    .text       start:0x02078f78 end:0x02078f9c
+
+src/arm9/CreateCEML_from_thumb.c:
+    complete
+    .text       start:0x02078f9c end:0x02079008
+
+src/arm9/func_02079014.c:
+    complete
+    .text       start:0x02079014 end:0x02079038
+
+src/arm9/Model_CreateFromNsbmdNsbtx2_from_thumb.c:
+    complete
+    .text       start:0x02079038 end:0x02079078
+
+src/arm9/MaybeLoadWinModelTextureAnimationHelper_from_thumb.c:
+    complete
+    .text       start:0x02079078 end:0x020790e0
+
+src/arm9/ReadKartModelMenuFile_from_thumb.c:
+    complete
+    .text       start:0x0207913c end:0x0207916c
+
+src/arm9/LoadAD00KillerItemModel_from_thumb.c:
+    complete
+    .text       start:0x0207916c end:0x02079220
+
+src/arm9/StructAD00Sub_LoadKartShadowModel_from_thumb.c:
+    complete
+    .text       start:0x02079220 end:0x0207926c
+
+src/arm9/CharacterKart_LoadKartTireModel_from_thumb.c:
+    complete
+    .text       start:0x0207926c end:0x020792c8
+
+src/arm9/GetKartModelMenuKartAPalette_from_thumb.c:
+    complete
+    .text       start:0x02079478 end:0x0207949c
+
+src/arm9/GetKartAPaletteData_from_thumb.c:
+    complete
+    .text       start:0x0207949c end:0x020794bc
+
+src/arm9/StructAD00Sub_LoadKartModel_from_thumb.c:
+    complete
+    .text       start:0x020794bc end:0x0207954c
+
+src/arm9/DetermineIsP_from_thumb.c:
+    complete
+    .text       start:0x020799a0 end:0x02079a04
+
+src/arm9/StructAD00Sub_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x02079a14 end:0x02079a3c
+
+src/arm9/StructAD00Sub_Initialize_from_thumb.c:
+    complete
+    .text       start:0x02079a3c end:0x02079b40
+
+src/arm9/func_0207a5f0.c:
+    complete
+    .text       start:0x0207a5f0 end:0x0207a68c
+
+src/arm9/DisposeDrivers.c:
+    complete
+    .text       start:0x0207a990 end:0x0207a9f4
+
+src/arm9/func_0207a9f4.c:
+    complete
+    .text       start:0x0207a9f4 end:0x0207aa7c
+
+src/arm9/StructMQRacerEntry_SomeFn_7.c:
+    complete
+    .text       start:0x0207b054 end:0x0207b0d0
+
+src/arm9/StructMQRacerEntry_SomeFn_2.c:
+    complete
+    .text       start:0x0207b0d0 end:0x0207b13c
+
+src/arm9/StructMQRacerEntry_SomeFn_36.c:
+    complete
+    .text       start:0x0207b13c end:0x0207b1a8
+
+src/arm9/CharacterKartContext_SetNsbcaAnimAt.c:
+    complete
+    .text       start:0x0207b6c0 end:0x0207b708
+
+src/arm9/FormatCharacterEmblemNsbcaPath.c:
+    complete
+    .text       start:0x0207b8f4 end:0x0207b960
+
+src/arm9/StructVC_SomeFnLinkedRouteRelated.c:
+    complete
+    .text       start:0x0207be40 end:0x0207becc
+
+src/arm9/func_0207e400.c:
+    complete
+    .text       start:0x0207e400 end:0x0207e4a4
+
+src/arm9/func_0207e564.c:
+    complete
+    .text       start:0x0207e564 end:0x0207e594
+
+src/arm9/func_0207e7f0.c:
+    complete
+    .text       start:0x0207e7f0 end:0x0207e944
+
+src/arm9/GetSomeMQRacerAnotherFlags.c:
+    complete
+    .text       start:0x0207f600 end:0x0207f630
+
+src/arm9/func_0207f9a8.c:
+    complete
+    .text       start:0x0207f9a8 end:0x0207f9cc
+
+src/arm9/func_0207f9cc.c:
+    complete
+    .text       start:0x0207f9cc end:0x0207fa74
+
+src/arm9/func_0207ff5c.c:
+    complete
+    .text       start:0x0207ff5c end:0x0207ffa4
+
+src/arm9/func_0207ffa4.c:
+    complete
+    .text       start:0x0207ffa4 end:0x0208001c
+
+src/arm9/func_0208001c.c:
+    complete
+    .text       start:0x0208001c end:0x020800a0
+
+src/arm9/func_02080adc.c:
+    complete
+    .text       start:0x02080adc end:0x02080b1c
+
+src/arm9/func_02080cd0.c:
+    complete
+    .text       start:0x02080cd0 end:0x02080d34
+
+src/arm9/func_02080d34.c:
+    complete
+    .text       start:0x02080d34 end:0x02080dbc
+
+src/arm9/func_02081060.c:
+    complete
+    .text       start:0x02081060 end:0x020810e4
+
+src/arm9/func_02081120.c:
+    complete
+    .text       start:0x02081120 end:0x02081224
+
+src/arm9/func_020813ec.c:
+    complete
+    .text       start:0x020813ec end:0x0208155c
+
+src/arm9/func_02081618.c:
+    complete
+    .text       start:0x02081618 end:0x02081724
+
+src/arm9/func_02081ab8.c:
+    complete
+    .text       start:0x02081ab8 end:0x02081b30
+
+src/arm9/func_02081b30.c:
+    complete
+    .text       start:0x02081b30 end:0x02081b64
+
+src/arm9/func_02081b64.c:
+    complete
+    .text       start:0x02081b64 end:0x02081ca0
+
+src/arm9/func_02081ca0.c:
+    complete
+    .text       start:0x02081ca0 end:0x02081d78
+
+src/arm9/func_02081d78.c:
+    complete
+    .text       start:0x02081d78 end:0x02081e3c
+
+src/arm9/func_02081e5c.c:
+    complete
+    .text       start:0x02081e5c end:0x02081f10
+
+src/arm9/func_02081f30.c:
+    complete
+    .text       start:0x02081f30 end:0x02082034
+
+src/arm9/func_02082368.c:
+    complete
+    .text       start:0x02082368 end:0x020824d0
+
+src/arm9/func_0208266c.c:
+    complete
+    .text       start:0x0208266c end:0x02082750
+
+src/arm9/func_02082a10.c:
+    complete
+    .text       start:0x02082a10 end:0x02082aec
+
+src/arm9/func_02082d64.c:
+    complete
+    .text       start:0x02082d64 end:0x02082e4c
+
+src/arm9/func_02082f94.c:
+    complete
+    .text       start:0x02082f94 end:0x02082fec
+
+src/arm9/func_02083d4c.c:
+    complete
+    .text       start:0x02083d4c end:0x02083de8
+
+src/arm9/DisposeAllModelResources.c:
+    complete
+    .text       start:0x020848fc end:0x02084958
+
+src/arm9/Model_SetCullMode.c:
+    complete
+    .text       start:0x02084958 end:0x02084968
+
+src/arm9/Model_SetPolygonIdLightFlagsEmi.c:
+    complete
+    .text       start:0x02084968 end:0x020849a0
+
+src/arm9/Model_CreateFromNsbmdNsbtxMetaCopy.c:
+    complete
+    .text       start:0x02084b2c end:0x02084c54
+
+src/arm9/func_02084f20.c:
+    complete
+    .text       start:0x02084f20 end:0x02084f68
+
+src/arm9/func_02084f68.c:
+    complete
+    .text       start:0x02084f68 end:0x02084fb0
+
+src/arm9/StructML_MaybeInnerLoadModel.c:
+    complete
+    .text       start:0x02084fb0 end:0x020850c4
+
+src/arm9/func_020853a4.c:
+    complete
+    .text       start:0x020853a4 end:0x020853dc
+
+src/arm9/MaybeLoadKartAIData_from_thumb.c:
+    complete
+    .text       start:0x02085fd8 end:0x02086058
+
+src/arm9/SetupDriverEmblems_from_thumb.c:
+    complete
+    .text       start:0x02086fac end:0x02087000
+
+src/arm9/StructAERSubSub_Fn1_Sub1_from_thumb.c:
+    complete
+    .text       start:0x02087228 end:0x020872a4
+
+src/arm9/func_020872a4.c:
+    complete
+    .text       start:0x020872a4 end:0x020873e4
+
+src/arm9/StructAER_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x02087508 end:0x020875b4
+
+src/arm9/Animation_UpdateBlend.c:
+    complete
+    .text       start:0x02087d44 end:0x02087de0
+
+src/arm9/Animation_Update.c:
+    complete
+    .text       start:0x02087de0 end:0x02087e90
+
+src/arm9/Animation_RegisterAll.c:
+    complete
+    .text       start:0x0208805c end:0x020881b0
+
+src/arm9/Animation_Register.c:
+    complete
+    .text       start:0x020881b0 end:0x0208823c
+
+src/arm9/FormatTeamEmblemNsbtx.c:
+    complete
+    .text       start:0x02088338 end:0x02088390
+
+src/arm9/FormatEmblemNsbtx.c:
+    complete
+    .text       start:0x02088390 end:0x020883e4
+
+src/arm9/FormatCharacterFaceAnimationNsbtpPath.c:
+    complete
+    .text       start:0x020883e4 end:0x02088430
+
+src/arm9/FormatCharacterPath.c:
+    complete
+    .text       start:0x02088430 end:0x0208848c
+
+src/arm9/FormatKartShadowNsbmdPath.c:
+    complete
+    .text       start:0x020884bc end:0x02088518
+
+src/arm9/FormatKartTireNsbmdPath.c:
+    complete
+    .text       start:0x02088574 end:0x020885d0
+
+src/arm9/FormatCharacterKartNsbtxPath.c:
+    complete
+    .text       start:0x020885d0 end:0x0208867c
+
+src/arm9/FormatCharacterKartNsbmdPath.c:
+    complete
+    .text       start:0x0208867c end:0x02088728
+
+src/arm9/FormatCharacterEmblemNsbtxPath.c:
+    complete
+    .text       start:0x02088728 end:0x020887d8
+
+src/arm9/FormatCharacterEmblemNsbmdPath.c:
+    complete
+    .text       start:0x020887d8 end:0x02088888
+
+src/arm9/CopyKartCharPhysicalParam.c:
+    complete
+    .text       start:0x0208aea8 end:0x0208af40
+
+src/arm9/CreateLoadPhysicalParams.c:
+    complete
+    .text       start:0x0208af40 end:0x0208afe4
+
+src/arm9/ExplosionKind_Bombcore2_UpdateFn.c:
+    complete
+    .text       start:0x0208da94 end:0x0208dad4
+
+src/arm9/ExplosionKind_BakubakuWave_UpdateFn.c:
+    complete
+    .text       start:0x0208db58 end:0x0208db94
+
+src/arm9/ExplosionKind_Splash_MissionSplash_UpdateFn.c:
+    complete
+    .text       start:0x0208dc08 end:0x0208dc50
+
+src/arm9/ExplosionKind_Splash_CreateFn.c:
+    complete
+    .text       start:0x0208dcbc end:0x0208dd10
+
+src/arm9/MaybeCheckMapObjBkWaveNsbcaNsbma.c:
+    complete
+    .text       start:0x0208e23c end:0x0208e2c8
+
+src/arm9/func_0208e82c.c:
+    complete
+    .text       start:0x0208e82c end:0x0208e99c
+
+src/arm9/func_0208eb1c.c:
+    complete
+    .text       start:0x0208eb1c end:0x0208ec64
+
+src/arm9/func_0208fba0.c:
+    complete
+    .text       start:0x0208fba0 end:0x0208fcac
+
+src/arm9/func_0208fdcc.c:
+    complete
+    .text       start:0x0208fdcc end:0x0208fe1c
+
+src/arm9/func_02090088.c:
+    complete
+    .text       start:0x02090088 end:0x02090194
+
+src/arm9/func_020901a0.c:
+    complete
+    .text       start:0x020901a0 end:0x020901f0
+
+src/arm9/func_020901f0.c:
+    complete
+    .text       start:0x020901f0 end:0x0209024c
+
+src/arm9/StructMQSub2_SomeFn_0.c:
+    complete
+    .text       start:0x020905a8 end:0x02090638
+
+src/arm9/func_0209086c.c:
+    complete
+    .text       start:0x0209086c end:0x020908d0
+
+src/arm9/Maybe_helper_091214.c:
+    complete
+    .text       start:0x02091214 end:0x02091238
+
+src/arm9/Maybe_helper_091238.c:
+    complete
+    .text       start:0x02091238 end:0x0209125c
+
+src/arm9/func_0209125c.c:
+    complete
+    .text       start:0x0209125c end:0x020912a0
+
+src/arm9/func_0209151c.c:
+    complete
+    .text       start:0x0209151c end:0x020915c0
+
+src/arm9/func_020915c0.c:
+    complete
+    .text       start:0x020915c0 end:0x02091654
+
+src/arm9/Maybe_get_17b0b4.c:
+    complete
+    .text       start:0x02091654 end:0x0209166c
+
+src/arm9/LoadSmanBottomMapObject.c:
+    complete
+    .text       start:0x0209166c end:0x020916a0
+
+src/arm9/func_020916a0.c:
+    complete
+    .text       start:0x020916a0 end:0x02091784
+
+src/arm9/Maybe_get_17b0b8.c:
+    complete
+    .text       start:0x02091784 end:0x0209179c
+
+src/arm9/LoadSmanTopMapObject.c:
+    complete
+    .text       start:0x0209179c end:0x020917d0
+
+src/arm9/func_02091828.c:
+    complete
+    .text       start:0x02091828 end:0x0209188c
+
+src/arm9/Maybe_helper_0918a8.c:
+    complete
+    .text       start:0x020918a8 end:0x020918cc
+
+src/arm9/func_020918cc.c:
+    complete
+    .text       start:0x020918cc end:0x02091954
+
+src/arm9/Maybe_get_17b0bc.c:
+    complete
+    .text       start:0x02091954 end:0x0209196c
+
+src/arm9/LoadCowMapObject.c:
+    complete
+    .text       start:0x0209196c end:0x020919a8
+
+src/arm9/Maybe_helper_091f24.c:
+    complete
+    .text       start:0x02091f24 end:0x02091f44
+
+src/arm9/Maybe_get_15d4b4.c:
+    complete
+    .text       start:0x02091f54 end:0x02091f6c
+
+src/arm9/func_02091fd8.c:
+    complete
+    .text       start:0x02091fd8 end:0x020920a0
+
+src/arm9/func_020920a0.c:
+    complete
+    .text       start:0x020920a0 end:0x02092140
+
+src/arm9/func_02092140.c:
+    complete
+    .text       start:0x02092140 end:0x02092178
+
+src/arm9/Maybe_helper_092484.c:
+    complete
+    .text       start:0x02092484 end:0x020924a8
+
+src/arm9/func_020924a8.c:
+    complete
+    .text       start:0x020924a8 end:0x020924d8
+
+src/arm9/func_0209280c.c:
+    complete
+    .text       start:0x0209280c end:0x02092928
+
+src/arm9/Maybe_get_17b0c4.c:
+    complete
+    .text       start:0x02092928 end:0x02092940
+
+src/arm9/LoadBasabasaMapObject.c:
+    complete
+    .text       start:0x02092940 end:0x0209297c
+
+src/arm9/Maybe_helper_093080.c:
+    complete
+    .text       start:0x02093080 end:0x020930a0
+
+src/arm9/Maybe_get_15d4b4_2.c:
+    complete
+    .text       start:0x020930b0 end:0x020930c8
+
+src/arm9/func_020930c8.c:
+    complete
+    .text       start:0x020930c8 end:0x02093190
+
+src/arm9/Maybe_helper_093210.c:
+    complete
+    .text       start:0x02093210 end:0x02093234
+
+src/arm9/func_020935fc.c:
+    complete
+    .text       start:0x020935fc end:0x020936f0
+
+src/arm9/Maybe_get_17b0c8.c:
+    complete
+    .text       start:0x020936f0 end:0x02093708
+
+src/arm9/func_02093708.c:
+    complete
+    .text       start:0x02093708 end:0x02093754
+
+src/arm9/func_02093754.c:
+    complete
+    .text       start:0x02093754 end:0x020937b8
+
+src/arm9/func_020937c4.c:
+    complete
+    .text       start:0x020937c4 end:0x02093884
+
+src/arm9/func_020938c0.c:
+    complete
+    .text       start:0x020938c0 end:0x02093910
+
+src/arm9/func_02093910.c:
+    complete
+    .text       start:0x02093910 end:0x02093a50
+
+src/arm9/func_02093a50.c:
+    complete
+    .text       start:0x02093a50 end:0x02093b30
+
+src/arm9/LoadNsKiller2MapObject.c:
+    complete
+    .text       start:0x02093b30 end:0x02093b7c
+
+src/arm9/func_02093b7c.c:
+    complete
+    .text       start:0x02093b7c end:0x02093c64
+
+src/arm9/func_02093c64.c:
+    complete
+    .text       start:0x02093c64 end:0x02093cb4
+
+src/arm9/func_02093ee8.c:
+    complete
+    .text       start:0x02093ee8 end:0x02093f78
+
+src/arm9/func_02093f78.c:
+    complete
+    .text       start:0x02093f78 end:0x02093fa4
+
+src/arm9/func_02093fa4.c:
+    complete
+    .text       start:0x02093fa4 end:0x02093ff0
+
+src/arm9/func_020946b8.c:
+    complete
+    .text       start:0x020946b8 end:0x02094724
+
+src/arm9/Maybe_helper_094744.c:
+    complete
+    .text       start:0x02094744 end:0x02094768
+
+src/arm9/Maybe_helper_094bd0.c:
+    complete
+    .text       start:0x02094bd0 end:0x02094bf0
+
+src/arm9/Maybe_calc_094bf0.c:
+    complete
+    .text       start:0x02094bf0 end:0x02094c0c
+
+src/arm9/Maybe_get_15d4b4_3.c:
+    complete
+    .text       start:0x02094c0c end:0x02094c24
+
+src/arm9/func_02094c70.c:
+    complete
+    .text       start:0x02094c70 end:0x02094d9c
+
+src/arm9/Maybe_get_17b0dc.c:
+    complete
+    .text       start:0x02094d9c end:0x02094db4
+
+src/arm9/func_02094db4.c:
+    complete
+    .text       start:0x02094db4 end:0x02094df4
+
+src/arm9/func_02094e3c.c:
+    complete
+    .text       start:0x02094e3c end:0x02094e8c
+
+src/arm9/Maybe_helper_09516c.c:
+    complete
+    .text       start:0x0209516c end:0x0209518c
+
+src/arm9/Maybe_get_15d4b4_4.c:
+    complete
+    .text       start:0x0209519c end:0x020951b4
+
+src/arm9/func_02095228.c:
+    complete
+    .text       start:0x02095228 end:0x020952dc
+
+src/arm9/func_020957ec.c:
+    complete
+    .text       start:0x020957ec end:0x02095848
+
+src/arm9/func_02095848.c:
+    complete
+    .text       start:0x02095848 end:0x02095958
+
+src/arm9/LoadBakubakuMapObject.c:
+    complete
+    .text       start:0x02095958 end:0x020959bc
+
+src/arm9/func_020959fc.c:
+    complete
+    .text       start:0x020959fc end:0x02095a3c
+
+src/arm9/func_02095d1c.c:
+    complete
+    .text       start:0x02095d1c end:0x02095db8
+
+src/arm9/func_02095db8.c:
+    complete
+    .text       start:0x02095db8 end:0x02095eb4
+
+src/arm9/LoadMoveTreeMapObject.c:
+    complete
+    .text       start:0x02095eb4 end:0x02095efc
+
+src/arm9/func_02095f9c.c:
+    complete
+    .text       start:0x02095f9c end:0x02095fec
+
+src/arm9/Maybe_calc_0968c0.c:
+    complete
+    .text       start:0x020968c0 end:0x020968dc
+
+src/arm9/Maybe_get_15d4b4_5.c:
+    complete
+    .text       start:0x020968dc end:0x020968f4
+
+src/arm9/func_02096d68.c:
+    complete
+    .text       start:0x02096d68 end:0x02096df0
+
+src/arm9/func_02096df0.c:
+    complete
+    .text       start:0x02096df0 end:0x02096f54
+
+src/arm9/func_020975ac.c:
+    complete
+    .text       start:0x020975ac end:0x020975ec
+
+src/arm9/LoadFlipperMapObject.c:
+    complete
+    .text       start:0x02097e84 end:0x02097ed0
+
+src/arm9/func_0209828c.c:
+    complete
+    .text       start:0x0209828c end:0x020982d4
+
+src/arm9/func_020982d4.c:
+    complete
+    .text       start:0x020982d4 end:0x02098328
+
+src/arm9/func_02098328.c:
+    complete
+    .text       start:0x02098328 end:0x02098374
+
+src/arm9/func_02098374.c:
+    complete
+    .text       start:0x02098374 end:0x020983c4
+
+src/arm9/func_02098954.c:
+    complete
+    .text       start:0x02098954 end:0x020989fc
+
+src/arm9/Maybe_get_17b10c.c:
+    complete
+    .text       start:0x020989fc end:0x02098a14
+
+src/arm9/LoadPakkunBodyMapObject.c:
+    complete
+    .text       start:0x02098a14 end:0x02098a58
+
+src/arm9/func_02098a58.c:
+    complete
+    .text       start:0x02098a58 end:0x02098b1c
+
+src/arm9/Maybe_get_17b104.c:
+    complete
+    .text       start:0x02098b1c end:0x02098b34
+
+src/arm9/LoadPakkunZHeadMapObject.c:
+    complete
+    .text       start:0x02098b34 end:0x02098b68
+
+src/arm9/func_02098d04.c:
+    complete
+    .text       start:0x02098d04 end:0x02098d4c
+
+src/arm9/func_02098f18.c:
+    complete
+    .text       start:0x02098f18 end:0x02099004
+
+src/arm9/Maybe_helper_0992ac.c:
+    complete
+    .text       start:0x020992ac end:0x020992d0
+
+src/arm9/Maybe_helper_0992d0.c:
+    complete
+    .text       start:0x020992d0 end:0x02099344
+
+src/arm9/Maybe_get_17b160.c:
+    complete
+    .text       start:0x02099344 end:0x0209935c
+
+src/arm9/LoadMiniDokanMapObject.c:
+    complete
+    .text       start:0x0209935c end:0x02099390
+
+src/arm9/Maybe_helper_099390.c:
+    complete
+    .text       start:0x02099390 end:0x020993b4
+
+src/arm9/Maybe_helper_0993b4.c:
+    complete
+    .text       start:0x020993b4 end:0x02099428
+
+src/arm9/Maybe_get_17b164.c:
+    complete
+    .text       start:0x02099428 end:0x02099440
+
+src/arm9/LoadBankEgg1MapObject.c:
+    complete
+    .text       start:0x02099440 end:0x02099474
+
+src/arm9/Maybe_helper_099474.c:
+    complete
+    .text       start:0x02099474 end:0x02099498
+
+src/arm9/Maybe_helper_099498.c:
+    complete
+    .text       start:0x02099498 end:0x0209950c
+
+src/arm9/Maybe_get_17b138.c:
+    complete
+    .text       start:0x0209950c end:0x02099524
+
+src/arm9/LoadOf6Tree1MapObject.c:
+    complete
+    .text       start:0x02099524 end:0x02099558
+
+src/arm9/Maybe_helper_099558.c:
+    complete
+    .text       start:0x02099558 end:0x0209957c
+
+src/arm9/Maybe_helper_09957c.c:
+    complete
+    .text       start:0x0209957c end:0x020995f0
+
+src/arm9/Maybe_get_17b158.c:
+    complete
+    .text       start:0x020995f0 end:0x02099608
+
+src/arm9/LoadOm6Tree1MapObject.c:
+    complete
+    .text       start:0x02099608 end:0x0209963c
+
+src/arm9/Maybe_helper_09963c.c:
+    complete
+    .text       start:0x0209963c end:0x02099660
+
+src/arm9/Maybe_helper_099660.c:
+    complete
+    .text       start:0x02099660 end:0x020996d4
+
+src/arm9/Maybe_get_17b13c.c:
+    complete
+    .text       start:0x020996d4 end:0x020996ec
+
+src/arm9/LoadKinoMount2MapObject.c:
+    complete
+    .text       start:0x020996ec end:0x02099720
+
+src/arm9/Maybe_helper_099720.c:
+    complete
+    .text       start:0x02099720 end:0x02099744
+
+src/arm9/Maybe_helper_099744.c:
+    complete
+    .text       start:0x02099744 end:0x020997b8
+
+src/arm9/Maybe_get_17b120.c:
+    complete
+    .text       start:0x020997b8 end:0x020997d0
+
+src/arm9/LoadKinoMount1MapObject.c:
+    complete
+    .text       start:0x020997d0 end:0x02099804
+
+src/arm9/Maybe_helper_099804.c:
+    complete
+    .text       start:0x02099804 end:0x02099828
+
+src/arm9/Maybe_helper_099828.c:
+    complete
+    .text       start:0x02099828 end:0x0209989c
+
+src/arm9/Maybe_get_17b128.c:
+    complete
+    .text       start:0x0209989c end:0x020998b4
+
+src/arm9/LoadKinoHouse2MapObject.c:
+    complete
+    .text       start:0x020998b4 end:0x020998e8
+
+src/arm9/Maybe_helper_0998e8.c:
+    complete
+    .text       start:0x020998e8 end:0x0209990c
+
+src/arm9/Maybe_helper_09990c.c:
+    complete
+    .text       start:0x0209990c end:0x02099980
+
+src/arm9/Maybe_get_17b148.c:
+    complete
+    .text       start:0x02099980 end:0x02099998
+
+src/arm9/LoadKinoHouse1MapObject.c:
+    complete
+    .text       start:0x02099998 end:0x020999cc
+
+src/arm9/Maybe_helper_0999cc.c:
+    complete
+    .text       start:0x020999cc end:0x020999f0
+
+src/arm9/Maybe_helper_0999f0.c:
+    complete
+    .text       start:0x020999f0 end:0x02099a64
+
+src/arm9/Maybe_get_17b12c.c:
+    complete
+    .text       start:0x02099a64 end:0x02099a7c
+
+src/arm9/LoadOsaTree1cMapObject.c:
+    complete
+    .text       start:0x02099a7c end:0x02099ab0
+
+src/arm9/Maybe_helper_099ab0.c:
+    complete
+    .text       start:0x02099ab0 end:0x02099ad4
+
+src/arm9/Maybe_helper_099ad4.c:
+    complete
+    .text       start:0x02099ad4 end:0x02099b48
+
+src/arm9/Maybe_get_17b130.c:
+    complete
+    .text       start:0x02099b48 end:0x02099b60
+
+src/arm9/LoadOlaTree1cMapObject.c:
+    complete
+    .text       start:0x02099b60 end:0x02099b94
+
+src/arm9/Maybe_helper_099b94.c:
+    complete
+    .text       start:0x02099b94 end:0x02099bb8
+
+src/arm9/Maybe_helper_099bb8.c:
+    complete
+    .text       start:0x02099bb8 end:0x02099c2c
+
+src/arm9/Maybe_get_17b154.c:
+    complete
+    .text       start:0x02099c2c end:0x02099c44
+
+src/arm9/LoadDeTree1MapObject.c:
+    complete
+    .text       start:0x02099c44 end:0x02099c78
+
+src/arm9/Maybe_helper_099c78.c:
+    complete
+    .text       start:0x02099c78 end:0x02099c9c
+
+src/arm9/Maybe_helper_099c9c.c:
+    complete
+    .text       start:0x02099c9c end:0x02099d10
+
+src/arm9/Maybe_get_17b168.c:
+    complete
+    .text       start:0x02099d10 end:0x02099d28
+
+src/arm9/LoadSnowTree1MapObject.c:
+    complete
+    .text       start:0x02099d28 end:0x02099d5c
+
+src/arm9/Maybe_helper_099d5c.c:
+    complete
+    .text       start:0x02099d5c end:0x02099d80
+
+src/arm9/Maybe_helper_099d80.c:
+    complete
+    .text       start:0x02099d80 end:0x02099df4
+
+src/arm9/Maybe_get_17b134.c:
+    complete
+    .text       start:0x02099df4 end:0x02099e0c
+
+src/arm9/LoadMarioTree3MapObject.c:
+    complete
+    .text       start:0x02099e0c end:0x02099e40
+
+src/arm9/Maybe_helper_099e40.c:
+    complete
+    .text       start:0x02099e40 end:0x02099e64
+
+src/arm9/Maybe_helper_099e64.c:
+    complete
+    .text       start:0x02099e64 end:0x02099ed8
+
+src/arm9/Maybe_get_17b124.c:
+    complete
+    .text       start:0x02099ed8 end:0x02099ef0
+
+src/arm9/LoadTownTree1MapObject.c:
+    complete
+    .text       start:0x02099ef0 end:0x02099f24
+
+src/arm9/Maybe_helper_099f24.c:
+    complete
+    .text       start:0x02099f24 end:0x02099f48
+
+src/arm9/Maybe_helper_099f48.c:
+    complete
+    .text       start:0x02099f48 end:0x02099fbc
+
+src/arm9/Maybe_get_17b118.c:
+    complete
+    .text       start:0x02099fbc end:0x02099fd4
+
+src/arm9/LoadGardenTree1MapObject.c:
+    complete
+    .text       start:0x02099fd4 end:0x0209a008
+
+src/arm9/Maybe_helper_09a008.c:
+    complete
+    .text       start:0x0209a008 end:0x0209a02c
+
+src/arm9/Maybe_helper_09a02c.c:
+    complete
+    .text       start:0x0209a02c end:0x0209a0a0
+
+src/arm9/Maybe_get_17b144.c:
+    complete
+    .text       start:0x0209a0a0 end:0x0209a0b8
+
+src/arm9/LoadBankTree1MapObject.c:
+    complete
+    .text       start:0x0209a0b8 end:0x0209a0ec
+
+src/arm9/Maybe_helper_09a0ec.c:
+    complete
+    .text       start:0x0209a0ec end:0x0209a110
+
+src/arm9/Maybe_helper_09a110.c:
+    complete
+    .text       start:0x0209a110 end:0x0209a184
+
+src/arm9/Maybe_get_17b11c.c:
+    complete
+    .text       start:0x0209a184 end:0x0209a19c
+
+src/arm9/LoadCrossTree1MapObject.c:
+    complete
+    .text       start:0x0209a19c end:0x0209a1d0
+
+src/arm9/Maybe_helper_09a1d0.c:
+    complete
+    .text       start:0x0209a1d0 end:0x0209a1f4
+
+src/arm9/Maybe_helper_09a1f4.c:
+    complete
+    .text       start:0x0209a1f4 end:0x0209a268
+
+src/arm9/Maybe_get_17b170.c:
+    complete
+    .text       start:0x0209a268 end:0x0209a280
+
+src/arm9/LoadNsCannon1MapObject.c:
+    complete
+    .text       start:0x0209a280 end:0x0209a2b4
+
+src/arm9/Maybe_helper_09a2b4.c:
+    complete
+    .text       start:0x0209a2b4 end:0x0209a2d8
+
+src/arm9/Maybe_helper_09a2d8.c:
+    complete
+    .text       start:0x0209a2d8 end:0x0209a34c
+
+src/arm9/Maybe_get_17b15c.c:
+    complete
+    .text       start:0x0209a34c end:0x0209a364
+
+src/arm9/LoadOf6Yoshi1MapObject.c:
+    complete
+    .text       start:0x0209a364 end:0x0209a398
+
+src/arm9/Maybe_helper_09a398.c:
+    complete
+    .text       start:0x0209a398 end:0x0209a3bc
+
+src/arm9/Maybe_helper_09a3bc.c:
+    complete
+    .text       start:0x0209a3bc end:0x0209a430
+
+src/arm9/Maybe_get_17b14c.c:
+    complete
+    .text       start:0x0209a430 end:0x0209a448
+
+src/arm9/LoadOlgPipe1MapObject.c:
+    complete
+    .text       start:0x0209a448 end:0x0209a47c
+
+src/arm9/Maybe_helper_09a47c.c:
+    complete
+    .text       start:0x0209a47c end:0x0209a4a0
+
+src/arm9/Maybe_helper_09a4a0.c:
+    complete
+    .text       start:0x0209a4a0 end:0x0209a514
+
+src/arm9/Maybe_get_17b16c.c:
+    complete
+    .text       start:0x0209a514 end:0x0209a52c
+
+src/arm9/LoadOlgMush1MapObject.c:
+    complete
+    .text       start:0x0209a52c end:0x0209a560
+
+src/arm9/Maybe_helper_09a560.c:
+    complete
+    .text       start:0x0209a560 end:0x0209a584
+
+src/arm9/Maybe_helper_09a584.c:
+    complete
+    .text       start:0x0209a584 end:0x0209a5f8
+
+src/arm9/Maybe_get_17b140.c:
+    complete
+    .text       start:0x0209a5f8 end:0x0209a610
+
+src/arm9/LoadOpaTree1MapObject.c:
+    complete
+    .text       start:0x0209a610 end:0x0209a644
+
+src/arm9/Maybe_helper_09a644.c:
+    complete
+    .text       start:0x0209a644 end:0x0209a668
+
+src/arm9/Maybe_helper_09a668.c:
+    complete
+    .text       start:0x0209a668 end:0x0209a6dc
+
+src/arm9/Maybe_get_17b150.c:
+    complete
+    .text       start:0x0209a6dc end:0x0209a6f4
+
+src/arm9/LoadBeachTree1MapObject.c:
+    complete
+    .text       start:0x0209a6f4 end:0x0209a728
+
+src/arm9/Maybe_helper_09a768.c:
+    complete
+    .text       start:0x0209a768 end:0x0209a78c
+
+src/arm9/func_0209a78c.c:
+    complete
+    .text       start:0x0209a78c end:0x0209a7dc
+
+src/arm9/Maybe_get_15d4b4_6.c:
+    complete
+    .text       start:0x0209af80 end:0x0209af98
+
+src/arm9/func_0209af98.c:
+    complete
+    .text       start:0x0209af98 end:0x0209b088
+
+src/arm9/LoadCrabMapObject.c:
+    complete
+    .text       start:0x0209b1fc end:0x0209b270
+
+src/arm9/func_0209b344.c:
+    complete
+    .text       start:0x0209b344 end:0x0209b388
+
+src/arm9/StructMapObject_SomeFn_1.c:
+    complete
+    .text       start:0x0209b634 end:0x0209b688
+
+src/arm9/StructMapObject_SomeFn_2.c:
+    complete
+    .text       start:0x0209b6ec end:0x0209b710
+
+src/arm9/func_0209b710.c:
+    complete
+    .text       start:0x0209b710 end:0x0209b734
+
+src/arm9/StructMapObject_GetAnimationBCAFrameCount.c:
+    complete
+    .text       start:0x0209b758 end:0x0209b77c
+
+src/arm9/StructMapObject_SomeFn_7.c:
+    complete
+    .text       start:0x0209b8ac end:0x0209b904
+
+src/arm9/func_0209b904.c:
+    complete
+    .text       start:0x0209b904 end:0x0209b940
+
+src/arm9/func_0209ba08.c:
+    complete
+    .text       start:0x0209ba08 end:0x0209ba58
+
+src/arm9/func_0209bbfc.c:
+    complete
+    .text       start:0x0209bbfc end:0x0209bc5c
+
+src/arm9/func_0209bd90.c:
+    complete
+    .text       start:0x0209bd90 end:0x0209bde8
+
+src/arm9/StructMapObject_AddAnimationNsbtp_from_thumb.c:
+    complete
+    .text       start:0x0209bde8 end:0x0209be1c
+
+src/arm9/StructMapObject_AddAnimationNsbta_from_thumb.c:
+    complete
+    .text       start:0x0209be1c end:0x0209be50
+
+src/arm9/StructMapObject_AddAnimationNsbca_from_thumb.c:
+    complete
+    .text       start:0x0209be50 end:0x0209be84
+
+src/arm9/CreateMapObjectFromModel_from_thumb.c:
+    complete
+    .text       start:0x0209be84 end:0x0209bef0
+
+src/arm9/CreateAllocateMapObject_from_thumb.c:
+    complete
+    .text       start:0x0209bef0 end:0x0209bf1c
+
+src/arm9/func_0209bf1c.c:
+    complete
+    .text       start:0x0209bf1c end:0x0209bf48
+
+src/arm9/func_0209bf48.c:
+    complete
+    .text       start:0x0209bf48 end:0x0209bf70
+
+src/arm9/CreateAllocateSomeObject_from_thumb.c:
+    complete
+    .text       start:0x0209bfa8 end:0x0209bfe0
+
+src/arm9/func_0209bfe0.c:
+    complete
+    .text       start:0x0209bfe0 end:0x0209c0d4
+
+src/arm9/func_0209c154.c:
+    complete
+    .text       start:0x0209c154 end:0x0209c198
+
+src/arm9/func_0209c198.c:
+    complete
+    .text       start:0x0209c198 end:0x0209c1dc
+
+src/arm9/func_0209c1dc.c:
+    complete
+    .text       start:0x0209c1dc end:0x0209c220
+
+src/arm9/Maybe_get_15d4b4_7.c:
+    complete
+    .text       start:0x0209c4d8 end:0x0209c4f0
+
+src/arm9/func_0209c5b8.c:
+    complete
+    .text       start:0x0209c5b8 end:0x0209c678
+
+src/arm9/func_0209c678.c:
+    complete
+    .text       start:0x0209c678 end:0x0209c738
+
+src/arm9/func_0209c7a8.c:
+    complete
+    .text       start:0x0209c7a8 end:0x0209c878
+
+src/arm9/func_0209c878.c:
+    complete
+    .text       start:0x0209c878 end:0x0209c8b0
+
+src/arm9/func_0209c8b0.c:
+    complete
+    .text       start:0x0209c8b0 end:0x0209c964
+
+src/arm9/Maybe_helper_09cf10.c:
+    complete
+    .text       start:0x0209cf10 end:0x0209cf34
+
+src/arm9/LoadSunMapObject.c:
+    complete
+    .text       start:0x0209d5ec end:0x0209d650
+
+src/arm9/func_0209d650.c:
+    complete
+    .text       start:0x0209d650 end:0x0209d694
+
+src/arm9/func_0209d694.c:
+    complete
+    .text       start:0x0209d694 end:0x0209d7e0
+
+src/arm9/func_0209d800.c:
+    complete
+    .text       start:0x0209d800 end:0x0209d84c
+
+src/arm9/func_0209ddec.c:
+    complete
+    .text       start:0x0209ddec end:0x0209decc
+
+src/arm9/Maybe_helper_09df20.c:
+    complete
+    .text       start:0x0209df20 end:0x0209df44
+
+src/arm9/func_0209df44.c:
+    complete
+    .text       start:0x0209df44 end:0x0209df84
+
+src/arm9/Maybe_get_17b190.c:
+    complete
+    .text       start:0x0209e938 end:0x0209e950
+
+src/arm9/func_0209e950.c:
+    complete
+    .text       start:0x0209e950 end:0x0209e988
+
+src/arm9/func_0209ea10.c:
+    complete
+    .text       start:0x0209ea10 end:0x0209ea90
+
+src/arm9/func_0209ea90.c:
+    complete
+    .text       start:0x0209ea90 end:0x0209eb04
+
+src/arm9/Maybe_helper_09eb04.c:
+    complete
+    .text       start:0x0209eb04 end:0x0209eb28
+
+src/arm9/func_0209eb28.c:
+    complete
+    .text       start:0x0209eb28 end:0x0209eb54
+
+src/arm9/Maybe_get_17b194.c:
+    complete
+    .text       start:0x0209ec00 end:0x0209ec18
+
+src/arm9/func_0209ec18.c:
+    complete
+    .text       start:0x0209ec18 end:0x0209ec44
+
+src/arm9/LoadPictureMapObjects.c:
+    complete
+    .text       start:0x0209f0a8 end:0x0209f124
+
+src/arm9/func_0209f178.c:
+    complete
+    .text       start:0x0209f178 end:0x0209f1c8
+
+src/arm9/LoadRainStarMapObject.c:
+    complete
+    .text       start:0x0209f2b0 end:0x0209f2f8
+
+src/arm9/func_0209f5cc.c:
+    complete
+    .text       start:0x0209f5cc end:0x0209f650
+
+src/arm9/LoadChandelierMapObject.c:
+    complete
+    .text       start:0x0209f650 end:0x0209f698
+
+src/arm9/func_0209f6d8.c:
+    complete
+    .text       start:0x0209f6d8 end:0x0209f800
+
+src/arm9/LoadTownMonteMapObject.c:
+    complete
+    .text       start:0x0209fbe4 end:0x0209fc2c
+
+src/arm9/func_0209fc38.c:
+    complete
+    .text       start:0x0209fc38 end:0x0209fc78
+
+src/arm9/Maybe_helper_0a0044.c:
+    complete
+    .text       start:0x020a0044 end:0x020a0064
+
+src/arm9/LoadAirshipMapObject.c:
+    complete
+    .text       start:0x020a0294 end:0x020a02c8
+
+src/arm9/func_020a16d0.c:
+    complete
+    .text       start:0x020a16d0 end:0x020a1728
+
+src/arm9/func_020a1e40.c:
+    complete
+    .text       start:0x020a1e40 end:0x020a1ee4
+
+src/arm9/func_020a22ac.c:
+    complete
+    .text       start:0x020a22ac end:0x020a2300
+
+src/arm9/Maybe_get_15d4b4_8.c:
+    complete
+    .text       start:0x020a2684 end:0x020a269c
+
+src/arm9/func_020a2f30.c:
+    complete
+    .text       start:0x020a2f30 end:0x020a2f9c
+
+src/arm9/func_020a2fe4.c:
+    complete
+    .text       start:0x020a2fe4 end:0x020a305c
+
+src/arm9/Maybe_helper_0a3130.c:
+    complete
+    .text       start:0x020a3130 end:0x020a3154
+
+src/arm9/func_020a3e38.c:
+    complete
+    .text       start:0x020a3e38 end:0x020a3eb8
+
+src/arm9/LoadBalloonMapObject.c:
+    complete
+    .text       start:0x020a3eb8 end:0x020a3f18
+
+src/arm9/func_020a3f48.c:
+    complete
+    .text       start:0x020a3f48 end:0x020a3fa8
+
+src/arm9/Maybe_helper_0a58d0.c:
+    complete
+    .text       start:0x020a58d0 end:0x020a58f4
+
+src/arm9/Maybe_helper_0a58f4.c:
+    complete
+    .text       start:0x020a58f4 end:0x020a5918
+
+src/arm9/func_020a5918.c:
+    complete
+    .text       start:0x020a5918 end:0x020a5958
+
+src/arm9/Maybe_get_17b224.c:
+    complete
+    .text       start:0x020a6a90 end:0x020a6aa8
+
+src/arm9/LoadShine16MapObject.c:
+    complete
+    .text       start:0x020a6aa8 end:0x020a6ae4
+
+src/arm9/func_020a6c64.c:
+    complete
+    .text       start:0x020a6c64 end:0x020a6cb4
+
+src/arm9/func_020a6cb4.c:
+    complete
+    .text       start:0x020a6cb4 end:0x020a6d20
+
+src/arm9/func_020a6d40.c:
+    complete
+    .text       start:0x020a6d40 end:0x020a6d8c
+
+src/arm9/func_020a7148.c:
+    complete
+    .text       start:0x020a7148 end:0x020a71c8
+
+src/arm9/func_020a7270.c:
+    complete
+    .text       start:0x020a7270 end:0x020a72c8
+
+src/arm9/func_020a72c8.c:
+    complete
+    .text       start:0x020a72c8 end:0x020a7338
+
+src/arm9/Maybe_helper_0a7358.c:
+    complete
+    .text       start:0x020a7358 end:0x020a737c
+
+src/arm9/func_020a737c.c:
+    complete
+    .text       start:0x020a737c end:0x020a73b0
+
+src/arm9/Maybe_get_15d4b4_9.c:
+    complete
+    .text       start:0x020a78b0 end:0x020a78c8
+
+src/arm9/LoadSanboMapObject.c:
+    complete
+    .text       start:0x020a7eb4 end:0x020a7f18
+
+src/arm9/Maybe_helper_0a91e0.c:
+    complete
+    .text       start:0x020a91e0 end:0x020a9204
+
+src/arm9/func_020a9224.c:
+    complete
+    .text       start:0x020a9224 end:0x020a9268
+
+src/arm9/Maybe_get_17b230.c:
+    complete
+    .text       start:0x020a9d98 end:0x020a9db0
+
+src/arm9/Maybe_helper_0a9db0.c:
+    complete
+    .text       start:0x020a9db0 end:0x020a9de4
+
+src/arm9/func_020a9e04.c:
+    complete
+    .text       start:0x020a9e04 end:0x020a9e80
+
+src/arm9/func_020a9ed8.c:
+    complete
+    .text       start:0x020a9ed8 end:0x020a9efc
+
+src/arm9/func_020a9efc.c:
+    complete
+    .text       start:0x020a9efc end:0x020a9f20
+
+src/arm9/func_020aa5d8.c:
+    complete
+    .text       start:0x020aa5d8 end:0x020aa600
+
+src/arm9/func_020aa600.c:
+    complete
+    .text       start:0x020aa600 end:0x020aa628
+
+src/arm9/func_020aa628.c:
+    complete
+    .text       start:0x020aa628 end:0x020aa650
+
+src/arm9/func_020ab8d4.c:
+    complete
+    .text       start:0x020ab8d4 end:0x020ab910
+
+src/arm9/func_020ab910.c:
+    complete
+    .text       start:0x020ab910 end:0x020ab94c
+
+src/arm9/func_020aba9c.c:
+    complete
+    .text       start:0x020aba9c end:0x020abae0
+
+src/arm9/CreateGlobal78_from_thumb.c:
+    complete
+    .text       start:0x020abcf4 end:0x020abff4
+
+src/arm9/func_020ac284.c:
+    complete
+    .text       start:0x020ac284 end:0x020ac2c4
+
+src/arm9/func_020ac2c4.c:
+    complete
+    .text       start:0x020ac2c4 end:0x020ac2fc
+
+src/arm9/func_020ac2fc.c:
+    complete
+    .text       start:0x020ac2fc end:0x020ac390
+
+src/arm9/func_020ac454.c:
+    complete
+    .text       start:0x020ac454 end:0x020ac524
+
+src/arm9/func_020ac524.c:
+    complete
+    .text       start:0x020ac524 end:0x020ac588
+
+src/arm9/func_020ac5e4.c:
+    complete
+    .text       start:0x020ac5e4 end:0x020ac63c
+
+src/arm9/Maybe_helper_0ac658.c:
+    complete
+    .text       start:0x020ac658 end:0x020ac67c
+
+src/arm9/func_020ac67c.c:
+    complete
+    .text       start:0x020ac67c end:0x020ac6a8
+
+src/arm9/Maybe_get_17b33c.c:
+    complete
+    .text       start:0x020ac9b0 end:0x020ac9c8
+
+src/arm9/LoadShineBalloonMapObject.c:
+    complete
+    .text       start:0x020ac9c8 end:0x020ac9fc
+
+src/arm9/Maybe_helper_0ace34.c:
+    complete
+    .text       start:0x020ace34 end:0x020ace68
+
+src/arm9/Maybe_check_0ace68.c:
+    complete
+    .text       start:0x020ace68 end:0x020ace8c
+
+src/arm9/Maybe_helper_0ace8c.c:
+    complete
+    .text       start:0x020ace8c end:0x020acebc
+
+src/arm9/func_020acf04.c:
+    complete
+    .text       start:0x020acf04 end:0x020acf44
+
+src/arm9/EnableAlphaSetTopBldcntBldalpha.c:
+    complete
+    .text       start:0x020ad2f0 end:0x020ad32c
+
+src/arm9/SetSubDispcntWindow0Window1ObjDisplayFlag.c:
+    complete
+    .text       start:0x020ad870 end:0x020ad88c
+
+src/arm9/EnableAlphaSetSubBldcntBldalpha.c:
+    complete
+    .text       start:0x020ad8a4 end:0x020ad8e0
+
+src/arm9/DisplayConfig_SetBottomEngineBg3Config.c:
+    complete
+    .text       start:0x020ad924 end:0x020ad958
+
+src/arm9/DisplayConfig_SetTopEngineBg3Config.c:
+    complete
+    .text       start:0x020ad958 end:0x020ad98c
+
+src/arm9/DisplayConfig_SetTopEngineBg2Config.c:
+    complete
+    .text       start:0x020ad98c end:0x020ad9c0
+
+src/arm9/DisplayConfig_SetTopEngineBg1Config.c:
+    complete
+    .text       start:0x020ad9c0 end:0x020ad9fc
+
+src/arm9/GetActiveExecutionContextHeapHandle_4.c:
+    complete
+    .text       start:0x020ada10 end:0x020ada2c
+
+src/arm9/MaybeAllMissionStagesBeatenWithStarRank_from_thumb.c:
+    complete
+    .text       start:0x020adb34 end:0x020adbc4
+
+src/arm9/MaybeGetNftrCodepointPixelSize.c:
+    complete
+    .text       start:0x020adce0 end:0x020add18
+
+src/arm9/func_020add18.c:
+    complete
+    .text       start:0x020add18 end:0x020add50
+
+src/arm9/NFTR_SomeFn_2.c:
+    complete
+    .text       start:0x020add50 end:0x020add80
+
+src/arm9/NFTR_SomeFn.c:
+    complete
+    .text       start:0x020add90 end:0x020addb8
+
+src/arm9/DoFill16.c:
+    complete
+    .text       start:0x020addb8 end:0x020adddc
+
+src/arm9/func_020adec0.c:
+    complete
+    .text       start:0x020adec0 end:0x020adf00
+
+src/arm9/SomeDrawRacerName_from_thumb.c:
+    complete
+    .text       start:0x020adf00 end:0x020adfb0
+
+src/arm9/G2d_TextCanvas_PrintString2.c:
+    complete
+    .text       start:0x020adfb0 end:0x020adfd8
+
+src/arm9/FormatRacerNameString_from_thumb.c:
+    complete
+    .text       start:0x020adff0 end:0x020ae0ac
+
+src/arm9/GetRacerCharacterId_0.c:
+    complete
+    .text       start:0x020ae0c8 end:0x020ae0e4
+
+src/arm9/GetRacerName.c:
+    complete
+    .text       start:0x020ae0f8 end:0x020ae114
+
+src/arm9/IsRacerPlayerOrGhostOrNet.c:
+    complete
+    .text       start:0x020ae114 end:0x020ae15c
+
+src/arm9/GetRacerType.c:
+    complete
+    .text       start:0x020ae15c end:0x020ae178
+
+src/arm9/Maybe_helper_0ae2b0.c:
+    complete
+    .text       start:0x020ae2b0 end:0x020ae2e4
+
+src/arm9/Maybe_check_0ae2e4.c:
+    complete
+    .text       start:0x020ae2e4 end:0x020ae308
+
+src/arm9/Maybe_helper_0ae308.c:
+    complete
+    .text       start:0x020ae308 end:0x020ae338
+
+src/arm9/Maybe_helper_0ae564.c:
+    complete
+    .text       start:0x020ae564 end:0x020ae584
+
+src/arm9/CopyOamBuffersToMemory_from_thumb.c:
+    complete
+    .text       start:0x020ae5f0 end:0x020ae630
+
+src/arm9/GetActiveExecutionContextHeapHandle_1.c:
+    complete
+    .text       start:0x020ae754 end:0x020ae770
+
+src/arm9/func_020b17a4.c:
+    complete
+    .text       start:0x020b17a4 end:0x020b18b0
+
+src/arm9/G2d_Text_PrintString3.c:
+    complete
+    .text       start:0x020b24a4 end:0x020b24cc
+
+src/arm9/GetActiveExecutionContextHeapHandle_3.c:
+    complete
+    .text       start:0x020b2540 end:0x020b255c
+
+src/arm9/Maybe_helper_0b2a94.c:
+    complete
+    .text       start:0x020b2a94 end:0x020b2ac8
+
+src/arm9/Maybe_check_0b2ac8.c:
+    complete
+    .text       start:0x020b2ac8 end:0x020b2aec
+
+src/arm9/Maybe_helper_0b2aec.c:
+    complete
+    .text       start:0x020b2aec end:0x020b2b1c
+
+src/arm9/func_020b2bc8.c:
+    complete
+    .text       start:0x020b2bc8 end:0x020b2bf0
+
+src/arm9/SaveDataHolderIsBusy.c:
+    complete
+    .text       start:0x020b2bf0 end:0x020b2c24
+
+src/arm9/SaveDataIoManagerIsBusy12.c:
+    complete
+    .text       start:0x020b2c24 end:0x020b2c54
+
+src/arm9/func_020b2d54.c:
+    complete
+    .text       start:0x020b2d54 end:0x020b2d90
+
+src/arm9/func_020b2e98.c:
+    complete
+    .text       start:0x020b2e98 end:0x020b2ec0
+
+src/arm9/func_020b2ecc.c:
+    complete
+    .text       start:0x020b2ecc end:0x020b2f18
+
+src/arm9/IsCurrentMission_Boss6OrBoss7_from_thumb.c:
+    complete
+    .text       start:0x020b2f58 end:0x020b2f88
+
+src/arm9/func_020b3008.c:
+    complete
+    .text       start:0x020b3008 end:0x020b302c
+
+src/arm9/func_020b3278.c:
+    complete
+    .text       start:0x020b3278 end:0x020b32ec
+
+src/arm9/func_020b32f8.c:
+    complete
+    .text       start:0x020b32f8 end:0x020b3374
+
+src/arm9/GetSomeBgTileData_from_thumb.c:
+    complete
+    .text       start:0x020b3374 end:0x020b33c4
+
+src/arm9/InitializeGlobalB358.c:
+    complete
+    .text       start:0x020b36dc end:0x020b3724
+
+src/arm9/AnotherAlloc.c:
+    complete
+    .text       start:0x020b3b08 end:0x020b3b58
+
+src/arm9/Bmg_GetRawStringPointer_from_thumb.c:
+    complete
+    .text       start:0x020b3f7c end:0x020b3fb0
+
+src/arm9/Bmg_Load_from_thumb.c:
+    complete
+    .text       start:0x020b3fb0 end:0x020b4000
+
+src/arm9/LoadMA2ContentIfMounted_from_thumb.c:
+    complete
+    .text       start:0x020b409c end:0x020b41d4
+
+src/arm9/NFTR_Load.c:
+    complete
+    .text       start:0x020b478c end:0x020b47b4
+
+src/arm9/MaybeReadScreenBlock.c:
+    complete
+    .text       start:0x020b47d8 end:0x020b4810
+
+src/arm9/func_020b48b4.c:
+    complete
+    .text       start:0x020b48b4 end:0x020b48ec
+
+src/arm9/LoadCellBankFrom.c:
+    complete
+    .text       start:0x020b48ec end:0x020b4934
+
+src/arm9/MaybeReadCharBlock_1.c:
+    complete
+    .text       start:0x020b4934 end:0x020b496c
+
+src/arm9/Gfx_ReadCharGraphicsV2.c:
+    complete
+    .text       start:0x020b496c end:0x020b49bc
+
+src/arm9/Gfx_ReadCharGraphicsRelative.c:
+    complete
+    .text       start:0x020b49bc end:0x020b49f4
+
+src/arm9/Gfx_ReadCharGraphics.c:
+    complete
+    .text       start:0x020b49f4 end:0x020b4a44
+
+src/arm9/Gfx_ReadPaletteRelative.c:
+    complete
+    .text       start:0x020b4a44 end:0x020b4a7c
+
+src/arm9/Gfx_ReadPalette.c:
+    complete
+    .text       start:0x020b4a7c end:0x020b4acc
+
+src/arm9/func_020b4bf8.c:
+    complete
+    .text       start:0x020b4bf8 end:0x020b4c74
+
+src/arm9/func_020b4cec.c:
+    complete
+    .text       start:0x020b4cec end:0x020b4d2c
+
+src/arm9/CheckCourseSomeVectorBounds.c:
+    complete
+    .text       start:0x020b4e0c end:0x020b4e5c
+
+src/arm9/Maybe_get_15d4b4_10.c:
+    complete
+    .text       start:0x020b5258 end:0x020b5270
+
+src/arm9/Maybe_helper_0b5270.c:
+    complete
+    .text       start:0x020b5270 end:0x020b5290
+
+src/arm9/func_020b6338.c:
+    complete
+    .text       start:0x020b6338 end:0x020b6368
+
+src/arm9/GetActiveExecutionContextHeapHandle_2.c:
+    complete
+    .text       start:0x020b6800 end:0x020b681c
+
+src/arm9/func_020b6d98.c:
+    complete
+    .text       start:0x020b6d98 end:0x020b6dc4
+
+src/arm9/func_020b6dc4.c:
+    complete
+    .text       start:0x020b6dc4 end:0x020b6e00
+
+src/arm9/DrawRacerNames.c:
+    complete
+    .text       start:0x020b80a8 end:0x020b8220
+
+src/arm9/func_020bb530.c:
+    complete
+    .text       start:0x020bb530 end:0x020bb5cc
+
+src/arm9/func_020bcb74.c:
+    complete
+    .text       start:0x020bcb74 end:0x020bcbe8
+
+src/arm9/func_020c0ba8.c:
+    complete
+    .text       start:0x020c0ba8 end:0x020c0c2c
+
+src/arm9/func_020c0f48.c:
+    complete
+    .text       start:0x020c0f48 end:0x020c0fd0
+
+src/arm9/func_020c1e70.c:
+    complete
+    .text       start:0x020c1e70 end:0x020c1ef8
+
+src/arm9/CreateGlobalB3EC.c:
+    complete
+    .text       start:0x020c53c4 end:0x020c541c
+
+src/arm9/StructE8_SomeFnHandle2.c:
+    complete
+    .text       start:0x020c5e30 end:0x020c5eb8
+
+src/arm9/CheckHandleSaveTimeTrialRecord_LeastLap.c:
+    complete
+    .text       start:0x020c6428 end:0x020c657c
+
+src/arm9/Maybe_helper_0c72f4.c:
+    complete
+    .text       start:0x020c72f4 end:0x020c7310
+
+src/arm9/func_020c7450.c:
+    complete
+    .text       start:0x020c7450 end:0x020c7464
+
+src/arm9/Maybe_helper_0c7550.c:
+    complete
+    .text       start:0x020c7550 end:0x020c756c
+
+src/arm9/func_020c767c.c:
+    complete
+    .text       start:0x020c767c end:0x020c7690
+
+src/arm9/Maybe_helper_0c76ac.c:
+    complete
+    .text       start:0x020c76ac end:0x020c76c8
+
+src/arm9/func_020c778c.c:
+    complete
+    .text       start:0x020c778c end:0x020c77a0
+
+src/arm9/Maybe_helper_0c7820.c:
+    complete
+    .text       start:0x020c7820 end:0x020c783c
+
+src/arm9/func_020c79c0.c:
+    complete
+    .text       start:0x020c79c0 end:0x020c79d4
+
+src/arm9/Maybe_helper_0c79f0.c:
+    complete
+    .text       start:0x020c79f0 end:0x020c7a0c
+
+src/arm9/func_020c7af8.c:
+    complete
+    .text       start:0x020c7af8 end:0x020c7b0c
+
+src/arm9/Maybe_helper_0c7b28.c:
+    complete
+    .text       start:0x020c7b28 end:0x020c7b44
+
+src/arm9/func_020c7c08.c:
+    complete
+    .text       start:0x020c7c08 end:0x020c7c1c
+
+src/arm9/Maybe_helper_0c7c38.c:
+    complete
+    .text       start:0x020c7c38 end:0x020c7c54
+
+src/arm9/func_020c7d40.c:
+    complete
+    .text       start:0x020c7d40 end:0x020c7d54
+
+src/arm9/Maybe_helper_0c7d70.c:
+    complete
+    .text       start:0x020c7d70 end:0x020c7d8c
+
+src/arm9/func_020c7f70.c:
+    complete
+    .text       start:0x020c7f70 end:0x020c7f84
+
+src/arm9/Maybe_helper_0c7fa0.c:
+    complete
+    .text       start:0x020c7fa0 end:0x020c7fbc
+
+src/arm9/func_020c8084.c:
+    complete
+    .text       start:0x020c8084 end:0x020c8098
+
+src/arm9/Maybe_get_0c0c2c.c:
+    complete
+    .text       start:0x020c8098 end:0x020c80b0
+
+src/arm9/Maybe_helper_0c80b0.c:
+    complete
+    .text       start:0x020c80b0 end:0x020c80cc
+
+src/arm9/func_020c8240.c:
+    complete
+    .text       start:0x020c8240 end:0x020c8254
+
+src/arm9/Maybe_helper_0ca058.c:
+    complete
+    .text       start:0x020ca058 end:0x020ca074
+
+src/arm9/func_020ca3d0.c:
+    complete
+    .text       start:0x020ca3d0 end:0x020ca3e4
+
+src/arm9/Maybe_helper_0ca438.c:
+    complete
+    .text       start:0x020ca438 end:0x020ca454
+
+src/arm9/func_020ca520.c:
+    complete
+    .text       start:0x020ca520 end:0x020ca534
+
+src/arm9/Maybe_get_0c0c2c_2.c:
+    complete
+    .text       start:0x020ca534 end:0x020ca54c
+
+src/arm9/Maybe_helper_0ca54c.c:
+    complete
+    .text       start:0x020ca54c end:0x020ca568
+
+src/arm9/func_020ca65c.c:
+    complete
+    .text       start:0x020ca65c end:0x020ca670
+
+src/arm9/Maybe_get_0c0c2c_3.c:
+    complete
+    .text       start:0x020ca670 end:0x020ca688
+
+src/arm9/G2d_Text_PrintString5.c:
+    complete
+    .text       start:0x020ca7e0 end:0x020ca808
+
+src/arm9/GetActiveExecutionContextHeapHandle_5.c:
+    complete
+    .text       start:0x020ca820 end:0x020ca83c
+
+src/arm9/func_020caaac.c:
+    complete
+    .text       start:0x020caaac end:0x020caae8
+
+src/arm9/UpdateBldcntBldalphaBldy_Sub.c:
+    complete
+    .text       start:0x020caae8 end:0x020cab2c
+
+src/arm9/func_020cadac.c:
+    complete
+    .text       start:0x020cadac end:0x020cade8
+
+src/arm9/Maybe_helper_0cb13c.c:
+    complete
+    .text       start:0x020cb13c end:0x020cb170
+
+src/arm9/Maybe_check_0cb170.c:
+    complete
+    .text       start:0x020cb170 end:0x020cb194
+
+src/arm9/Maybe_helper_0cb194.c:
+    complete
+    .text       start:0x020cb194 end:0x020cb1c4
+
+src/arm9/GetActiveExecutionContextHeapHandle.c:
+    complete
+    .text       start:0x020cb99c end:0x020cb9b8
+
+src/arm9/EnableAlphaSetBldcntBldalphaSub.c:
+    complete
+    .text       start:0x020cba30 end:0x020cba6c
+
+src/arm9/EnableAlphaSetBldcntBldalphaTop.c:
+    complete
+    .text       start:0x020cba6c end:0x020cbaa8
+
+src/arm9/IsDwc_0.c:
+    complete
+    .text       start:0x020cbadc end:0x020cbb04
+
+src/arm9/SetDispcntWindows01ObjDisplayFlagsSub.c:
+    complete
+    .text       start:0x020cc134 end:0x020cc150
+
+src/arm9/DisplayConfig_SetBottomEngineBg3Config_1.c:
+    complete
+    .text       start:0x020cc1ac end:0x020cc1e0
+
+src/arm9/DisplayConfig_SetBottomEngineBg2Config2.c:
+    complete
+    .text       start:0x020cc1e0 end:0x020cc214
+
+src/arm9/DisplayConfig_SetBottomEngineBg1Config.c:
+    complete
+    .text       start:0x020cc214 end:0x020cc250
+
+src/arm9/DisplayConfig_SetBottomEngineBg0Config.c:
+    complete
+    .text       start:0x020cc250 end:0x020cc28c
+
+src/arm9/DisplayConfig_SetTopEngineBg3Config_0.c:
+    complete
+    .text       start:0x020cc28c end:0x020cc2c0
+
+src/arm9/DisplayConfig_SetTopEngineBg2Config2.c:
+    complete
+    .text       start:0x020cc2c0 end:0x020cc2f4
+
+src/arm9/DisplayConfig_SetTopEngineBg1Config_1.c:
+    complete
+    .text       start:0x020cc2f4 end:0x020cc330
+
+src/arm9/DisplayConfig_SetTopEngineBg0Config.c:
+    complete
+    .text       start:0x020cc330 end:0x020cc36c
+
+src/arm9/Maybe_helper_0cc6a4.c:
+    complete
+    .text       start:0x020cc6a4 end:0x020cc6c0
+
+src/arm9/GetRacerTeam.c:
+    complete
+    .text       start:0x020cc6c0 end:0x020cc6dc
+
+src/arm9/GetRacerType_0.c:
+    complete
+    .text       start:0x020cc6f0 end:0x020cc70c
+
+src/arm9/GetRacerKartId.c:
+    complete
+    .text       start:0x020cc70c end:0x020cc728
+
+src/arm9/GetRacerCharacterId.c:
+    complete
+    .text       start:0x020cc728 end:0x020cc744
+
+src/arm9/func_020ccb48.c:
+    complete
+    .text       start:0x020ccb48 end:0x020ccb78
+
+src/arm9/func_020ccb78.c:
+    complete
+    .text       start:0x020ccb78 end:0x020ccbb8
+
+src/arm9/Maybe_helper_0cccd8.c:
+    complete
+    .text       start:0x020cccd8 end:0x020cccf4
+
+src/arm9/func_020cce10.c:
+    complete
+    .text       start:0x020cce10 end:0x020cce24
+
+src/arm9/Maybe_get_0c0c2c_4.c:
+    complete
+    .text       start:0x020cce24 end:0x020cce3c
+
+src/arm9/Maybe_helper_0cce3c.c:
+    complete
+    .text       start:0x020cce3c end:0x020cce58
+
+src/arm9/func_020ccf58.c:
+    complete
+    .text       start:0x020ccf58 end:0x020ccf6c
+
+src/arm9/func_020cd2dc.c:
+    complete
+    .text       start:0x020cd2dc end:0x020cd2f0
+
+src/arm9/Maybe_helper_0cd30c.c:
+    complete
+    .text       start:0x020cd30c end:0x020cd328
+
+src/arm9/func_020cd438.c:
+    complete
+    .text       start:0x020cd438 end:0x020cd44c
+
+src/arm9/Maybe_get_0c0c2c_5.c:
+    complete
+    .text       start:0x020cd44c end:0x020cd464
+
+src/arm9/Maybe_helper_0cd464.c:
+    complete
+    .text       start:0x020cd464 end:0x020cd480
+
+src/arm9/func_020cd584.c:
+    complete
+    .text       start:0x020cd584 end:0x020cd598
+
+src/arm9/Maybe_helper_0cd5b4.c:
+    complete
+    .text       start:0x020cd5b4 end:0x020cd5d0
+
+src/arm9/func_020cd6e0.c:
+    complete
+    .text       start:0x020cd6e0 end:0x020cd6f4
+
+src/arm9/Maybe_helper_0cd710.c:
+    complete
+    .text       start:0x020cd710 end:0x020cd72c
+
+src/arm9/func_020cd830.c:
+    complete
+    .text       start:0x020cd830 end:0x020cd844
+
+src/arm9/Maybe_helper_0cd860.c:
+    complete
+    .text       start:0x020cd860 end:0x020cd87c
+
+src/arm9/func_020cd9c8.c:
+    complete
+    .text       start:0x020cd9c8 end:0x020cd9dc
+
+src/arm9/Maybe_helper_0cd9f8.c:
+    complete
+    .text       start:0x020cd9f8 end:0x020cda14
+
+src/arm9/func_020cdb40.c:
+    complete
+    .text       start:0x020cdb40 end:0x020cdb54
+
+src/arm9/Maybe_helper_0cdb70.c:
+    complete
+    .text       start:0x020cdb70 end:0x020cdb8c
+
+src/arm9/func_020cdc7c.c:
+    complete
+    .text       start:0x020cdc7c end:0x020cdc90
+
+src/arm9/Maybe_helper_0cdcac.c:
+    complete
+    .text       start:0x020cdcac end:0x020cdcc8
+
+src/arm9/func_020cddd0.c:
+    complete
+    .text       start:0x020cddd0 end:0x020cdde4
+
+src/arm9/Maybe_get_0c0c2c_6.c:
+    complete
+    .text       start:0x020cdde4 end:0x020cddfc
+
+src/arm9/Maybe_helper_0cddfc.c:
+    complete
+    .text       start:0x020cddfc end:0x020cde18
+
+src/arm9/func_020cdf04.c:
+    complete
+    .text       start:0x020cdf04 end:0x020cdf18
+
+src/arm9/Maybe_helper_0cdf34.c:
+    complete
+    .text       start:0x020cdf34 end:0x020cdf50
+
+src/arm9/func_020ce0ec.c:
+    complete
+    .text       start:0x020ce0ec end:0x020ce100
+
+src/arm9/Maybe_get_0c0c2c_7.c:
+    complete
+    .text       start:0x020ce100 end:0x020ce118
+
+src/arm9/Maybe_helper_0ce118.c:
+    complete
+    .text       start:0x020ce118 end:0x020ce134
+
+src/arm9/func_020ce250.c:
+    complete
+    .text       start:0x020ce250 end:0x020ce264
+
+src/arm9/Maybe_get_0c0c2c_8.c:
+    complete
+    .text       start:0x020ce264 end:0x020ce27c
+
+src/arm9/Maybe_helper_0ce27c.c:
+    complete
+    .text       start:0x020ce27c end:0x020ce298
+
+src/arm9/func_020ce3cc.c:
+    complete
+    .text       start:0x020ce3cc end:0x020ce3e0
+
+src/arm9/Maybe_get_0c0c2c_9.c:
+    complete
+    .text       start:0x020ce3e0 end:0x020ce3f8
+
+src/arm9/Maybe_helper_0ce3f8.c:
+    complete
+    .text       start:0x020ce3f8 end:0x020ce414
+
+src/arm9/func_020ce534.c:
+    complete
+    .text       start:0x020ce534 end:0x020ce548
+
+src/arm9/Maybe_helper_0ce564.c:
+    complete
+    .text       start:0x020ce564 end:0x020ce580
+
+src/arm9/func_020ce694.c:
+    complete
+    .text       start:0x020ce694 end:0x020ce6a8
+
+src/arm9/Maybe_get_0c0c2c_10.c:
+    complete
+    .text       start:0x020ce6a8 end:0x020ce6c0
+
+src/arm9/func_020ce784.c:
+    complete
+    .text       start:0x020ce784 end:0x020ce7ac
+
+src/arm9/Maybe_helper_0ced10.c:
+    complete
+    .text       start:0x020ced10 end:0x020ced2c
+
+src/arm9/func_020cedf8.c:
+    complete
+    .text       start:0x020cedf8 end:0x020cee0c
+
+src/arm9/CreateGlobalB488_from_thumb.c:
+    complete
+    .text       start:0x020cef1c end:0x020cef68
+
+src/arm9/SpecialMemoryMemsetV2.c:
+    complete
+    .text       start:0x020cef7c end:0x020cefa0
+
+src/arm9/Maybe_helper_0cefc0.c:
+    complete
+    .text       start:0x020cefc0 end:0x020cefdc
+
+src/arm9/func_020cf2fc.c:
+    complete
+    .text       start:0x020cf2fc end:0x020cf310
+
+src/arm9/SomeAlloc.c:
+    complete
+    .text       start:0x020cffa0 end:0x020cffd0
+
+src/arm9/Maybe_helper_0cffd0.c:
+    complete
+    .text       start:0x020cffd0 end:0x020cffec
+
+src/arm9/func_020d0108.c:
+    complete
+    .text       start:0x020d0108 end:0x020d011c
+
+src/arm9/Maybe_get_0c0c2c_11.c:
+    complete
+    .text       start:0x020d011c end:0x020d0134
+
+src/arm9/Maybe_helper_0d0134.c:
+    complete
+    .text       start:0x020d0134 end:0x020d0150
+
+src/arm9/func_020d026c.c:
+    complete
+    .text       start:0x020d026c end:0x020d0280
+
+src/arm9/Maybe_helper_0d0cbc.c:
+    complete
+    .text       start:0x020d0cbc end:0x020d0cd8
+
+src/arm9/func_020d0e28.c:
+    complete
+    .text       start:0x020d0e28 end:0x020d0e3c
+
+src/arm9/func_020d0e7c.c:
+    complete
+    .text       start:0x020d0e7c end:0x020d0ea0
+
+src/arm9/func_020d0ea0.c:
+    complete
+    .text       start:0x020d0ea0 end:0x020d0ec4
+
+src/arm9/func_020d0ec4.c:
+    complete
+    .text       start:0x020d0ec4 end:0x020d0ee8
+
+src/arm9/func_020d0efc.c:
+    complete
+    .text       start:0x020d0efc end:0x020d0f60
+
+src/arm9/Maybe_m_picture.c:
+    complete
+    .text       start:0x020d0f78 end:0x020d0ffc
+
+src/arm9/Maybe_m_b.c:
+    complete
+    .text       start:0x020d0ffc end:0x020d1080
+
+src/arm9/Maybe_m_b_2.c:
+    complete
+    .text       start:0x020d1080 end:0x020d10fc
+
+src/arm9/GetActiveExecutionContextHeapHandle_0.c:
+    complete
+    .text       start:0x020d113c end:0x020d1158
+
+src/arm9/IsDwc_1.c:
+    complete
+    .text       start:0x020d1164 end:0x020d118c
+
+src/arm9/SomeAlloc2.c:
+    complete
+    .text       start:0x020d12b0 end:0x020d12e0
+
+src/arm9/func_020d12e0.c:
+    complete
+    .text       start:0x020d12e0 end:0x020d13f8
+
+src/arm9/IncrementStaffRollFrameCount.c:
+    complete
+    .text       start:0x020d13f8 end:0x020d1450
+
+src/arm9/LoadSomeEndingStaffRollStuff.c:
+    complete
+    .text       start:0x020d1464 end:0x020d159c
+
+src/arm9/LoadStaffRollDataOam.c:
+    complete
+    .text       start:0x020d159c end:0x020d1630
+
+src/arm9/LoadStatic2DContents.c:
+    complete
+    .text       start:0x020d1640 end:0x020d18d4
+
+src/arm9/FormatFindMapObjFileBuffer_from_thumb.c:
+    complete
+    .text       start:0x020d21ec end:0x020d2210
+
+src/arm9/FormatFindMapObjFileBuffer_0_from_thumb.c:
+    complete
+    .text       start:0x020d2210 end:0x020d2234
+
+src/arm9/func_020d252c.c:
+    complete
+    .text       start:0x020d252c end:0x020d2584
+
+src/arm9/func_020d2668.c:
+    complete
+    .text       start:0x020d2668 end:0x020d26e0
+
+src/arm9/func_020d4990.c:
+    complete
+    .text       start:0x020d4990 end:0x020d49d8
+
+src/arm9/LoadCourseKcl_from_thumb.c:
+    complete
+    .text       start:0x020d5b8c end:0x020d5bac
+
+src/arm9/func_020d5d80.c:
+    complete
+    .text       start:0x020d5d80 end:0x020d5dd0
+
+src/arm9/func_020d673c.c:
+    complete
+    .text       start:0x020d673c end:0x020d6794
+
+src/arm9/Maybe_CreateObj_1569fc.c:
+    complete
+    .text       start:0x020d6794 end:0x020d67f0
+
+src/arm9/func_020d68b0.c:
+    complete
+    .text       start:0x020d68b0 end:0x020d6910
+
+src/arm9/func_020d6df0.c:
+    complete
+    .text       start:0x020d6df0 end:0x020d6f20
+
+src/arm9/func_020d6f20.c:
+    complete
+    .text       start:0x020d6f20 end:0x020d6f78
+
+src/arm9/func_020d7b88.c:
+    complete
+    .text       start:0x020d7b88 end:0x020d7bec
+
+src/arm9/func_020d8918.c:
+    complete
+    .text       start:0x020d8918 end:0x020d8a5c
+
+src/arm9/func_020d90a8.c:
+    complete
+    .text       start:0x020d90a8 end:0x020d91dc
+
+src/arm9/func_020d98a4.c:
+    complete
+    .text       start:0x020d98a4 end:0x020d9900
+
+src/arm9/func_020d9900.c:
+    complete
+    .text       start:0x020d9900 end:0x020d99f8
+
+src/arm9/LoadGhostHouseWaterModel.c:
+    complete
+    .text       start:0x020d99f8 end:0x020d9a90
+
+src/arm9/LoadTownWaterModel.c:
+    complete
+    .text       start:0x020d9b20 end:0x020d9bb8
+
+src/arm9/LoadBeachWaterModels.c:
+    complete
+    .text       start:0x020d9bb8 end:0x020d9c54
+
+src/arm9/func_020d9c54.c:
+    complete
+    .text       start:0x020d9c54 end:0x020d9cf4
+
+src/arm9/func_020d9de0.c:
+    complete
+    .text       start:0x020d9de0 end:0x020d9e60
+
+src/arm9/func_020da384.c:
+    complete
+    .text       start:0x020da384 end:0x020da414
+
+src/arm9/func_020da414.c:
+    complete
+    .text       start:0x020da414 end:0x020da494
+
+src/arm9/func_020da5f0.c:
+    complete
+    .text       start:0x020da5f0 end:0x020da628
+
+src/arm9/func_020da628.c:
+    complete
+    .text       start:0x020da628 end:0x020da684
+
+src/arm9/Maybe_get_17b688.c:
+    complete
+    .text       start:0x020db198 end:0x020db1b0
+
+src/arm9/Maybe_CreateObj_158164.c:
+    complete
+    .text       start:0x020db1b0 end:0x020db20c
+
+src/arm9/Maybe_CreateObj_15818c.c:
+    complete
+    .text       start:0x020db20c end:0x020db268
+
+src/arm9/Maybe_CreateObj_1581b8.c:
+    complete
+    .text       start:0x020db268 end:0x020db2b8
+
+src/arm9/func_020db3e4.c:
+    complete
+    .text       start:0x020db3e4 end:0x020db430
+
+src/arm9/Maybe_CreateObj_158238.c:
+    complete
+    .text       start:0x020dbe74 end:0x020dbed0
+
+src/arm9/Maybe_CreateObj_158260.c:
+    complete
+    .text       start:0x020dbed0 end:0x020dbf2c
+
+src/arm9/Maybe_CreateObj_15828c.c:
+    complete
+    .text       start:0x020dbf2c end:0x020dbf7c
+
+src/arm9/func_020dc308.c:
+    complete
+    .text       start:0x020dc308 end:0x020dc354
+
+src/arm9/Maybe_CreateObj_158334.c:
+    complete
+    .text       start:0x020dd7a8 end:0x020dd804
+
+src/arm9/Maybe_CreateObj_15835c.c:
+    complete
+    .text       start:0x020dd804 end:0x020dd860
+
+src/arm9/Maybe_CreateObj_158388.c:
+    complete
+    .text       start:0x020dd860 end:0x020dd8b0
+
+src/arm9/func_020de130.c:
+    complete
+    .text       start:0x020de130 end:0x020de184
+
+src/arm9/Maybe_CreateObj_15840c.c:
+    complete
+    .text       start:0x020de2d8 end:0x020de334
+
+src/arm9/Maybe_CreateObj_158434.c:
+    complete
+    .text       start:0x020de334 end:0x020de390
+
+src/arm9/Maybe_CreateObj_158460.c:
+    complete
+    .text       start:0x020de390 end:0x020de3e0
+
+src/arm9/func_020de438.c:
+    complete
+    .text       start:0x020de438 end:0x020de488
+
+src/arm9/Maybe_get_17b6f0.c:
+    complete
+    .text       start:0x020de588 end:0x020de5a0
+
+src/arm9/Maybe_CreateObj_1584d4.c:
+    complete
+    .text       start:0x020de5a0 end:0x020de5fc
+
+src/arm9/Maybe_CreateObj_1584fc.c:
+    complete
+    .text       start:0x020de5fc end:0x020de658
+
+src/arm9/Maybe_CreateObj_158528.c:
+    complete
+    .text       start:0x020de658 end:0x020de6a8
+
+src/arm9/func_020de84c.c:
+    complete
+    .text       start:0x020de84c end:0x020de9ec
+
+src/arm9/Maybe_get_17b710.c:
+    complete
+    .text       start:0x020df064 end:0x020df07c
+
+src/arm9/Maybe_get_17b71c.c:
+    complete
+    .text       start:0x020df220 end:0x020df238
+
+src/arm9/Maybe_CreateObj_1585a8.c:
+    complete
+    .text       start:0x020df238 end:0x020df294
+
+src/arm9/Maybe_CreateObj_1585d0.c:
+    complete
+    .text       start:0x020df294 end:0x020df2f0
+
+src/arm9/Maybe_CreateObj_1585fc.c:
+    complete
+    .text       start:0x020df2f0 end:0x020df34c
+
+src/arm9/Maybe_CreateObj_158628.c:
+    complete
+    .text       start:0x020df34c end:0x020df3a8
+
+src/arm9/Maybe_CreateObj_158654.c:
+    complete
+    .text       start:0x020df3a8 end:0x020df3f8
+
+src/arm9/Maybe_CreateObj_1586d8.c:
+    complete
+    .text       start:0x020df61c end:0x020df678
+
+src/arm9/Maybe_CreateObj_158700.c:
+    complete
+    .text       start:0x020df678 end:0x020df6c8
+
+src/arm9/LoadBubbleEffectModel.c:
+    complete
+    .text       start:0x020df758 end:0x020df7d0
+
+src/arm9/Maybe_get_17b778.c:
+    complete
+    .text       start:0x020dfae4 end:0x020dfafc
+
+src/arm9/Maybe_CreateObj_1587b0.c:
+    complete
+    .text       start:0x020dfcb8 end:0x020dfd14
+
+src/arm9/Maybe_CreateObj_1587dc.c:
+    complete
+    .text       start:0x020dfd14 end:0x020dfd64
+
+src/arm9/func_020dff08.c:
+    complete
+    .text       start:0x020dff08 end:0x020dff4c
+
+src/arm9/Maybe_CreateObj_158854.c:
+    complete
+    .text       start:0x020e0340 end:0x020e039c
+
+src/arm9/Maybe_CreateObj_15887c.c:
+    complete
+    .text       start:0x020e039c end:0x020e03f8
+
+src/arm9/Maybe_CreateObj_1588a8.c:
+    complete
+    .text       start:0x020e03f8 end:0x020e0448
+
+src/arm9/func_020e04b0.c:
+    complete
+    .text       start:0x020e04b0 end:0x020e0538
+
+src/arm9/func_020e0538.c:
+    complete
+    .text       start:0x020e0538 end:0x020e0584
+
+src/arm9/AllocateNewDriverSub208.c:
+    complete
+    .text       start:0x020e0650 end:0x020e0680
+
+src/arm9/func_020e24d0.c:
+    complete
+    .text       start:0x020e24d0 end:0x020e2630
+
+src/arm9/Maybe_CreateObj_158a54.c:
+    complete
+    .text       start:0x020e2d5c end:0x020e2db8
+
+src/arm9/Maybe_CreateObj_158abc.c:
+    complete
+    .text       start:0x020e2e1c end:0x020e2e6c
+
+src/arm9/Maybe_CreateObj_158afc.c:
+    complete
+    .text       start:0x020e2e6c end:0x020e2ebc
+
+src/arm9/Maybe_CreateObj_158b3c.c:
+    complete
+    .text       start:0x020e2ebc end:0x020e2f0c
+
+src/arm9/func_020e2fac.c:
+    complete
+    .text       start:0x020e2fac end:0x020e2fe4
+
+src/arm9/Maybe_get_17b7b8.c:
+    complete
+    .text       start:0x020e3724 end:0x020e373c
+
+src/arm9/Maybe_CreateObj_158bbc.c:
+    complete
+    .text       start:0x020e373c end:0x020e3798
+
+src/arm9/Maybe_CreateObj_158be4.c:
+    complete
+    .text       start:0x020e3798 end:0x020e37f4
+
+src/arm9/Maybe_CreateObj_158c10.c:
+    complete
+    .text       start:0x020e37f4 end:0x020e3850
+
+src/arm9/Maybe_CreateObj_158c3c.c:
+    complete
+    .text       start:0x020e3850 end:0x020e38a0
+
+src/arm9/func_020e3a7c.c:
+    complete
+    .text       start:0x020e3a7c end:0x020e3af0
+
+src/arm9/Maybe_CreateObj_158cc0.c:
+    complete
+    .text       start:0x020e3dec end:0x020e3e48
+
+src/arm9/Maybe_CreateObj_158d18.c:
+    complete
+    .text       start:0x020e3ea4 end:0x020e3ef4
+
+src/arm9/Maybe_CreateObj_158e9c.c:
+    complete
+    .text       start:0x020e4610 end:0x020e466c
+
+src/arm9/Maybe_CreateObj_158ec4.c:
+    complete
+    .text       start:0x020e466c end:0x020e46c8
+
+src/arm9/Maybe_CreateObj_158ef0.c:
+    complete
+    .text       start:0x020e46c8 end:0x020e4718
+
+src/arm9/Maybe_CreateObj_158f30.c:
+    complete
+    .text       start:0x020e4718 end:0x020e4768
+
+src/arm9/func_020e4768.c:
+    complete
+    .text       start:0x020e4768 end:0x020e47c8
+
+src/arm9/func_020e48b4.c:
+    complete
+    .text       start:0x020e48b4 end:0x020e48e0
+
+src/arm9/Maybe_get_17b7f0.c:
+    complete
+    .text       start:0x020e4fb0 end:0x020e4fc8
+
+src/arm9/Maybe_CreateObj_158ff0.c:
+    complete
+    .text       start:0x020e4fc8 end:0x020e5024
+
+src/arm9/Maybe_CreateObj_159018.c:
+    complete
+    .text       start:0x020e5024 end:0x020e5080
+
+src/arm9/Maybe_CreateObj_159044.c:
+    complete
+    .text       start:0x020e5080 end:0x020e50dc
+
+src/arm9/Maybe_CreateObj_159070.c:
+    complete
+    .text       start:0x020e50dc end:0x020e512c
+
+src/arm9/func_020e52bc.c:
+    complete
+    .text       start:0x020e52bc end:0x020e5348
+
+src/arm9/func_020e576c.c:
+    complete
+    .text       start:0x020e576c end:0x020e57a0
+
+src/arm9/Maybe_CreateObj_1590ec.c:
+    complete
+    .text       start:0x020e59e4 end:0x020e5a40
+
+src/arm9/Maybe_CreateObj_159114.c:
+    complete
+    .text       start:0x020e5a40 end:0x020e5a9c
+
+src/arm9/Maybe_CreateObj_159140.c:
+    complete
+    .text       start:0x020e5a9c end:0x020e5aec
+
+src/arm9/func_020e5b50.c:
+    complete
+    .text       start:0x020e5b50 end:0x020e5b88
+
+src/arm9/Maybe_get_17b830.c:
+    complete
+    .text       start:0x020e5d0c end:0x020e5d24
+
+src/arm9/func_020e5d24.c:
+    complete
+    .text       start:0x020e5d24 end:0x020e5d78
+
+src/arm9/Maybe_CreateObj_1591dc.c:
+    complete
+    .text       start:0x020e5d78 end:0x020e5dd4
+
+src/arm9/Maybe_CreateObj_159208.c:
+    complete
+    .text       start:0x020e5dd4 end:0x020e5e24
+
+src/arm9/func_020e5f68.c:
+    complete
+    .text       start:0x020e5f68 end:0x020e5fb4
+
+src/arm9/Maybe_CreateObj_15927c.c:
+    complete
+    .text       start:0x020e6380 end:0x020e63dc
+
+src/arm9/Maybe_CreateObj_1592a4.c:
+    complete
+    .text       start:0x020e63dc end:0x020e6438
+
+src/arm9/Maybe_CreateObj_1592d0.c:
+    complete
+    .text       start:0x020e6438 end:0x020e6488
+
+src/arm9/BillboardModel_AllocateFromNsbmdNsbtp_from_thumb.c:
+    complete
+    .text       start:0x020e6488 end:0x020e64b8
+
+src/arm9/func_020e6d34.c:
+    complete
+    .text       start:0x020e6d34 end:0x020e6d88
+
+src/arm9/func_020e6d88.c:
+    complete
+    .text       start:0x020e6d88 end:0x020e6df0
+
+src/arm9/func_020e6f9c.c:
+    complete
+    .text       start:0x020e6f9c end:0x020e6fc4
+
+src/arm9/Maybe_CreateObj_159348.c:
+    complete
+    .text       start:0x020e73b4 end:0x020e7410
+
+src/arm9/Maybe_CreateObj_159370.c:
+    complete
+    .text       start:0x020e7410 end:0x020e7460
+
+src/arm9/func_020e7a40.c:
+    complete
+    .text       start:0x020e7a40 end:0x020e7a84
+
+src/arm9/func_020ea4bc.c:
+    complete
+    .text       start:0x020ea4bc end:0x020ea514
+
+src/arm9/SomeAnimationLoadWrapper_from_thumb.c:
+    complete
+    .text       start:0x020ea514 end:0x020ea55c
+
+src/arm9/func_020ea55c.c:
+    complete
+    .text       start:0x020ea55c end:0x020ea588
+
+src/arm9/func_020ea588.c:
+    complete
+    .text       start:0x020ea588 end:0x020ea5b0
+
+src/arm9/func_020eb2a0.c:
+    complete
+    .text       start:0x020eb2a0 end:0x020eb3f0
+
+src/arm9/func_020eb3f0.c:
+    complete
+    .text       start:0x020eb3f0 end:0x020eb498
+
+src/arm9/func_020eb72c.c:
+    complete
+    .text       start:0x020eb72c end:0x020eb760
+
+src/arm9/Maybe_CreateObj_1594e4.c:
+    complete
+    .text       start:0x020ec314 end:0x020ec370
+
+src/arm9/Maybe_CreateObj_15950c.c:
+    complete
+    .text       start:0x020ec370 end:0x020ec3cc
+
+src/arm9/Maybe_CreateObj_159538.c:
+    complete
+    .text       start:0x020ec3cc end:0x020ec41c
+
+src/arm9/func_020ec490.c:
+    complete
+    .text       start:0x020ec490 end:0x020ec504
+
+src/arm9/func_020ec7e8.c:
+    complete
+    .text       start:0x020ec7e8 end:0x020ec854
+
+src/arm9/func_020ec884.c:
+    complete
+    .text       start:0x020ec884 end:0x020ec8bc
+
+src/arm9/func_020ed490.c:
+    complete
+    .text       start:0x020ed490 end:0x020ed4d0
+
+src/arm9/CreateBillboardModel_from_thumb.c:
+    complete
+    .text       start:0x020ed4d0 end:0x020ed548
+
+src/arm9/FindItemFileBuffer_from_thumb.c:
+    complete
+    .text       start:0x020ed548 end:0x020ed578
+
+src/arm9/func_020ee528.c:
+    complete
+    .text       start:0x020ee528 end:0x020ee684
+
+src/arm9/func_020f1d70.c:
+    complete
+    .text       start:0x020f1d70 end:0x020f1ea4
+
+src/arm9/func_020f2028.c:
+    complete
+    .text       start:0x020f2028 end:0x020f2150
+
+src/arm9/func_020f2768.c:
+    complete
+    .text       start:0x020f2768 end:0x020f288c
+
+src/arm9/func_020f288c.c:
+    complete
+    .text       start:0x020f288c end:0x020f29e8
+
+src/arm9/func_020f73a4.c:
+    complete
+    .text       start:0x020f73a4 end:0x020f73d4
+
+src/arm9/func_020f7c60.c:
+    complete
+    .text       start:0x020f7c60 end:0x020f7c90
+
+src/arm9/func_020f8148.c:
+    complete
+    .text       start:0x020f8148 end:0x020f81b8
+
+src/arm9/func_020f98a0.c:
+    complete
+    .text       start:0x020f98a0 end:0x020f992c
+
+src/arm9/func_020f9c6c.c:
+    complete
+    .text       start:0x020f9c6c end:0x020f9ca8
+
+src/arm9/func_020f9ca8.c:
+    complete
+    .text       start:0x020f9ca8 end:0x020f9ce8
+
+src/arm9/func_020fad00.c:
+    complete
+    .text       start:0x020fad00 end:0x020fad9c
+
+src/arm9/func_020fade4.c:
+    complete
+    .text       start:0x020fade4 end:0x020fae74
+
+src/arm9/func_020fbd4c.c:
+    complete
+    .text       start:0x020fbd4c end:0x020fbd98
+
+src/arm9/func_020fcac0.c:
+    complete
+    .text       start:0x020fcac0 end:0x020fcb30
+
+src/arm9/func_020fd8b0.c:
+    complete
+    .text       start:0x020fd8b0 end:0x020fd938
+
+src/arm9/func_020fe3d8.c:
+    complete
+    .text       start:0x020fe3d8 end:0x020fe450
+
+src/arm9/func_020ff344.c:
+    complete
+    .text       start:0x020ff344 end:0x020ff3c4
+
+src/arm9/func_020ff3c4.c:
+    complete
+    .text       start:0x020ff3c4 end:0x020ff438
+
+src/arm9/func_020ff910.c:
+    complete
+    .text       start:0x020ff910 end:0x020ff97c
+
+src/arm9/func_020ff97c.c:
+    complete
+    .text       start:0x020ff97c end:0x020ffabc
+
+src/arm9/Maybe_CreateObj_15a068.c:
+    complete
+    .text       start:0x020ffacc end:0x020ffb1c
+
+src/arm9/func_020ffbd4.c:
+    complete
+    .text       start:0x020ffbd4 end:0x020ffc08
+
+src/arm9/Maybe_CreateObj_15a100.c:
+    complete
+    .text       start:0x020fff4c end:0x020fffa8
+
+src/arm9/Maybe_CreateObj_15a12c.c:
+    complete
+    .text       start:0x020fffa8 end:0x02100004
+
+src/arm9/func_02100004.c:
+    complete
+    .text       start:0x02100004 end:0x02100084
+
+src/arm9/func_02102674.c:
+    complete
+    .text       start:0x02102674 end:0x02102718
+
+src/arm9/Maybe_CreateObj_15a680.c:
+    complete
+    .text       start:0x02105480 end:0x021054d0
+
+src/arm9/IsInRaceSceneNormalOrReplay.c:
+    complete
+    .text       start:0x02105504 end:0x02105550
+
+src/arm9/func_021057f0.c:
+    complete
+    .text       start:0x021057f0 end:0x0210593c
+
+src/arm9/MaybePlaySomeSseqFromSarc0.c:
+    complete
+    .text       start:0x02105ac0 end:0x02105b0c
+
+src/arm9/Maybe_helper_105b48.c:
+    complete
+    .text       start:0x02105b48 end:0x02105b64
+
+src/arm9/func_02106c64.c:
+    complete
+    .text       start:0x02106c64 end:0x02106dc8
+
+src/arm9/MaybeReloadRacerSbnksSwars.c:
+    complete
+    .text       start:0x021087f4 end:0x0210887c
+
+src/arm9/SetGlobalSdatActive.c:
+    complete
+    .text       start:0x02108ec4 end:0x02108ed8
+
+src/arm9/DriverContext_MaybeQueuePlaySfx.c:
+    complete
+    .text       start:0x021090c4 end:0x02109110
+
+src/arm9/func_02109184.c:
+    complete
+    .text       start:0x02109184 end:0x0210920c
+
+src/arm9/StructMQRacerEntry_SomeFn_70.c:
+    complete
+    .text       start:0x0210a53c end:0x0210a578
+
+src/arm9/StructMQRacerEntry_SomeFn_41.c:
+    complete
+    .text       start:0x0210ad58 end:0x0210add4
+
+src/arm9/func_0210b6a0.c:
+    complete
+    .text       start:0x0210b6a0 end:0x0210b708
+
+src/arm9/func_0210ba78.c:
+    complete
+    .text       start:0x0210ba78 end:0x0210bac0
+
+src/arm9/func_0210bc54.c:
+    complete
+    .text       start:0x0210bc54 end:0x0210bc8c
+
+src/arm9/StructMQRacerEntry_MaybeInsertChildEntry.c:
+    complete
+    .text       start:0x0210bc8c end:0x0210bce0
+
+src/arm9/func_0210c134.c:
+    complete
+    .text       start:0x0210c134 end:0x0210c1b0
+
+src/arm9/StructMQRacerEntry_SomeFn_46.c:
+    complete
+    .text       start:0x0210cf20 end:0x0210cf9c
+
+src/arm9/SfxUpdate_Unk.c:
+    complete
+    .text       start:0x0210d078 end:0x0210d0b4
+
+src/arm9/func_0210dc7c.c:
+    complete
+    .text       start:0x0210dc7c end:0x0210dca8
+
+src/arm9/func_0210e094.c:
+    complete
+    .text       start:0x0210e094 end:0x0210e128
+
+src/arm9/func_0210e434.c:
+    complete
+    .text       start:0x0210e434 end:0x0210e4c8
+
+src/arm9/func_0210e4c8.c:
+    complete
+    .text       start:0x0210e4c8 end:0x0210e4ec
+
+src/arm9/LoadGroupById.c:
+    complete
+    .text       start:0x0210e50c end:0x0210e524
+
+src/arm9/LoadCertainSwarSbnkSarc.c:
+    complete
+    .text       start:0x0210e920 end:0x0210e98c
+
+src/arm9/Maybe_helper_10ef34.c:
+    complete
+    .text       start:0x0210ef34 end:0x0210ef50
+
+src/arm9/func_0210ef68.c:
+    complete
+    .text       start:0x0210ef68 end:0x0210efac
+
+src/arm9/Sound_ReadSdatFromPathImplV2.c:
+    complete
+    .text       start:0x0210efcc end:0x0210f068
+
+src/arm9/Maybe_helper_10f0d8.c:
+    complete
+    .text       start:0x0210f0d8 end:0x0210f0f4
+
+src/arm9/Maybe_helper_10f114.c:
+    complete
+    .text       start:0x0210f114 end:0x0210f130
+
+src/arm9/func_0210f9f0.c:
+    complete
+    .text       start:0x0210f9f0 end:0x0210fa28
+
+src/arm9/func_02110484.c:
+    complete
+    .text       start:0x02110484 end:0x021104dc
+
+src/arm9/func_02110534.c:
+    complete
+    .text       start:0x02110534 end:0x0211057c
+
+src/arm9/CreateSetGlobalCX.c:
+    complete
+    .text       start:0x02111250 end:0x0211127c
+
+src/arm9/func_02114298.c:
+    complete
+    .text       start:0x02114298 end:0x021142d4
+
+src/arm9/Maybe_emblem2.c:
+    complete
+    .text       start:0x021144c0 end:0x02114504
+
+src/arm9/func_02115cc4.c:
+    complete
+    .text       start:0x02115cc4 end:0x02115cec
+
+src/arm9/func_02116a4c.c:
+    complete
+    .text       start:0x02116a4c end:0x02116b50
+
+src/arm9/func_02116b50.c:
+    complete
+    .text       start:0x02116b50 end:0x02116b80
+
+src/arm9/VerifyCommonWaitFiles_from_thumb.c:
+    complete
+    .text       start:0x02116e70 end:0x02116ec0
+
+src/arm9/CreateSetGlobalKTB_from_thumb.c:
+    complete
+    .text       start:0x0211717c end:0x021171a0
+
+src/arm9/func_02117224.c:
+    complete
+    .text       start:0x02117224 end:0x021172a8
+
+src/arm9/func_021172a8.c:
+    complete
+    .text       start:0x021172a8 end:0x0211732c
+
+src/arm9/VerifyKartIconFiles_from_thumb.c:
+    complete
+    .text       start:0x0211732c end:0x02117388
+
+src/arm9/func_02118184.c:
+    complete
+    .text       start:0x02118184 end:0x021181b8
+
+src/arm9/func_02118414.c:
+    complete
+    .text       start:0x02118414 end:0x02118458
+
+src/arm9/func_021187d4.c:
+    complete
+    .text       start:0x021187d4 end:0x02118814
+
+src/arm9/func_021196f4.c:
+    complete
+    .text       start:0x021196f4 end:0x02119770
+
+src/arm9/func_02119ba8.c:
+    complete
+    .text       start:0x02119ba8 end:0x02119bdc
+
+src/arm9/func_0211cea8.c:
+    complete
+    .text       start:0x0211cea8 end:0x0211cfd0
+
+src/arm9/func_0211de40.c:
+    complete
+    .text       start:0x0211de40 end:0x0211de98
+
+src/arm9/VerifySelectCupNameFiles_from_thumb.c:
+    complete
+    .text       start:0x0211de98 end:0x0211ded0
+
+src/arm9/func_0211df44.c:
+    complete
+    .text       start:0x0211df44 end:0x0211dfb4
+
+src/arm9/func_0211dfb4.c:
+    complete
+    .text       start:0x0211dfb4 end:0x0211e024
+
+src/arm9/VerifyCupMarkFiles_from_thumb.c:
+    complete
+    .text       start:0x0211e024 end:0x0211e074
+
+src/arm9/func_0211e074.c:
+    complete
+    .text       start:0x0211e074 end:0x0211e0c4
+
+src/arm9/func_0211e2f8.c:
+    complete
+    .text       start:0x0211e2f8 end:0x0211e38c
+
+src/arm9/InitializeGlobalPK_from_thumb.c:
+    complete
+    .text       start:0x0211e480 end:0x0211e4e8
+
+src/arm9/func_0211e65c.c:
+    complete
+    .text       start:0x0211e65c end:0x0211e7c0
+
+src/arm9/func_0211e7c0.c:
+    complete
+    .text       start:0x0211e7c0 end:0x0211e924
+
+src/arm9/func_0211f2b8.c:
+    complete
+    .text       start:0x0211f2b8 end:0x0211f328
+
+src/arm9/VerifySelectTrophyIconFiles_from_thumb.c:
+    complete
+    .text       start:0x0211f328 end:0x0211f378
+
+src/arm9/func_0211ffb0.c:
+    complete
+    .text       start:0x0211ffb0 end:0x0211fffc
+
+src/arm9/func_0211fffc.c:
+    complete
+    .text       start:0x0211fffc end:0x02120044
+
+src/arm9/func_02120514.c:
+    complete
+    .text       start:0x02120514 end:0x0212055c
+
+src/arm9/func_02124ed0.c:
+    complete
+    .text       start:0x02124ed0 end:0x02124efc
+
+src/arm9/func_02124efc.c:
+    complete
+    .text       start:0x02124efc end:0x02124f4c
+
+src/arm9/func_02125028.c:
+    complete
+    .text       start:0x02125028 end:0x021250b0
+
+src/arm9/MaybeHandleBmgFormatting_from_thumb.c:
+    complete
+    .text       start:0x0212513c end:0x021251c4
+
+src/arm9/G2d_Text_SomeFn_1_from_thumb.c:
+    complete
+    .text       start:0x021257d8 end:0x02125808
+
+src/arm9/G2d_Text_SomeFn_5_from_thumb.c:
+    complete
+    .text       start:0x02125808 end:0x0212583c
+
+src/arm9/G2d_Text_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x0212583c end:0x0212586c
+
+src/arm9/NavigationContext_OnSceneVblank_from_thumb.c:
+    complete
+    .text       start:0x021258f0 end:0x02125928
+
+src/arm9/NavigationContext_OnSceneUpdate_from_thumb.c:
+    complete
+    .text       start:0x02125928 end:0x02125960
+
+src/arm9/InitializeBackScreen_from_thumb.c:
+    complete
+    .text       start:0x02125960 end:0x02125ba4
+
+src/arm9/PrepareNavigationContextFiles_from_thumb.c:
+    complete
+    .text       start:0x02125c2c end:0x02125da0
+
+src/arm9/DisposeNavigationContext_from_thumb.c:
+    complete
+    .text       start:0x02125da0 end:0x02125de0
+
+src/arm9/TextSystemContext_UpdateFn_State3_from_thumb.c:
+    complete
+    .text       start:0x021269b8 end:0x02126a00
+
+src/arm9/TextSystemContext_ReloadButtonGraphics2_from_thumb.c:
+    complete
+    .text       start:0x02126ea8 end:0x02126ef8
+
+src/arm9/TextSystemContext_ReloadButtonGraphics_from_thumb.c:
+    complete
+    .text       start:0x02126ef8 end:0x02126f78
+
+src/arm9/SelectChoisesContext_UpdateFn_State2_from_thumb.c:
+    complete
+    .text       start:0x02127a38 end:0x02127a84
+
+src/arm9/SelectChoisesContext_LoadGraphics_from_thumb.c:
+    complete
+    .text       start:0x02127f14 end:0x0212802c
+
+src/arm9/func_02128310.c:
+    complete
+    .text       start:0x02128310 end:0x02128374
+
+src/arm9/LoadSelectReturnGraphics_from_thumb.c:
+    complete
+    .text       start:0x021286a0 end:0x02128778
+
+src/arm9/SceneFn_Keyboard_from_thumb.c:
+    complete
+    .text       start:0x021288a4 end:0x021288d8
+
+src/arm9/Scene_Keyboard_Initialize_from_thumb.c:
+    complete
+    .text       start:0x02128958 end:0x0212898c
+
+src/arm9/Keyboard_SwitchFn13_from_thumb.c:
+    complete
+    .text       start:0x02128dbc end:0x02128e08
+
+src/arm9/Keyboard_SwitchFn5_from_thumb.c:
+    complete
+    .text       start:0x02129788 end:0x021297cc
+
+src/arm9/Keyboard_SwitchFn4_from_thumb.c:
+    complete
+    .text       start:0x021297cc end:0x0212982c
+
+src/arm9/Keyboard_SwitchFn0_from_thumb.c:
+    complete
+    .text       start:0x02129bdc end:0x02129c18
+
+src/arm9/Maybe_Keyboard_s_10key.c:
+    complete
+    .text       start:0x02129cbc end:0x02129e78
+
+src/arm9/func_02129e78.c:
+    complete
+    .text       start:0x02129e78 end:0x02129ea4
+
+src/arm9/func_0212a410.c:
+    complete
+    .text       start:0x0212a410 end:0x0212a448
+
+src/arm9/MaybeFormatMultiplayNetErrorCode_from_thumb.c:
+    complete
+    .text       start:0x0212ae2c end:0x0212ae80
+
+src/arm9/GetMultiplayerErrorString_from_thumb.c:
+    complete
+    .text       start:0x0212afac end:0x0212b064
+
+src/arm9/CleanTemporaryMultiplayErrorBuffer_from_thumb.c:
+    complete
+    .text       start:0x0212b064 end:0x0212b090
+
+src/arm9/InitializeGlobal1A44_from_thumb.c:
+    complete
+    .text       start:0x0212b158 end:0x0212b1a8
+
+src/arm9/LoadStaffRollStuff.c:
+    complete
+    .text       start:0x0212b5ec end:0x0212b7d8
+
+src/arm9/func_0212ba34.c:
+    complete
+    .text       start:0x0212ba34 end:0x0212ba68
+
+src/arm9/NNS_SndMain.c:
+    complete
+    .text       start:0x0212ba74 end:0x0212baa8
+
+src/arm9/func_0212bc20.c:
+    complete
+    .text       start:0x0212bc20 end:0x0212bc58
+
+src/arm9/func_0212bc58.c:
+    complete
+    .text       start:0x0212bc58 end:0x0212bcac
+
+src/arm9/func_0212bcac.c:
+    complete
+    .text       start:0x0212bcac end:0x0212bd10
+
+src/arm9/SoundDtorFn.c:
+    complete
+    .text       start:0x0212bd10 end:0x0212bd6c
+
+src/arm9/func_0212bd6c.c:
+    complete
+    .text       start:0x0212bd6c end:0x0212bdfc
+
+src/arm9/func_0212beb4.c:
+    complete
+    .text       start:0x0212beb4 end:0x0212bf14
+
+src/arm9/func_0212bf14.c:
+    complete
+    .text       start:0x0212bf14 end:0x0212bf70
+
+src/arm9/func_0212bfbc.c:
+    complete
+    .text       start:0x0212bfbc end:0x0212c018
+
+src/arm9/func_0212c3c8.c:
+    complete
+    .text       start:0x0212c3c8 end:0x0212c400
+
+src/arm9/func_0212c4c4.c:
+    complete
+    .text       start:0x0212c4c4 end:0x0212c4f4
+
+src/arm9/func_0212c4f4.c:
+    complete
+    .text       start:0x0212c4f4 end:0x0212c524
+
+src/arm9/func_0212c524.c:
+    complete
+    .text       start:0x0212c524 end:0x0212c554
+
+src/arm9/func_0212c554.c:
+    complete
+    .text       start:0x0212c554 end:0x0212c594
+
+src/arm9/NNS_SndPlayerSetTrackMute.c:
+    complete
+    .text       start:0x0212c594 end:0x0212c5c4
+
+src/arm9/func_0212c5f4.c:
+    complete
+    .text       start:0x0212c5f4 end:0x0212c620
+
+src/arm9/func_0212c6ac.c:
+    complete
+    .text       start:0x0212c6ac end:0x0212c6f0
+
+src/arm9/func_0212c9a4.c:
+    complete
+    .text       start:0x0212c9a4 end:0x0212c9d4
+
+src/arm9/func_0212cad8.c:
+    complete
+    .text       start:0x0212cad8 end:0x0212cb78
+
+src/arm9/Sound_Context_SetHeap.c:
+    complete
+    .text       start:0x0212d9dc end:0x0212da1c
+
+src/arm9/Sound_Context_BackupFrameState.c:
+    complete
+    .text       start:0x0212db24 end:0x0212db7c
+
+src/arm9/Sound_Context_Allocate.c:
+    complete
+    .text       start:0x0212db7c end:0x0212dbec
+
+src/arm9/Sound_InitializeContext.c:
+    complete
+    .text       start:0x0212dcc8 end:0x0212dd64
+
+src/arm9/AndAndAnotherSoundDtorFn.c:
+    complete
+    .text       start:0x0212df28 end:0x0212df7c
+
+src/arm9/Sound_DtorFn_SwarHeader.c:
+    complete
+    .text       start:0x0212df7c end:0x0212dfa0
+
+src/arm9/AnotherSoundDtorFn.c:
+    complete
+    .text       start:0x0212dfa0 end:0x0212dfdc
+
+src/arm9/SomeSoundDtorFn.c:
+    complete
+    .text       start:0x0212dfdc end:0x0212e018
+
+src/arm9/Sound_DtorFn_SomeSarcPointer.c:
+    complete
+    .text       start:0x0212e018 end:0x0212e04c
+
+src/arm9/Sound_PrepareSwarData.c:
+    complete
+    .text       start:0x0212e1ec end:0x0212e268
+
+src/arm9/Sound_PrepareSbnkData.c:
+    complete
+    .text       start:0x0212e268 end:0x0212e2e4
+
+src/arm9/Sound_PrepareSarcData.c:
+    complete
+    .text       start:0x0212e2e4 end:0x0212e360
+
+src/arm9/Sound_PrepareSseqData.c:
+    complete
+    .text       start:0x0212e360 end:0x0212e3dc
+
+src/arm9/Sound_GetSwarPointer.c:
+    complete
+    .text       start:0x0212e490 end:0x0212e538
+
+src/arm9/Sound_GetSarcPointer.c:
+    complete
+    .text       start:0x0212e698 end:0x0212e708
+
+src/arm9/NNSi_SndArcLoadSeq.c:
+    complete
+    .text       start:0x0212e708 end:0x0212e7b4
+
+src/arm9/Sound_LoadGroupImpl.c:
+    complete
+    .text       start:0x0212e7b4 end:0x0212e8f4
+
+src/arm9/Sound_LoadSbnkWithFlags.c:
+    complete
+    .text       start:0x0212e8f4 end:0x0212e924
+
+src/arm9/Sound_LoadSwar.c:
+    complete
+    .text       start:0x0212e924 end:0x0212e95c
+
+src/arm9/Sound_LoadSbnk.c:
+    complete
+    .text       start:0x0212e95c end:0x0212e994
+
+src/arm9/Sound_LoadSarc.c:
+    complete
+    .text       start:0x0212e994 end:0x0212e9cc
+
+src/arm9/CheckMaybeLoadSseqOk.c:
+    complete
+    .text       start:0x0212e9cc end:0x0212ea04
+
+src/arm9/Sound_LoadGroup.c:
+    complete
+    .text       start:0x0212ea04 end:0x0212ea28
+
+src/arm9/func_0212ed58.c:
+    complete
+    .text       start:0x0212ed58 end:0x0212edac
+
+src/arm9/func_0212ee54.c:
+    complete
+    .text       start:0x0212ee54 end:0x0212ee8c
+
+src/arm9/func_0212ef00.c:
+    complete
+    .text       start:0x0212ef00 end:0x0212ef48
+
+src/arm9/func_0212f1ac.c:
+    complete
+    .text       start:0x0212f1ac end:0x0212f1f8
+
+src/arm9/func_0212f7f8.c:
+    complete
+    .text       start:0x0212f7f8 end:0x0212f834
+
+src/arm9/func_0212f834.c:
+    complete
+    .text       start:0x0212f834 end:0x0212f864
+
+src/arm9/_ull_mod.c:
+    complete
+    .text       start:0x02132e4c end:0x02132e98
+
+src/arm9/func_02133e50.c:
+    complete
+    .text       start:0x02133e50 end:0x02133f84
+
+src/arm9/Maybe_get_16ec9c.c:
+    complete
+    .text       start:0x02134398 end:0x021343b0
+
+src/arm9/abs.c:
+    complete
+    .text       start:0x02134420 end:0x0213442c
+
+src/arm9/Maybe_helper_134ae8.c:
+    complete
+    .text       start:0x02134ae8 end:0x02134b18
+
+src/arm9/memchr.c:
+    complete
+    .text       start:0x02134db0 end:0x02134de0
+
+src/arm9/SomeSnprintf.c:
+    complete
+    .text       start:0x02135014 end:0x02135048
+
+src/arm9/_snprintf.c:
+    complete
+    .text       start:0x02135048 end:0x02135078
+
+src/arm9/wmemchr.c:
+    complete
+    .text       start:0x0213c9c0 end:0x0213c9e8
+
+src/arm9/func_0213c9e8.c:
+    complete
+    .text       start:0x0213c9e8 end:0x0213c9f8
+
+src/arm9/func_0213ca94.c:
+    complete
+    .text       start:0x0213ca94 end:0x0213cae0
+
+src/arm9/copysign.c:
+    complete
+    .text       start:0x021400a0 end:0x021400c8
+
+src/arm9/func_021400c8.c:
+    complete
+    .text       start:0x021400c8 end:0x021400ec
+
+src/arm9/func_0214259c.c:
+    complete
+    .text       start:0x0214259c end:0x021425cc
+
+src/arm9/Wm_Initialize.c:
+    complete
+    .text       start:0x02142e78 end:0x02142eac
+
+src/arm9/func_02142eac.c:
+    complete
+    .text       start:0x02142eac end:0x02142f24
+
+src/arm9/MaybeGeneratePseudoRandomValue.c:
+    complete
+    .text       start:0x02143134 end:0x021431d8
+
+src/arm9/func_02143280.c:
+    complete
+    .text       start:0x02143280 end:0x021432ac
+
+src/arm9/func_02143520.c:
+    complete
+    .text       start:0x02143520 end:0x0214358c
+
+src/arm9/func_0214358c.c:
+    complete
+    .text       start:0x0214358c end:0x021435e8
+
+src/arm9/func_021435e8.c:
+    complete
+    .text       start:0x021435e8 end:0x02143634
+
+src/arm9/StructWM_SomeFn.c:
+    complete
+    .text       start:0x02143e10 end:0x02143e78
+
+src/arm9/func_021445e0.c:
+    complete
+    .text       start:0x021445e0 end:0x0214461c
+
+src/arm9/func_0214461c.c:
+    complete
+    .text       start:0x0214461c end:0x02144688
+
+src/arm9/func_02144814.c:
+    complete
+    .text       start:0x02144814 end:0x02144920
+
+src/arm9/func_02144920.c:
+    complete
+    .text       start:0x02144920 end:0x02144a50
+
+src/arm9/func_02144b64.c:
+    complete
+    .text       start:0x02144b64 end:0x02144c6c
+
+src/arm9/EnsureCardEnabled.c:
+    complete
+    .text       start:0x02145888 end:0x021458b4
+
+src/arm9/Card_InitializeContext.c:
+    complete
+    .text       start:0x021458c4 end:0x021459cc
+
+src/arm9/Card_UnlockResource.c:
+    complete
+    .text       start:0x021459cc end:0x02145a70
+
+src/arm9/MaybeInitializeBackup.c:
+    complete
+    .text       start:0x02145d44 end:0x02145e8c
+
+src/arm9/Card_RequestStreamCommand.c:
+    complete
+    .text       start:0x02145e8c end:0x02145f80
+
+src/arm9/Card_Initialize.c:
+    complete
+    .text       start:0x02146154 end:0x021461d8
+
+src/arm9/StructSZ_SomeFn.c:
+    complete
+    .text       start:0x021464a4 end:0x02146600
+
+src/arm9/MaybeGamecardTransferSY.c:
+    complete
+    .text       start:0x021466d8 end:0x02146730
+
+src/arm9/GlobalSZ_SomeFn.c:
+    complete
+    .text       start:0x021467d0 end:0x02146868
+
+src/arm9/Card_Request.c:
+    complete
+    .text       start:0x02146868 end:0x021469a4
+
+src/arm9/Card_SendToFifo.c:
+    complete
+    .text       start:0x02146a50 end:0x02146ab4
+
+src/arm9/MTX_Identity22_.c:
+    complete
+    .text       start:0x02146c98 end:0x02146cb0
+
+src/arm9/func_02146cb0.c:
+    complete
+    .text       start:0x02146cb0 end:0x02146cbc
+
+src/arm9/MTX_Identity33_.c:
+    complete
+    .text       start:0x02146cbc end:0x02146ce0
+
+src/arm9/MTX_RotX33__from_thumb.c:
+    complete
+    .text       start:0x02146d28 end:0x02146d44
+
+src/arm9/MTX_RotY33__from_thumb.c:
+    complete
+    .text       start:0x02146d44 end:0x02146d60
+
+src/arm9/MTX_RotZ33__from_thumb.c:
+    complete
+    .text       start:0x02146d60 end:0x02146d78
+
+src/arm9/Matrix4x3_Identity.c:
+    complete
+    .text       start:0x021471bc end:0x021471e4
+
+src/arm9/func_021471e4.c:
+    complete
+    .text       start:0x021471e4 end:0x02147218
+
+src/arm9/MTX_Scale43__from_thumb.c:
+    complete
+    .text       start:0x02147218 end:0x02147230
+
+src/arm9/MTX_RotX43__from_thumb.c:
+    complete
+    .text       start:0x02147230 end:0x02147250
+
+src/arm9/MTX_RotY43__from_thumb.c:
+    complete
+    .text       start:0x02147250 end:0x0214726c
+
+src/arm9/func_02147954.c:
+    complete
+    .text       start:0x02147954 end:0x02147980
+
+src/arm9/func_02147980.c:
+    complete
+    .text       start:0x02147980 end:0x021479b4
+
+src/arm9/FX_DivAsync.c:
+    complete
+    .text       start:0x02147d88 end:0x02147dc0
+
+src/arm9/FX_InvAsync.c:
+    complete
+    .text       start:0x02147dec end:0x02147e28
+
+src/arm9/FX_GetDivResult.c:
+    complete
+    .text       start:0x02147e28 end:0x02147e64
+
+src/arm9/FX_Sqrt.c:
+    complete
+    .text       start:0x02147e8c end:0x02147edc
+
+src/arm9/FX_Inv64.c:
+    complete
+    .text       start:0x02147edc end:0x02147f18
+
+src/arm9/FX_Inv.c:
+    complete
+    .text       start:0x02147f18 end:0x02147f34
+
+src/arm9/FX_Div.c:
+    complete
+    .text       start:0x02147f34 end:0x02147f50
+
+src/arm9/GX_DisableBankForSubOBJ.c:
+    complete
+    .text       start:0x02148d84 end:0x02148d98
+
+src/arm9/GX_DisableBankForSubBG.c:
+    complete
+    .text       start:0x02148d98 end:0x02148dac
+
+src/arm9/GX_DisableBankForLCDC.c:
+    complete
+    .text       start:0x02148dac end:0x02148dc0
+
+src/arm9/GX_DisableBankForARM7.c:
+    complete
+    .text       start:0x02148dc0 end:0x02148dd4
+
+src/arm9/GX_DisableBankForClearImage.c:
+    complete
+    .text       start:0x02148dd4 end:0x02148de8
+
+src/arm9/GX_DisableBankForTexPltt.c:
+    complete
+    .text       start:0x02148de8 end:0x02148dfc
+
+src/arm9/func_02148dfc.c:
+    complete
+    .text       start:0x02148dfc end:0x02148e10
+
+src/arm9/func_02148e58.c:
+    complete
+    .text       start:0x02148e58 end:0x02148e6c
+
+src/arm9/func_02148e6c.c:
+    complete
+    .text       start:0x02148e6c end:0x02148e80
+
+src/arm9/func_02148fb4.c:
+    complete
+    .text       start:0x02148fb4 end:0x02148fc8
+
+src/arm9/func_02148fc8.c:
+    complete
+    .text       start:0x02148fc8 end:0x02148fdc
+
+src/arm9/func_02148fdc.c:
+    complete
+    .text       start:0x02148fdc end:0x02148ff0
+
+src/arm9/func_02148ff0.c:
+    complete
+    .text       start:0x02148ff0 end:0x02149004
+
+src/arm9/func_02149004.c:
+    complete
+    .text       start:0x02149004 end:0x02149018
+
+src/arm9/func_02149060.c:
+    complete
+    .text       start:0x02149060 end:0x02149098
+
+src/arm9/GX_SetBankForSubOBJExtPltt.c:
+    complete
+    .text       start:0x02149098 end:0x02149124
+
+src/arm9/GX_SetBankForSubBGExtPltt.c:
+    complete
+    .text       start:0x02149124 end:0x021491b0
+
+src/arm9/func_021493b0.c:
+    complete
+    .text       start:0x021493b0 end:0x021494f0
+
+src/arm9/func_021498a0.c:
+    complete
+    .text       start:0x021498a0 end:0x021499b4
+
+src/arm9/func_021499b4.c:
+    complete
+    .text       start:0x021499b4 end:0x02149b20
+
+src/arm9/GXi_NopClearFifo128_.c:
+    complete
+    .text       start:0x0214a54c end:0x0214a5e0
+
+src/arm9/G3X_GetVectorMtx.c:
+    complete
+    .text       start:0x0214a75c end:0x0214a7a4
+
+src/arm9/G3X_GetClipMtx.c:
+    complete
+    .text       start:0x0214a7a4 end:0x0214a7ec
+
+src/arm9/G3X_ResetMatrixStack2.c:
+    complete
+    .text       start:0x0214a840 end:0x0214a8ec
+
+src/arm9/G3X_ClearFifo.c:
+    complete
+    .text       start:0x0214a99c end:0x0214a9d0
+
+src/arm9/G3X_Initialize.c:
+    complete
+    .text       start:0x0214aa58 end:0x0214abb4
+
+src/arm9/GXS_EndLoadOBJExtPltt.c:
+    complete
+    .text       start:0x0214b338 end:0x0214b384
+
+src/arm9/GXS_EndLoadBGExtPltt.c:
+    complete
+    .text       start:0x0214b41c end:0x0214b468
+
+src/arm9/GX_EndLoadOBJExtPltt.c:
+    complete
+    .text       start:0x0214b500 end:0x0214b558
+
+src/arm9/CopyBgData_Bg3_Bottom.c:
+    complete
+    .text       start:0x0214b824 end:0x0214b88c
+
+src/arm9/CopyBgData_Bg3_Top.c:
+    complete
+    .text       start:0x0214b88c end:0x0214b8f4
+
+src/arm9/CopyBgData_Bg2_Bottom.c:
+    complete
+    .text       start:0x0214b8f4 end:0x0214b95c
+
+src/arm9/CopyBgData_Bg2_Top.c:
+    complete
+    .text       start:0x0214b95c end:0x0214b9c4
+
+src/arm9/CopyBgData_Bg1_Bottom.c:
+    complete
+    .text       start:0x0214b9c4 end:0x0214ba2c
+
+src/arm9/CopyBgData_Bg1_Top.c:
+    complete
+    .text       start:0x0214ba2c end:0x0214ba94
+
+src/arm9/CopyBgData_Bg0_Bottom.c:
+    complete
+    .text       start:0x0214ba94 end:0x0214bafc
+
+src/arm9/CopyBgData_Bg0_Top.c:
+    complete
+    .text       start:0x0214bafc end:0x0214bb64
+
+src/arm9/TEQSub_Fn27Impl_Fn29Impl.c:
+    complete
+    .text       start:0x0214bb64 end:0x0214bbcc
+
+src/arm9/TEQSub_Fn11Impl_Fn13Impl.c:
+    complete
+    .text       start:0x0214bbcc end:0x0214bc34
+
+src/arm9/TEQSub_Fn26Impl_Fn28Impl.c:
+    complete
+    .text       start:0x0214bc34 end:0x0214bc9c
+
+src/arm9/TEQSub_Fn10Impl_Fn12Impl.c:
+    complete
+    .text       start:0x0214bc9c end:0x0214bd04
+
+src/arm9/TEQSub_Fn25Impl.c:
+    complete
+    .text       start:0x0214bd04 end:0x0214bd6c
+
+src/arm9/TEQSub_Fn9Impl.c:
+    complete
+    .text       start:0x0214bd6c end:0x0214bdd4
+
+src/arm9/TEQSub_Fn24Impl.c:
+    complete
+    .text       start:0x0214bdd4 end:0x0214be3c
+
+src/arm9/TEQSub_Fn8Impl.c:
+    complete
+    .text       start:0x0214be3c end:0x0214bea4
+
+src/arm9/CopyToOamB.c:
+    complete
+    .text       start:0x0214bf64 end:0x0214bfcc
+
+src/arm9/CopyToOamA.c:
+    complete
+    .text       start:0x0214bfcc end:0x0214c028
+
+src/arm9/CopyPaletteTop.c:
+    complete
+    .text       start:0x0214c160 end:0x0214c1bc
+
+src/arm9/func_0214c48c.c:
+    complete
+    .text       start:0x0214c48c end:0x0214c4d4
+
+src/arm9/func_0214c6a8.c:
+    complete
+    .text       start:0x0214c6a8 end:0x0214c728
+
+src/arm9/CopySingle384.c:
+    complete
+    .text       start:0x0214c728 end:0x0214c74c
+
+src/arm9/Mem_CpuFill16.c:
+    complete
+    .text       start:0x0214cfe4 end:0x0214cffc
+
+src/arm9/CopyMemory16.c:
+    complete
+    .text       start:0x0214cffc end:0x0214d018
+
+src/arm9/MIi_CpuClear32.c:
+    complete
+    .text       start:0x0214d018 end:0x0214d02c
+
+src/arm9/Mem_CpuCopy32.c:
+    complete
+    .text       start:0x0214d02c end:0x0214d044
+
+src/arm9/MIi_CpuSend32.c:
+    complete
+    .text       start:0x0214d044 end:0x0214d05c
+
+src/arm9/Mem_CpuFastMemorySet.c:
+    complete
+    .text       start:0x0214d05c end:0x0214d0a8
+
+src/arm9/MIi_CpuCopyFast.c:
+    complete
+    .text       start:0x0214d0a8 end:0x0214d0e0
+
+src/arm9/asm_MI_Copy32B.c:
+    complete
+    .text       start:0x0214d0e0 end:0x0214d0fc
+
+src/arm9/asm_MI_Copy36B.c:
+    complete
+    .text       start:0x0214d0fc end:0x0214d118
+
+src/arm9/asm_MI_Copy48B.c:
+    complete
+    .text       start:0x0214d118 end:0x0214d13c
+
+src/arm9/asm_MI_Copy64B.c:
+    complete
+    .text       start:0x0214d13c end:0x0214d168
+
+src/arm9/Mem_CpuFill8.c:
+    complete
+    .text       start:0x0214d168 end:0x0214d1fc
+
+src/arm9/Mem_CpuCopy8.c:
+    complete
+    .text       start:0x0214d1fc end:0x0214d32c
+
+src/arm9/func_0214d32c.c:
+    complete
+    .text       start:0x0214d32c end:0x0214d33c
+
+src/arm9/DecompressLzss.c:
+    complete
+    .text       start:0x0214d344 end:0x0214d3d8
+
+src/arm9/Mem_Initialize.c:
+    complete
+    .text       start:0x0214d594 end:0x0214d5b8
+
+src/arm9/Fifo_Initialize.c:
+    complete
+    .text       start:0x0214d830 end:0x0214d93c
+
+src/arm9/Rtc_GetTime.c:
+    complete
+    .text       start:0x0214df78 end:0x0214dfbc
+
+src/arm9/Rtc_GetTimeAsync.c:
+    complete
+    .text       start:0x0214dfbc end:0x0214e038
+
+src/arm9/Rtc_GetDate.c:
+    complete
+    .text       start:0x0214e038 end:0x0214e07c
+
+src/arm9/Rtc_GetDateAsync.c:
+    complete
+    .text       start:0x0214e07c end:0x0214e0f4
+
+src/arm9/Rtc_SendFifoWord.c:
+    complete
+    .text       start:0x0214e17c end:0x0214e1b0
+
+src/arm9/Rtc_DateTime_GetSeconds.c:
+    complete
+    .text       start:0x0214e1e0 end:0x0214e258
+
+src/arm9/func_0214ef00.c:
+    complete
+    .text       start:0x0214ef00 end:0x0214ef34
+
+src/arm9/func_0214ef34.c:
+    complete
+    .text       start:0x0214ef34 end:0x0214f060
+
+src/arm9/func_0214f1f4.c:
+    complete
+    .text       start:0x0214f1f4 end:0x0214f264
+
+src/arm9/func_0214f6bc.c:
+    complete
+    .text       start:0x0214f6bc end:0x0214f710
+
+src/arm9/func_0214fa7c.c:
+    complete
+    .text       start:0x0214fa7c end:0x0214faac
+
+src/arm9/Pm_GetBacklightStatus.c:
+    complete
+    .text       start:0x0214faac end:0x0214fb24
+
+src/arm9/func_0214fbe4.c:
+    complete
+    .text       start:0x0214fbe4 end:0x0214fc74
+
+src/arm9/func_0214fcb0.c:
+    complete
+    .text       start:0x0214fcb0 end:0x0214fd18
+
+src/arm9/func_0214fd54.c:
+    complete
+    .text       start:0x0214fd54 end:0x0214fdd4
+
+src/arm9/func_0214fe88.c:
+    complete
+    .text       start:0x0214fe88 end:0x0214fefc
+
+src/arm9/func_021501d8.c:
+    complete
+    .text       start:0x021501d8 end:0x02150228
+
+src/arm9/func_02150808.c:
+    complete
+    .text       start:0x02150808 end:0x02150994
+
+src/arm9/func_02150c1c.c:
+    complete
+    .text       start:0x02150c1c end:0x02150d78
+
+src/arm9/StructDC_CleanDCSub_from_thumb.c:
+    complete
+    .text       start:0x021519d4 end:0x02151a00
+
+src/arm9/func_02151da8.c:
+    complete
+    .text       start:0x02151da8 end:0x02151ddc
+
+src/arm9/func_02151f48.c:
+    complete
+    .text       start:0x02151f48 end:0x02151f88
+
+src/arm9/StructDC_SomeFn_4_from_thumb.c:
+    complete
+    .text       start:0x02151f88 end:0x02151fc4
+
+src/arm9/PlayerProfileInfo_SomeFn_3_from_thumb.c:
+    complete
+    .text       start:0x02152340 end:0x02152390
+
+src/arm9/func_02152468.c:
+    complete
+    .text       start:0x02152468 end:0x02152490
+
+src/arm9/PlayerProfileInfo_CopyFriendCode_from_thumb.c:
+    complete
+    .text       start:0x02152490 end:0x021524d8
+
+src/arm9/FriendCode_SetProfileIdAndChecksum_from_thumb.c:
+    complete
+    .text       start:0x021524d8 end:0x02152500
+
+src/arm9/PlayerProfileInfo_PrepareForSave_from_thumb.c:
+    complete
+    .text       start:0x021525a8 end:0x021525e0
+
+src/arm9/func_021525f0.c:
+    complete
+    .text       start:0x021525f0 end:0x02152638
+
+src/arm9/PlayerProfileInfo_SomeFn_4_from_thumb.c:
+    complete
+    .text       start:0x02152638 end:0x02152690
+
+src/arm9/PlayerProfileInfo_Create_from_thumb.c:
+    complete
+    .text       start:0x021527ac end:0x02152808
+
+src/arm9/FriendCode_SomeFn_7_from_thumb.c:
+    complete
+    .text       start:0x02152808 end:0x0215286c
+
+src/arm9/func_0215286c.c:
+    complete
+    .text       start:0x0215286c end:0x021528bc
+
+src/arm9/VerifyChecksumGetProfileId_from_thumb.c:
+    complete
+    .text       start:0x02152988 end:0x021529bc
+
+src/arm9/FriendCode_SomeFn_from_thumb.c:
+    complete
+    .text       start:0x02152a24 end:0x02152a58
+
+src/arm9/MaybeInitializeDwc_from_thumb.c:
+    complete
+    .text       start:0x02152b08 end:0x02152b5c

@@ -1,0 +1,47 @@
+• Read the files.Analyze the ROM layout:
+
+  ROM:
+  - 0x...98e: cmp r0,#0; bne #0x20299d0 (epilogue) — GetPMaybeState != 0 → jump to END directly (skipping everything!). Note it jumps to 0x20299d0, the epilogue — so if GetPMaybeState()!=0, mission_mr_buf_p8 is NOT stored at all... wait but mission_mr_buf would be stale? Actually ROM: bne → 0x20299d0 = epilogue directly. Hmm, so if GetPMaybeState()!=0, skip everything including the p8 block.
+  - else path: bl func_020299e4; cmp; bne #0x20299aa (mission_mr_buf=0 path at 0x99aa)
+  - 0x999a: find_buf; store mission_mr_buf; b #0x20299b4
+  - 0x99aa: mission_mr_buf = 0; fall to 0x99b4
+  - 0x99b4: load mission_mr_buf; cmp 0; beq #0x99ca
+  - 0x99c2: p8 = buf+8; b #0x99d0
+  - 0x99ca: p8 = 0
+  - 0x99d0: epilogue
+
+  Candidate mismatch: at 0x54 (which is address 0x...990, the bne after GetPMaybeState): ROM branches to 0x20299d0 (epilogue), candidate produces bne #0x20299b4 (the p8 check block).
+
+  So candidate compiled `if (GetPMaybeState() == 0) { ... }` with the else falling to the p8 check — i.e., mwcc merged: when state != 0, mission_mr_buf is uninitialized... wait, but CpuFastMemoryZero zeroed everything, so mission_mr_buf is 0. Candidate branches to 0x99b4 (the p8 check), ROM branches to 0x99d0 (epilogue, skipping p8 check). ROM duplicates the epilogue? No — ROM bne jumps FURTHER to 0x99d0, which is the shared epilogue. So ROM skips the p8 block entirely when GetPMaybeState()!=0.
+
+  So in ROM, the code shape is:
+
+  ```
+  if (GetPMaybeState() == 0) {
+      if (func_020299e4() == 0) mission_mr_buf = find(...);
+      else mission_mr_buf = 0;
+      if (mission_mr_buf != 0) p8 = buf+8;
+      else p8 = 0;
+  }
+  ```
+
+  i.e., the p8 block is INSIDE the outer if. That's the fix: move the second if inside the first.
+
+  Check: with p8 inside the outer if, mwcc emits bne to epilogue at 0x990. Yes.
+
+• De ROM springt bij `GetPMaybeState() != 0` direct naar de epiloog — het `mission_mr_buf_p8`-blok zit dus *binnen* de buitenste if, niet erna. Dat verklaart exact het één-halfword-verschil.
+
+• Done. READY.
+
+• Aanpassing gedaan. Redenering:
+
+  - ROM bij `0x...990`: `bne #0x20299d0` — bij `GetPMaybeState() != 0` springt de ROM **direct naar de epiloog** (`add sp,#4; pop...`), en slaat dus ook het `mission_mr_buf_p8`-blok over.
+  - De kandidaat had het p8-blok *na* de buitenste if staan, dus mwcc deelde dat blok tussen beide paden en takte bij `bne` af op `0x20299b4`.
+
+  Fix: het `mission_mr_buf_p8` if/else-blok verplaatst naar *binnen* de `if (GetPMaybeState() == 0)`. Dan eindigt de nee-tak van de buitenste if direct in de gedeelde epiloog (`0x20299d0`), terwijl de ja-tak doorloopt naar de p8-check — exact de ROM-vorm. PURPOSE-comment behouden.
+
+  READY
+
+To resume this session: kimi -r session_9127418d-cb64-4648-a7ab-b026a3f2d9fc
+== ronde 1: RESULT match=True mismatches=0/84
+FINAL: MATCH=yes | rondes=1 | RESULT match=True mismatches=0/84 | 117s

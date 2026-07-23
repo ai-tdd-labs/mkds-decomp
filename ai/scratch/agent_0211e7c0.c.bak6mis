@@ -1,0 +1,117 @@
+/*
+ * STATUS: NOT a byte-perfect match yet — 172/178 instructions match (6 mismatches).
+ * The residual diff is a pure register-coloring swap in the LAST 4-iteration loop
+ * (ROM: counter=r2, cf04-cursor=r4; this candidate: counter=r4, cf04-cursor=r2;
+ * the cf0c-cursor=r3 and all opcodes/offsets are identical). Behaviourally equivalent.
+ * Every variable-reuse/freshness permutation of the 4 loops with <=8 locals was
+ * tried; adding any 9th local shifts the second-half count-register off r0 and
+ * makes it worse. See ai/tricks.jsonl for the coloring rules that got 18 -> 6.
+ *
+ * func_0211e7c0 — probably a menu/HUD slide-out animation step (thumb).
+ * Counterpart of func_0211e65c (slide-in): same body, interpolation ranges
+ * reversed (0->0xc0 and -0xc0->-0x20 over 10 frames).
+ * Increments a frame counter in the global state, returns early when the
+ * shared-WRAM state halfword (0x027ffc40) == 2, then interpolates two
+ * offset values (0->0xc0 and -0xc0->-0x20 over 10 frames) and writes them
+ * into the u16 field at +6 of many 0x40-stride entries of two arrays
+ * (offsets 0x18 and 0x1c), picking entries directly (20,19,2,1,0) and via
+ * u16 index tables (data_0215cf1c / data_0215cf04 / data_0215cf0c).
+ */
+
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef short s16;
+
+/* 0x40-stride entry, u16 value at offset 6 (probably an OAM/sprite cell) */
+typedef struct UnkEntry {
+    u8 pad0[6];
+    s16 h6;               /* +0x06: the animated value (can go negative) */
+    u8 pad8[0x38];
+} UnkEntry;
+
+/* header object with an entry count at +6 */
+typedef struct UnkHeader {
+    u8 pad0[6];
+    u16 count6;           /* +0x06 */
+} UnkHeader;
+
+typedef struct UnkState {
+    u8 pad00[4];          /* +0x00 */
+    UnkHeader *hdr04;     /* +0x04 */
+    u8 pad08[8];          /* +0x08 */
+    UnkHeader *hdr10;     /* +0x10 */
+    u8 pad14[4];          /* +0x14 */
+    UnkEntry *arr18;      /* +0x18 */
+    UnkEntry *arr1c;      /* +0x1c */
+    u8 pad20[0x14];       /* +0x20 */
+    int counter34;        /* +0x34: frame counter */
+    u8 pad38[4];          /* +0x38 */
+    int val3c;            /* +0x3c: interpolated value 1 */
+    int val40;            /* +0x40: interpolated value 2 */
+} UnkState;
+
+extern UnkState *data_0217d378;
+
+extern u16 data_0215cf1c[8];  /* index table, 8 entries */
+extern u16 data_0215cf04[4];  /* index table, 4 entries */
+extern u16 data_0215cf0c[4];  /* index table, 4 entries (offset by count) */
+
+/* returns a 16-bit value: stored via strh with no truncation in the caller */
+extern s16 ComputeValueInterpolation_from_thumb(int type, int from, int to, int t, int dur);
+
+void func_0211e7c0(void)
+{
+    s16 v2;
+    s16 v1;
+    int cnt;
+    int i;
+    const u16 *p1;
+    const u16 *pa;
+    const u16 *pb;
+    int j;
+
+    data_0217d378->counter34++;
+    if (*(volatile u16 *)0x027ffc40 == 2) {
+        return;
+    }
+    v1 = ComputeValueInterpolation_from_thumb(1, 0, 0xc0, data_0217d378->counter34, 10);
+    v2 = ComputeValueInterpolation_from_thumb(1, -0xc0, -0x20, data_0217d378->counter34, 10);
+
+    /* first array (+0x18): value v1 */
+    cnt = data_0217d378->hdr04->count6;
+    data_0217d378->val3c = v1;
+    data_0217d378->arr18[20].h6 = v1;
+    data_0217d378->arr18[19].h6 = v1;
+    data_0217d378->arr18[2].h6 = v1;
+    data_0217d378->arr18[1].h6 = v1;
+    data_0217d378->arr18[0].h6 = v1;
+    for (i = 0, p1 = data_0215cf1c; i < 8; i++) {
+        data_0217d378->arr18[*p1].h6 = v1;
+        p1++;
+    }
+    for (j = 0, pa = data_0215cf04, pb = data_0215cf0c; j < 4; j++) {
+        data_0217d378->arr18[*pa].h6 = v1;
+        data_0217d378->arr18[cnt + *pb].h6 = v1;
+        pa++;
+        pb++;
+    }
+
+    /* second array (+0x1c): value v2 */
+    cnt = data_0217d378->hdr10->count6;
+    data_0217d378->val40 = v2;
+    data_0217d378->arr1c[20].h6 = v2;
+    data_0217d378->arr1c[19].h6 = v2;
+    data_0217d378->arr1c[2].h6 = v2;
+    data_0217d378->arr1c[1].h6 = v2;
+    data_0217d378->arr1c[0].h6 = v2;
+    for (j = 0, p1 = data_0215cf1c; j < 8; j++) {
+        data_0217d378->arr1c[*p1].h6 = v2;
+        p1++;
+    }
+    for (j = 0, pb = data_0215cf04, pa = data_0215cf0c; j < 4; j++) {
+        data_0217d378->arr1c[*pb].h6 = v2;
+        data_0217d378->arr1c[cnt + *pa].h6 = v2;
+        pb++;
+        pa++;
+    }
+}

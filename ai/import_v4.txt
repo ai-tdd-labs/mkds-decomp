@@ -1,0 +1,46 @@
+MKDS-functies laden...
+  7,723 functies >= 12 bytes
+
+586 bronnen compileren (10 decomp-projecten)...
+
+== RESULTAAT ==
+byte-identieke SDK-functies in MKDS: 179  (11,244 bytes)
+  waarvan mét aanroepen (reloc-bewust gevonden): 123
+
+  4660 B +136reloc  __ieee754_pow                  -> arm9 0x0213ee6c (func_0213ee6c)
+   992 B +47reloc  __two_exp                      -> arm9 0x0214177c (func_0214177c)
+   304 B     leaf  MI_CpuCopy8                    -> arm9 0x0214d1fc (Mem_CpuCopy8)
+   232 B  +1reloc  init_cp15                      -> arm9 0x02000a5c (Crt0_InitializePU)
+   192 B  +1reloc  frexp                          -> arm9 0x021400ec (func_021400ec)
+   172 B     leaf  MIi_UncompressBackward         -> arm9 0x02000934 (Crt0_DecompressFlushCode)
+   148 B     leaf  GXi_NopClearFifo128_           -> arm9 0x0214a54c (GXi_NopClearFifo128_)
+   148 B     leaf  MI_CpuFill8                    -> arm9 0x0214d168 (Mem_CpuFill8)
+   148 B     leaf  MI_UncompressLZ8               -> arm9 0x0214d344 (DecompressLzss)
+   144 B  +1reloc  OSi_SetExContext               -> arm9 0x0200f3f4 (Os_SaveExceptionContext)
+   120 B  +2reloc  do_autoload                    -> arm9 0x020009e0 (Crt0_RegionCopy)
+   116 B  +3reloc  OSi_ExceptionHandler           -> arm9 0x0200f36c (Os_ExceptionHandler)
+   112 B  +2reloc  __flush_all                    -> arm9 0x021343b0 (func_021343b0)
+    88 B  +2reloc  OS_IrqHandler                  -> itcm 0x01ff8000 (func_01ff8000)
+    88 B     leaf  OS_GetLockID                   -> arm9 0x0200cd28 (Os_AllocateLockId)
+    84 B  +4reloc  exit                           -> arm9 0x02133f84 (CheckZetaInvokeBeta)
+    76 B     leaf  MIi_CpuClearFast               -> arm9 0x0214d05c (Mem_CpuFastMemorySet)
+    76 B  +1reloc  OS_SaveContext                 -> arm9 0x0200e6ec (Arm_Context_Save)
+    68 B  +1reloc  OS_LoadContext                 -> arm9 0x0200e738 (Arm_Context_Load)
+    56 B     leaf  MIi_CpuCopyFast                -> arm9 0x0214d0a8 (MIi_CpuCopyFast)
+    52 B     leaf  MTX_Copy43To44_                -> arm9 0x021471e4 (func_021471e4)
+    52 B     leaf  MTX_Copy44To43_                -> arm9 0x02147980 (func_02147980)
+    52 B     leaf  DC_FlushAll                    -> arm9 0x0200ee08 (DC_FlushAll)
+    48 B     leaf  OS_ReleaseLockID               -> arm9 0x0200cd80 (Os_ReleaseLockId)
+    48 B  +3reloc  abort                          -> arm9 0x02133fd8 (OnAssertionFailed)
+    48 B  +2reloc  scalbn                         -> arm9 0x02134ae8 (func_02134ae8)
+    44 B     leaf  MTX_Identity44_                -> arm9 0x02147954 (func_02147954)
+    44 B     leaf  MI_Copy64B                     -> arm9 0x0214d13c (asm_MI_Copy64B)
+    44 B     leaf  DC_StoreAll                    -> arm9 0x0200eddc (func_0200eddc)
+    40 B     leaf  MTX_Identity43_                -> arm9 0x021471bc (Matrix4x3_Identity)
+    40 B     leaf  copysign                       -> arm9 0x021400a0 (func_021400a0)
+    40 B     leaf  wmemchr                        -> arm9 0x0213c9c0 (func_0213c9c0)
+    36 B     leaf  MTX_Identity33_                -> arm9 0x02146cbc (MTX_Identity33_)
+    36 B     leaf  GX_SendFifo48B                 -> arm9 0x0214c728 (func_0214c728)
+    36 B     leaf  MI_Copy48B                     -> arm9 0x0214d118 (asm_MI_Copy48B)
+
+179 treffers opgeslagen (compiler 1.2/sp2p3)

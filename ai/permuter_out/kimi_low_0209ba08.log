@@ -1,0 +1,33 @@
+• Read the candidate file.Target: `orr r2,r2,r1; str r2,[r3,#0x14]`. Candidate: `orr r1,r2,r1; str r1`. Different dest. Likely `sub->flags |= flagBits` colors dest as the loaded register r2. Try compound assignment combining? Actually lines 22-23: two stores. Target residue offset 0x24 is the second store. Candidate does `sub->flags = sub->flags | flagBits` — loads flags into r2, orr into r1. Using `sub->flags |= flagBits` may make dest r2 (in-place). Try that.READY.
+
+• Changed `sub->flags = sub->flags | flagBits;` to `sub->flags |= flagBits;` — compound assignment into the field itself typically keeps the orr result in the register that held the loaded value (r2), matching the target's `orr r2,r2,r1; str r2,[r3,#0x14]`.
+
+  READY
+
+To resume this session: kimi -r session_0d21ac78-dab0-4270-8cf0-03081a49e661
+== ronde 1: 
+• No diff shown, just "Left=ROM, right=yours" — presumably still mismatched. Try next lever: reload via global/struct field instead of caching — e.g., avoid local `sub`, use owner->sub directly, or swap declaration. Try writing through owner->sub->flags directly.
+
+• Removed the cached local `sub` — the flags accesses now reload through `owner->sub` each time, which changes register allocation and typically keeps the orr destination in the value register (r2). Also kept the `|=` form from the previous lever.
+
+  READY
+
+To resume this session: kimi -r session_0d21ac78-dab0-4270-8cf0-03081a49e661
+== ronde 2: 
+• Still failing. Try reverting |= to plain assignment but keep reload form, plus maybe merging the two operations into one: `owner->sub->flags = (owner->sub->flags & ~0xf) | flagBits;` — single RMW. Actually the target residue at 0x24 shows orr+str — but there may be two stores in ROM too. Combining is a shape change. Try combined single expression first.
+
+• Combined the two RMWs into a single expression `(flags & ~0xf) | flagBits` assigned back to the field — this forces one load-modify-store chain where the orr result naturally lands in the loaded-value register.
+
+  READY
+
+To resume this session: kimi -r session_0d21ac78-dab0-4270-8cf0-03081a49e661
+== ronde 3: 
+• Try restoring local sub with combined expression: `sub->flags = (sub->flags & ~0xf) | flagBits;` with local cached pointer — that changes reg allocation of r3.The `volatile` on flags forces reloads and specific ordering; the ROM might not have volatile. Removing volatile could change register allocation (fewer reloads). Try removing volatile and using combined expression with cached local.Ignore reminder (single-edit task). Already made edits; say READY.
+
+• Removed `volatile` from `flags` (extra reloads skew allocation) and restored the cached local `sub` with the combined `(flags & ~0xf) | flagBits` expression.
+
+  READY
+
+To resume this session: kimi -r session_0d21ac78-dab0-4270-8cf0-03081a49e661
+== ronde 4: 
+FINAL: MATCH=no | rondes=4 | best= | 228s

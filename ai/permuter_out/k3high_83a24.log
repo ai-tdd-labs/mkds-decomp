@@ -1,0 +1,1219 @@
+• Read the candidate file and disassemble ROM./opt/homebrew/bin/arm-none-eabi-objdump
+---
+02083a24 <.data>:
+ 2083a24:	4ff0      	ldr	r7, [pc, #960]	@ (0x2083de8)
+ 2083a26:	e92d d004 	stmdb	sp!, {r2, ip, lr, pc}
+ 2083a2a:	e24d      	b.n	0x2083ec8
+ 2083a2c:	9002      	str	r0, [sp, #8]
+ 2083a2e:	e1a0      	b.n	0x2083d72
+ 2083a30:	509c      	str	r4, [r3, r2]
+ 2083a32:	e59f      	b.n	0x2083574
+ 2083a34:	27b4      	movs	r7, #180	@ 0xb4
+ 2083a36:	e1d9      	b.n	0x2083dec
+ 2083a38:	3000      	adds	r0, #0
+ 2083a3a:	e595      	b.n	0x2083568
+ 2083a3c:	4058      	eors	r0, r3
+ 2083a3e:	e3a0      	b.n	0x2084182
+ 2083a40:	3492      	adds	r4, #146	@ 0x92
+ 2083a42:	e023      	b.n	0x2083a8c
+ 2083a44:	2020      	movs	r0, #32
+ 2083a46:	e593      	b.n	0x2083570
+ 2083a48:	a000      	add	r0, pc, #0	@ (adr r0, 0x2083a4c)
+ 2083a4a:	e1a0      	b.n	0x2083d8e
+ 2083a4c:	0000      	movs	r0, r0
+ 2083a4e:	e352      	b.n	0x20840f6
+ 2083a50:	0002      	movs	r2, r0
+ 2083a52:	1a00      	subs	r0, r0, r0
+ 2083a54:	0024      	movs	r4, r4
+ 2083a56:	e593      	b.n	0x2083580
+ 2083a58:	0000      	movs	r0, r0
+ 2083a5a:	e350      	b.n	0x20840fe
+ 2083a5c:	0003      	movs	r3, r0
+ 2083a5e:	0a00      	lsrs	r0, r0, #8
+ 2083a60:	d004      	beq.n	0x2083a6c
+ 2083a62:	e28d      	b.n	0x2083f80
+ 2083a64:	0000      	movs	r0, r0
+ 2083a66:	e3a0      	b.n	0x20841aa
+ 2083a68:	4ff0      	ldr	r7, [pc, #960]	@ (0x2083e2c)
+ 2083a6a:	e8bd ff1e 	ldmia.w	sp!, {r1, r2, r3, r4, r8, r9, sl, fp, ip, sp, lr, pc}
+ 2083a6e:	e12f      	b.n	0x2083cd0
+ 2083a70:	b060      	add	sp, #384	@ 0x180
+ 2083a72:	e59f      	b.n	0x20835b4
+ 2083a74:	6060      	str	r0, [r4, #4]
+ 2083a76:	e59f      	b.n	0x20835b8
+ 2083a78:	8000      	strh	r0, [r0, #0]
+ 2083a7a:	e3a0      	b.n	0x20841be
+ 2083a7c:	70ff      	strb	r7, [r7, #3]
+ 2083a7e:	e201      	b.n	0x2083e84
+ 2083a80:	0004      	movs	r4, r0
+ 2083a82:	e59a      	b.n	0x20835ba
+ 2083a84:	100b      	asrs	r3, r1, #32
+ 2083a86:	e1a0      	b.n	0x2083dca
+ 2083a88:	1f4b      	subs	r3, r1, #5
+ 2083a8a:	eb00 37b4 	add.w	r7, r0, r4, ror #14
+ 2083a8e:	e1d9      	b.n	0x2083e44
+ 2083a90:	2000      	movs	r0, #0
+ 2083a92:	e595      	b.n	0x20835c0
+ 2083a94:	1001      	asrs	r1, r0, #32
+ 2083a96:	e288      	b.n	0x2083faa
+ 2083a98:	2493      	movs	r4, #147	@ 0x93
+ 2083a9a:	e022      	b.n	0x2083ae2
+ 2083a9c:	2108      	movs	r1, #8
+ 2083a9e:	e082      	b.n	0x2083ba6
+ 2083aa0:	0020      	movs	r0, r4
+ 2083aa2:	e582      	b.n	0x20835aa
+ 2083aa4:	9094      	str	r0, [sp, #592]	@ 0x250
+ 2083aa6:	e580      	b.n	0x20835aa
+ 2083aa8:	809b      	strh	r3, [r3, #4]
+ 2083aaa:	e5c0      	b.n	0x208362e
+ 2083aac:	1801      	adds	r1, r0, r0
+ 2083aae:	e1a0      	b.n	0x2083df2
+ 2083ab0:	7098      	strb	r0, [r3, #2]
+ 2083ab2:	e5c0      	b.n	0x2083636
+ 2083ab4:	8821      	ldrh	r1, [r4, #0]
+ 2083ab6:	e1a0      	b.n	0x2083dfa
+ 2083ab8:	6090      	str	r0, [r2, #8]
+ 2083aba:	e580      	b.n	0x20835be
+ 2083abc:	0002      	movs	r2, r0
+ 2083abe:	e358      	b.n	0x2084172
+ 2083ac0:	ffee 3aff 			@ <UNDEFINED> instruction: 0xffee3aff
+ 2083ac4:	0001      	movs	r1, r0
+ 2083ac6:	e3a0      	b.n	0x208420a
+ 2083ac8:	d004      	beq.n	0x2083ad4
+ 2083aca:	e28d      	b.n	0x2083fe8
+ 2083acc:	4ff0      	ldr	r7, [pc, #960]	@ (0x2083e90)
+ 2083ace:	e8bd ff1e 	ldmia.w	sp!, {r1, r2, r3, r4, r8, r9, sl, fp, ip, sp, lr, pc}
+ 2083ad2:	e12f      	b.n	0x2083d34
+ 2083ad4:	ae84      	add	r6, sp, #528	@ 0x210
+ 2083ad6:	0217      	lsls	r7, r2, #8
+ 2083ad8:	5a14      	ldrh	r4, [r2, r0]
+ 2083ada:	0215      	lsls	r5, r2, #8
+ 2083adc:	2fec      	cmp	r7, #236	@ 0xec
+ 2083ade:	0208      	lsls	r0, r1, #8
+objdump misdisassembled as thumb mix. Force ARM mode with -M reg-names-std? Use `arm-none-eabi-objdump -D -b binary -m arm` — need to specify architecture armv5te without thumb. The issue: it decoded some words as thumb pairs. Actually it seems objdump mixed 16-bit decoding — probably because of -M force-thumb-no not being a thing. Better: disassemble word by word with a proper ARM disassembler.
+/tmp/f.bin:     file format binary
+
+
+Disassembly of section .data:
+
+02083a24 <.data>:
+ 2083a24:	e92d4ff0 	push	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 2083a28:	e24dd004 	sub	sp, sp, #4
+ 2083a2c:	e1a09002 	mov	r9, r2
+ 2083a30:	e59f509c 	ldr	r5, [pc, #156]	@ 0x2083ad4
+ 2083a34:	e1d927b4 	ldrh	r2, [r9, #116]	@ 0x74
+ 2083a38:	e5953000 	ldr	r3, [r5]
+ 2083a3c:	e3a04058 	mov	r4, #88	@ 0x58
+ 2083a40:	e0233492 	mla	r3, r2, r4, r3
+ 2083a44:	e5932020 	ldr	r2, [r3, #32]
+ 2083a48:	e1a0a000 	mov	sl, r0
+ 2083a4c:	e3520000 	cmp	r2, #0
+ 2083a50:	1a000002 	bne	0x2083a60
+ 2083a54:	e5930024 	ldr	r0, [r3, #36]	@ 0x24
+ 2083a58:	e3500000 	cmp	r0, #0
+ 2083a5c:	0a000003 	beq	0x2083a70
+ 2083a60:	e28dd004 	add	sp, sp, #4
+ 2083a64:	e3a00000 	mov	r0, #0
+ 2083a68:	e8bd4ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 2083a6c:	e12fff1e 	bx	lr
+ 2083a70:	e59fb060 	ldr	fp, [pc, #96]	@ 0x2083ad8
+ 2083a74:	e59f6060 	ldr	r6, [pc, #96]	@ 0x2083adc
+ 2083a78:	e3a08000 	mov	r8, #0
+ 2083a7c:	e20170ff 	and	r7, r1, #255	@ 0xff
+ 2083a80:	e59a0004 	ldr	r0, [sl, #4]
+ 2083a84:	e1a0100b 	mov	r1, fp
+ 2083a88:	eb001f4b 	bl	0x208b7bc
+ 2083a8c:	e1d937b4 	ldrh	r3, [r9, #116]	@ 0x74
+ 2083a90:	e5952000 	ldr	r2, [r5]
+ 2083a94:	e2881001 	add	r1, r8, #1
+ 2083a98:	e0222493 	mla	r2, r3, r4, r2
+ 2083a9c:	e0822108 	add	r2, r2, r8, lsl #2
+ 2083aa0:	e5820020 	str	r0, [r2, #32]
+ 2083aa4:	e5809094 	str	r9, [r0, #148]	@ 0x94
+ 2083aa8:	e5c0809b 	strb	r8, [r0, #155]	@ 0x9b
+ 2083aac:	e1a01801 	lsl	r1, r1, #16
+ 2083ab0:	e5c07098 	strb	r7, [r0, #152]	@ 0x98
+ 2083ab4:	e1a08821 	lsr	r8, r1, #16
+ 2083ab8:	e5806090 	str	r6, [r0, #144]	@ 0x90
+ 2083abc:	e3580002 	cmp	r8, #2
+ 2083ac0:	3affffee 	bcc	0x2083a80
+ 2083ac4:	e3a00001 	mov	r0, #1
+ 2083ac8:	e28dd004 	add	sp, sp, #4
+ 2083acc:	e8bd4ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 2083ad0:	e12fff1e 	bx	lr
+ 2083ad4:	0217ae84 	andseq	sl, r7, #132, 28	@ 0x840
+ 2083ad8:	02155a14 	andseq	r5, r5, #20, 20	@ 0x14000
+ 2083adc:	02082fec 	andeq	r2, r8, #236, 30	@ 0x3b0
+ROM: ldr fp (cfg), ldr r6 (cb), mov r8,#0, and r7,r1,#0xff. Candidate emits `and` before `mov r8,#0`. We need the scheduler to put `mov r8,#0` before `and r7,r1,#0xff`.
+
+  Ideas: compute kind after initializing i in source order... but the candidate already writes kind before i? Source: cfg, kind, cb, i=0. Candidate order presumably: ldr fp, ldr r6, and r7, mov r8. The scheduler chose to issue `and` earlier than mov r8 — perhaps because `and` uses r1 which is live-in, vs mov r8 is independent. mwcc scheduler may order by register lifetime: the `and` kills/uses r1 early so scheduled earlier.
+
+  Trick: make kind's computation depend on something later, or make i's init produce a dependency. Options:
+
+  1. Derive i from kind or vice versa? E.g. `i = 0; kind = a1 & 0xff;` order in source vs assignment to force... but scheduler ignores source order for independent ops.
+
+  2. Compute kind with an operation that depends on i? Not reasonable.
+
+  3. Delay the `and` so it's emitted after mov r8 by making it use a register that's busy: e.g. `kind = (u8)(a1 + i)`? a1 + 0 = a1, but codegen would emit add r7, r1, r8 — depends on r8, forcing mov r8 first! But then `and r7, r7, #0xff` after add — extra instruction. `a1 & (0xff | (i<<8))`? complex.
+
+  Actually simpler: make kind computed from something like `a1 & (0x100 - (i+...))`. Hmm, adds instructions.
+
+  Alternative: `(u8)a1` where a1 is passed as u8 parameter? If a1 declared `u8 a1`, mwcc may still emit `and` for safety? Actually if parameter type is u8, mwcc treats r1 as already masked and might not emit the and at all. No.
+
+  What about `i` used before kind: the loop's first use. Or force r8's mov first by making kind's and depend on r8: `kind = (u8)(a1 >> (i*8))`? i=0 → shift by 0: `mov r7, r1, lsr r8`? That changes instruction. But `and` with immediate — ROM has `and r7, r1, #255`.
+
+  Alternative: make the mov r8 come from something the scheduler wants early. E.g., initialize `i` before computing cfg/cb loads? Source order doesn't matter much, but mwcc's scheduler has heuristics. Try moving `i = 0;` to before `kind = (u8)a1;` in source. Already "tried assignment-order swaps" — claimed tried. Hmm, they tried swapping init order.
+
+  Other idea: express loop counter differently so mov r8 is emitted by a different path — e.g., use `int i` but with the u16 truncation happening differently. They say u16 required for size.
+
+  Alternative dependency trick: compute cfg/cb loads and and all needing registers. The scheduler emitted: ldr fp, ldr r6, [candidate: and r7, mov r8] vs ROM [mov r8, and r7]. These two are independent; the order is purely scheduler tie-breaking. Maybe affected by register numbers or by which source statement comes first... The candidate source order is cfg, kind, cb, i. ROM order: cfg, cb, i, kind. So ROM's source likely had i=0 before kind! mwcc's scheduler often preserves source order among independent instructions as a tiebreak. The candidate emits and-before-mov though its source has kind before i... but they tried assignment-order swaps. Hmm, but maybe they tried swapping only some.
+
+  Let me reorder to: cfg, cb, i = 0, kind — matching ROM emission exactly.
+
+  Actually the "already tried: assignment-order swaps of the init block" covers this presumably. But the permutation of 4 items — maybe not all. Still, try the specific ROM order first; cheap.
+
+  Other lever: `cb` and `cfg` load order matters too — candidate currently matches those? 4/94 diff only at 0x54, so everything else matches; the only diff is the and/mov swap.
+
+  Tie-breaking in mwcc scheduler: among ready instructions, it may prefer lower register number or by data-dependency graph. r7 (and) vs r8 (mov): it emitted and first → maybe prefers lower dest reg. To force mov r8 first, we could make `and`'s result register be r8 and counter r7? But then body uses r8 for counter... Registers are assigned by allocator based on usage; swapping roles would swap the instructions but then diff would show same issue reversed.
+
+  Dependency approach: make kind depend on i without extra instructions: `kind = (u8)(a1 + i)` would emit `add r7, r1, r8; and?` no — (u8) of int: mwcc might just use strb later without and? Actually the `and r7,r1,#0xff` exists because kind is materialized as a masked value in a register for the strb. If we do `a1 + i`, codegen: `add r7, r1, r8` then `and r7, r7, #0xff`? That adds an instruction — size grows. Unless mwcc folds: u8 kind = a1 + i → since strb only stores low byte, maybe no and needed... but then r7 wouldn't hold the and-result... it would emit add and skip and possibly. Size differs.
+
+  Try simply: reorder init to match ROM order: cfg, cb, i, kind. That's the most plausible original source anyway.
+
+  Also alternative: put `u16 i = 0;` initialization in for-init `for (i = 0; ...)`? They said "i initialized via the for-init vs before" was open. Try both.
+
+  Let me try variant 1: reorder cfg, cb, i, kind. Run oracle.   off                         target | candidate
+0x0054     0080            mov r8, #0 |     ff70 and r7, r1, #0xff    
+0x0056     a0e3            mov r8, #0 |     01e2 and r7, r1, #0xff    
+0x0058     ff70     and r7, r1, #0xff |     0080 mov r8, #0           
+0x005a     01e2     and r7, r1, #0xff |     a0e3 mov r8, #0           
+RESULT match=False mismatches=4/94
+Source order didn't matter — scheduler still puts and first. Scheduler tie-break probably prefers the instruction that frees a register (and uses r1) or list order. Need to force a dependency: make `and` depend on r8, or make mov r8 depend on something that the and doesn't.
+
+  Option: compute kind after something that depends on i. E.g. `kind = (u8)(a1 | i)` — i=0, so a1|0 = a1; codegen: orr r7, r1, r8? That changes the instruction (and → orr). No.
+
+  What expression yields `and r7, r1, #0xff` but with r8 already set? The and instruction itself doesn't depend on r8. Only scheduling pressure changes order. Scheduler may schedule in order of "critical path" — r7's consumer is strb r7,[r0,#0x98] late; r8's consumer is add r1, r8, #1 in loop. Hmm.
+
+  Alternative: change register allocation so the and goes to r8 and counter to r7? If counter in r7 and kind in r8, then instructions: mov r7,#0; and r8,r1,#0xff — still and-second? The order between them same heuristic. Not helpful unless heuristic depends on register number.
+
+  Try: make the `and` depend on the result of a load (fp or r6). E.g., kind = a1 & 0xff where the mask... no.
+
+  Make i's initialization happen via a path that the scheduler wants later? Actually we want mov r8 FIRST. Scheduler currently prefers and first. Heuristic might be: among ready list, pick... If we make r8's mov the producer for the and's input? e.g. kind = (u8)(a1 >> i)? shift by i(=0): mov r7, r1, lsr r8 — different instruction. What about `a1 & (0xff + i)`? i=0 → 0xff. Would mwcc fold the constant? 0xff + 0 constant-folded if i is known 0 at compile time... but i is a variable; compiler won't fold. It'd emit add.
+
+  Alternative: give the `and` a scheduling reason to go later: the and kills r1? No, and reads r1 writes r7, r1 free after. In ROM, after and, r1 reused? ldr r0,[sl,#4]; mov r1, fp — r1 reused immediately. So the and must come before the mov r1, fp — but that's in the loop body.
+
+  What if kind is computed via a1's byte AFTER something? Hmm.
+
+  Different idea: express loop counter increment so that i lives in r8 but initialized inside loop compare: e.g. `for (i = 0; i < 2; i++)` — tried reportedly.
+
+  What about making kind depend on the load result r6/fp: `kind = (u8)(a1 & (int)cb)`? no, cb is address, changes bytes.
+
+  Make mov r8 earlier by using i before the and in a way that's free: e.g. `e->slots` written with index i... Actually what about computing something with r8 before the and that is free, e.g. the loop uses `i` and kind computed inside first iteration. If kind computed inside loop first iteration — but and is hoisted outside in ROM (at 0x7c, before loop at 0x80).
+
+  Scheduler in mwcc: instructions scheduled in "data dependence" order with priority. Maybe priority = order in which source-level temporaries were assigned registers, or reverse. Try making kind's temp assigned later: compute kind from an expression that forces later register allocation, e.g. `kind = (u8)(a1 << 0)`? still and. Or pass through a temporary: `int t = a1; kind = (u8)t;` same.
+
+  Try: reorder so that the and's destination is allocated after mov r8 — mwcc allocator assigns registers in order of first use? Currently r7=kind, r8=i. If i's first "use" were before kind's assignment... Actually assignment order: scheduler likely emits in dependency-ready order where ties broken by... let me just experiment.
+
+  Experiment A: make counter the and: not applicable.
+
+  Experiment B: `kind = (u8)a1;` moved AFTER `for` setup? Can't.
+
+  Experiment C: merge into loop init: `for (i = 0, kind = (u8)a1; i < 2; i++)` — comma operator changes nothing probably.
+
+  Experiment D: `i = (u16)(a1 & 0); kind = (u8)a1;` — i = a1&0: codegen `and r8, r1, #...`? and with 0 → mwcc might emit mov r8,#0? If it emits `and r8, r1, #0`... hmm immediate 0 valid: `and r8, r1, #0` = 0. Compiler might simplify to mov r8,#0. But if it stays `and`, mismatch. If simplified to mov r8,#0, then the mov reads r1?? No, mov doesn't read. But would the scheduler then put it before the other and? The and r8 consumes r1... Actually if it emits mov, then both still independent.
+
+  Experiment E: make the mov r8 depend on an instruction that comes early and the and depend on the mov: `kind = (u8)(a1 >> (i - i))`... compiler computes i-i=0, shift by constant 0 eliminated → and only, no dep.
+
+  F: use a barrier-ish: `kind = (u8)a1; i = kind - kind;`? i = kind - kind → compiler may fold to 0? kind is variable; kind-kind → 0 constant-folds. Then mov r8, #0 still.
+
+  G: `i = (u16)(kind & 0);` → might fold to mov r8,#0 but with a dependency edge in the scheduler's graph from and r7 → mov r8 (even if folded, maybe not; folding removes the edge).
+
+  H: make the and use r7 whose consumer strb r7 is in loop; make mov r8's first consumer earlier. If r8's consumer (add r1, r8, #1 at loop tail) — it's late. The and's consumer strb is in body. ROM order has mov first anyway.
+
+  Maybe the trick: delay the `and` by making kind = (u8)(a1) where a1 is first used inside... Actually! What if a1 itself is used earlier in the function — it isn't. 
+
+  Idea: change where the mask happens — store via `o->f98 = (u8)a1;` with a local kind not hoisted? In ROM the and IS hoisted. 
+
+  Scheduler heuristic guess: mwcc's -O4 scheduler processes basic block top-down in original program order but may hoist loads. The and and mov are both simple ALU; original program order determined by register allocation/linearization, which tends to follow expression order. We changed source order and it didn't change — so codegen order fixed: kind's and gets emitted first because kind's temp created first? Even though source says i=0 first now? Interesting — maybe because u16 i's live range or because the loop preheader generation emits the and when it's a loop-invariant hoisted... kind computed at assignment; i=0 is the loop init emitted at loop build time (after invariant hoisting). So the and gets emitted during statement processing, but i=0 emitted when building the loop — and hoisting/invariant code motion happens after? Actually kind is also loop-invariant used in loop; LICM would move both. Order after LICM may be: invariants in order of use in loop body: body uses i (strb r8, add) before kind (strb r7)? Body order: slots[i]=o (uses i), f94=sub, f9b=i, f98=kind, f90=cb. LICM hoists invariants in body-use order: i before kind → mov r8 before and r7. But candidate has and before mov — meaning candidate's and wasn't LICM'd (computed pre-loop in source) while mov r8 is loop init (emitted by loop structure, comes after?). Hmm.
+
+  Try: remove explicit `kind` assignment before the loop; compute kind inside the loop body: `o->f98 = (u8)a1;` and let LICM hoist it. Then both mov r8 (loop init) and and r7 (hoisted invariant) are generated by the loop machinery, in body order → mov first. This is the "kind computed inside the loop" open idea. But wait — they said "kind inlined vs hoisted" already tried. Inlined maybe produced and inside loop (not hoisted) → different size? But with LICM at -O4 it should hoist. Unless it wasn't tried in exactly this form. Let me try.
+
+• Source order doesn't matter — the scheduler emits the `and` first regardless. Next idea: move `kind` computation inside the loop body so LICM hoists it together with the loop init (which hoists in body-use order: `i` first).
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=4/94
+• Interesting! Now mov r8 and and order matches (the diff at 0x54 gone), but registers for kind and cb got swapped: candidate allocates r6=kind, r7=cb; ROM has r6=cb, r7=kind. So this form fixes the scheduling but swaps register allocation of cb/kind. So now I need cb in r6 and kind in r7.
+
+  Register allocation: loads ldr fp (cfg), ldr r6 (cb) in ROM. Now candidate: ldr fp at 0x50? diff at 0x50: target ldr r6 (cb) vs candidate ldr r7 (cb) — same load, different dest reg. So allocation order differs.
+
+  In the previous version, allocation was right (r7=kind, r6=cb) but schedule wrong. Now schedule right, allocation swapped. Combine: keep kind computed inside loop (fixes schedule) but force allocation order so cb→r6, kind→r7.
+
+  Register assignment likely follows order of first-definition/use. In ROM: r7 assigned to kind... but with in-loop kind, candidate gave kind r6. In original, kind defined before loop got r7, cb r6. Hmm, in original, kind (defined 3rd) got r7, cb (2nd) got r6... order: cfg(fp), cb(r6), i(r8), kind(r7)? Allocation isn't simply source order.
+
+  Maybe allocation is by live-range start after scheduling: in new version, schedule order: ldr fp, ldr r7(cb)... candidate gave cb r7? diff says candidate ldr r7 at 0x50 and and r6 — so candidate: cb→r7, kind→r6. We need cb→r6, kind→r7. 
+
+  How to nudge? Options: make cb's live range start later or kind's earlier. E.g., keep a `kind` local assigned before the loop from the in-loop expression... combine both: keep `u8 kind;` declared, but assign kind inside loop first iteration? Simpler: `o->f98 = kind` where `kind = (u8)a1` computed inside loop before use? Try: inside loop, `kind = (u8)a1; o->f98 = kind;` — LICM hoists the and. The local's live range might get r7.
+
+  Alternative: swap body store order of f90/f98? ROM stores f9b, f98, f90 order: strb r8(0x9b), strb r7(0x98), str r6(0x90). If we reorder source stores f90 before f98, allocator might assign... but that regressed earlier.
+
+  Another approach: declare cb after kind in source but assign... Actually try: pre-loop declare `u8 kind;` unused-init, and inside loop `o->f98 = kind = (u8)a1;`? Ugly.
+
+  Cleaner: maybe force register by ordering of loads: the and uses r1 (arg). Allocation may tie to operand registers. Try simply: in the in-loop version, reference `cb` after kind? Body currently: f90 last. If we move `o->f90 = cb` before `o->f98 = (u8)a1`, earlier attempt at body store-order swap regressed — but that was in the old version. Hmm, risky.
+
+  Try first: kind local declared and assigned in loop:
+  ```
+  for (i=0;i<2;i++){ ... o->f98 = (u8)a1; ...}
+  ```
+  → change to `o->f98 = (u8)a1;` stays but also keep `cb` usage pattern. Actually maybe the allocator assigns registers in order of def: cfg load (fp), cb load (r7 in cand), and (r6). To get and→r7 and cb→r6, need the and's def to come before cb's def in allocation order, or vice versa. In ROM order: ldr fp, ldr r6(cb), mov r8, and r7. So cb def before and def, and cb got r6, and got r7 — allocation follows def order with descending?? fp is r11... weird. fp=r11, then r6, r8, r7. Not monotonic.
+
+  Let me just try variants quickly. Variant: keep pre-loop kind assignment AND in-loop (u8)a1? No.
+
+  Variant B: `o->f98 = (u8)(a1 & 0xff);` same thing.
+
+  Variant C: hoist only the and manually but as statement expression inside loop via a temp declared outside:
+  ```
+  u8 kind;
+  ...
+  for (...) { ...; kind = (u8)a1; o->f98 = kind; ...}
+  ```
+  Try that.   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=4/94
+Same result. The allocator gives the first callee-saved reg after fp to... candidate: cb load → r7, kind and → r6. Interesting: LICM hoists and above? The allocation order probably follows the schedule: ldr fp, ldr r7(cb)? Wait candidate ldr r7 at 0x50 is the cb load, and and r6 — but which order were they scheduled? The diff only shows register swap, so schedule identical: ldr fp; ldr r6/r7; mov r8; and. Candidate: ldr r7 = cb (2nd instr), and r6 (4th). So the 2nd scheduled def got r7 and 4th got r6?! While ROM: 2nd def r6, 4th def r7. So allocation isn't schedule-order.
+
+  Maybe allocation order is reverse of first-use or by variable. In old version (kind pre-loop), we had correct allocation: cb→r6, kind→r7. Difference now: kind's live range starts in the loop (hoisted). Old: kind assigned before loop.
+
+  Alternative idea: keep old structure (correct allocation, wrong schedule) and fix schedule differently. In old version, schedule was: ..., and r7, mov r8. The `and` emitted before `mov r8`. Why? Because kind is computed as a plain statement pre-loop, and i=0 emitted by loop init after LICM? What if i is not a loop counter recognized... What if we write the loop as a do-while? They tried loop forms.
+
+  What if i is initialized inside the for: `for (i = 0; ...)` in old version — tried? "i initialized via the for-init vs before" was listed as OPEN idea. In old version I changed to `for (; i<2; i++)` with i=0 pre-statement (I did that in first edit: `i = 0; for (;...`). Original candidate had `i = 0; for (; i < 2; i++)`. So for-init form not tried yet in old (kind pre-loop) version.
+
+  Try: old structure with kind pre-loop, but `for (i = 0; i < 2; i++)`.   off                         target | candidate
+0x0054     0080            mov r8, #0 |     ff70 and r7, r1, #0xff    
+0x0056     a0e3            mov r8, #0 |     01e2 and r7, r1, #0xff    
+0x0058     ff70     and r7, r1, #0xff |     0080 mov r8, #0           
+0x005a     01e2     and r7, r1, #0xff |     a0e3 mov r8, #0           
+RESULT match=False mismatches=4/94
+Back to original failure. So: kind pre-loop → correct regs, wrong order. kind in-loop → correct order, swapped regs.
+
+  Now: can I get both? In the in-loop version, registers were: cb→r7, kind→r6. I need cb→r6, kind→r7. Register allocation likely by order of... in the in-loop version, maybe kind (hoisted by LICM) gets allocated based on its position in the loop body (used at f98 store, before f90=cb use). Body order: f9b uses r8, f98 uses kind, f90 uses cb. So kind used before cb → kind gets r6? Hmm but it gave kind r6 and cb r7 — yes! First-used-in-body gets lower reg. To flip: use cb before kind in the body → store f90 before f98. But earlier "body store-order swap regressed" — in old version. In in-loop version it might give: cb→r6, kind→r7 and keep schedule. ROM body store order is: f94, f9b, f98, f90. If I swap f90 before f98, codegen store order changes → mismatch at those stores. Unless scheduler reorders... risky but try? Actually store order swap regressed before, meaning it changed emitted order and made things worse. Hmm.
+
+  Alternative: make cb's first use earlier without changing body: e.g. reference cb before loop? No, that changes code.
+
+  Alternative: allocation might be by live-range END or by "weight". Or by order of the and vs load in the hoisted preheader: schedule is ldr fp, ldr r6/r7, mov r8, and. Allocation pass runs before scheduling typically... 
+
+  Different approach: keep in-loop version, but swap the DECLARATION/meaning: make cb a function pointer variable vs void*? Unlikely.
+
+  Try swapping order of f90/f98 stores in the in-loop version:
+
+• Back to square one: pre-loop `kind` gives right regs/wrong order; in-loop `kind` gives right order/wrong regs (first body use gets the lower reg). Try using `cb` before `kind` in the in-loop body to flip allocation.
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9070 str r7, [r0, #0x90]  
+0x008e     c0e5  strb r7, [r0, #0x98] |     80e5 str r7, [r0, #0x90]  
+0x0094     9060   str r6, [r0, #0x90] |     9860 strb r6, [r0, #0x98] 
+0x0096     80e5   str r6, [r0, #0x90] |     c0e5 strb r6, [r0, #0x98] 
+RESULT match=False mismatches=6/94
+• Store order changed (6/94, regressed) — as expected. Revert. The allocation is tied to something else. In the in-loop version, kind got r6 and cb r7 regardless of body order of these two stores? Actually here cb used before kind in body yet cb still r7, kind r6. So allocation not by body-use order. Hmm — then what determined r6=kind? Maybe by hoisting order in preheader: LICM hoists invariants in some order: the and is hoisted maybe before/after the cb load... Schedule shows ldr cb first, then and. And yet cb→r7, and→r6. Allocation might be reverse-order of defs, or by variable name/temp id.
+
+  Compare pre-loop version: defs in order: cfg(fp), cb(r6), i(r8), kind(r7). In-loop version: cfg(fp), cb(r7), kind(r6), i(r8)? Pre-loop: cb r6, kind r7. The difference: in pre-loop version kind is a source-level assignment before loop; in-loop it's hoisted.
+
+  Maybe allocation assigns registers by temp creation order, and in the pre-loop case temps: cfg,cfg-load?,cb,kind... while in-loop kind temp created later but allocated r6... confusing. Just try more variants:
+
+  Variant: in-loop version but declare `u8 kind` and assign `kind = (u8)a1;` INSIDE loop before stores with cb declared/assigned AFTER kind pre-loop:
+  order: cfg, kind-decl..., cb = func_02082fec assigned after the for-init? Try: cb assignment placed between for-init and loop? Not valid; put cb assignment just before loop but kind used inside via in-loop expression, and declaration order changed.
+
+  Actually maybe allocation order = order of first DEF in the function linearization: pre-loop version defs: cfg(ldr), cb(ldr), kind(and), i(mov)? That gives cfg=fp, cb=r6, kind=r7, i=r8. Order: fp, r6, r7, r8 — monotonic-ish (skipping r9, sl used for args). In-loop version defs: cfg(ldr), cb(ldr), i(mov)... but wait result was cb=r7, kind=r6. If def order cfg, cb, i, kind → fp, r6?, ... no.
+
+  Hmm, maybe allocation by LAST use / live-range length: kind's live range in-loop version: def in preheader (hoisted), used each iteration. cb same. 
+
+  Try: pre-loop kind assignment BUT placed AFTER `i = 0`:
+  cfg, cb, i=0, kind — that was my first edit → wrong order persisted (and before mov). So schedule in pre-loop version always puts and first. Because LICM or the scheduler hoists the and above the mov (mov r8 is loop-init, placed at loop boundary; the and is a regular statement, and the scheduler moves it down? no...).
+
+  Actually why does the and come BEFORE the mov in pre-loop version? Source: i=0 then kind=(u8)a1 (first edit) still emitted and-first. So the scheduler deliberately hoists the and above the mov. Maybe because the and's input r1 must be consumed before r1 is clobbered (mov r1, fp in loop). The scheduler prioritizes instructions whose input registers are about to be clobbered? In ROM, the and is AFTER the mov — both before r1 clobber.
+
+  OK, the in-loop version gives the correct schedule. Just need register swap. Ideas to flip allocation:
+  1. Change kind's type to `int kind` → and still emitted? kind int = a1 & 0xff explicit: `o->f98 = a1 & 0xff;` int temp.
+  2. Make cb's live range longer/shorter.
+  3. Give the and a different form: `o->f98 = a1 & 0xff;` — maybe different temp ordering.
+  4. Use `a1` re-cast: `o->f98 = (u8)(a1);`
+
+  Let me try variant: in-loop, `o->f98 = a1 & 0xff;` (int expression, no u8 temp declared).
+
+• Regressed (store order changed). Reverting to the in-loop version and trying a different expression form for the mask to nudge allocation.
+
+! grootteverschil: doel 0xbc, kandidaat 0xc0
+   off                         target | candidate
+0x000c     9c50   ldr r5, [pc, #0x9c] |     a050 ldr r5, [pc, #0xa0]  
+0x004c     60b0   ldr fp, [pc, #0x60] |     64b0 ldr fp, [pc, #0x64]  
+0x0050     6060   ldr r6, [pc, #0x60] |     6470 ldr r7, [pc, #0x64]  
+0x0054     0080            mov r8, #0 |     ff00 and r0, r1, #0xff    
+0x0056     a0e3            mov r8, #0 |     01e2 and r0, r1, #0xff    
+0x0058     ff70     and r7, r1, #0xff |     0080 mov r8, #0           
+0x005a     01e2     and r7, r1, #0xff |     a0e3 mov r8, #0           
+0x005c     0400      ldr r0, [sl, #4] |     ff60 and r6, r0, #0xff    
+0x005e     9ae5      ldr r0, [sl, #4] |     00e2 and r6, r0, #0xff    
+0x0060     0b10            mov r1, fp |     0400 ldr r0, [sl, #4]     
+0x0062     a0e1            mov r1, fp |     9ae5 ldr r0, [sl, #4]     
+0x0064     4b1f         bl #0x208b7bc |     0b10 mov r1, fp           
+0x0066     00eb         bl #0x208b7bc |     a0e1 mov r1, fp           
+0x006c     0020          ldr r2, [r5] |     b437 ldrh r3, [sb, #0x74] 
+0x006e     95e5          ldr r2, [r5] |     d9e1 ldrh r3, [sb, #0x74] 
+0x0070     0110        add r1, r8, #1 |     0020 ldr r2, [r5]         
+0x0072     88e2        add r1, r8, #1 |     95e5 ldr r2, [r5]         
+0x0074     9324    mla r2, r3, r4, r2 |     0110 add r1, r8, #1       
+0x0076     22e0    mla r2, r3, r4, r2 |     88e2 add r1, r8, #1       
+0x0078     0821 add r2, r2, r8, lsl # |     9324 mla r2, r3, r4, r2   
+0x007a     82e0 add r2, r2, r8, lsl # |     22e0 mla r2, r3, r4, r2   
+0x007c     2000   str r0, [r2, #0x20] |     0821 add r2, r2, r8, lsl #
+0x007e     82e5   str r0, [r2, #0x20] |     82e0 add r2, r2, r8, lsl #
+0x0080     9490   str sb, [r0, #0x94] |     2000 str r0, [r2, #0x20]  
+0x0082     80e5   str sb, [r0, #0x94] |     82e5 str r0, [r2, #0x20]  
+0x0084     9b80  strb r8, [r0, #0x9b] |     9490 str sb, [r0, #0x94]  
+0x0086     c0e5  strb r8, [r0, #0x9b] |     80e5 str sb, [r0, #0x94]  
+0x0088     0118     lsl r1, r1, #0x10 |     9b80 strb r8, [r0, #0x9b] 
+0x008a     a0e1     lsl r1, r1, #0x10 |     c0e5 strb r8, [r0, #0x9b] 
+0x008c     9870  strb r7, [r0, #0x98] |     0118 lsl r1, r1, #0x10    
+0x008e     c0e5  strb r7, [r0, #0x98] |     a0e1 lsl r1, r1, #0x10    
+0x0090     2188     lsr r8, r1, #0x10 |     9860 strb r6, [r0, #0x98] 
+0x0092     a0e1     lsr r8, r1, #0x10 |     c0e5 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     2188 lsr r8, r1, #0x10    
+0x0096     80e5   str r6, [r0, #0x90] |     a0e1 lsr r8, r1, #0x10    
+0x0098     0200            cmp r8, #2 |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=49/94
+• Regressed badly (a1 & 0xff wasn't hoisted; extra and inside). Revert to in-loop `(u8)a1` version which gave the 4/94 register-swap state.
+
+• Regressed. Reverting to the 4/94 in-loop version, then trying to flip the r6/r7 allocation.
+
+• Now back to the 4/94 swapped-reg state. Need cb→r6, kind→r7. 
+
+  Hypothesis: allocation assigns in order of first def in some linearized order where in-loop-hoisted `and` temp is defined... it got r6 (lower) despite being scheduled after cb's load. Maybe allocation prefers the temp whose live range starts at the loop (hoisted) vs cb defined before the loop? In pre-loop version, kind def'd before loop, got r7 while cb got r6 — so there, cb (defined earlier in source: cb before kind) got lower reg. Source def order pre-loop: cfg, cb, kind → fp, r6, r7. Monotonic by def order!
+
+  In-loop version: source def order: cfg, cb, (kind inside loop). Allocation: cb→r7, kind→r6. That breaks monotonicity... unless the and temp is considered defined at the point of the hoisted preheader, but cb also preheader. Hmm, but in in-loop version maybe the linearizer processes the loop body temps before the preheader statement `cb = ...`? No, cb assigned before loop in source.
+
+  Wait — maybe in in-loop version, the compiler treats `cb` assignment as loop-invariant too and LICM reorders: order of defs after LICM: and (hoisted from body), then cb load? And allocation follows that order: kind→r6? But schedule emitted ldr cb before and. Scheduler ran after allocation.
+
+  So allocation order might be: cfg(fp), kind(r6), cb(r7)? Hmm, but why would kind come before cb? Body processed order: the and is "computed" in the body at the f98 store; cb used at f90 store after. If allocation follows body-use order (i.e., linearization puts loop body first-uses in order): i (strb 9b) → r8? kind → r6, cb → r7? And cfg used in call arg (first in body) → fp? Plausible: allocation by first use in the loop body: cfg (call), then... i, kind, cb. Given fp, r8 assigned specially, kind→r6, cb→r7.
+
+  To flip: make cb used before kind in the body — tried, changed store order → regressed. Need cb used before kind WITHOUT changing emitted store order. Idea: use cb in the f9b line? No.
+
+  Alternative: compute kind's and AFTER the f90 store in the body but store f98 before f90? Order: `u8 k = (u8)a1;` placement... stores must be emitted f98 then f90.
+
+  Trick: make the and depend on the call result so it's computed later in the body:
+  ```
+  o->f98 = (u8)a1;   // needs and before this store
+  o->f90 = cb;
+  ```
+  The and must precede the f98 store. cb's use is the f90 store. The temp creation order is what matters maybe: temps created when the compiler first sees the expression: f98 expr (u8)a1 creates temp before f90's cb use. To create cb's temp... cb is a source variable already assigned pre-loop.
+
+  What if cb is not a pre-loop variable but `(void*)func_02082fec` inlined in the body: `o->f90 = (void*)func_02082fec;`? That's a constant load; the ldr r6,[pc] is a literal-pool load hoisted. Try: remove cb variable, inline the cast in the f90 store. Then body first-use order: cfg, i, kind, cb-const. Hmm same order as before → likely same allocation (kind r6, cb r7).
+
+  What about inlining kind as well and declaring cb after? Let me think about what drives allocation differently: maybe it's the literal pool loads: ldr fp, ldr r6 — two constant loads; maybe assigned in order of the pool entry order, which follows first-reference order in the function. data_02155a14 (cfg) referenced at call arg; func_02082fec referenced at f90 store. kind is an ALU temp.
+
+  Alternative approach: attack from the pre-loop version side, which had perfect allocation. There, scheduler hoists `and` above `mov r8`. Can I pin the and below the mov with a false dependency that costs no instructions? E.g., `kind = (u8)(a1 >> i);` wrong instr. What about making i's init use r1: `i = (u16)(a1 & 0);`? If mwcc folds to mov r8,#0, no dep edge remains. 
+
+  Or: schedule barrier via `i` used in the and: `kind = (u8)(a1 | (i & 0));` → folds.
+
+  What about volatile asm-free barrier: declare kind volatile? regressed earlier.
+
+  Different: swap which variable is the loop counter vs which holds kind — make the loop counter be derived... The mov r8,#0 is emitted by loop-init code. What if i starts at a nonzero constant offset and we adjust? `for (i = 0; ...)` — what if `i = 0` comes from `i = a1 - a1`? folds to mov.
+
+  Try: pre-loop version but with `kind` assigned via a1 BEFORE cfg/cb loads? Order kind, cfg, cb, i? Probably scheduler still hoists and right before loop.
+
+  Actually maybe the scheduler in pre-loop version hoists the and because it's the LAST instruction before the loop in source? In my first edit order was cfg, cb, i, kind — and was last before loop, still scheduled before mov r8. If kind were FIRST: kind, cfg, cb, i — scheduler might keep and early (hoisted above loads?). ROM order: ldr, ldr, mov, and. If scheduler hoists the and aggressively it might go above the loads → worse.
+
+  Alternative idea for pre-loop version: create an artificial dependency mov r8 → and r7 via `kind = (u8)((a1 + i) & 0xff);`? a1 + 0: emits `add r7, r1, r8; and r7, r7, #0xff`? extra instr. Unless compiler knows i=0 at that point (i is a variable assigned 0 just before — constant propagation!). mwcc may propagate i=0 into `a1 + i` → `a1` — removing the dep. But maybe the dep survives into scheduling because propagation happens after? Worth trying: `kind = (u8)a1;` → `kind = (u8)(a1 + i);` with i=0 just above, both pre-loop.
+
+• Now trying a dependency trick on the pre-loop version: make the `and` depend on `r8` via `a1 + i` (i is 0; mwcc may fold the value but keep the scheduling edge).
+
+   off                         target | candidate
+0x0054     0080            mov r8, #0 |     ff70 and r7, r1, #0xff    
+0x0056     a0e3            mov r8, #0 |     01e2 and r7, r1, #0xff    
+0x0058     ff70     and r7, r1, #0xff |     0080 mov r8, #0           
+0x005a     01e2     and r7, r1, #0xff |     a0e3 mov r8, #0           
+RESULT match=False mismatches=4/94
+• Constant propagation removed the dep. OK.
+
+  Think harder about the scheduler. mwcc 1.2 scheduler: why would it emit `and r7` before `mov r8`? In the pre-loop version, both are in the preheader. Perhaps scheduling priority: instruction with more successors / on critical path. The and feeds strb r7 (inside loop, cross-iteration); mov r8 feeds add r1, r8, #1 (critical loop-carried path!). Hmm, loop-carried dep on r8 makes mov r8 MORE critical, so scheduler should put it first... it didn't.
+
+  Alternative: maybe scheduling is bottom-up or based on register pressure: the and's operand r1 dies; scheduling the and early frees r1... 
+
+  Look at in-loop version result: schedule was correct (ldr, ldr, mov, and). There, the and was created by LICM during loop optimization, appended after loop-init mov. In pre-loop version, the and is an early statement; loop built later appends mov r8 after it → then scheduler doesn't reorder? But my first edit (i=0 before kind) still gave and-first — because i=0 statement is absorbed into loop construction while kind statement stays; loop construction happens and the mov lands after the and regardless of source order. That explains: the and always precedes the mov because the mov is generated at loop-build time. And the scheduler doesn't swap them (they're in the same block, maybe scheduling is off or list scheduler preserves order).
+
+  So the fix must come from the in-loop version (LICM generates mov first, then hoisted and). Now fix the allocation: in-loop version gave kind→r6, cb→r7; want kind→r7, cb→r6.
+
+  In pre-loop version allocation was cb→r6, kind→r7. What's different? Allocation probably happens in order temps are introduced to the allocator. In-loop: LICM hoists the and — its temp maybe created before cb's load temp? cb load = literal pool constant load. Maybe allocator processes: r9(sub), sl(a0), r5, r4 (early block), then loop-related: fp(cfg load, used as call arg), r8(i), then in-body temps in order of use: f94(sub, r9), f9b(r8), f98(kind)→r6, f90(cb)→r7. That fits body-use order! And pre-loop version: kind temp created pre-loop gets... but there kind also got r7, cb r6. Pre-loop body-use order is same (f98 before f90). Yet allocation differs! So allocation is NOT body-use order.
+
+  Pre-loop: def order cfg, cb, kind, i → allocation fp, r6, r7, r8?? weird order but maybe: early-block temps (r5,r4,r3,r2, sl, r9) assigned first, then preheader temps in def order: cfg→fp, cb→r6, kind→r7, i→r8. Yes monotonic-ish with reg selection quirks.
+
+  In-loop: def order cfg, cb, i pre-loop; kind def inside loop. Allocation: cfg→fp, cb→r7??, kind→r6. Hmm, cb def before kind but got higher reg. Unless LICM moves the and def ABOVE the cb def when hoisting: hoisted preheader order: ldr cfg?, mov r8, and, then cb load? But emitted schedule: ldr fp, ldr r6/r7, mov, and — hmm ldr cb is 2nd. Scheduler reorders though. Pre-schedule order might be: ldr cfg, mov r8, and(kind), ldr cb → allocation fp, r8, r6(kind), r7(cb)? But i got r8, and in pre-loop version i also r8. If allocation order were ldr cfg(fp), mov r8(i), and(kind→r6?)... regs picked: fp=11, r8=8, r6, r7 — allocator picks from a preference list, maybe [r4..r12] minus used, in some order. i→r8 both versions. kind→r6, cb→r7 in-loop.
+
+  So in in-loop version, if I could make cb's def come before kind's def in the pre-schedule order... cb IS defined before the loop in source. But LICM may process loop invariants in body order: the and (body, invariant) hoisted; cb (pre-loop, invariant, used in body) maybe ALSO moved into preheader by the loop prepass — inserted after the hoisted and? The hoisted and is placed at loop preheader creation; cb load already sits before the loop... 
+
+  Experiment: define cb AFTER the loop-init but before loop, with kind still in-loop:
+  ```
+  cfg = ...; 
+  for-init i=0
+  cb = (void*)func_02082fec;
+  for(...) 
+  ```
+  Can't put statement between for-init and loop. Use comma: `for (i = 0, cb = (void*)func_02082fec; ...)`? cb is void* and i u16 — comma ok. Hmm but that might change cb load scheduling.
+
+  Alternative experiment: also compute kind pre-loop BUT keep the in-loop (u8)a1 expression (double): no.
+
+  Try: swap so that kind temp is the constant load and cb is the ALU? no.
+
+  Experiment: change allocation pressure: use `cb` twice? e.g. f90 store and something else — changes code.
+
+  Experiment: declare `u8 kind` and inside loop do `o->f98 = (u8)a1;` — the (u8)a1 temp is anonymous. If instead I write `kind = (u8)a1; o->f98 = kind;` inside loop — I tried that (same 4/94 swap result).
+
+  What about making cb's temp created at the f90 store (inline) and kind assigned pre-loop via in-loop... Let me try inline cb: `o->f90 = (void *)func_02082fec;` with kind still in-loop: def order in body: kind before cb-const. Allocation: cfg(fp), then body temps: kind→r6, cbconst→r7? Probably same swap.
+
+  Alternatively declare cb AFTER first use? Not possible in C89... this is C, mwcc allows C99? Declarations mid-block already used. 
+
+  Try: assign cb inside loop too? `o->f90 = cb = (void*)func_02082fec;` weird.
+
+  Different idea: swap roles — make kind use the CONSTANT-load mechanism and cb the ALU? No.
+
+  Maybe force register via type: make cb a `void (*)(void)` function pointer: `o->f90 = (void *)func_02082fec;` vs `void (*cb)(void) = func_02082fec;` — same load.
+
+  Pragmatic approach: in-loop version, but swap body so cb's temp is created before kind's without changing store order: reference cb earlier in a way that creates the temp early but emits no instruction... e.g. `o->f90 = cb;` is the only use. What about `data_...slots[i] = o;` using cb? No.
+
+  Use the comma operator: `o->f98 = (cb, (u8)a1);`? Evaluates cb (no-op, temp exists earlier?) — the temp for cb already exists from pre-loop assignment. Hmm.
+
+  Actually maybe allocation is by temp-number order and temp numbers are assigned at parse: pre-loop version temps: cfg(t1), cb(t2), kind(t3), i(t4) → fp,r6,r7,r8? no wait that gives cfg fp? odd but maybe allocator preference list is r12, r11(fp), ... nah.
+
+  In-loop version temps: cfg(t1), cb(t2), i(t3), then body: o(t?), ..., kind(t? later). Allocation gave kind r6, cb r7 — NOT temp order. So maybe allocation is by live-interval START in the linearized (pre-schedule) code: in-loop pre-schedule linearization: [early block] then preheader: ldr cfg?, and LICM-hoisted and, then loop with cb load? If cb's load was sunk INTO the loop pre-schedule (used only in body, LICM hoists it — hoist order: and hoisted before cb-load because and appears earlier in body? f98 before f90!). Hoisting in body order: and first, then cb load → preheader: ..., and(kind), ldr cb. Live start: kind before cb → kind gets r6, cb r7. That fits!
+
+  So to flip: make cb hoisted before kind → cb's body use must come before kind's body use → store f90 before f98 — but that changed store order and regressed. Unless the scheduler reorders stores back? It didn't.
+
+  Alternative: make the and hoist later: put the (u8)a1 computation AFTER the f90 store in source, but store to f98 before? Can't — need value before store.
+
+  Trick: split — compute kind temp after cb's use but store earlier via the temp? No.
+
+  Use a temporary for the store value: 
+  ```
+  u8 k;
+  ...
+  o->f90 = cb;
+  k = (u8)a1;   // too late, f98 store must come before f90 store
+  ```
+  ROM store order: strb r7(f98) at 0xac? Actually order: str r9(f94) 0xa4, strb r8(f9b) 0xa8, strb r7(f98) 0xb0, str r6(f90) 0xb8. f98 stored before f90. So kind must be computed before f98 store, cb used at f90 store after. In-loop kind necessarily "used" before cb in body. So hoisting order always and-first → kind always r6. Dead end? Unless cb is NOT hoisted by LICM but is a pre-loop statement (it is, in current in-loop version cb is assigned pre-loop!). Wait — current in-loop version: cb assigned pre-loop, kind in-loop. Result: kind r6, cb r7. So even with cb def'd pre-loop, kind got the lower reg! Then allocation isn't def-order either. Hmm.
+
+  So what determines it? kind (an and with r1) vs cb (literal load). Maybe allocator preference: ALU temp vs load temp? Or maybe by live-range length: both live through loop. Or by register preference lists per use: kind used by strb (any reg), cb by str (any).
+
+  Maybe it's about which is created first in the compiler's internal numbering after optimization... I could try: make kind ALSO defined pre-loop AND keep the and generated by LICM — impossible.
+
+  New angle: in the in-loop version, could I swap the roles of r6/r7 by swapping which expression is the "and" vs the "load"? E.g., make cb = (void*)((int)func_02082fec | 0)? no.
+
+  Alternative: accept r6=kind, r7=cb by making ROM... no, ROM fixed.
+
+  Try: pre-loop version with cb declared/assigned AFTER kind:
+  kind pre-loop first: kind = (u8)a1; cfg=...; cb=...; i=0? Def order: kind, cfg, cb, i. Might allocate kind→fp? cfg must be fp (it matched). Hmm fp is r11 — why did cfg get r11? Maybe because cfg is used as a call argument (r1) and lives across call; preference... unclear.
+
+  Let me try a bunch of quick variants systematically. Variant V1: in-loop kind, but make kind's and depend on cb load: `o->f98 = (u8)(a1 & (int)cb);`? changes value. No: cb = 0x02082fec, low byte 0xec... wrong.
+
+  V2: in-loop kind, define cb between for-init via comma: `for (i = 0; i < 2; i++)` with cb assignment inside loop before stores? cb is invariant; if assigned in loop: `cb = (void*)func_02082fec;` as first body statement — LICM hoists the load. Hoist order: cb load first (appears first in body), then and → cb r6, kind r7? And the load's position after scheduling: ROM has ldr r6 second (right after ldr fp). Try it:
+
+• Constant propagation killed the dependency. New idea for the in-loop version: move `cb`'s assignment into the loop body too, so LICM hoists it before the `and` (body order), flipping the allocation.
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     0080 mov r8, #0           
+0x0052     9fe5   ldr r6, [pc, #0x60] |     a0e3 mov r8, #0           
+0x0054     0080            mov r8, #0 |     5c60 ldr r6, [pc, #0x5c]  
+0x0056     a0e3            mov r8, #0 |     9fe5 ldr r6, [pc, #0x5c]  
+RESULT match=False mismatches=4/94
+• Very interesting! Now: kind→r7 (strb r7 at 0x8c? let's infer: only diff is at 0x50-0x56: candidate has mov r8 first, then ldr r6. So now allocation is CORRECT (cb→r6, and→r7 presumably) and the and/mov order is correct, but the ORDER of ldr r6 vs mov r8 differs: ROM: ldr r6, mov r8; candidate: mov r8, ldr r6.
+
+  So close! Need ldr r6 before mov r8. cb assigned inside loop got hoisted, but scheduled after the mov. Since cb def is now a hoisted invariant placed maybe after loop-init. Hmm.
+
+  Try: keep kind in-loop, cb in-loop, but cb assignment AFTER the call or later in body so hoist order...? We need hoist order: ldr r6 (cb) BEFORE mov r8? But mov r8 is loop-init, hoisted invariants usually placed after init? In this result, invariants order: and then ldr? Actually candidate order now: ldr fp, mov r8, ldr r6, and r7? The diff only shows mov/ldr swap; and r7 matched at 0x58. So candidate: ldr fp(0x4c), mov r8(0x50), ldr r6(0x54), and r7(0x58). ROM: ldr fp, ldr r6, mov r8, and r7.
+
+  Need the ldr r6 moved up one. Ideas: cb assigned before the for (pre-loop) but kind in-loop — that was the previous 4/94 state (regs swapped). Different combination: cb pre-loop AND kind in-loop gave kind r6. cb in-loop gave cb r6 but scheduled after mov. 
+
+  What if BOTH cb assignment pre-loop and ALSO force hoist scheduling... 
+
+  What about putting cb assignment inside the for-init: `for (i = 0, cb = (void*)func_02082fec; i < 2; i++)`? Then cb load emitted at loop-init, maybe before mov r8? Order within init: i first... write `for (cb = ..., i = 0; ...)`? Comma order: cb first → ldr r6 then mov r8! And kind stays in-loop → and r7 after. Allocation: cb→r6 (as just observed), kind→r7. Try it.   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=4/94
+Now the ORDER is right (ldr before mov, and after mov) but allocation flipped again: cb→r7, kind→r6. Gah. The allocation flips with cb def location: pre-loop/in-init → cb r7; in-loop body → cb r6.
+
+  Summary of states:
+  - kind pre-loop: order wrong (and before mov), regs right (cb r6, kind r7).
+  - kind in-loop, cb pre-loop: order right, regs wrong (cb r7, kind r6).
+  - kind in-loop, cb in-loop: regs right, but ldr r6 after mov r8.
+  - kind in-loop, cb in for-init: order right, regs wrong.
+
+  So allocation seems tied to the SCHEDULED position: whichever of cb/kind's def comes earlier gets r7?? No: state1: order cfg,cb,i,kind: cb r6, kind r7 — earlier def got LOWER reg. State2 (order presumably cfg, cb, mov, and): cb r7?? earlier def got HIGHER. Contradiction. Hmm, unless in state2 the actual schedule was cfg, mov, cb, and? No—diff showed only reg swaps, so schedule identical to ROM: ldr fp, ldr(cb), mov r8, and. cb def 2nd, kind def 4th; cb→r7, kind→r6. In state4 same schedule: cb→r7. In state3: schedule ldr fp, mov, ldr cb, and; cb→r6, kind→r7. So allocation correlates with... in state3, kind def comes before cb def → kind r6? no kind got r7 there. Ugh: state3: kind→r7 (correct), cb→r6. Order: mov, ldr cb(r6), and(r7): earlier def (cb) → r6. State2: ldr cb(r7), and(r6): earlier def (cb) → r7. So not position-based.
+
+  Maybe allocation follows the compiler's temp creation order (SSA/linearization before scheduling). State2 (kind in-loop, cb pre-loop): temps: cfg, cb, i, ..., kind → cb created before kind. Allocation: cb→r7, kind→r6. State1 (both pre-loop): temps cfg, cb, kind, i → cb→r6, kind→r7. Different! In state1 i created after kind; state2 i before kind. Maybe allocation is REVERSE temp order among {cb, kind, i} with i pinned to r8? Reverse: state1: i(r8), kind(r7), cb(r6) — yes! reverse creation order: last-created gets lowest? i last → r8? no r8 > r7. Hmm order r6<r7<r8: state1: cb r6 (created 1st), kind r7 (2nd), i r8 (3rd) = creation order! State2: cb(1st)→r7?? i(2nd)→r8, kind(3rd)→r6. No.
+
+  Whatever the heuristic, state3 (both in-loop) gave perfect allocation; only issue: ldr r6 placed after mov r8. In state3 the hoisted ldr cb was emitted after loop-init mov. What if I can nudge the hoisted ldr before the mov? In state3, cb assignment was the FIRST statement in the loop body. LICM hoists invariants, placing them... after the init. What if i is initialized OUTSIDE the for (pre-loop statement) while cb/kind stay in-loop? Then mov r8 comes from a normal statement before the loop, hoisted ldr lands after it again probably. What if i init inside for-init but cb assignment FIRST thing in body — that was state3.
+
+  Alternative: make the ldr r6 come from the pre-loop region while keeping kind's and the last... state2 had ldr cb pre-loop → schedule correct but regs flipped. What if BOTH cb and kind pre-loop but kind is expressed so its def temp is created... state1 regs were correct (cb r6, kind r7)! State1's only problem: schedule (and before mov). So: can I keep state1's allocation but get the and scheduled after the mov?
+
+  State1: pre-loop defs cfg, cb, kind, i. Schedule emitted: ldr fp, ldr r6, and r7, mov r8. The scheduler moved and above mov. Why? In state2/4 (kind in-loop): schedule ldr fp, ldr r7?, mov r8, and — and after mov. So the and, when a plain pre-loop statement, gets scheduled before the loop-init mov; when hoisted by LICM, after. 
+
+  Can I create a fake dependency mov r8 → and r7 without extra instructions? Scheduler respects data deps. If the and read r8... e.g. kind = (u8)(a1 & ~0) no. `(u8)(a1 >> 0)` → just and? shifts by 0 are optimized away. 
+
+  What if i's mov depends on the and instead — scheduler would then put and before mov — wrong direction (current state already).
+
+  What if the and's dest reg r7 conflicts such that scheduler prefers it later... 
+
+  Alternative: two loops peeled? No, size.
+
+  What about making the pre-loop and NOT loop-invariant-looking... it isn't in the loop.
+
+  Hmm, what about state3 variant: both in-loop, but swap body order so cb assignment is the LAST body statement (o->f90 = (void*)func_02082fec; inline) and kind first? Hoist order might put the and before the ldr... we want ldr r6 FIRST (before mov). ROM: ldr fp, ldr r6, mov r8, and. In state3, LICM placed ldr after mov. Maybe LICM places hoisted code before the init mov if... unlikely.
+
+  Try state3 with i initialized pre-loop as plain statement (i = 0; for(;...)): maybe the mov r8 then is scheduled relative to ldr differently.
+
+• Order right, regs flipped again. State 3 (both `cb`/`kind` computed in-loop) had perfect allocation — only the hoisted `ldr r6` landed after `mov r8`. Trying `i` as a pre-loop statement with `cb`/`kind` still in-loop.
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     0080 mov r8, #0           
+0x0052     9fe5   ldr r6, [pc, #0x60] |     a0e3 mov r8, #0           
+0x0054     0080            mov r8, #0 |     5c60 ldr r6, [pc, #0x5c]  
+0x0056     a0e3            mov r8, #0 |     9fe5 ldr r6, [pc, #0x5c]  
+RESULT match=False mismatches=4/94
+• Same as state3: regs correct (cb r6, kind r7), but ldr r6 scheduled after mov r8. So with cb in-loop, the hoisted ldr always lands after the loop-init mov. 
+
+  Now, can I make the scheduler prefer the ldr before the mov? The ldr is a LOAD — schedulers usually hoist loads early. Here it placed ldr after mov. Perhaps because LICM inserted the ldr textually after the preheader. mwcc's scheduler at -O4 should reorder within the block... but it doesn't (maybe scheduling only within certain boundaries, or list scheduler in program order with priorities).
+
+  What determines the order in state2/4 (ldr cb before mov)? There the ldr was a pre-loop statement, textually before the loop. So textual order is preserved! The scheduler seems to mostly preserve program order for these. So: I need textual order: ldr cb (pre-loop), mov r8 (loop init), and (hoisted, after mov). And allocation cb→r6, kind→r7.
+
+  State4 (cb in for-init before i): textual ldr cb, mov i, and → correct order! But allocation flipped (cb r7, kind r6). State1 (cb, kind, i all pre-loop): allocation cb r6, kind r7 — correct, but and scheduled before mov.
+
+  So what if: cb pre-loop (statement), kind ALSO pre-loop statement but AFTER the... the and must textually come after the loop-init mov. The loop-init mov is generated by the loop. A pre-loop kind statement is always textually before. Unless... kind is assigned between the for-init and the loop — impossible — OR kind assignment is the LAST thing LICM-like... 
+
+  What about computing kind inside the loop CONDITION or increment? e.g. `for (i = 0; i < 2; i++, kind = (u8)a1)` — the increment runs at end of body; LICM might hoist? The and in increment would be evaluated each iteration — hoisted as invariant maybe. Placement? Uncertain. Alternatively kind in the condition: `i < 2 && (kind = (u8)a1, 1)` — ugly, changes codegen.
+
+  What about state2 (kind in-loop, cb pre-loop) which had correct ORDER but flipped regs (cb r7, kind r6) — vs state3/5 correct regs wrong order. Allocation difference between state2 and state5: in state2 cb pre-loop; in state5 cb in-loop. kind in-loop both. Regs: state2 cb r7/kind r6; state5 cb r6/kind r7. So cb's def location drives cb's register?! cb pre-loop → r7; cb in-loop → r6. And kind gets the other.
+
+  What if BOTH cb and kind in-loop but kind FIRST in body (before cb)? Body order: ..., f98 store uses kind... kind must be computed before f98 store. Put `cb` assignment after the f98 store but before f90 store? i.e.:
+  ```
+  o->f9b = (u8)i;
+  o->f98 = (u8)a1;   // kind temp created here
+  cb = (void*)func_02082fec;
+  o->f90 = cb;
+  ```
+  Hoist order might be: and first, then ldr → and before ldr textually → wrong order (we need ldr, mov, and). Hmm but where's the mov? Hoisted stuff placed after loop-init presumably: order mov, and, ldr? We'd get mov, and, ldr — wrong.
+
+  Actually wait — in state3/5, the hoisted sequence was: mov r8 (init), ldr r6, and r7. Both cb and kind hoisted AFTER the init mov, in body order (cb assigned first in body → ldr first). So hoisted invariants go after the init, in body-appearance order. To get ROM order (ldr, mov, and) we'd need the ldr hoisted BEFORE the init — LICM won't do that.
+
+  So the cb-in-loop family can't produce ldr-before-mov. The cb-pre-loop family (state2/4) produces ldr, mov, and correctly but with flipped regs: cb→r7, kind→r6.
+
+  Now focus: flip regs in state2/4. In state2, kind in-loop, cb pre-loop. Compare state1: kind pre-loop, cb pre-loop → cb r6, kind r7. So kind's location drives kind's register: kind pre-loop → r7, in-loop → r6. I need kind→r7 with kind in-loop. What if kind's temp is created pre-loop (declared/assigned) but the and is still emitted by LICM? E.g.:
+
+  ```
+  u8 kind = 0;   // pre-loop init (dead?)
+  ...
+  o->f98 = kind = (u8)a1;
+  ```
+  Dead init eliminated; temp kind created pre-loop? Allocation might then give r7? Tried similar earlier? I tried `kind = (u8)a1; o->f98 = kind;` fully in-loop (gave cb r7/kind r6). Not with pre-loop declaration+dead init.
+
+  Actually wait, maybe simpler: in state1 the allocation was cb r6, kind r7 — both pre-loop. The ONLY problem was schedule: and before mov. What if I make the pre-loop and's def textually AFTER... the loop-init is generated by the loop header; nothing pre-loop can come after it. BUT what if the loop counter init is not generated by the loop — e.g., a while loop where increment/init are explicit statements?
+
+  ```
+  i = 0;
+  kind = (u8)a1;
+  while (i < 2) { ...; i++; }
+  ```
+  Order: mov r8, and r7 textually → schedule mov, and! And allocation: cfg, cb, kind?, i? Def order: cfg, cb, i, kind → cb r6? kind r7? This was maybe among "loop forms tried". They said do-while/while/for tried. But maybe not in this exact combination (while with i init before kind). Hmm, "assignment-order swaps of the init block" also tried. This is cfg, cb, i, kind order with while-loop — I did try `i=0; kind=(u8)a1` with for — gave and-first. With for, the compiler rebuilds init. With while, i=0 stays a plain statement textually before kind. Did anyone try while? Reportedly yes. But let me try anyway — cheap.
+
+  Actually wait: with `for (i = 0; ...)` the compiler may move the init INTO loop structure and emit it after hoisting other preheader stuff (the and). With while, i=0 is an ordinary statement; then kind=(u8)a1 after it → textual mov, and. Scheduler preserves textual → mov first! And allocation def-order cfg,cb,i,kind → hopefully cb r6, kind r7, i r8. Try:
+
+  ```
+  cfg = &data_02155a14;
+  cb = (void *)func_02082fec;
+  i = 0;
+  kind = (u8)a1;
+  while (i < 2) { body; i++; }
+  ```
+  Body must produce: ldrh/ldr/mla/add/str sequence with add r1, r8, #1; lsl/lsr for u16 increment; cmp; bcc. The ROM loop is a do-while-ish shape (branch back to 0x80 from 0xc0, condition at end). The for-loop version produced matching body already, so keep the body identical, only change loop head. A `while (i<2)` might generate a pre-header cmp+jump — changing size. Since i=0 and trip count unknown (well, i known 0? constant prop might know i<2 true and make do-while). Risky but try.
+
+• Same state-3 shape. New idea: `while` loop so `i = 0` stays a plain statement textually before `kind = (u8)a1` — preserving both def-order allocation and mov-before-and order.
+
+   off                         target | candidate
+0x0054     0080            mov r8, #0 |     ff70 and r7, r1, #0xff    
+0x0056     a0e3            mov r8, #0 |     01e2 and r7, r1, #0xff    
+0x0058     ff70     and r7, r1, #0xff |     0080 mov r8, #0           
+0x005a     01e2     and r7, r1, #0xff |     a0e3 mov r8, #0           
+RESULT match=False mismatches=4/94
+• While-loop didn't help — compiler still converts to for-structure, mov after and. So ANY pre-loop and gets scheduled before the loop-init mov. The scheduler apparently pulls the and up (or pushes mov down) deliberately.
+
+  Wait — actually maybe it's the opposite: the scheduler DELAYS the mov r8 because r8's first use is inside the loop, and hoists the and because... In ROM, mov r8 comes before and. So in ROM, something kept the mov early. What if in the original, the and depended on the result of... Actually maybe the original code's `and` input isn't r1 directly but something computed after the mov — e.g., kind was derived from a value loaded or from `sub`/args shuffled.
+
+  Look: ROM: and r7, r1, #0xff — reads r1 (a1) directly. mov r8, #0. Independent. Scheduler tie-break chose mov first in ROM, and first in ours. Since textual order in our compile is and-then-mov (compiler-generated), maybe the original had textual mov-then-and, i.e., the mov r8 was NOT loop-init-generated but a plain statement before the and that the compiler kept... but our while test shows the compiler moves a plain i=0 statement into loop-init position (after the and). Hmm, does it? In the while test, the and was AFTER i=0 textually, yet emitted before. So the compiler/scheduler moved the and up above the mov. So scheduler does reorder: it hoisted the and. Priority: maybe the and is on the critical path? Or loads/ALU with all-ready operands scheduled by some priority where and > mov?
+
+  In state3/5 (both in-loop), order was mov, ldr, and — LICM placed them: init first, then hoisted in body order. To get ldr, mov, and — maybe make cb's load NOT hoisted (pre-loop) but kind's and hoisted (in-loop): that's state2 → correct order but flipped regs (cb r7, kind r6).
+
+  So the remaining problem is ONLY: in state2/4, flip r6↔r7 allocation. Observations: cb pre-loop→r7 when kind in-loop; cb pre-loop→r6 when kind pre-loop. So allocation might depend on temp creation ORDER: state1: temps cfg(t?), cb(t+1), kind(t+2): cb r6, kind r7 (creation order ascending). state2: cb(t+1), kind created LATER in-loop: cb r7, kind r6?? That's descending then. Contradiction, so maybe allocation is by live-range start in LINEARIZED code: state1 linearization: ldr cfg, ldr cb, and(kind), [loop-init mov] → live starts: cfg, cb, kind → fp, r6, r7 ascending. state2 linearization (pre-schedule): ldr cfg, ldr cb, [loop region with hoisted and...] — where does the hoisted and land pre-allocation? If LICM hoists and ABOVE the ldr cb (inserted right after cfg?): live starts cfg, kind, cb → fp, r6?? but kind got r6? No: state2 kind→r6, cb→r7 — matches live-start order cfg, kind, cb → fp, r6, r7! And state1: live starts cfg, cb, kind → fp, r6, r7 — also matches! Great, hypothesis: allocation = live-range start order in pre-schedule linearization.
+
+  So in state2, LICM hoisted the and above the pre-loop cb load (pre-schedule). To flip: get the and hoisted to AFTER the ldr cb in linearization. In state3 (both in-loop): linearization had... cb r6, kind r7 → live starts: cfg, cb, kind → so hoisted ldr cb came before hoisted and, and both after the mov probably. That matches body order (cb assigned first in body).
+
+  So in state2, why was and hoisted above the pre-loop cb load? LICM inserts hoisted code at the top of the preheader maybe, before existing preheader statements. In state3, the cb load was also loop-hoisted, inserted in body order.
+
+  Plan: state2 variant where the and is hoisted AFTER the cb load. If LICM inserts hoists in reverse body order or at preheader top: with only the and hoisted, it lands at... position relative to pre-existing ldr cb. We got and before ldr cb (kind r6? wait kind→r6 means kind's live start BEFORE cb). Hmm wait state2: kind r6, cb r7 → kind live-start before cb → and inserted before the ldr cb. To flip, we want and inserted after ldr cb.
+
+  What if the hoisted instruction is inserted at the preheader in the order the invariant is encountered, but existing statements... Alternatively, move cb load INTO the loop but AFTER the f98 store? Then body order: and (f98) first, cb second → hoisted: and then ldr → kind r6 — wrong way. We need cb's hoist before and's: cb assigned first in body (state3) → ldr before and textually? But state3 gave final schedule mov, ldr, and — the and after the mov, good — but we need ldr BEFORE mov. Ugh, state3's problem was ldr after mov.
+
+  Combine: TWO in-loop assignments with cb first (state3) gives allocation right, order mov,ldr,and. Need ldr,mov,and. What if there are TWO loop-invariant loads and the init is... no.
+
+  What if the loop counter init also comes from LICM-hoisting? Like i initialized inside loop conditionally? Crazy.
+
+  What if i is declared and the loop is `for (i = 0; ...)` but the init expression is a load/constant that LICM... the mov r8 is generated as part of the loop, placed BEFORE hoisted invariants (state3: mov first). In state2, the and was hoisted before the pre-loop ldr cb but after mov? State2 final schedule: ldr fp, ldr cb(r7), mov r8, and(r6)? The diff for state2 showed only reg swaps vs ROM, so schedule = ldr fp, ldr cb, mov r8, and — the ldr cb scheduled before mov even though allocation says its live range started after the and. Fine, scheduler moved the load up (loads prioritized) but allocation was already done.
+
+  So target: allocation live-start order cfg, cb, kind (→fp,r6,r7) AND final schedule ldr fp, ldr cb, mov, and. State1 had exactly that allocation; schedule had and before mov. If the scheduler prioritizes loads (hoisting ldr cb above and/mov) but didn't move the and below the mov... In state1 final: ldr fp, ldr r6, and r7, mov r8. ROM: ldr fp, ldr r6, mov r8, and r7. The scheduler moved and above mov. Why? Because the and has a ready operand r1 and its result r7 is needed... The scheduler presumably schedules by priority = critical path length. and r7 → strb (in loop, far). mov r8 → add (in loop). Hmm.
+
+  Alternatively the scheduler schedules in order of... source/linearization order with only loads hoisted: state1 linearization: cfg, cb, kind, mov(i-init) — if loop-init mov is appended AFTER all preheader statements in linearization, then scheduler preserving non-load order gives and before mov. ROM's original linearization must have had the mov BEFORE the and — i.e., in the original source, i=0 initialized in a way that linearizes before the and, and the and is NOT moved. In state1 variant `i=0; kind=(u8)a1;` textual i before kind — but emitted and before mov. So the compiler moved the loop-init mov after the and during loop restructuring. The only way the mov precedes the and in linearization: the and is generated by LICM (in-loop kind). But then its live-start is early (hoisted above preheader) → r6.
+
+  UNLESS the and is hoisted but its live range starts... allocation might be by temp number after all. Ugh.
+
+  Try: in-loop kind, pre-loop cb, but ALSO make another invariant hoisted before the and so that the and lands after the ldr cb in the hoist insertion order. E.g., insert a dummy invariant that gets hoisted between? The hoisted and in state2 went to the TOP of the preheader (before ldr cb). What if LICM inserts at top in REVERSE order of encounter, and I add the cb load also as an in-loop invariant BEFORE the and in body order? That's state3 (cb first in body): gave ldr, and both hoisted after mov: schedule mov, ldr, and. Allocation right. Only the ldr's final position wrong (after mov).
+
+  Then: can the scheduler move the hoisted ldr above the mov? In state2, the pre-loop ldr cb WAS scheduled before the mov. In state3, the hoisted ldr stayed after the mov. So scheduler treats hoisted ldr differently?? Or maybe in state3 the scheduler kept linearization order (mov, ldr, and) — loads not prioritized after all — and in state2 linearization was (ldr cb, mov, and) already (and hoisted below the ldr? but then live-start of cb before and → cb r6... but cb got r7!). Contradiction with live-start hypothesis.
+
+  Let me stop theorizing and just brute-force a few more structural variants:
+
+  V6: state3 (both in-loop, cb first) but with `i` init via for-init (exactly state3 was for-init? state3: `for (i = 0; ...)` cb first stmt in body. Yes). Gave mov, ldr, and with right regs.
+
+  V7: cb assigned in for-init BEFORE i: tried (state4) → regs flipped (cb r7).
+
+  V8: cb assigned in for-init AFTER i: `for (i = 0, cb = ...; ...)`: order mov, ldr? plus kind in-loop. Allocation?
+
+  V9: two vars: assign BOTH cb and kind in for-init after i? and would be pre-loop statement then → and before mov probably.
+
+  V10: state3 + make the ldr cb load-dependent on nothing but schedule earlier by using cb in the loop condition? `while ((cb = (void*)func_02082fec), i < 2)`? weird.
+
+  V11: state2 (cb pre-loop, kind in-loop → right order, wrong regs cb r7/kind r6) and flip regs by adding a THIRD invariant pre-loop that takes r6? If allocation is live-start order and kind's hoisted and starts before cb's load, add a pre-loop invariant whose live range starts even earlier, grabbing r6, pushing... no wait we want cb→r6, kind→r7. If live-start order is cfg(fp), kind(r6), cb(r7): we need cb's live range to start before kind's. cb IS textually before the loop; kind's and is hoisted above it. What if cb's live range starts even earlier — use cb in the EARLY block (before the preheader)? E.g., reference cb in the `if` condition? Changes semantics/bytes? Could do a dummy use that optimizes away... risky.
+
+  V12: in state2, declare kind with `register` keyword? mwcc ignores mostly.
+
+  V13: What about making kind's and NOT hoisted above but kept in preheader after ldr: kind in-loop but referenced ALSO pre-loop after cb? e.g.
+  ```
+  cb = (void*)func_02082fec;
+  kind = (u8)a1;        // pre-loop (state1 order: cfg, cb, kind, i)
+  for (...) { ... o->f98 = (u8)a1; ... }  // but use inline expr in body
+  ```
+  Then the pre-loop kind is dead (unused, body uses inline (u8)a1) → eliminated. No.
+
+  V14: Use kind pre-loop (state1, right regs) and force the scheduler to delay the and via an artificial use of r7... What about making the and's destination conflict: schedule... The scheduler moved and before mov despite textual order — maybe because of a false dep: mov r8 writes r8; and writes r7 — no dep. The scheduler's choice... What if I add ANOTHER independent instruction textually between them that the scheduler keeps, changing priorities? E.g. compute the cfg load between? Already loads.
+
+  Honestly, brute permuter tried 300 variants. Let me try V8 and V11-ish quickly.
+
+  V8 first: `for (i = 0, cb = (void*)func_02082fec; i < 2; i++)` with kind in-loop.
+
+• While-form didn't help either. Trying `cb` assigned in the for-init after `i`, with `kind` still in-loop.
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=4/94
+• Same as state2/4: correct order, cb→r7, kind→r6. Consistent: whenever cb's load is scheduled before the mov (correct order), cb gets r7. Whenever cb in-loop (load after mov), cb gets r6.
+
+  So: allocation correlates with final scheduled position?? In correct-order states (ldr, mov, and): cb (pos2) → r7; and (pos4) → r6. In state3 order (mov, ldr, and): ldr (pos2) → r6; and (pos3) → r7. So the EARLIER-scheduled of {cb,and} gets... state2: cb earlier → r7; state3: cb earlier → r6. Contradiction again! Unless it's about position relative to mov r8: whoever is before the mov gets r7, after gets r6? state2: cb before mov → r7. state3: cb after mov → r6. state1: cb before and, both... state1 order: ldr cb(r6), and(r7), mov. cb before mov → r6?! Contradiction with state2.
+
+  Grr. state1: ldr fp, ldr r6(cb), and r7(kind), mov r8. cb→r6, kind→r7.
+  state2: ldr fp, ldr r7(cb), mov r8, and r6(kind). cb→r7, kind→r6.
+
+  Allocation = pre-schedule linearization live-start order? state1: cb def before kind def textually (both pre-loop) → cb r6, kind r7 ascending. state2: cb pre-loop, kind hoisted: allocation cb r7, kind r6 → kind's live start before cb's. So hoisted and lands BEFORE the ldr cb in linearization (at top of preheader). To get kind→r7 in state2, the and must land after the ldr cb in linearization. LICM insertion point may be the very top of the preheader. What if there's ANOTHER hoisted invariant that lands at top, and ldr cb... no, cb is not hoisted (pre-loop).
+
+  What if cb is ALSO hoisted but appears earlier in the body than the and, and the init mov is... state3: cb in-loop first → hoisted: ldr, then and (body order), placed after mov: linearization mov, ldr, and → live starts: i(r8)?? i got r8 in all states. Order of live starts state3: cfg(fp), i(r8)?, cb(r6), kind(r7). Hmm i before cb → r8 < ? so allocation isn't simply ascending reg by live-start (fp=11, r8=8, then r6, r7??). Maybe allocation picks registers by live-start order from a preference list like [r4, r5, ..., r12] skipping used: cfg→r11? weird. Whatever — pattern: in state3, live-start order [cfg, i, cb, kind] gave [fp, r8, r6, r7]. In state1, [cfg, cb, kind, i] → [fp, r6, r7, r8]. Consistent with preference list: 1st→fp(r11), 2nd→r6?? no: state1 2nd=cb→r6, 4th=i→r8; state3 2nd=i→r8, 3rd=cb→r6, 4th=kind→r7. So mapping: position1→fp, position2→r6 in state1 but position2→r8 in state3. Inconsistent... unless the preference is per-instruction-type (mov → r8?). 
+
+  Enough theory. Try: state2 with a dummy pre-loop invariant between cb and the loop whose live range starts before the hoisted and and which collapses to... no, extra instructions change size.
+
+  Different: can I get the and's def into the preheader as a NORMAL statement scheduled after the mov? What if kind is computed INSIDE the loop but the loop is peeled once by the compiler? no.
+
+  What about computing kind from `i`: kind = (u8)(a1 | (i - i))? folds. 
+
+  Alternative: make the mov r8 itself generated by LICM? If the loop counter init were loop-invariant code motion... it's the init.
+
+  Try: `u16 i = 2;` counting DOWN? Changes loop shape (cmp at 0, etc.) — body uses i as index 0,1, so no.
+
+  Try: make the and depend on the ldr cb's register so it's scheduled after ldr: it already is in state2 (schedule fine). State2's ONLY problem is reg numbers. What if I swap the USES: make cb stored as byte and kind as word? No, changes offsets.
+
+  What if I change the TYPE of kind to `int` (kind = a1 & 0xff pre... in-loop `o->f98 = (u8)a1`): try `o->f98 = (a1 & 0xff);` regressed badly earlier (extra and not hoisted? it produced 0xc0 size). Actually that attempt had `a1 & 0xff` and grew size. Hmm but that was odd — maybe because & 0xff on int then implicit conversion... Let me instead try in state2: `o->f98 = (u8)(a1 & 0xff);` — same as (u8)a1 probably.
+
+  Try changing what register r7 vs r6 by changing the and to a different instruction that still matches: no, must be and r7,r1,#0xff.
+
+  Alternative: swap the roles! Make the LOOP COUNTER live in r7 and kind in r8? ROM has counter r8. No.
+
+  Hmm, what about making cb's temp created by the CALL: e.g. cfg and cb both... 
+
+  Try state2 + `kind` declared as `u8 kind;` at top and assigned in body before use: `kind = (u8)a1; o->f98 = kind;` — I did try (same as state2 result). OK.
+
+  Try: state2 with kind computed in the loop-increment: `for (i = 0; i < 2; i++, kind = (u8)a1)` — kind assigned in increment; first iteration uses uninit kind? Body uses kind → compiler warns, and the and lands in the tail — LICM may hoist it since invariant. Try: keep body o->f98 = kind, with kind pre-initialized... Actually simpler: `for (i = 0, kind = (u8)a1; ...)` — kind in for-init AFTER i: init order mov r8, and r7! Textually! For-init with comma: i=0 then kind=(u8)a1 → emits mov r8,#0; and r7, r1, #0xff in that order?? And cb pre-loop. Allocation: live starts cfg, cb, i, kind → hopefully fp, r6, r8, r7? state1 order [cfg,cb,kind,i]→[fp,r6,r7,r8] suggests 3rd→r7, 4th→r8; here kind 4th → r8?? and i 3rd → r7. That would swap counter/kind regs — bad. But try anyway; allocation heuristics unclear.
+
+• Same flipped-reg state. Trying `kind` in the for-init after `i` (textual order: `mov r8`, then `and r7`).
+
+   off                         target | candidate
+0x0054     0080            mov r8, #0 |     ff70 and r7, r1, #0xff    
+0x0056     a0e3            mov r8, #0 |     01e2 and r7, r1, #0xff    
+0x0058     ff70     and r7, r1, #0xff |     0080 mov r8, #0           
+0x005a     01e2     and r7, r1, #0xff |     a0e3 mov r8, #0           
+RESULT match=False mismatches=4/94
+• Back to and-before-mov (regs correct!). So kind in for-init = treated like pre-loop: allocation correct, but the and hoisted above the loop-init mov.
+
+  So the pattern: whenever kind's def is a "statement" (pre-loop or for-init), allocation is correct (kind r7) but the and schedules before the mov. When kind's def comes from the loop body (LICM), the and schedules after the mov but kind gets r6.
+
+  The scheduler apparently hoists the preheader and above the loop-init mov. What stops it in ROM? Maybe in the ROM the and was scheduled AFTER because r7 was still occupied / the mov had higher priority due to loop-carried dep. What creates such priority? Hmm.
+
+  Key: in state3 (LICM), final order was mov, ldr, and. So instructions coming from LICM are appended after the init and NOT re-hoisted. While a source-level and IS re-hoisted above the init. So the difference is LICM vs source statement. Thus to get schedule ldr, mov, and: need ldr before mov (so cb must be a source-level statement pre-loop — it stays put, not moved below the mov) AND the and must come from LICM (in-loop kind). That's exactly state2/4/8 — which gives kind r6.
+
+  So now ONLY fix allocation in state2: kind→r7, cb→r6. Think about how mwcc allocates: probably a graph-coloring or linear-scan over the pre-schedule linearization. In state2, pre-schedule linearization might be: [early block], ldr fp(cfg), ldr(cb)... wait if linearization had ldr cb before the and, live-start cb < kind. But cb got r7 and kind r6. If linear-scan assigns from preference order r4,r5,r6,r7,r8..., earliest live-start gets LOWEST free: cb→r6, kind→r7. Not the case. If assignment is by live-range END (last use): both end in loop... kind used at strb f98 (0xb0), cb at str f90 (0xb8): kind's last use BEFORE cb's. If allocation order = last-use order (shortest/earliest-ending first): kind first → r6, cb → r7. Matches state2! Check state1: same last-use order (kind before cb in body) → kind→r6? But state1 gave kind r7, cb r6. Contradiction. Unless in state1 last uses differ... same body. Hmm.
+
+  State1 vs state2 allocation flip: the only difference is where kind's def is. Maybe it's temp numbering: allocator processes temps in creation order and assigns: state1 creation: cfg, cb, kind, i → cb r6, kind r7: creation order → ascending regs (r6, r7, r8 for cb, kind, i; cfg→fp?). state2 creation: cfg, cb, i, ..., kind(in-loop, created later) → cb r6?? but cb got r7! Damn.
+
+  Wait maybe I misassigned: in state2, is r6 really kind? diff: candidate at 0x50: `ldr r7` (cb load in position of ROM's ldr r6); 0x58: `and r6`. Yes: cb→r7, kind→r6.
+
+  OK brute-force more variants around state2 to flip regs:
+
+  (a) state2 + declare cb with different type (e.g. `void (*cb)(void) = func_02082fec;` then `o->f90 = (void *)cb;`).
+  (b) state2 + cfg also loaded in-loop? cfg is fp — matched, don't touch... though maybe.
+  (c) state2 + make kind's use a u16? no.
+  (d) state2 + swap names: use two cbs? 
+
+  Try (a):
+
+• Allocation correct but order flipped again. Back to state 2 shape, now varying `cb`'s type to nudge its register.
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=4/94
+• Same. Let me think about the actual mwcc allocation mechanism differently. 
+
+  Compare the two 4/94 states precisely:
+  - State A (kind pre-loop stmt): regs perfect; schedule: ..., and, mov (wrong).
+  - State B (kind in-loop): schedule perfect; regs swapped.
+
+  What if kind's def is pre-loop statement but the scheduler is prevented from hoisting the and because r7 is BUSY until after the mov? What else uses r7... In state A, could I make the and's destination depend on... 
+
+  Alternative: give the scheduler a reason to issue mov r8 first: make the and use a register that is only free after the mov? The and writes r7. If r7 were live until the mov... What lives in r7 in state B? kind itself. Circular.
+
+  Different: what if the `and`'s INPUT is not r1 but a temp that is created after the mov? E.g., kind = (u8)a2 where a2 is a copy of a1 made... a copy would be a mov instruction — extra bytes. Unless the copy is free: e.g., the function takes a1, and something like `a1 = a1 & 0xff` ... same.
+
+  What about making r1 live longer so the and can't be early? No — and READS r1; reading early is fine.
+
+  Key insight attempt: why does the scheduler hoist the and above the mov? Maybe mwcc schedules by "as late as possible" or list-schedules from the BOTTOM of the block upward? Bottom-up scheduling: instructions near block end scheduled first, placed... In bottom-up, the LAST instruction (mov, if textually last) gets scheduled first and stays at the end?? ROM has mov at 0x78 and and at 0x7c — mov BEFORE and. In state A textual order: and then mov (and textually before since mov is loop-generated, appended last). Bottom-up scheduling preserving textual order gives and, mov. In state B textual: mov, ldr, and → preserved. So the scheduler preserves textual order, no reordering (except loads?). Then the only way to get ROM order textually: ldr cb (pre-loop stmt), mov (loop init), and (LICM-hoisted). That's state B. So allocation must be fixed in state B.
+
+  State B allocation: cb→r7, kind→r6. Need cb→r6, kind→r7. Allocation likely happens BEFORE scheduling/linearization ordering, on a linearization where the hoisted and is placed... where? If placed right after the ldr cb, then live starts: cfg, cb, kind → allocation gave cb r7, kind r6 — so NOT first-come-first-served ascending. Maybe preference order is r7 before r6? Check state A: cb→r6, kind→r7 — if preference were r7-first, cb would get r7. Contradiction. So allocation order differs between A and B.
+
+  Temp creation order: A: cfg, cb, kind, i → cb r6, kind r7, i r8. B: cfg, cb, i, kind → cb r7?? i r8, kind r6. If assignment is by creation order with preference list [fp?, r6, r7, r8...]: A: cfg→fp?, cb→r6, kind→r7, i→r8 ✓. B: cfg→fp, cb→r6?? ✗ (cb got r7). If preference [fp, r7, r8, r6]: B: cfg→fp, cb→r7, i→r8, kind→r6 ✓ but A fails.
+
+  Unless in B the temps are created in order cfg, i, cb, kind?? preference [fp, r8, r7, r6]: B ✓ (cfg fp, i r8, cb r7, kind r6); A with creation cfg, cb, kind, i → cfg fp, cb r8? ✗.
+
+  Hmm. What if in A creation order is cfg, i, cb, kind? i is declared/used... A: `cfg, cb, i=0, kind` was my edit but original candidate A had `cfg, kind, cb, i`?? Let me recheck: the ORIGINAL candidate (state A original): order was cfg, kind, cb, i — gave and-before-mov with CORRECT regs (r7=kind, r6=cb). Creation order: cfg, kind, cb, i. If preference [fp, r7, r6, r8]: cfg→fp, kind→r7 ✓, cb→r6 ✓, i→r8 ✓!! 
+
+  Now B: creation cfg, cb, i, kind with preference [fp, r7, r6, r8]: cfg→fp, cb→r7 ✓(matches!), i→r6?? but i got r8. ✗. Hmm. Unless i is special (induction variable allocated with the loop). Let's test the hypothesis: allocation = temp creation order, preference [fp, r7, r6, ...] with i pinned to r8 by loop machinery.
+
+  B creation order: cfg, cb, (i), kind → cb→r7, kind→r6 ✓ matches observed!
+  A-original creation: cfg, kind, cb, (i) → kind→r7, cb→r6 ✓ matches!
+
+  So to flip B: make kind's temp created BEFORE cb's temp, while keeping kind's def in-loop (LICM) and cb pre-loop. Creation order is by first appearance in source? In B, cb appears (assignment) before the loop; kind first appears in the body. To make kind's temp exist earlier: DECLARE kind and assign it pre-loop? That becomes state A. What about declaring kind and taking its address? no.
+
+  What about: `u8 kind;` declared, and pre-loop do `kind = 0;`? dead init removed, but temp created early? Then in-loop `kind = (u8)a1;` reassign — SSA might create a second temp anyway.
+
+  Alternatively make cb's temp created LATER: declare cb but assign it... cb must be assigned pre-loop (to keep ldr before mov). What if cb is assigned pre-loop but the ldr temp... the assignment IS the creation.
+
+  Hmm — what about creating kind's temp pre-loop via a dummy use that compiles to nothing, e.g. `if (kind == 0xFF) ...` no, uninit.
+
+  What about using a1's cast pre-loop in a way that's dead: `(void)(u8)a1;`? Dead code eliminated, probably no temp.
+
+  Try: `u8 kind = (u8)a1;` pre-loop (temp created), then inside loop REASSIGN `kind = (u8)a1;`? Compiler sees redundant; keeps one and. Where? The in-loop assignment dominates use; pre-loop init dead → eliminated; temp created... at first assignment pre-loop? Try it:
+
+  ```
+  u8 kind;
+  kind = (u8)a1;      // but this makes it state A...
+  for (...) { ...; kind = (u8)a1; o->f98 = kind; }
+  ```
+  The pre-loop kind is dead (overwritten before use) → removed; remaining and in-loop → LICM. Temp creation might follow the surviving assignment. Probably same as B. But cheap to try.
+
+  Alternative: flip preference by making cb's temp created after kind: assign cb INSIDE the loop but as the LAST body statement, and rely on... that was tried? No — I tried cb as FIRST body statement (state3) and cb assignment before call (state5). What about cb as last body statement: `o->f90 = cb = (void*)func_02082fec;`? or assign then store:
+  ```
+  o->f98 = (u8)a1;
+  cb = (void*)func_02082fec;
+  o->f90 = cb;
+  ```
+  Hoist order: and, ldr → but then ldr scheduled after and? ROM: ldr, mov, and. This gives mov, and, ldr? or and... The LICM places in body order: and first, ldr second, both after mov → mov, and, ldr — wrong order. Hmm but wait, in state3 (cb FIRST in body): result was mov, ldr, and — hoisted in body order ✓. So cb last → mov, and, ldr — the ldr at end. Wrong.
+
+  But allocation-wise: creation order cfg, (i), kind, cb → kind→r7, cb→r6 ✓!! But schedule wrong (ldr last). Unless the scheduler then hoists the LOAD above... In state A the scheduler DID hoist the and above the mov — so it does reorder! Maybe the scheduler would hoist the ldr too: mov, and, ldr → reorder loads early: ldr... where? Scheduler moved and (ALU) above mov — so it's not load-specific. If scheduler prioritizes... in state A, why and-before-mov? Ugh.
+
+  Let me just try: cb assigned as last body statement.
+
+• Hypothesis: allocation follows temp creation order, so `kind` must be "created" before `cb`. Trying `cb` assigned at the end of the loop body (after the `f98` store).
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     0080 mov r8, #0           
+0x0052     9fe5   ldr r6, [pc, #0x60] |     a0e3 mov r8, #0           
+0x0054     0080            mov r8, #0 |     5c60 ldr r6, [pc, #0x5c]  
+0x0056     a0e3            mov r8, #0 |     9fe5 ldr r6, [pc, #0x5c]  
+RESULT match=False mismatches=4/94
+• Interesting! Now: regs CORRECT (cb r6, kind r7 presumably — the diffs show only mov/ldr swap). Schedule: candidate: ldr fp, mov r8, ldr r6, and r7? Wait diff: 0x50: target ldr r6, cand mov r8; 0x54: target mov r8, cand ldr r6. So candidate order: ldr fp, mov r8, ldr r6, and r7. Even with cb assigned LAST in body, the hoisted ldr came before the and? and after the mov. Same as state3. So the ldr-vs-and order is not body order; loads hoisted first?
+
+  Current diff: only need to swap mov r8 and ldr r6 order. ldr fp is at 0x4c (before), matches. So candidate: ldr fp(0x4c), mov r8(0x50), ldr r6(0x54), and r7(0x58). Target: ldr fp, ldr r6, mov r8, and r7.
+
+  Why does ldr fp come before mov but ldr r6 after? ldr fp is a pre-loop statement (cfg = &data_02155a14 before loop). ldr r6 is LICM-hoisted → placed after init mov. So: if BOTH constant loads are pre-loop statements and the and is LICM-hoisted → order ldr, ldr, mov, and = ROM! That's... state2! State2: cb pre-loop, kind in-loop → order was correct (ldr fp, ldr cb, mov, and) ✓ but regs flipped cb→r7.
+
+  But NOW with cb assigned in-loop-last, regs are correct. Combine: I need cb's LOAD to be a pre-loop statement (for schedule) but cb's temp to be created AFTER kind's temp (for allocation). Hmm.
+
+  What if there are TWO cb variables? cb1 assigned in-loop (dead?), cb2 pre-loop... 
+
+  Alternative: make kind's temp created earlier than cb's while cb's assignment stays pre-loop: e.g. declare kind and reference it pre-loop in a dead-but-not-eliminable way? Like `kind = (u8)a1;` pre-loop AND in-loop reassign? Try:
+
+  ```
+  u8 kind;
+  kind = (u8)a1;                 // creates temp early; maybe dead
+  cb = (void*)func_02082fec;
+  for (...) { ...; kind = (u8)a1; o->f98 = kind; ...}
+  ```
+  Wait but if pre-loop kind=(u8)a1 survives (if the in-loop reassign is seen as redundant and removed instead!), then we're at state A (and before mov). Compiler removes the REDUNDANT one: in-loop reassign of same value — it would eliminate the in-loop assignment and use the pre-loop value → state A. Bad.
+
+  What if the pre-loop creation is not an assignment but something that creates the temp without surviving: e.g. `kind;`? no. Volatile? regressed.
+
+  Reverse approach: make the ldr r6 (cb load) come from a pre-loop statement while the temp is created late — impossible, the load IS the assignment.
+
+  Alternative: make the mov r8 come EARLIER — as a pre-loop statement that the compiler doesn't move into loop-init. In the while-test, i=0 pre-loop still got moved after the and. But was it? In while-test, order was and, mov — and was pre-loop statement, mov loop-generated. Scheduler hoists... hmm wait, actually maybe the scheduler DOES reorder: in the while test, textual order was ldr fp, ldr r6?, mov(i=0 stmt), and — wait no, in my while test, order was: cfg, cb, i=0, kind — textual: ldr fp, ldr r6, mov r8, and r7 — EXACTLY ROM ORDER. But output was and-before-mov! So the scheduler DID reorder and above mov. So the scheduler reorders: it moved the and up. Why?? Maybe priority: the and's result r7 has a use... or the scheduler is bottom-up and and is CLOSER to its use? No...
+
+  If the scheduler moves ALU ops with ready operands above movs, maybe priority = "number of uses" or "slack". mov r8's first use is inside the loop (far). and r7's first use also inside loop (strb at 0xb0 vs add at 0x94). add r1, r8, #1 is at 0x94 — EARLIER than strb r7 at 0xb0. Hmm.
+
+  Whatever the priority, ROM managed mov-first. In state B (LICM and), the scheduler did NOT move the and above the mov. So LICM-generated code is frozen post-scheduling (schedule runs before LICM? or LICM runs last). So: mov and ldr positions: in the current state, mov(0x50) before ldr r6(0x54) — LICM placed the ldr after the loop. ldr fp at 0x4c was scheduled (pre-LICM) before the loop. So final order = [scheduled pre-loop code][loop-init][LICM-hoisted in body/invariant order][loop].
+
+  ROM order: ldr fp, ldr r6, mov r8, and r7 = [ldr fp, ldr r6 both pre-loop-scheduled][mov r8 loop-init][and r7 LICM-hoisted]. So the original had: BOTH loads as pre-loop statements (like our cfg and cb), the and from an in-loop expression (LICM). That's exactly state2!! And state2's allocation mismatch means my model of allocation is off, or state2's temp creation order differs from ROM's.
+
+  In state2: temps created: cfg(pre), cb(pre), i, kind(in-loop). Allocation: cb→r7, kind→r6. In ROM: cb→r6, kind→r7. If allocation were creation-order with preference [r6, r7, ...]: cb first → r6 ✓ ROM; state2 cb→r7 ✗. So in state2 the allocation didn't follow that. What differs? In state2, cb is used ONLY inside the loop — maybe the compiler first creates a temp for `(void*)func_02082fec` constant... Both are constant loads from literal pool. cfg gets fp (r11!). Why r11/fp for cfg? fp is unusual — suggests allocation preference list is like [r7, r6, ..., fp]? If preference descending weird: state2 creation cfg→fp?...
+
+  Let me instead test: state2 but with cb declared/assigned BEFORE cfg in source:
+  ```
+  cb = (void*)func_02082fec;
+  cfg = &data_02155a14;
+  for (...) {...}
+  ```
+  If allocation follows creation order, cb→fp?! and cfg→r7? That would break cfg=fp. Risky but informative. Actually ROM has cfg→fp (r11). Hmm fp=r11 is typically frame pointer — mwcc uses fp as general reg here. 
+
+  Alternative experiment: state2 with an EXTRA pre-loop invariant to probe preference: nah, changes bytes.
+
+  Let me try swapping declaration order of cb and cfg:
+
+• Regs correct now, but the hoisted `ldr r6` lands after the loop-init `mov`. Probing allocation order: swap `cb` before `cfg` in source (state-2 shape).
+
+   off                         target | candidate
+0x004c     60b0   ldr fp, [pc, #0x60] |     6080 ldr r8, [pc, #0x60]  
+0x0050     6060   ldr r6, [pc, #0x60] |     60b0 ldr fp, [pc, #0x60]  
+0x0054     0080            mov r8, #0 |     0070 mov r7, #0           
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x0072     88e2        add r1, r8, #1 |     87e2 add r1, r7, #1       
+0x0078     0821 add r2, r2, r8, lsl # |     0721 add r2, r2, r7, lsl #
+0x0084     9b80  strb r8, [r0, #0x9b] |     9b70 strb r7, [r0, #0x9b] 
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0090     2188     lsr r8, r1, #0x10 |     2178 lsr r7, r1, #0x10    
+0x0094     9060   str r6, [r0, #0x90] |     9080 str r8, [r0, #0x90]  
+0x009a     58e3            cmp r8, #2 |     57e3 cmp r7, #2           
+RESULT match=False mismatches=11/94
+• Very informative! Swapping decl/assign order caused: first-assigned (cb) got r8?? no wait: candidate: ldr r8 (cb?), ldr fp (cfg), mov r7 (i!), and r6 (kind). So allocation order followed assignment order: cb→r8, cfg→fp, i→r7, kind→r6?? Hmm: 0x4c ldr r8 = first load = cb (assigned first). 0x50 ldr fp = cfg. mov r7 = i. and r6 = kind.
+
+  So allocation preference by assignment order: 1st→r8?? That contradicts earlier. Wait earlier cfg first → fp. Now cb first → r8?! Not consistent unless preference depends on USE: cfg is used as call argument (must survive call, used in r1 setup); maybe the allocator assigns by live-interval and the choice differs.
+
+  Actually maybe allocation is linear-scan by live range start with preference list [r4,r5,r6,r7,r8,...] but with some temps pre-colored. In this version: registers used: r8(cb), fp(cfg), r7(i), r6(kind). In state2 (cfg, cb, i, kind-in-loop): fp(cfg), r7(cb), r8(i), r6(kind). In state A (cfg, kind, cb, i pre-loop): fp(cfg), r7(kind), r6(cb), r8(i).
+
+  Look at "i": state A i→r8; state2 i→r8; this version i→r7. "kind": A→r7, 2→r6, now→r6. "cb": A→r6, 2→r7, now→r8. "cfg": always fp.
+
+  Sum: in each version, the four regs {fp, r6, r7, r8} assigned to {cfg, cb, i, kind}:
+  A: cfg=fp, kind=r7, cb=r6, i=r8
+  2: cfg=fp, cb=r7, i=r8, kind=r6
+  now: cb=r8, cfg=fp, i=r7, kind=r6
+
+  Hypothesis: linear scan with preference [fp, r8, r7, r6]? A order of... what ordering maps? A: cfg→fp (1st pref), then? kind→r7, cb→r6, i→r8: prefs fp, r8, r7, r6 with order cfg, i, kind, cb ✓ if order were cfg, i, kind, cb. 2: cfg→fp, i→r8, cb→r7, kind→r6: order cfg, i, cb, kind ✓. now: cb→r8?? order would be cfg→fp, cb→r8, i→r7, kind→r6: cfg, cb, i, kind ✓ if ordering is by LIVE RANGE START: now: cfg live starts at its def (0x50, after cb's def at 0x4c)... cb def first → cb should be 1st → fp? ✗ (cfg got fp).
+
+  Hmm, cfg always fp regardless. Maybe fp is preferred for a value used as a call argument? Or preference list [fp, r8, r7, r6] and ordering by something: A: kind before cb; 2: cb before kind; now: cb before i?? In "now", i's live range: def after cb & cfg. Ordering [cfg, cb, i, kind] = def order! with prefs [fp, r8, r7, r6]: cfg→fp, cb→r8, i→r7, kind→r6 ✓✓.
+  2: def order cfg, cb, i, kind → cfg→fp, cb→r8?? ✗ (cb got r7, i got r8). ✗.
+
+  Ordering by something else: in 2, kind's def is in-loop (hoisted). Maybe ordering = [cfg] + [loop-related in some order]. In 2: i→r8, cb→r7, kind→r6 = order i, cb, kind with prefs r8, r7, r6 (descending!). In A: i→r8, kind→r7, cb→r6 = order i, kind, cb descending prefs. In "now": cb→r8, i→r7, kind→r6 = order cb, i, kind.
+
+  Descending preference [r8, r7, r6] after fp. Order among {cb, i, kind}:
+  A (cfg, cb, i, kind all pre-loop): i, kind, cb → reverse def order! (defs: cb, i, kind... wait A source: cfg, cb, i=0, kind — my first edit. Original A was cfg, kind, cb, i → allocation kind r7, cb r6, i r8: order i, kind, cb = reverse def (i, cb, kind)? reverse of (kind, cb, i) is (i, cb, kind) — that gives i→r8, cb→r7, kind→r6 ✗. Original A had cb→r6. So order i, kind, cb. Def order was kind, cb, i. Reverse: i, cb, kind ✗. Not reverse.
+
+  Try ordering by LAST USE (descending pref to earliest last-use?): all end in loop. 
+
+  Alternative: allocation is graph-coloring with preference = avoiding call-clobbered... all are callee-saved (r6, r7, r8, fp all saved). Maybe it minimizes... The call func_0208b7bc is inside the loop; all four live across it.
+
+  Empirical table (order of assignment in source → reg):
+  - cfg always fp (3/3 where cfg assigned first; also in "now" cfg assigned 2nd, still fp!). So cfg → fp always. Interesting! In "now", cb assigned before cfg, but cfg still got fp. So cfg is special (used as call arg → maybe must be in a reg that's... r11? no obvious reason).
+
+  Remaining {cb, i, kind} → {r6, r7, r8}:
+  A1 (orig: kind, cb, i): kind→r7, cb→r6, i→r8
+  A2 (my edit: cb, i, kind): cb→r6, i→r8, kind→r7 (same as A1!)
+  So A1/A2 identical allocation despite different order → for pre-loop all-statements, allocation is fixed: i→r8, kind→r7, cb→r6. Determined by something structural, not order.
+
+  2 (cb pre, i loop, kind in-loop): cb→r7, i→r8, kind→r6.
+  3/5 (cb in-loop, i loop, kind in-loop): cb→r6, i→r8, kind→r7.
+  now (cb pre, cfg after, i loop, kind in-loop): cb→r8, i→r7, kind→r6?!? i moved to r7!
+
+  Hmm "now" broke i→r8 because... cb→r8. 
+
+  Pattern guess: linear-scan over live intervals sorted by start point, preference descending [r8, r7, r6]:
+  A: intervals start: cfg(1st), then cb/kind/i all pre-loop... starts: cfg < others. If order by start: kind(2nd stmt)? A2 starts: cfg, cb, i, kind → assign descending: cb→r8? ✗ (cb=r6).
+
+  Sort by start with ASCENDING preference [r6, r7, r8]: A2: cb→r6 ✓, i→r7?? ✗ (i=r8). ✗.
+
+  Sort by END of live range? All end in loop at their last use: cfg used at call (0x88, earliest), cb at 0xb8, kind at 0xb0, i at 0xbc (cmp, latest). Order by end: cfg, cb, kind, i. Assign preference [fp, r6, r7, r8]: cfg→fp, cb→r6, kind→r7, i→r8 ✓✓ A!
+  2: same body → same end order: cfg, cb, kind, i → cfg fp, cb r6 ✗ (cb got r7). DAMN.
+
+  Unless in 2, cb's live range... same. Hmm but wait — maybe the scheduler's reordering changes last-use? No, uses same.
+
+  What differs between A and 2 in allocation inputs? Only kind's def location. If allocation is by end-order with preference [fp, r6, r7, r8], both should be identical. They're not. So allocation includes def position. Linear scan typically sorts by start. A starts (scheduled positions): cfg@0x4c, cb@0x50, kind@0x54(and before mov), i@0x58. 2: cfg@0x4c, cb@0x50, i@0x54, kind@0x58.
+  Preference? If sorted by start and preference [fp, r6, r7, r8]: A: cfg→fp, cb→r6, kind→r7, i→r8 ✓. 2: cfg→fp, cb→r6?? ✗ observed cb→r7. ARGH. Unless allocation runs on the PRE-schedule linearization: 2 pre-schedule: cfg, cb... where's the hoisted and? If LICM placed the and BEFORE the ldr cb in the preheader: pre-sched order: cfg, kind(and), cb(ldr), i(mov)?? wait i(mov) position... If pre-sched: cfg, kind, cb, i → allocation with pref [fp, r6, r7, r8]: cfg→fp, kind→r6 ✓, cb→r7 ✓, i→r8 ✓!! MATCHES state2!!
+
+  Check "now": pre-sched order? cb def'd pre-loop first, cfg second, and hoisted... observed: cb→r8, cfg→fp, i→r7, kind→r6. Pref list [fp, r8, r7, r6]? order cfg, cb, i, kind → cfg→fp, cb→r8, i→r7, kind→r6 ✓. But then pref isn't [fp, r6, r7, r8]... contradiction with state2 (cb→r7 there; if pref were [fp, r8, r7, r6]: order cfg, kind, cb, i → cfg fp, kind r8?? ✗ kind was r6).
+
+  OK allocation modeling is a rabbit hole. Empirical: state3/5/now-family (cb assigned in-loop) gives kind→r7, cb→r6 CORRECT, with schedule mov, ldr, and (ldr after mov). State2-family (cb pre-loop) gives correct schedule but cb→r7.
+
+  In "now" (cb pre-loop before cfg): cb→r8 — even worse.
+
+  What if cb pre-loop AND kind in-loop AND we add ANOTHER pre-loop invariant to absorb r6? If allocation pre-sched order is cfg, kind(hoisted), cb, i with pref [fp, r6, r7, r8], then kind→r6. If we add a dummy invariant X whose pre-sched position is between cfg and kind, X→r6, kind→r7, cb→r7?? collision... pref continues r8: cb→r8, i→? breaks. No good unless X disappears — impossible.
+
+  What about making the hoisted and land AFTER the ldr cb pre-sched? LICM inserts hoisted code at the START of the preheader apparently (before existing preheader statements like ldr cb). What if ldr cb is NOT in the preheader but inside the loop pre-LICM and hoisted too — that's state3 (both hoisted, insertion order: cb-temp? we saw ldr, and final order mov, ldr, and). Pre-sched order state3: probably cfg, i, cb, kind? giving cb→r6, kind→r7 with pref [fp, r8?...]. 
+
+  Actually for state3, observed: cb→r6, kind→r7, i→r8, cfg→fp. If pref [fp, r8, r6, r7] order cfg, i, cb, kind ✓. For state2 with same pref: order cfg, i?, ...: observed cb→r7, kind→r6: order would need kind before cb with kind→r6?? pref[2]=r6: order cfg(fp), i?(r8)... if i→r8 then kind→r6, cb→r7: order cfg, i, kind, cb ✓. For state A: cfg→fp, i→r8, kind→r7?? but pref[3]=r6... observed kind→r7, cb→r6: order cfg, i, cb, kind → cb→r6 ✓, kind→r7 ✓!!
+
+  So with pref [fp, r8, r6, r7]:
+  - A: order cfg, i, cb, kind ✓
+  - 2: order cfg, i, kind, cb ✓
+  - 3: order cfg, i, cb, kind ✓
+
+  So the allocation ORDER of cb vs kind flips between A/3 (cb before kind) and 2 (kind before cb). In 2, kind's temp is "created" before cb's?? Even though cb assigned pre-loop... maybe because in 2, cb's ldr temp is created when the constant pool load is generated, which happens LATE (constants materialized at first use in the loop?) while kind's and temp is created when LICM processes... 
+
+  If ordering = [cfg, i] + (cb, kind in the order their defs appear in the final scheduled code?):
+  - A scheduled: cb(0x50) before kind(0x54): order cb, kind ✓
+  - 2 scheduled: cb(0x50) before kind(0x58)?? kind last: order cb, kind → cb→r6 ✗. No.
+
+  Order of def in PRE-sched linearization:
+  - 2: kind before cb (as I guessed) ✓
+  - A: cb before kind ✓ (both pre-loop, source order cb-then-kind in A2; but original A1 was kind-then-cb and ALSO gave cb→r6, kind→r7 — meaning cb before kind in allocation order even when source kind-first! So in A1, allocation order cb before kind despite def order kind, cb. Hmm — because cb's def is a LOAD and loads materialize earlier? or because cb is used... 
+
+  In A1 source: cfg, kind, cb, i. Allocation order cb, kind. Why cb first? Maybe because ordering is by first USE: cb first used... all first used in loop: call(cfg), strb i (0x9b... actually i used at add 0x94), kind strb 0xb0, cb str 0xb8. First-use order: cfg, i, kind, cb ✗ (need cb before kind).
+
+  By LAST use: cfg(call 0x88), kind(0xb0), cb(0xb8), i(0xbc cmp): order cfg, kind, cb, i with pref [fp, r8, r6, r7]: cfg→fp, kind→r8 ✗.
+
+  Give up modeling; just brute force more combos around the two near-miss families. The remaining lever on state2: change cb's temp-creation timing while keeping its load pre-loop scheduled. Ideas:
+  - `cb = (void *)func_02082fec + 0;`? const-folded.
+  - Load cb through a global pointer? changes instruction.
+  - Make cb's value come from a different expression: `o->f90 = &func_02082fec;`? same load.
+
+  On state3-family (regs right, ldr after mov): make the ldr cb move before mov. Since LICM places hoisted stuff after the loop-init, what if there is NO loop-init mov because i is initialized by a pre-loop statement that stays (while-loop attempt showed i=0 moves into loop structure and the and got hoisted above it — but that was with kind pre-loop!). Combination NOT tried: i=0 pre-loop STATEMENT + cb in-loop + kind in-loop (while or for with empty init):
+
+  ```
+  cfg = ...;
+  i = 0;
+  for (; i < 2; i++) {
+      cb = ...;  // first body stmt
+      ...
+      o->f98 = (u8)a1;
+      o->f90 = cb;
+  }
+  ```
+  That's state5 exactly (tried: mov, ldr order wrong — mov r8 at 0x50 before ldr r6). Hmm state5 WAS this. Result: ldr r6 after mov r8.
+
+  What if i=0 pre-loop statement and cb in-loop and ALSO an and... the mov r8 in state5: was it scheduled as a pre-loop statement at 0x50 (right after ldr fp) — before the LICM ldr. So the mov stays with pre-loop code, LICM stuff comes after. In ROM, the ldr r6 comes BEFORE the mov — so the ldr r6 must be scheduled pre-loop code, NOT LICM-hoisted. But then (state2) allocation flips. UNLESS the temp-creation order issue can be fixed by creating kind's temp before cb's: kind is in-loop; cb pre-loop. What creates temps? Maybe declare kind and assign it... in state2, what if kind is declared and assigned pre-loop BUT ALSO reassigned in-loop with a DIFFERENT expression that computes the same and, preventing elimination: e.g. in-loop `o->f98 = (u8)a1;` uses a fresh expression — but the pre-loop kind assignment is then dead. Dead assignment eliminated — but maybe its temp creation already happened and numbering persists? If allocation follows temp numbers, a dead temp still consumes a number!
+
+  Try:
+  ```
+  u8 kind;
+  kind = (u8)a1;                 // dead, but maybe consumes temp slot
+  cb = (void*)func_02082fec;
+  for (i = 0; i < 2; i++) { ...; o->f98 = (u8)a1; o->f90 = cb; }
+  ```
+  If DCE removes the first and (it will), and temp numbering: kind temp created first... but the surviving and in-loop is a DIFFERENT temp. Numbering: kind1(dead), cb, i, kind2. If allocation order = creation order with some pref: cfg(fp), then? kind1 dead — removed before allocation probably. Risky, but cheap to test. Actually simpler variant of the same idea: make kind's in-loop def textually precede... cb is pre-loop; can't.
+
+  Alternative: swap which value is loaded vs anded: what if f90 gets a value needing an AND and f98 a constant? No, semantics fixed.
+
+  Test the dead-init variant now.
+
+• Allocation modeling is a dead end; testing empirically. Variant: state-2 shape plus a dead pre-loop `kind` assignment to shift temp creation order.
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=4/94
+• Dead init was eliminated (still state2: cb→r7, kind→r6). 
+
+  Hmm wait — actually maybe the compiler didn't eliminate the pre-loop and: the and at 0x58 is r6 (in-loop-hoisted?), and pre-loop kind is dead so removed. Yeah.
+
+  New idea: in state2, force kind's temp to be created before cb's by placing the FIRST use-related expression of kind earlier: e.g., declare kind and USE it in the cfg line? cfg = &data_02155a14; unrelated.
+
+  Alternatively: change the and to be computed from a load? ROM: and r7, r1, #0xff — r1 is the raw argument.
+
+  Different structural idea: what if the mask comes from the SIGNATURE: `int func_02083a24(Owner *a0, u8 a1, Sub *sub)`? Then a1 arrives already masked... but mwcc ABI: u8 arg passed in r1; callee may assume upper bits garbage per AAPCS? Actually for u8 params, the caller ensures... mwcc might emit NO and (trusts zero-extension) or still and. If no and, mismatch. But maybe it emits the and AND allocates differently. Cheap to try: with u8 a1 and in-loop `o->f98 = a1;` state2 shape.
+
+• Trying a signature-level change: declare `a1` as `u8` so the mask semantics come from the type.
+
+   off                         target | candidate
+0x0008     0290            mov sb, r2 |     0280 mov r8, r2           
+0x0012     d9e1  ldrh r2, [sb, #0x74] |     d8e1 ldrh r2, [r8, #0x74] 
+0x0028     0000            cmp r2, #0 |     0190 mov sb, r1           
+0x002a     52e3            cmp r2, #0 |     a0e1 mov sb, r1           
+0x002c     0200        bne #0x2083a60 |     0000 cmp r2, #0           
+0x002e     001a        bne #0x2083a60 |     52e3 cmp r2, #0           
+0x0030     2400   ldr r0, [r3, #0x24] |     0200 bne #0x2083a64       
+0x0032     93e5   ldr r0, [r3, #0x24] |     001a bne #0x2083a64       
+0x0034     0000            cmp r0, #0 |     2400 ldr r0, [r3, #0x24]  
+0x0036     50e3            cmp r0, #0 |     93e5 ldr r0, [r3, #0x24]  
+0x0038     0300        beq #0x2083a70 |     0000 cmp r0, #0           
+0x003a     000a        beq #0x2083a70 |     50e3 cmp r0, #0           
+0x003c     04d0        add sp, sp, #4 |     0300 beq #0x2083a74       
+0x003e     8de2        add sp, sp, #4 |     000a beq #0x2083a74       
+0x0040     0000            mov r0, #0 |     04d0 add sp, sp, #4       
+0x0042     a0e3            mov r0, #0 |     8de2 add sp, sp, #4       
+0x0044     f04f pop {r4, r5, r6, r7,  |     0000 mov r0, #0           
+0x0046     bde8 pop {r4, r5, r6, r7,  |     a0e3 mov r0, #0           
+0x0048     1eff                 bx lr |     f04f pop {r4, r5, r6, r7, 
+0x004a     2fe1                 bx lr |     bde8 pop {r4, r5, r6, r7, 
+0x004c     60b0   ldr fp, [pc, #0x60] |     1eff bx lr                
+0x004e     9fe5   ldr fp, [pc, #0x60] |     2fe1 bx lr                
+0x0050     6060   ldr r6, [pc, #0x60] |     5cb0 ldr fp, [pc, #0x5c]  
+0x0054     0080            mov r8, #0 |     5c60 ldr r6, [pc, #0x5c]  
+0x0056     a0e3            mov r8, #0 |     9fe5 ldr r6, [pc, #0x5c]  
+0x0058     ff70     and r7, r1, #0xff |     0070 mov r7, #0           
+0x005a     01e2     and r7, r1, #0xff |     a0e3 mov r7, #0           
+0x006a     d9e1  ldrh r3, [sb, #0x74] |     d8e1 ldrh r3, [r8, #0x74] 
+0x0072     88e2        add r1, r8, #1 |     87e2 add r1, r7, #1       
+0x0078     0821 add r2, r2, r8, lsl # |     0721 add r2, r2, r7, lsl #
+0x0080     9490   str sb, [r0, #0x94] |     9480 str r8, [r0, #0x94]  
+0x0084     9b80  strb r8, [r0, #0x9b] |     9b70 strb r7, [r0, #0x9b] 
+0x008c     9870  strb r7, [r0, #0x98] |     9890 strb sb, [r0, #0x98] 
+0x0090     2188     lsr r8, r1, #0x10 |     2178 lsr r7, r1, #0x10    
+0x009a     58e3            cmp r8, #2 |     57e3 cmp r7, #2           
+RESULT match=False mismatches=35/94
+• u8 param made things much worse (no and emitted; sb used for a1; r8/sb roles swapped). Revert to state2 (int a1, cb pre-loop, kind in-loop) — the 4/94 with cb→r7, kind→r6.
+
+  Remaining idea list for flipping r6/r7 in state2:
+  1. In state3 family (regs correct, ldr-after-mov), can I make the loop-init mov disappear/merge so the ldr lands first? What if the loop counts with the counter materialized differently — e.g., `for (i = 0; ...)` but unrolled manually? Manual 2x unroll changes everything.
+
+  2. What if cfg is ALSO assigned in-loop? Then both loads hoisted... cfg must be ldr fp BEFORE the call inside loop; hoisted: ldr fp, ldr r6, then mov? Placement of hoisted invariants after init mov → mov first, then ldr fp, ldr r6 — wrong (ROM has both loads before mov).
+
+  3. State2 with `kind` used ALSO in the f9b line? no.
+
+  4. What about making the `and` use r7's... Actually — flip perspective: in state2, candidate emits and r6 and strb r6→f98, str r7→f90, ldr r7=cb. What if I swap the MEANING: make cb the and-ed value?? No.
+
+  5. Try declaring `kind` BEFORE `cb` in declaration order only (assignments unchanged): declarations might drive temp numbering:
+  ```
+  u8 kind;
+  void *cb;
+  ```
+  with cb assigned pre-loop, kind in-loop. Tried? In "now" variant I swapped decl of cb/cfg. Not kind/cb decl order with state2 assignments. Cheap — try.
+
+  6. Try `register u8 kind;` / `register void *cb;` hints? mwcc may honor register keyword for allocation priority. Try `register` on kind.
+
+• `u8` param regressed badly. Reverting to state-2 and trying `register` hints to steer allocation.
+
+   off                         target | candidate
+0x0050     6060   ldr r6, [pc, #0x60] |     6070 ldr r7, [pc, #0x60]  
+0x0058     ff70     and r7, r1, #0xff |     ff60 and r6, r1, #0xff    
+0x008c     9870  strb r7, [r0, #0x98] |     9860 strb r6, [r0, #0x98] 
+0x0094     9060   str r6, [r0, #0x90] |     9070 str r7, [r0, #0x90]  
+RESULT match=False mismatches=4/94
+• `register` ignored. Same 4/94.
+
+  Think about state3 again (regs PERFECT: cb r6, kind r7; schedule: ldr fp, mov r8, ldr r6, and r7). Only need ldr r6 before mov r8. The ldr r6 is LICM-hoisted, placed after the loop-init. What if there were TWO things hoisted and the scheduler... hmm.
+
+  What if the loop init `i = 0` is NOT needed as a separate mov because i's initial value comes from a different construction? E.g., the loop counter could be materialized by the compiler from the and? `i = (u16)(a1 & 0)` → might emit `and r8, r1, #0` — wrong instruction (ROM has mov r8,#0... wait does it? ROM 0x78: e3a08000 = mov r8, #0. yes).
+
+  What if i starts from a value loaded? no.
+
+  Alternative: make the mov r8 part of the hoisted set: e.g. use a second induction... What if the loop is written as `for (i = 0; i < 2; i++)` but i's init comes from LICM of `i = 0` inside? no.
+
+  Different: what if cb's load is generated NOT by LICM but is a genuine pre-loop statement, and kind's and is LICM-hoisted — state2 — and we fix allocation by making cb's live range START before kind's in the pre-sched linearization. In state2, kind's and (hoisted) is inserted before cb's load pre-sched. What if I put a USE of cb before the loop that requires the load pre-loop anyway... e.g., `if (cb == 0) return 0;`? adds code.
+
+  What about two kinds: make the hoisted-and insertion happen at a point AFTER cb: LICM usually inserts into the preheader it creates; the preheader is placed before the loop but after existing statements. In state2, existing statements: cfg load, cb load. LICM preheader insertion should go AFTER them → and after ldr cb → live-start order cfg, cb, kind → but observed cb→r7, kind→r6 contradicts that linear-scan assumption... unless allocation isn't linear scan.
+
+  Alternatively maybe the and isn't LICM-hoisted in state2 at all; maybe it's SCHEDULED (the scheduler moved it after the mov, since scheduling happens... and in state A the scheduler moved it BEFORE the mov). Contradiction: same and, same pre-loop position, different placement? In state A kind was a named var assigned pre-loop; in state2 it's an anonymous in-loop expression. So in state2 the and IS from the loop body (LICM), placed after init — consistent with scheduler-preserves-textual-order. And in state A, textual order was and-then-mov (loop-init generated last) — consistent! And the while-test: i=0 textual before kind, but the compiler moved i=0 into the loop structure → textual became and, mov — consistent. And cb-in-loop (state3): textual: ldr fp, mov(init), ldr r6, and — LICM appended in order cb-then-kind? In state3 cb was FIRST in body and and later; appended order: ldr r6, and ✓ observed. In state-now (cb LAST in body): observed ldr r6 BEFORE and still — hmm, that breaks append-in-body-order... unless loads hoisted before ALU. Fine.
+
+  So the model: final order = pre-loop scheduled statements, loop-init mov, LICM-hoisted (loads first, then ALU?), loop. ROM = ldr fp, ldr r6, mov, and. Requires: cb load = pre-loop statement; and = hoisted. That's state2. Allocation in state2 gives cb→r7, kind→r6. 
+
+  Now, allocation model: let's tabulate again with pre-sched linearization guess = same as final order (scheduler preserves order):
+  - A: cfg, cb, kind, i (and before mov) → cb r6, kind r7, i r8. Pref by order: [fp, r6, r7, r8]? cfg→fp, cb→r6, kind→r7, i→r8 ✓.
+  - 2: cfg, cb, i, kind (final order ldr, ldr, mov, and) → observed cb r7, kind r6, i r8. With pref [fp, r6, r7, r8]: cfg→fp, cb→r6 ✗. So allocation order ≠ final order in state2. Pre-sched order must have been cfg, i, kind, cb?? giving with pref [fp, r8, ...]... 
+
+  Try pref list from state A: maybe pref isn't fixed; maybe allocation tries to match the temp's "natural" register based on use (e.g., strb vs str). 
+
+  Let me try yet another empirical probe: state2 with cb and kind body-use order swapped is impossible (store order fixed). Probe: state2 with an EXTRA use of cb after the loop? changes bytes? A dead use after loop: `return cb != 0;`? changes return. `if (cb == 0) return 0;` after loop before return 1 — adds instructions. No.
+
+  Probe: state2 where kind is used TWICE in body: `o->f98 = kind; o->f9b = kind + i - kind...` no.
+
+  Maybe simpler: in state2, does making kind's type `int` change allocation? `int kind;` assigned in-loop `kind = a1 & 0xff; o->f98 = (u8)kind;` — the and temp is int-typed; strb truncates. Try.
+
+  Or `u8 kind` but assigned `kind = a1 & 0xff` (int expr converted). Same and.
+
+  Actually, let me try the OPPOSITE structure: cb's load LICM-hoisted AND kind's and ALSO pre-loop?? A had and-before-mov. What if cb pre-loop, kind pre-loop, but with a dummy loop-invariant LOAD in the body that gets hoisted BETWEEN mov and and?... doesn't fix and/mov.
+
+  Hmm, what about making the and be scheduled (not LICM) but FORCING the loop-init mov before it by making the mov NOT loop-generated: unroll the loop completely! 2 iterations, manual:
+
+  ```
+  o0 = func_0208b7bc(...); slots[0]=o0; ...stores with 0...
+  o1 = func_0208b7bc(...); slots[1]=o1; ...stores with 1...
+  ```
+  That changes codegen massively (no loop, no r8 counter, cmp...). ROM has a loop. No.
+
+  What about `for (i = 0; i < 2; i++)` where the INIT is hoisted ldr-dependent... 
+
+  Actually, maybe revisit: is the and in state2 placed by the SCHEDULER (not LICM)? If scheduling happens after LICM, and the scheduler preserves order, state2's and placement = LICM placement = after mov. Then allocation happens... when? If allocation happens BEFORE LICM (on pre-LICM code), kind's temp in state2 is created IN THE LOOP BODY. Its live range: def in body, use in body. cb: def pre-loop, use in body. Linear scan by start: cb starts earlier → pref [fp, r6...]: cb→r6. ✗ observed r7. If allocation prefers... what if allocator assigns HIGHER regs to shorter live ranges? kind (short: within loop body iteration)... it's loop-carried? kind defined each iteration, used same iteration — short live range → r6 (lower?) hmm.
+
+  Try pref-by-live-range-LENGTH descending reg: state2: kind shortest → r6? cb longer → r7? i longest → r8? cfg → fp? state A: kind's live range: def pre-loop → use in loop = LONG (same as cb). Both long: cb→r6, kind→r7 — tie broken by def order ✓. State3: cb in-loop → short → should get r6 ✓, kind in-loop short → r7? both short, tie broken by def order (cb first) ✓✓!! state2: cb long → r7?, kind short → r6 ✓!! state A: cb long, kind long: cb r6, kind r7 (order) ✓. "now": cb pre-loop long?? but cb→r8 there. Hmm "now": cb first, cfg second: cfg→fp, cb→r8?? breaks (expected cb→r6 or r7). Unless in "now" the mov i→r7 because... i is loop var. Maybe i always gets r8 unless bumped. In "now" i→r7! So "now" is weird anyway (decl order cb, cfg disturbed everything).
+
+  Model: live-range length determines reg class: loop-local temps → low regs (r6, r7) by def order; loop-crossing temps → higher (r8); special call-arg → fp. Check:
+  - A: cb crosses (pre→in-loop), kind crosses, i crosses (loop var), cfg crosses+arg. All cross: assignment by ??? cb→r6, kind→r7, i→r8: def order ascending ✓ (cfg→fp special).
+  - 2: cb crosses → r7?? expected if crossing temps get r7/r8: cb→r7, i→r8; kind loop-local → r6 ✓✓!! 
+  - 3: cb local → r6, kind local → r7 (def order), i crosses → r8 ✓✓!!
+  - now: cb crosses, i crosses: cb→r8, i→r7?? order cb before i → cb→r7?? ✗. Hmm. Unless "now"'s cfg-after-cb made cfg's live range... cfg→fp still. cb crossing: assigned r8 (first crossing?), i crossing r7? Inconsistent with 2 (cb→r7, i→r8) where def order cb before i too. ✗✗. 
+
+  Whatever — "now" had cfg assigned AFTER cb which changed cfg's live range start, perturbing everything.
+
+  Model prediction for getting state2 schedule with correct regs: need cb LOOP-LOCAL (in-loop) for r6, kind LOOP-LOCAL for r7, i crossing r8, cfg fp — that's state3! — and schedule ldr r6 before mov r8. State3 schedule: mov, ldr, and. The ldr is LICM-hoisted after the init. Can the scheduler move the ldr above the mov? Earlier I concluded scheduler preserves textual order (and/mov evidence). But wait — in state A the scheduler moved the AND above the MOV?? Textual in A: was it really and-then-mov? If loop-init is emitted BEFORE the preheader statements... hmm, actually if textual were mov-then-and in A and the scheduler preserved it, A would match! It didn't. So either textual was and-then-mov (preserved), or scheduler reorders.
+
+  Test of scheduler reordering: state3 had textual mov, ldr, and (LICM output) — if the scheduler could hoist loads, it would produce ldr, mov, and and we'd be done. It didn't → scheduler preserves order (at least post-LICM). So state3 cannot be fixed by scheduling; the ldr must be pre-LICM, i.e., cb pre-loop → state2 → allocation wrong.
+
+  Unless: make the loop-init mov be emitted AFTER LICM hoisting! I.e., i initialized by hoisted code?? If i's init were loop-invariant code inside the loop... like `i = 0` can't be in the loop.
+
+  What if the loop is nested-shaped: `i = 0; do { ... } while (++i < 2);`? do-while: init pre-loop statement → the compiler may keep it as a regular preheader statement scheduled with the others. Then: cfg, cb(pre-loop), i=0 pre-loop statement, kind in-loop. Schedule of pre-loop: ldr fp, ldr cb, mov r8 (in source order!), then LICM and. Order: ldr, ldr, mov, and ✓!! And allocation: cb crosses → r7?? (state2 gave crossing cb→r7). Hmm, but maybe with do-while the allocation differs. The while-loop test earlier (kind pre-loop) gave and-first; but with kind IN-loop + cb pre-loop + do-while, untried! The while test earlier had kind PRE-loop. Let me try: cb pre-loop, kind in-loop, do-while with i=0 pre-loop:
+
+  ```
+  cfg = &data_02155a14;
+  cb = (void *)func_02082fec;
+  i = 0;
+  do {
+      ...body...
+      i++;
+  } while (i < 2);
+  ```
+  Wait but earlier "while" test: cfg, cb, i=0, kind=(u8)a1, while(...) → and-before-mov. There the and was a pre-loop statement too, and the compiler moved the and above the mov?? or moved the mov after the and into loop-init. With kind in-loop, the and comes from LICM (after init), and the mov is a pre-loop statement — will the compiler still suck i=0 into loop-init and place it after the hoisted and? In state5 (i=0 pre-loop, cb in-loop, kind in-loop, for with empty init): result was mov@0x50, ldr r6@0x54 — mov BEFORE the LICM stuff ✓. So with cb PRE-loop: ldr fp, ldr cb, mov, and potentially ✓. That's just state2 with i=0 as separate statement instead of for-init! Did I try that exact combo? State2 variants used `for (i = 0; ...)`. Let me try `i = 0; for (; i < 2; i++)` with cb pre-loop, kind in-loop.
+
+• New combination not yet tried: `cb` pre-loop, `kind` in-loop, but `i = 0` as a separate pre-loop statement (not for-init).
+
+error: failed to run prompt: provider.api_error: 403 You've reached your usage limit for this billing cycle. Your quota will be refreshed in the next cycle. To continue now, purchase extra usage or upgrade your plan: https://www.kimi.com/membership/subscription?tab=quota
+See log: /Users/chrislamark/.kimi-code/logs/kimi-code.log
+== ronde 1: 
+error: Cannot use --session without an id in prompt mode.
+== ronde 2: 
+error: Cannot use --session without an id in prompt mode.
+== ronde 3: 
+error: Cannot use --session without an id in prompt mode.
+== ronde 4: 
+FINAL: MATCH=no | rondes=4 | best= | 2352s

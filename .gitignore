@@ -1,0 +1,27 @@
+# Auteursrechtelijk (Nintendo) — NOOIT publiek pushen:
+*.nds
+extract/
+arm7_bios.bin
+*.bin
+
+# Build-artefacten (herbouwbaar):
+build/
+mkds_eur.nds
+ai/sdk_objs/
+ai/hangin_quarantine.txt
+
+# Toegestaan: config/, src/, tools/, notes/, ai/*.json, ai/*.jsonl, *.md, build.sh
+!ai/*.json
+!ai/*.jsonl
+!config/**
+ai/wave/
+.wibo_tmp/
+
+# Python bytecode-cache (versie-specifiek, niet delen)
+__pycache__/
+*.pyc
+
+# Compile-artefacten en propriëtaire toolchain — nooit publiek
+*.o
+.tmpmatch/
+tools/mwccarm/

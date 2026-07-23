@@ -1,0 +1,6 @@
+extern void DisplayEngineConfig_SetBg3Config(void *cfg, int a1, int a2, int a3, int a4, int a5, int a6);
+
+void DisplayConfig_SetBottomEngineBg3Config_1(char *base, int a1, int a2, int a3, int a4, int a5, int a6)
+{
+    DisplayEngineConfig_SetBg3Config(base + 0x70, a1, a2, a3, a4, a5, a6);
+}

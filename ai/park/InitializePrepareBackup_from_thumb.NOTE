@@ -1,0 +1,1 @@
+PARKED: symbool verliest thumb-bit in de link (BLX->BL flip bij caller 0x02039de0); kandidaat is byte-perfect maar object-symboltype klopt niet — onderzoek compile-pad
