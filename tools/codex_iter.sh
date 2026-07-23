@@ -18,6 +18,14 @@ oracle() {
     --module arm9 --addr "$ADDR" --size "$SIZE" 2>&1
 }
 
+# oracle-preflight (stroomstoring-les 2026-07-23): een dode docker voedt
+# agents met valse mismatches en verbrandt quota — eerst bewijzen dat de
+# oracle compileert, anders weigeren.
+if ! docker exec "${MKDS_WIBO_CONTAINER:-mkds-cc}" true 2>/dev/null; then
+  echo "ITER ${FUNC}: ORACLE-DOWN (docker/mkds-cc niet bereikbaar) — batch geweigerd"
+  exit 2
+fi
+
 FEEDBACK=""
 for r in $(seq 1 "$MAXR"); do
   P="Je bent een matching-decompilatie-agent voor Mario Kart DS (EUR).
