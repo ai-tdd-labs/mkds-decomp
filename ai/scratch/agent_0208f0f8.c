@@ -1,9 +1,7 @@
-/* PURPOSE: Initializes the award-track effect manager.
- *
- * Selects the race-specific resource and limits, allocates the manager's
- * object pools, links every object into its owning list, and prepares the
- * loaded texture dimensions used by the effect renderer.
- */
+// PURPOSE: Sets up the award-track effect system.
+// The heap argument supplies storage unless the race uses the shared effect heap.
+// Race settings select the texture, callback, pool counts, and render parameters.
+// The new groups and items are linked into the manager's free lists.
 
 typedef unsigned char u8;
 typedef unsigned short u16;
@@ -17,7 +15,7 @@ typedef struct RaceConfig_0208f0f8 {
 } RaceConfig_0208f0f8;
 
 typedef struct RaceContext_0208f0f8 {
-    char pad_000[0xa4];
+    u8 pad_000[0xa4];
     void *effectHeap;
 } RaceContext_0208f0f8;
 
@@ -29,19 +27,19 @@ typedef struct IntrusiveListWrapper_0208f0f8 {
 } IntrusiveListWrapper_0208f0f8;
 
 typedef struct AwardTrackGroup_0208f0f8 {
-    char pad_00[8];
+    u8 pad_00[8];
     IntrusiveListWrapper_0208f0f8 members;
-    char pad_14[0x1c];
+    u8 pad_14[0x1c];
 } AwardTrackGroup_0208f0f8;
 
-typedef struct AwardTrackInstance_0208f0f8 {
-    char data[0x1c];
-} AwardTrackInstance_0208f0f8;
+typedef struct AwardTrackItem_0208f0f8 {
+    u8 data[0x1c];
+} AwardTrackItem_0208f0f8;
 
 typedef struct LoadedAwardTexture_0208f0f8 {
-    char pad_00[8];
+    u8 pad_00[8];
     u32 field_08;
-    char pad_0c[0x20];
+    u8 pad_0c[0x20];
     u32 field_2c;
 } LoadedAwardTexture_0208f0f8;
 
@@ -49,17 +47,14 @@ typedef struct AwardTrackManager_0208f0f8 {
     IntrusiveListWrapper_0208f0f8 activeItems;
     IntrusiveListWrapper_0208f0f8 groups;
     IntrusiveListWrapper_0208f0f8 freeItems;
-    char loadedModelTexture[0xc];
+    u8 loadedModelTexture[0xc];
     LoadedAwardTexture_0208f0f8 *texture;
     u32 field_34;
 } AwardTrackManager_0208f0f8;
 
 typedef struct AwardRenderParameters_0208f0f8 {
-    union {
-        u32 packedWidth;
-        u16 itemsPerGroup;
-    } dimensions;
-    char pad_04[0x14];
+    u32 packedWidth;
+    u8 pad_04[0x14];
     u32 scaledHeight;
     u32 unitScale;
     u32 halfScale;
@@ -73,9 +68,9 @@ extern u8 data_021663d8;
 extern u8 data_021663dc;
 extern u16 data_021663e0;
 extern u16 data_021663e4;
-extern int data_021663e8;
+extern u32 data_021663e8;
 extern void (*data_021663ec)(void);
-extern int data_021663f0;
+extern u32 data_021663f0;
 extern AwardRenderParameters_0208f0f8 data_021663f4;
 extern char data_02166514[];
 extern char data_02166530[];
@@ -95,11 +90,11 @@ void func_0208f0f8(void *heap)
 {
     void *resource;
     u16 groupCount;
-    u16 instanceCount;
+    u16 itemCount;
     AwardTrackGroup_0208f0f8 *groups;
-    AwardTrackInstance_0208f0f8 *instances;
+    AwardTrackItem_0208f0f8 *items;
     u16 groupIndex;
-    u16 instanceIndex;
+    u16 itemIndex;
     LoadedAwardTexture_0208f0f8 *texture;
     u32 scaledWidth;
     u32 clearedWidth;
@@ -129,8 +124,7 @@ void func_0208f0f8(void *heap)
         groupCount = 6;
     }
 
-    instanceCount =
-        (u16)(data_021663f4.dimensions.itemsPerGroup * groupCount);
+    itemCount = (u16)(data_021663e4 * groupCount);
 
     if (gRaceConfig->raceType == 4) {
         heap = data_0217aa10->effectHeap;
@@ -138,7 +132,7 @@ void func_0208f0f8(void *heap)
 
     data_0217b08c = Mem_AllocateHeap(heap, 0x38);
     groups = Mem_AllocateHeap(heap, groupCount * 0x30);
-    instances = Mem_AllocateHeap(heap, instanceCount * 0x1c);
+    items = Mem_AllocateHeap(heap, itemCount * 0x1c);
 
     IntrusiveListWrapper_InitializeEmpty(&data_0217b08c->activeItems, 0);
     IntrusiveListWrapper_InitializeEmpty(&data_0217b08c->groups, 0);
@@ -150,9 +144,9 @@ void func_0208f0f8(void *heap)
                                         &groups[groupIndex]);
     }
 
-    for (instanceIndex = 0; instanceIndex < instanceCount; instanceIndex++) {
+    for (itemIndex = 0; itemIndex < itemCount; itemIndex++) {
         IntrusiveListWrapper_InsertLast(&data_0217b08c->freeItems,
-                                        &instances[instanceIndex]);
+                                        &items[itemIndex]);
     }
 
     LoadedModelTexture_SomeFn(&data_0217b08c->loadedModelTexture, resource,
@@ -160,9 +154,9 @@ void func_0208f0f8(void *heap)
 
     texture = data_0217b08c->texture;
     scaledWidth = (texture->field_08 & 0xffff) << 3;
-    clearedWidth = data_021663f4.dimensions.packedWidth & 0xffff0000;
-    data_021663f4.dimensions.packedWidth = clearedWidth;
-    data_021663f4.dimensions.packedWidth =
+    clearedWidth = data_021663f4.packedWidth & 0xffff0000;
+    data_021663f4.packedWidth = clearedWidth;
+    data_021663f4.packedWidth =
         clearedWidth | ((scaledWidth >> 3) & 0xffff);
     data_021663f4.scaledHeight = (texture->field_2c & 0xffff) << 3;
     data_021663f4.unitScale = 0x10000;

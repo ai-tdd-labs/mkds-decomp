@@ -6408,6 +6408,10 @@ src/arm9/func_021493b0.c:
     complete
     .text       start:0x021493b0 end:0x021494f0
 
+src/arm9/func_021495e4.c:
+    complete
+    .text       start:0x021495e4 end:0x021497e8
+
 src/arm9/func_021498a0.c:
     complete
     .text       start:0x021498a0 end:0x021499b4

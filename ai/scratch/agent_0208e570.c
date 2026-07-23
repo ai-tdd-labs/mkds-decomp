@@ -1,8 +1,8 @@
-/* PURPOSE: Loads the models and animations used by map-object effects.
- *
- * Allocates and initializes the effect-model manager, selects its limits for
- * the current race mode, and loads the bomb and splash-wave resource sets.
- */
+// PURPOSE: Loads the models and animations used by map-object effects.
+// The heap argument supplies memory for the shared effect-model manager.
+// Race and course settings select limits, resources, and an optional wave model.
+
+typedef unsigned short u16;
 
 typedef struct RaceConfig_0208e570 {
     int courseId;
@@ -23,16 +23,16 @@ typedef struct EffectModelManager_0208e570 {
     IntrusiveListWrapper_0208e570 models;
     IntrusiveListWrapper_0208e570 modelsByKind[5];
     char pad_048[0x14];
-    unsigned short maximumModels;
-    unsigned short pad_05e;
+    u16 maximumModels;
+    u16 pad_05e;
 } EffectModelManager_0208e570;
 
 extern RaceConfig_0208e570 *gRaceConfig;
 extern RaceContext_0208e570 *data_0217aa10;
 extern EffectModelManager_0208e570 *data_0217b080;
 
-extern unsigned short data_0216618c;
-extern unsigned short data_021661b8;
+extern u16 data_0216618c;
+extern u16 data_021661b8;
 extern int data_021661e4;
 extern int data_0216623c;
 
@@ -44,14 +44,16 @@ extern char data_02166318[];
 extern char data_0216633c[];
 extern char data_02166360[];
 extern char data_02166384[];
+extern char data_021663a8[];
+extern char data_021663c0[];
 
 extern void *Mem_AllocateHeap(void *heap, unsigned int size);
 extern void IntrusiveListWrapper_InitializeEmpty(void *list, int itemSize);
-extern void MaybeLoadExplosionManager(void *resource, int kind);
+extern void MaybeLoadExplosionManager(void *resource, u16 kind);
 extern void MaybeCheckMapObjBkWaveNsbcaNsbma(void);
 extern void CreateExplosionInstances(void *heap);
 extern void *FindFileBuffer_MAR_EFT_from_thumb(const char *path);
-extern void *FindFileBuffer_CRS_CST_from_thumb(void *path);
+extern void *FindFileBuffer_CRS_CST_from_thumb(const char *path);
 extern void MaybeLoadSomeExplosion(void *heap, int kind, void *model,
                                    void *jointAnimation,
                                    void *materialAnimation,
@@ -62,10 +64,10 @@ extern void *GetExplosionSplashWaveNsbma_from_thumb(void);
 
 void LoadEffectMapObjModels(void *heap)
 {
+    u16 kind;
     void *model;
     void *jointAnimation;
     void *materialAnimation;
-    unsigned short kind;
 
     if (gRaceConfig->mode == 4) {
         heap = data_0217aa10->effectHeap;
@@ -86,6 +88,7 @@ void LoadEffectMapObjModels(void *heap)
         data_0216618c = 3;
         data_021661b8 = 1;
     }
+
     if (gRaceConfig->mode == 4) {
         data_0216618c = 0x14;
     }
@@ -121,11 +124,10 @@ void LoadEffectMapObjModels(void *heap)
 
     if (gRaceConfig->courseId == 0x17) {
         model = GetExplosionSplashWaveNsbmd_from_thumb();
-        jointAnimation =
-            FindFileBuffer_CRS_CST_from_thumb((void *)0x021663a8);
+        jointAnimation = FindFileBuffer_CRS_CST_from_thumb(data_021663a8);
         MaybeLoadSomeExplosion(
             heap, 3, model, jointAnimation,
-            FindFileBuffer_CRS_CST_from_thumb((void *)0x021663c0), 0);
+            FindFileBuffer_CRS_CST_from_thumb(data_021663c0), 0);
     }
 
     data_0217b080->maximumModels = 0xa;

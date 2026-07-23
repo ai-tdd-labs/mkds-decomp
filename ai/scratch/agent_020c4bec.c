@@ -1,8 +1,7 @@
-/* PURPOSE: Initializes the graphics and course label used by the race intro.
- * This allocates the race-intro workspace, loads its palette, character, and
- * cell resources, renders the localized course or mission label, and uploads
- * the finished palette and tiles.
- */
+// PURPOSE: Prepares the graphics and course title shown before a race.
+// This allocates the race-intro state and loads its palette, tiles, and cells.
+// It draws either the course name or the mission label into the tile data.
+// The finished palette and character graphics are uploaded for display.
 
 typedef signed char s8;
 typedef unsigned char u8;
@@ -72,7 +71,7 @@ extern char data_02169680[];
 
 extern void *GetActiveExecutionContext(void);
 extern void *ExecutionContext_GetHeapHandle(void *context);
-extern void *Mem_AllocateHeap(void *heap, u32 size);
+extern void *Mem_AllocateHeap(void *heap, unsigned int size);
 extern void *func_020b47c0(char *name);
 extern void *func_020b47cc(char *name);
 extern void Gfx_ReadPalette(void *destination, void *buffer);
@@ -94,7 +93,7 @@ extern void CopyTileDataTop_0(void *source, u32 offset, u32 size);
 
 void InitializeRaceIntroData(void)
 {
-    void *cell_bank = 0;
+    void *cell_bank;
     TextSprite sprite;
     TextRenderer text;
     int i;
@@ -110,12 +109,12 @@ void InitializeRaceIntroData(void)
     }
 
     data_0217b3e8->frame_count = 0;
-
     Gfx_ReadPalette(&data_0217b3e8->palette,
                     func_020b47c0(data_0216962c));
     Gfx_ReadCharGraphics(&data_0217b3e8->characters,
                          func_020b47c0(data_02169644));
-    LoadCellBankFrom(&cell_bank, func_020b47c0(data_0216965c));
+    LoadCellBankFrom((cell_bank = 0, &cell_bank),
+                     func_020b47c0(data_0216965c));
 
     for (cell_index = 0; cell_index < 3; cell_index++) {
         data_0217b3e8->cells[cell_index] =
@@ -144,11 +143,11 @@ void InitializeRaceIntroData(void)
     }
 
     G2d_Text_PrintString(
-        &text, 0, 9, 0xe, 0x02000000,
+        &text, 0, 9, 0xe, 0x40a,
         Bmg_GetRawStringPointer_from_thumb(func_020b47cc(data_02169674),
                                            message_id));
     G2d_Text_PrintString(
-        &text, 0, 8, 0xe, 0x02000000,
+        &text, 0, 8, 0xe, 0x40a,
         Bmg_GetRawStringPointer_from_thumb(func_020b47cc(data_02169680),
                                            message_id));
 

@@ -1561,3 +1561,4 @@
 {"func": "G3X_Initialize", "naam": "G3X_Initialize", "module": "arm9", "addr": "0x214aa58", "size": "0x15c", "bron": "family-batch", "scratch": "agent_0214aa58.c"}
 {"func": "DrawRacerNames", "naam": "DrawRacerNames", "module": "arm9", "addr": "0x20b80a8", "size": "0x178", "bron": "family-batch", "scratch": "agent_020b80a8.c"}
 {"func": "func_021499b4", "naam": "func_021499b4", "module": "arm9", "addr": "0x21499b4", "size": "0x16c", "bron": "family-batch", "scratch": "agent_021499b4.c"}
+{"func": "func_021495e4", "naam": "func_021495e4", "module": "arm9", "addr": "0x21495e4", "size": "0x204", "bron": "family-batch", "scratch": "agent_021495e4.c"}

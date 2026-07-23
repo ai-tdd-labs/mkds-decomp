@@ -1,7 +1,7 @@
-// PURPOSE: Initializes the main sound data used by the game.
-// This routine has no arguments and returns whether every required sound resource loaded.
-// It probably redirects shared archive and wave files before completing the sound setup.
-// Any failed load stops initialization and returns zero.
+// PURPOSE: Loads the main sound database and prepares its shared resources.
+// This function takes no arguments and returns zero when a required load fails.
+// It redirects paired archive entries to reuse the same loaded file data.
+// On success it finishes the sound setup and returns one.
 
 typedef unsigned int u32;
 
@@ -31,8 +31,8 @@ extern int Sound_ReadSdatFromPathImplV2(void *destination, const char *path,
 extern void SetGlobalSdatUsed(int used);
 extern int Sound_LoadSarc(int archiveId, void *heap);
 extern SoundSarcInfoEntry *Sound_GetSarcInfoEntry(int archiveId);
-extern u32 Sound_MaybeGetRawFilePointer(u32 fileId);
-extern void Sound_SetFileFatDynamicOffsetField(u32 fileId, u32 offset);
+extern void *Sound_MaybeGetRawFilePointer(u32 fileId);
+extern void Sound_SetFileFatDynamicOffsetField(u32 fileId, void *offset);
 extern int Sound_LoadSwar(int waveArchiveId, void *heap);
 extern SoundSwarInfoEntry *Sound_GetSwarInfoEntry(int waveArchiveId);
 extern int Sound_LoadSbnkWithFlags(int bankId, int flags, void *heap);
@@ -43,16 +43,16 @@ extern void func_0210e4c8(void);
 int Maybe_data_Sound_sound_data(void)
 {
     int loaded;
-    SoundSarcInfoEntry *redirectSourceArchive;
-    SoundSarcInfoEntry *redirectTargetArchive;
-    SoundSwarInfoEntry *redirectSourceWave;
-    SoundSwarInfoEntry *redirectTargetWave;
+    SoundSarcInfoEntry *sourceArchive;
+    SoundSarcInfoEntry *targetArchive;
+    SoundSwarInfoEntry *sourceWave;
+    SoundSwarInfoEntry *targetWave;
     u32 sourceFileId;
     u32 targetFileId;
 
     Sound_MaybeSetActiveSdat(data_0217c868);
-    loaded = Sound_ReadSdatFromPathImplV2(data_0217d0a0, data_0216cb30,
-                                          data_0217d130, 0);
+    loaded = Sound_ReadSdatFromPathImplV2(
+        data_0217d0a0, data_0216cb30, data_0217d130, 0);
     SetGlobalSdatUsed(1);
     if (!loaded) {
         return 0;
@@ -62,24 +62,20 @@ int Maybe_data_Sound_sound_data(void)
         return 0;
     }
 
-    redirectSourceArchive = Sound_GetSarcInfoEntry(1);
-    redirectTargetArchive = Sound_GetSarcInfoEntry(0);
-    sourceFileId = redirectSourceArchive->fileId;
-    targetFileId = redirectTargetArchive->fileId;
-
-    /* Make archive zero reuse archive one's loaded data. */
+    sourceArchive = Sound_GetSarcInfoEntry(1);
+    targetArchive = Sound_GetSarcInfoEntry(0);
+    sourceFileId = sourceArchive->fileId;
+    targetFileId = targetArchive->fileId;
     Sound_SetFileFatDynamicOffsetField(
         targetFileId, Sound_MaybeGetRawFilePointer(sourceFileId));
     Sound_SetFileFatDynamicOffsetField(sourceFileId, 0);
     data_0217d178.files[data_0217d178.count++] = targetFileId;
 
     if (Sound_LoadSwar(0x3e, data_0217d130)) {
-        redirectSourceWave = Sound_GetSwarInfoEntry(0x3e);
-        redirectTargetWave = Sound_GetSwarInfoEntry(0x3d);
-        sourceFileId = redirectSourceWave->fileId;
-        targetFileId = redirectTargetWave->fileId;
-
-        /* Apply the same redirection to the paired wave archives. */
+        sourceWave = Sound_GetSwarInfoEntry(0x3e);
+        targetWave = Sound_GetSwarInfoEntry(0x3d);
+        sourceFileId = sourceWave->fileId;
+        targetFileId = targetWave->fileId;
         Sound_SetFileFatDynamicOffsetField(
             targetFileId, Sound_MaybeGetRawFilePointer(sourceFileId));
         Sound_SetFileFatDynamicOffsetField(sourceFileId, 0);

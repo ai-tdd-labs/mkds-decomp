@@ -57,9 +57,11 @@ klein (paar %), de verse pen doet het werk.
 - Timeout per agent-call: 240s (klein werk), 480s (groot/high) — codex kan
   hangen (13 min, 0 CPU); perl-alarm om élke call (TW_ALARM).
 - Grote functies (0x100-0x200): met 1500-register-briefs + SOL-xhigh-ITER wél
-  werkbaar: 4/10 (was 0/10 bij register ~1200 met kale eerste pen) — het
-  vliegwiel opent bands die eerder dicht zaten; hertest gesloten bands na
-  elke ~300 nieuwe registraties.
+  werkbaar: 40-80% per batch (was 0/10 bij register ~1200 met kale eerste
+  pen) — het vliegwiel opent bands die eerder dicht zaten; hertest gesloten
+  bands na elke ~300 nieuwe registraties. Volgende trap 0x200-0x400: 0/10 op
+  xhigh-iter bij register 1557 (2026-07-21) — plafond; wacht op groter
+  vliegwiel of Fable.
 
 ## Oudere gemeten lessen (2026-07-16 t/m 19, uit de model-vergelijkingen)
 

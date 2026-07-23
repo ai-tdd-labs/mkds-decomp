@@ -1469,6 +1469,7 @@ src/arm9/func_02149060.c	src/arm9/func_02149060.o	arm
 src/arm9/GX_SetBankForSubOBJExtPltt.c	src/arm9/GX_SetBankForSubOBJExtPltt.o	arm	
 src/arm9/GX_SetBankForSubBGExtPltt.c	src/arm9/GX_SetBankForSubBGExtPltt.o	arm	
 src/arm9/func_021493b0.c	src/arm9/func_021493b0.o	arm	
+src/arm9/func_021495e4.c	src/arm9/func_021495e4.o	arm	
 src/arm9/func_021498a0.c	src/arm9/func_021498a0.o	arm	
 src/arm9/func_021499b4.c	src/arm9/func_021499b4.o	arm	
 src/arm9/G3X_GetVectorMtx.c	src/arm9/G3X_GetVectorMtx.o	arm	
