@@ -117,3 +117,11 @@ mtime van de log/artefacten + CPU-tijd van het proces, nooit alleen de klok.
 - Oogst per ~100, niet per batch (oogst is serieel; build-kosten vast).
 - Driver-scripts: buitentimeout + heartbeat — nooit wachten op alleen een
   taak-notificatie (5 uur verloren aan een hanger, nacht 19→20 jul).
+
+## Cross-platform (2026-07-23, volledig rapport: ~/projects/decomp/PLATFORM_BENCHMARK.md)
+- N64/IDO (Wave Race): 76% (13/17); routing OMGEKEERD aan NDS — SOL-high/
+  xhigh 7/7, Terra-low 2/5. GC/C++ (Sunshine): vers ~11%, near-miss ~67%.
+- Kernles: taal > console (C fabriek-vriendelijk, C++ zwaar); routing per
+  platform apart meten; oracle-snelheid bepaalt het iteratietempo.
+- Drie fabrieken operationeel: mkds (NDS), ai-tdd-labs/wave-race-64-ai
+  (N64, 49 IDO-trucs), sms (GC, near-miss-inzet).
