@@ -38,9 +38,11 @@ zonder reloc = literal; MMIO = volatile-pointer-literal; eerste regel
 Schrijf je kandidaat naar ${SRC} (volledig overschrijven). Verifieer niet
 zelf. Ontdek je een nieuwe codegen-truc: append als JSON-regel aan
 ai/tricks.jsonl. Antwoord alleen 'GESCHREVEN'."
-  perl -e "alarm ${TW_ALARM:-480}; exec @ARGV" -- codex exec -m "$MODEL" \
+  CU=$(perl -e "alarm ${TW_ALARM:-480}; exec @ARGV" -- codex exec -m "$MODEL" \
     -c model_reasoning_effort="$EFF" --sandbox workspace-write \
-    --cd "$PWD" "$P" < /dev/null > /dev/null 2>&1
+    --cd "$PWD" "$P" < /dev/null 2>&1)
+  TOK=$(echo "$CU" | grep -A1 "tokens used" | tail -1 | tr -dc '0-9')
+  echo "TOKENS ${FUNC} r${r} ${MODEL} ${EFF} ${TOK:-0}" >> ai/wave/token_log.txt
   RES=$(oracle)
   if echo "$RES" | grep -q "match=True"; then
     echo "ITER ${FUNC}: MATCH ronde ${r} (${MODEL}/${EFF})"

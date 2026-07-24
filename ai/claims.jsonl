@@ -4292,3 +4292,15 @@
 {"func": "func_020824d0", "addr": "0x20824d0", "who": "claude-main", "date": "2026-07-23", "status": "active"}
 {"func": "Fs_InitializeMountRom", "addr": "0x2004e1c", "who": "claude-main", "date": "2026-07-23", "status": "active"}
 {"func": "StructRC_SomeFn_2", "addr": "0x2040750", "who": "claude-main", "date": "2026-07-23", "status": "active"}
+{"func": "func_0212d968", "addr": "0x212d968", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_020e246c", "addr": "0x20e246c", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_02012f24", "addr": "0x2012f24", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_02047498", "addr": "0x2047498", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_02068094", "addr": "0x2068094", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_0206bab8", "addr": "0x206bab8", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "MaybeSoundSendCommand", "addr": "0x20207ec", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_0214c1bc", "addr": "0x214c1bc", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_0212cb78", "addr": "0x212cb78", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_0214b63c", "addr": "0x214b63c", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_0204aba8", "addr": "0x204aba8", "who": "claude-main", "date": "2026-07-24", "status": "active"}
+{"func": "func_0214c4d4", "addr": "0x214c4d4", "who": "claude-main", "date": "2026-07-24", "status": "active"}

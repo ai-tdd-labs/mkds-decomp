@@ -140,6 +140,7 @@ src/arm9/func_02010168.c	src/arm9/func_02010168.o	arm
 src/arm9/func_020101e8.c	src/arm9/func_020101e8.o	arm	
 src/arm9/Mode_CreateFromResource.c	src/arm9/Mode_CreateFromResource.o	arm	
 src/arm9/func_02011074.c	src/arm9/func_02011074.o	arm	
+src/arm9/func_02012f24.c	src/arm9/func_02012f24.o	arm	
 src/arm9/ModelBlock_SetSomethingToAllMaterials_MaybeTraslucent.c	src/arm9/ModelBlock_SetSomethingToAllMaterials_MaybeTraslucent.o	arm	
 src/arm9/Maybe_helper_013044.c	src/arm9/Maybe_helper_013044.o	arm	
 src/arm9/Maybe_helper_01308c.c	src/arm9/Maybe_helper_01308c.o	arm	
@@ -195,6 +196,7 @@ src/arm9/func_0201e540.c	src/arm9/func_0201e540.o	arm
 src/arm9/func_020204c0.c	src/arm9/func_020204c0.o	arm	
 src/arm9/ComputeProfileInfoCrc.c	src/arm9/ComputeProfileInfoCrc.o	arm	
 src/arm9/ComputeFriendCrc.c	src/arm9/ComputeFriendCrc.o	arm	
+src/arm9/MaybeSoundSendCommand.c	src/arm9/MaybeSoundSendCommand.o	arm	
 src/arm9/func_02020844.c	src/arm9/func_02020844.o	arm	
 src/arm9/func_02020870.c	src/arm9/func_02020870.o	arm	
 src/arm9/func_020208a4.c	src/arm9/func_020208a4.o	arm	
@@ -346,6 +348,7 @@ src/arm9/GetSomeRacerValue.c	src/arm9/GetSomeRacerValue.o	arm
 src/arm9/InitializeGlobalMV.c	src/arm9/InitializeGlobalMV.o	arm	
 src/arm9/StructRC_SomeFn_1.c	src/arm9/StructRC_SomeFn_1.o	arm	
 src/arm9/StructRC_SomeFn.c	src/arm9/StructRC_SomeFn.o	arm	
+src/arm9/ComputeDriverSkillRankpoints.c	src/arm9/ComputeDriverSkillRankpoints.o	arm	
 src/arm9/func_02041a70.c	src/arm9/func_02041a70.o	arm	
 src/arm9/NkmHandler_CAME_from_thumb.c	src/arm9/NkmHandler_CAME_from_thumb.o	thumb	
 src/arm9/NkmHandler_AREA_from_thumb.c	src/arm9/NkmHandler_AREA_from_thumb.o	thumb	
@@ -367,6 +370,7 @@ src/arm9/NkmHandler_OBJI_from_thumb.c	src/arm9/NkmHandler_OBJI_from_thumb.o	thum
 src/arm9/func_02043410.c	src/arm9/func_02043410.o	arm	
 src/arm9/Struct5624_SetXflag2.c	src/arm9/Struct5624_SetXflag2.o	arm	
 src/arm9/func_02043b04.c	src/arm9/func_02043b04.o	arm	
+src/arm9/func_02044380.c	src/arm9/func_02044380.o	arm	
 src/arm9/MaybeLoadStaffGhost.c	src/arm9/MaybeLoadStaffGhost.o	arm	
 src/arm9/func_020467a0.c	src/arm9/func_020467a0.o	arm	
 src/arm9/InitializeGlobalCO.c	src/arm9/InitializeGlobalCO.o	arm	
@@ -381,6 +385,7 @@ src/arm9/CreateGlobal59C4.c	src/arm9/CreateGlobal59C4.o	arm
 src/arm9/Input_MaybeInitializeTouch.c	src/arm9/Input_MaybeInitializeTouch.o	arm	
 src/arm9/LoadEmbeddedStatic2DArchive_from_thumb.c	src/arm9/LoadEmbeddedStatic2DArchive_from_thumb.o	thumb	
 src/arm9/ResizeActiveExecutionContextHeapHandle_from_thumb.c	src/arm9/ResizeActiveExecutionContextHeapHandle_from_thumb.o	thumb	
+src/arm9/func_02047498.c	src/arm9/func_02047498.o	thumb	
 src/arm9/func_020474e4.c	src/arm9/func_020474e4.o	thumb	
 src/arm9/func_020476ac.c	src/arm9/func_020476ac.o	thumb	
 src/arm9/Dispose_CST_Mount_K2D_R2D_MAR_from_thumb.c	src/arm9/Dispose_CST_Mount_K2D_R2D_MAR_from_thumb.o	thumb	
@@ -411,6 +416,7 @@ src/arm9/SceneFn_Emblem.c	src/arm9/SceneFn_Emblem.o	arm
 src/arm9/func_0204a928.c	src/arm9/func_0204a928.o	arm	
 src/arm9/func_0204a978.c	src/arm9/func_0204a978.o	arm	
 src/arm9/AllocateInputRecord.c	src/arm9/AllocateInputRecord.o	arm	
+src/arm9/func_0204aba8.c	src/arm9/func_0204aba8.o	arm	
 src/arm9/SetSomeSceneSseqId.c	src/arm9/SetSomeSceneSseqId.o	arm	
 src/arm9/InitializeSystemContext.c	src/arm9/InitializeSystemContext.o	arm	
 src/arm9/SceneFn_WLMenu.c	src/arm9/SceneFn_WLMenu.o	arm	
@@ -541,18 +547,22 @@ src/arm9/func_020616c0.c	src/arm9/func_020616c0.o	arm
 src/arm9/HandleCourseAnim.c	src/arm9/HandleCourseAnim.o	arm	
 src/arm9/StructML_SetSomeDefaultFields.c	src/arm9/StructML_SetSomeDefaultFields.o	arm	
 src/arm9/func_02067cb0.c	src/arm9/func_02067cb0.o	arm	
+src/arm9/func_02068094.c	src/arm9/func_02068094.o	arm	
 src/arm9/StructMQRacerEntry_SomeFn_10.c	src/arm9/StructMQRacerEntry_SomeFn_10.o	arm	
 src/arm9/StructMQRacerEntry_SomeFn_52.c	src/arm9/StructMQRacerEntry_SomeFn_52.o	arm	
 src/arm9/StructMQRacerEntry_SomeFn_34.c	src/arm9/StructMQRacerEntry_SomeFn_34.o	arm	
 src/arm9/func_0206b020.c	src/arm9/func_0206b020.o	arm	
+src/arm9/func_0206bab8.c	src/arm9/func_0206bab8.o	arm	
 src/arm9/func_0206be54.c	src/arm9/func_0206be54.o	arm	
 src/arm9/StructMQRacerEntry_SomeFn_89.c	src/arm9/StructMQRacerEntry_SomeFn_89.o	arm	
+src/arm9/func_0206f694.c	src/arm9/func_0206f694.o	arm	
 src/arm9/DriverContext_SomeFn_0.c	src/arm9/DriverContext_SomeFn_0.o	arm	
 src/arm9/func_02073e04.c	src/arm9/func_02073e04.o	arm	
 src/arm9/func_02073e4c.c	src/arm9/func_02073e4c.o	arm	
 src/arm9/StructHD_SomeFn_9.c	src/arm9/StructHD_SomeFn_9.o	arm	
 src/arm9/SomeLookAtHD3.c	src/arm9/SomeLookAtHD3.o	arm	
 src/arm9/func_02076c50.c	src/arm9/func_02076c50.o	arm	
+src/arm9/StructHD_SomeFn_10.c	src/arm9/StructHD_SomeFn_10.o	arm	
 src/arm9/CreateGlobalHD_HD2_from_thumb.c	src/arm9/CreateGlobalHD_HD2_from_thumb.o	thumb	
 src/arm9/CreateGlobalHD_HD2_V2_from_thumb.c	src/arm9/CreateGlobalHD_HD2_V2_from_thumb.o	thumb	
 src/arm9/CreateGlobalHD5_from_thumb.c	src/arm9/CreateGlobalHD5_from_thumb.o	thumb	
@@ -619,6 +629,7 @@ src/arm9/func_02081ca0.c	src/arm9/func_02081ca0.o	arm
 src/arm9/func_02081d78.c	src/arm9/func_02081d78.o	arm	
 src/arm9/func_02081e5c.c	src/arm9/func_02081e5c.o	arm	
 src/arm9/func_02081f30.c	src/arm9/func_02081f30.o	arm	
+src/arm9/func_020821cc.c	src/arm9/func_020821cc.o	arm	
 src/arm9/func_02082368.c	src/arm9/func_02082368.o	arm	
 src/arm9/func_0208266c.c	src/arm9/func_0208266c.o	arm	
 src/arm9/func_02082a10.c	src/arm9/func_02082a10.o	arm	
@@ -1190,6 +1201,7 @@ src/arm9/Maybe_CreateObj_1588a8.c	src/arm9/Maybe_CreateObj_1588a8.o	arm
 src/arm9/func_020e04b0.c	src/arm9/func_020e04b0.o	arm	
 src/arm9/func_020e0538.c	src/arm9/func_020e0538.o	arm	
 src/arm9/AllocateNewDriverSub208.c	src/arm9/AllocateNewDriverSub208.o	arm	
+src/arm9/func_020e246c.c	src/arm9/func_020e246c.o	arm	
 src/arm9/func_020e24d0.c	src/arm9/func_020e24d0.o	arm	
 src/arm9/Maybe_CreateObj_158a54.c	src/arm9/Maybe_CreateObj_158a54.o	arm	
 src/arm9/Maybe_CreateObj_158abc.c	src/arm9/Maybe_CreateObj_158abc.o	arm	
@@ -1396,6 +1408,8 @@ src/arm9/func_0212c5f4.c	src/arm9/func_0212c5f4.o	arm
 src/arm9/func_0212c6ac.c	src/arm9/func_0212c6ac.o	arm	
 src/arm9/func_0212c9a4.c	src/arm9/func_0212c9a4.o	arm	
 src/arm9/func_0212cad8.c	src/arm9/func_0212cad8.o	arm	
+src/arm9/func_0212cb78.c	src/arm9/func_0212cb78.o	arm	
+src/arm9/func_0212d968.c	src/arm9/func_0212d968.o	arm	
 src/arm9/Sound_Context_SetHeap.c	src/arm9/Sound_Context_SetHeap.o	arm	
 src/arm9/Sound_Context_BackupFrameState.c	src/arm9/Sound_Context_BackupFrameState.o	arm	
 src/arm9/Sound_Context_Allocate.c	src/arm9/Sound_Context_Allocate.o	arm	
@@ -1477,6 +1491,7 @@ src/arm9/G3X_GetClipMtx.c	src/arm9/G3X_GetClipMtx.o	arm
 src/arm9/G3X_ResetMatrixStack2.c	src/arm9/G3X_ResetMatrixStack2.o	arm	
 src/arm9/G3X_ClearFifo.c	src/arm9/G3X_ClearFifo.o	arm	
 src/arm9/G3X_Initialize.c	src/arm9/G3X_Initialize.o	arm	
+src/arm9/G3i_LookAt_.c	src/arm9/G3i_LookAt_.o	arm	
 src/arm9/GXS_EndLoadOBJExtPltt.c	src/arm9/GXS_EndLoadOBJExtPltt.o	arm	
 src/arm9/GXS_EndLoadBGExtPltt.c	src/arm9/GXS_EndLoadBGExtPltt.o	arm	
 src/arm9/GX_EndLoadOBJExtPltt.c	src/arm9/GX_EndLoadOBJExtPltt.o	arm	
@@ -1499,7 +1514,9 @@ src/arm9/TEQSub_Fn8Impl.c	src/arm9/TEQSub_Fn8Impl.o	arm
 src/arm9/CopyToOamB.c	src/arm9/CopyToOamB.o	arm	
 src/arm9/CopyToOamA.c	src/arm9/CopyToOamA.o	arm	
 src/arm9/CopyPaletteTop.c	src/arm9/CopyPaletteTop.o	arm	
+src/arm9/func_0214c1bc.c	src/arm9/func_0214c1bc.o	arm	
 src/arm9/func_0214c48c.c	src/arm9/func_0214c48c.o	arm	
+src/arm9/func_0214c4d4.c	src/arm9/func_0214c4d4.o	arm	
 src/arm9/func_0214c6a8.c	src/arm9/func_0214c6a8.o	arm	
 src/arm9/Mem_Initialize.c	src/arm9/Mem_Initialize.o	arm	
 src/arm9/Fifo_Initialize.c	src/arm9/Fifo_Initialize.o	arm	
